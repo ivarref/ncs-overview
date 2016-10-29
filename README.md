@@ -2,8 +2,7 @@
 
 Tabellen under angir prosentvis bidrag til petroleumsproduksjon på norsk sokkel. 
 Disse er gruppert på funntiår.
-Man kan med andre ord se at funn gjort på 1970-tallet (såvidt) dominerer produksjonen. 
-
+Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produksjonen. 
 
 | Funntiår | Olje | Gass | Petroleum |
 | ---- | ---: | ---: | ---: |

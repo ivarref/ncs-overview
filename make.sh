@@ -1,4 +1,4 @@
 #!/bin/bash
 
 clear
-./overview.py
+./make_readme.sh
