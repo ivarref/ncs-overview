@@ -4,6 +4,7 @@
 from __future__ import print_function
 
 import csv
+import datetime
 import itertools
 
 import pandas as pd
@@ -76,6 +77,8 @@ if __name__=="__main__":
 
   #props = ['prfPrdOilNetMillSm3', 'prfPrdGasNetBillSm3', 'prfPrdOeNetMillSm3']
   
+  now = datetime.datetime.now()
+
   def write_file_for_property(filename, prop):
     with open(filename, 'wb') as csvfile:
       writer = csv.writer(csvfile)
@@ -85,14 +88,20 @@ if __name__=="__main__":
 
       for date in alldates:
         prevdates.append(date)
-        if len(prevdates) == 12:
-          row = [date]
+        yr = date.split("-")[0]
+        month = date.split("-")[1]
+        if len(prevdates) == 12 and (month=="12" or date == alldates[-1]):
+          if month!="12":
+            yr+="-YTD"
+          row = [yr]
           for decade in decades:
             months = df[df['prfYearMonth'].isin(prevdates)]
             fields = months[months['prfNpdidInformationCarrier'].isin(decade_to_fields[decade])]
             row.append("%g" % (fields[prop].sum()))
             print(date, prop, decade, fields[prop].sum())
           writer.writerow(row)
+          prevdates.remove(prevdates[0])
+        elif len(prevdates) == 12:
           prevdates.remove(prevdates[0])
   
   write_file_for_property('oil_production_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
