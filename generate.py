@@ -84,6 +84,8 @@ if __name__=="__main__":
       header.extend(decades)
       header.append('Sum')
       writer.writerow(header)
+      
+      started_writing = False
 
       for date in alldates:
         prevdates.append(date)
@@ -100,8 +102,13 @@ if __name__=="__main__":
             print(date, prop, decade, fields[prop].sum())
           
           months = df[df['prfYearMonth'].isin(prevdates)]
-          row.append("%g" % (months[prop].sum()))
-          writer.writerow(row)
+          sum = months[prop].sum()
+          row.append("%g" % (sum))
+          if sum == 0 and started_writing == False:
+            pass
+          else:
+            started_writing = True
+            writer.writerow(row)
           prevdates.remove(prevdates[0])
         elif len(prevdates) == 12:
           prevdates.remove(prevdates[0])
