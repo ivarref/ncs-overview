@@ -71,13 +71,13 @@ if __name__=="__main__":
   alldates = df['prfYearMonth'].unique()
   alldates.sort()
   
-  prevdates = []
   decades = decade_to_fields.keys()
   decades.sort()
 
   now = datetime.datetime.now()
 
   def write_file_for_property(filename, prop):
+    prevdates = []
     with open(filename, 'wb') as csvfile:
       writer = csv.writer(csvfile)
       header = ['Date']
