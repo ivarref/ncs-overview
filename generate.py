@@ -93,7 +93,7 @@ if __name__=="__main__":
         month = date.split("-")[1]
         if len(prevdates) == 12 and (month=="12" or date == alldates[-1]):
           if month!="12":
-            yr+="-YTD"
+            yr=prevdates[0]+"-"+prevdates[1]
           row = [yr]
           for decade in decades:
             months = df[df['prfYearMonth'].isin(prevdates)]
