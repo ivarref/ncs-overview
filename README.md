@@ -1,4 +1,5 @@
-| Tiår | Olje | Gass | Oljeekvivalenter |
+# ncs-overview
+| Tiår | Olje | Gass | Petroleum |
 | ---- | ---: | ---: | ---: |
 | 1960 | 9.5 | 0.8 | 4.2 |
 | 1970 | 34.6 | 39.4 | 36.6 |
