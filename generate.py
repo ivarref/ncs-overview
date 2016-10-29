@@ -82,8 +82,9 @@ if __name__=="__main__":
   def write_file_for_property(filename, prop):
     with open(filename, 'wb') as csvfile:
       writer = csv.writer(csvfile)
-      header = ['date']
+      header = ['Date']
       header.extend(decades)
+      header.append('Sum')
       writer.writerow(header)
 
       for date in alldates:
@@ -99,6 +100,9 @@ if __name__=="__main__":
             fields = months[months['prfNpdidInformationCarrier'].isin(decade_to_fields[decade])]
             row.append("%g" % (fields[prop].sum()))
             print(date, prop, decade, fields[prop].sum())
+          
+          months = df[df['prfYearMonth'].isin(prevdates)]
+          row.append("%g" % (months[prop].sum()))
           writer.writerow(row)
           prevdates.remove(prevdates[0])
         elif len(prevdates) == 12:
