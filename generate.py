@@ -75,8 +75,6 @@ if __name__=="__main__":
   decades = decade_to_fields.keys()
   decades.sort()
 
-  #props = ['prfPrdOilNetMillSm3', 'prfPrdGasNetBillSm3', 'prfPrdOeNetMillSm3']
-  
   now = datetime.datetime.now()
 
   def write_file_for_property(filename, prop):
@@ -109,5 +107,7 @@ if __name__=="__main__":
           prevdates.remove(prevdates[0])
   
   write_file_for_property('oil_production_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
-
+  write_file_for_property('gas_production_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property('oe_production_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
+  
   print("exiting generate.py ...")
