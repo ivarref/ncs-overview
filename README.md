@@ -1,10 +1,9 @@
-# ncs-overview
-
-What do we want?
-We want data like:
-
-    date     1960s 1970s 1980s 1990s 2000s 2010s ...
-    1991-01  val1  val2  val3  val4  val5  val6  ...
-    1991-02  val1  val2  val3  val4  val5  val6  ...
-    ...
-
+# Petroleum
+| Funntiår | Bidrag i %% |
+| -------: | -----: |
+| 1960 | 4.2 |
+| 1970 | 36.6 |
+| 1980 | 29.2 |
+| 1990 | 23.6 |
+| 2000 | 6.0 |
+| 2010 | 0.2 |
