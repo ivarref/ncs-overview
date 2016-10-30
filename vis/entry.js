@@ -5,13 +5,13 @@ function isNumeric(num) {
     return !isNaN(num);
 }
 
-function show_resource(resource, file) {
+function show_resource(resource, unit, file) {
     var svg = d3.select('body').append('svg')
         .attr('width', 960 / 1.5)
         .attr('height', 500 / 1.5)
         .style('border', "1px solid #000000");
 
-    var margin = { top: 20, right: 20, bottom: 30, left: 50 },
+    var margin = { top: 40, right: 20, bottom: 30, left: 50 },
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -48,7 +48,6 @@ function show_resource(resource, file) {
 
             x.domain(d3.extent(data, function (d) { return d.date; }));
             y.domain([0, d3.max(data, function (d) { return d.Sum; })]);
-
             z.domain(keys);
             stack.keys(keys);
 
@@ -71,13 +70,51 @@ function show_resource(resource, file) {
                 .append("text")
                 .attr("fill", "#000")
                 .attr("transform", "rotate(-90)")
-                .attr("y", 6)
+                .attr("y", -margin.left + 8)
+                .attr("x", -height / 2)
                 .attr("dy", "0.71em")
-                .style("text-anchor", "end")
-                .text(resource + " Mboe/d");
+                .style("text-anchor", "middle")
+                .text(unit);
+
+            g.append("g")
+                .attr("transform", "transalte(0,0)")
+                .append("text")
+                .attr('dy', '-.35em')
+                .attr('x', width / 2)
+                .style("text-anchor", "middle")
+                .classed("heading", true)
+                .text("Norsk " + resource + " etter funntiår")
+
+            g.append('text')
+                .attr("transform", "translate(15,7)")
+                .attr("dy", "0.35em")
+                .style('font-weight', 'bold')
+                .text('Funntiår')
+
+            var legend = g.append("g")
+                .attr("transform", "translate(15,15)")
+                .selectAll('g')
+                .data(keys.slice(0).reverse())
+                .enter().append('g')
+                .attr("transform", function (d, i) { return "translate(0," + (i * 20) + ")"; })
+                .style("font", "10px sans-serif");
+
+            legend
+                .append('rect')
+                .attr('width', 18)
+                .attr('height', 18)
+                .attr('fill', z);
+
+            legend.append('text')
+                .attr("x", 18 + 4)
+                .attr('y', 9)
+                .attr("dy", "0.35em")
+                .text(function (d) { return d });
         });
 }
 
-show_resource('Oljeproduksjon', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-show_resource('Gassproduksjon', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-show_resource('Petroleumproduksjon', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+show_resource('oljeproduksjon', 'Millioner fat/dag', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+show_resource('gassproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+show_resource('petroleumproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+
+// show_resource('Petroleumproduksjon', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
