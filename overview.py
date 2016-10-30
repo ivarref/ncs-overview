@@ -52,9 +52,9 @@ if __name__=="__main__":
                 "(%.2f %s)." % (mx, unit)
                 )
     print("# Oversikt over norsk sokkel\n")
-    short_summary('Oljeproduksjonen', './data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'Million fat/dag')
-    short_summary('Gassproduksjonen', './data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'Million fat oljeekvivalenter/dag')
-    short_summary('Petroleumproduksjonen', './data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'Million fat oljeekvivalenter/dag')
+    short_summary('Oljeproduksjonen', './data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag')
+    short_summary('Gassproduksjonen', './data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag')
+    short_summary('Petroleumproduksjonen', './data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag')
 
     print("")
 

@@ -1,11 +1,11 @@
 # Oversikt over norsk sokkel
 
 
-Oljeproduksjonen per august 2016 er på 1.61 Million fat/dag, som er 51.3% av nivået i januar 2001 (3.13 Million fat/dag).
+Oljeproduksjonen per august 2016 er på 1.61 millioner fat/dag, som er 51.3% av nivået i januar 2001 (3.13 millioner fat/dag).
 
-Gassproduksjonen per august 2016 er på 2.07 Million fat oljeekvivalenter/dag, som er 98.0% av nivået i mai 2016 (2.11 Million fat oljeekvivalenter/dag).
+Gassproduksjonen per august 2016 er på 2.07 millioner fat oljeekvivalenter/dag, som er 98.0% av nivået i mai 2016 (2.11 millioner fat oljeekvivalenter/dag).
 
-Petroleumproduksjonen per august 2016 er på 4.06 Million fat oljeekvivalenter/dag, som er 87.7% av nivået i juli 2004 (4.63 Million fat oljeekvivalenter/dag).
+Petroleumproduksjonen per august 2016 er på 4.06 millioner fat oljeekvivalenter/dag, som er 87.7% av nivået i juli 2004 (4.63 millioner fat oljeekvivalenter/dag).
 
 
 ## Prosent av nåværende produksjon
