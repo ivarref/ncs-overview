@@ -114,9 +114,9 @@ if __name__=="__main__":
             writer.writerow(row)
         prevdates.remove(prevdates[0])
   
-  write_file_for_property('data/oil_production_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
-  write_file_for_property('data/gas_production_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
-  write_file_for_property('data/oe_production_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
+  write_file_for_property('data/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
+  write_file_for_property('data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property('data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
   
   def to_mboe_d(x):
     # http://www.npd.no/no/Nyheter/Produksjonstall/2016/Juli-2016/
