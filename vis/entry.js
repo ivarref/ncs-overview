@@ -47,7 +47,7 @@ function show_resource(resource, file) {
             var keys = data.columns.filter(isNumeric);
 
             x.domain(d3.extent(data, function (d) { return d.date; }));
-            y.domain(d3.extent(data, function (d) { return d.Sum; }));
+            y.domain([0, d3.max(data, function (d) { return d.Sum; })]);
 
             z.domain(keys);
             stack.keys(keys);
