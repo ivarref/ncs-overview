@@ -1,5 +1,9 @@
 var page = require('webpage').create();
-page.open('http://localhost:8080/bundle', function() {
-  page.render('screenshot.png');
+var system = require('system');
+address = system.args[1];
+output = system.args[2];
+
+page.open(address, function() {
+  page.render(output);
   phantom.exit();
 });

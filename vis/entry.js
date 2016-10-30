@@ -5,6 +5,19 @@ function isNumeric(num) {
     return !isNaN(num);
 }
 
+function findGetParameter(parameterName, default_value) {
+    var result = default_value,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+            tmp = item.split("=");
+            if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
 function show_resource(resource, unit, file) {
     var svg = d3.select('body').append('svg')
         .attr('width', 960 / 1.5)
@@ -113,8 +126,11 @@ function show_resource(resource, unit, file) {
         });
 }
 
-show_resource('oljeproduksjon', 'Millioner fat/dag', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-show_resource('gassproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-show_resource('petroleumproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+show_resource(findGetParameter("title", "oljeproduksjon"),
+    findGetParameter("unit", "Millioner fat/dag"),
+    findGetParameter("filename", '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv')
+);
 
-// show_resource('Petroleumproduksjon', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('oljeproduksjon', 'Millioner fat/dag', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('gassproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('petroleumproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
