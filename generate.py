@@ -11,17 +11,17 @@ import pandas as pd
 
 
 def npdid_name(id):
-  frame = pd.read_csv('./raw_production_monthly_field.csv')
+  frame = pd.read_csv('./data/raw_production_monthly_field.csv')
   f = frame[frame[u'prfNpdidInformationCarrier'] == id]
   return f['prfInformationCarrier'].values[0]
 
 def get_distinct_fields():
-  frame = pd.read_csv('./raw_production_monthly_field.csv')
+  frame = pd.read_csv('./data/raw_production_monthly_field.csv')
   ids = frame[u'prfNpdidInformationCarrier'].unique()
   return ids
 
 def get_discovery_years(ids):
-  frame = pd.read_csv('./raw_discovery_overview.csv')
+  frame = pd.read_csv('./data/raw_discovery_overview.csv')
   frame = frame[frame['dscCurrentActivityStatus'] != 'INCLUDED IN OTHER DISCOVERY']
   res = []
   for (idx, id) in enumerate(ids):
@@ -63,7 +63,7 @@ if __name__=="__main__":
   decade_to_fields = get_decade_to_fields(id_to_year)
 
   # get all production dates
-  df = pd.read_csv('./raw_production_monthly_field.csv')
+  df = pd.read_csv('./data/raw_production_monthly_field.csv')
   df['prfMonthStr'] = df['prfMonth'].astype(str)
   mask = df['prfMonthStr'].str.len() == 1
   df.loc[mask, 'prfMonthStr'] = '0' + df['prfMonthStr']
@@ -113,8 +113,8 @@ if __name__=="__main__":
         elif len(prevdates) == 12:
           prevdates.remove(prevdates[0])
   
-  write_file_for_property('oil_production_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
-  write_file_for_property('gas_production_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
-  write_file_for_property('oe_production_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
+  write_file_for_property('data/oil_production_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
+  write_file_for_property('data/gas_production_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property('data/oe_production_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
   
   print("exiting generate.py ...")

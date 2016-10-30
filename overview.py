@@ -12,7 +12,7 @@ def get_contribution(filename, decade):
     return "%.1f" % (p.values[0])
 
 if __name__=="__main__":
-    frame = pd.read_csv('./oe_production_by_discovery_decade.csv')
+    frame = pd.read_csv('./data/oe_production_by_discovery_decade.csv')
     frame = frame.tail(1)
     decades = frame.columns
     decades = decades[decades.str.isnumeric()].values
@@ -20,7 +20,7 @@ if __name__=="__main__":
     print("| ---- | ---: | ---: | ---: |")
     for dec in decades:
         v = []
-        v.append(get_contribution('./oil_production_by_discovery_decade.csv', dec))
-        v.append(get_contribution('./gas_production_by_discovery_decade.csv', dec))
-        v.append(get_contribution('./oe_production_by_discovery_decade.csv', dec))
+        v.append(get_contribution('./data/oil_production_by_discovery_decade.csv', dec))
+        v.append(get_contribution('./data/gas_production_by_discovery_decade.csv', dec))
+        v.append(get_contribution('./data/oe_production_by_discovery_decade.csv', dec))
         print("|", dec, "|", " | ".join(v), "|")
