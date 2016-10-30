@@ -38,11 +38,11 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 if __name__=="__main__":
     locale.setlocale(locale.LC_TIME, 'no_NO')
 
-    def short_summary(prefix, filename, unit, image):
+    def short_summary(title, prefix, filename, unit, image):
         frame = pd.read_csv(filename)
         last = frame.tail(1)['Sum'].values[0]
         mx = frame['Sum'].max()
-        print("")
+        print("## " + title)
         print("![%s etter funntiår](%s)" % (prefix, image))
         print("")
 
@@ -57,9 +57,9 @@ if __name__=="__main__":
                 )
 
     print("# Oversikt over norsk sokkel\n")
-    short_summary('Oljeproduksjonen', './data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png')
-    short_summary('Gassproduksjonen', './data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/gas_production_yearly_12MMA_by_discovery_decade.png')
-    short_summary('Petroleumproduksjonen', './data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/oe_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Olje', 'Oljeproduksjonen', './data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Gass', 'Gassproduksjonen', './data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/gas_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Petroleum', 'Petroleumproduksjonen', './data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/oe_production_yearly_12MMA_by_discovery_decade.png')
 
     print("")
 
