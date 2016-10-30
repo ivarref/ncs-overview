@@ -38,23 +38,28 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 if __name__=="__main__":
     locale.setlocale(locale.LC_TIME, 'no_NO')
 
-    def short_summary(prefix, filename, unit):
+    def short_summary(prefix, filename, unit, image):
         frame = pd.read_csv(filename)
         last = frame.tail(1)['Sum'].values[0]
         mx = frame['Sum'].max()
         print("")
+        print("![%s etter funntiår](%s)" % (prefix, image))
+        print("")
+
         def format_date(v):
             return datetime.date(int(v.split("-")[0]), int(v.split("-")[1]), 1).strftime('%B %Y')
+        
         print(prefix, "per %s er på" % (format_date(frame.tail(1)['Date'].values[0])), 
                 "%.2f %s," % (last, unit), 
                 "som er", "%.1f%%" % (100.0 * (last / mx)),
                 "av nivået i %s" % (format_date(frame[frame['Sum'] == mx]['Date'].values[0])),
                 "(%.2f %s)." % (mx, unit)
                 )
+
     print("# Oversikt over norsk sokkel\n")
-    short_summary('Oljeproduksjonen', './data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag')
-    short_summary('Gassproduksjonen', './data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag')
-    short_summary('Petroleumproduksjonen', './data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag')
+    short_summary('Oljeproduksjonen', './data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Gassproduksjonen', './data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/gas_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Petroleumproduksjonen', './data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/oe_production_yearly_12MMA_by_discovery_decade.png')
 
     print("")
 
