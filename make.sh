@@ -1,4 +1,4 @@
 #!/bin/bash
 
 clear
-./generate.py
+./overview.py
