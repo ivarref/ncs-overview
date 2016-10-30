@@ -2,6 +2,7 @@
 
 
 Oljeproduksjonen per august 2016 er på 1.61 millioner fat/dag, som er 51.3% av nivået i januar 2001 (3.13 millioner fat/dag).
+
 ![Screenshot](img/oil_production_yearly_12MMA_by_discovery_decade.png)
 
 Gassproduksjonen per august 2016 er på 2.07 millioner fat oljeekvivalenter/dag, som er 98.0% av nivået i mai 2016 (2.11 millioner fat oljeekvivalenter/dag).
