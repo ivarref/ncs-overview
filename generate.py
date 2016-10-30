@@ -92,8 +92,6 @@ if __name__=="__main__":
         if len(prevdates) != 12:
           continue
         elif endofyear or lastrow or monthly:
-          if month!="12":
-            yr=prevdates[0]+"-"+prevdates[-1]
           if monthly:
             yr = date
           row = [yr]
