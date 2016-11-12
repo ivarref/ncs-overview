@@ -6,30 +6,14 @@ import os
 import sys
 
 if __name__=="__main__":
-    files = [
-        {
-            'title': 'oljeproduksjon',
-            'filename': '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
-            'unit': 'Millioner fat/dag',
-            'output_filename': './img/oil_production_yearly_12MMA_by_discovery_decade.png'
-        },
-        {
-            'title': 'gassproduksjon',
-            'filename': '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
-            'unit': 'Millioner fat oljeekvivalenter/dag',
-            'output_filename': './img/gas_production_yearly_12MMA_by_discovery_decade.png'
-        },
-        {
-            'title': 'petroleumproduksjon',
-            'filename': '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
-            'unit': 'Millioner fat oljeekvivalenter/dag',
-            'output_filename': './img/oe_production_yearly_12MMA_by_discovery_decade.png'
-        }
-    ]
-    
-    for fil in files:
-        url = "http://localhost:8080/bundle?" + urllib.urlencode(fil)
-        cmd = "phantomjs screenshot.js \"%s\" %s" % (url, fil['output_filename'])
+    files = {
+        'oil': './img/oil_production_yearly_12MMA_by_discovery_decade.png',
+        'gas': './img/gas_production_yearly_12MMA_by_discovery_decade.png',
+        'petroleum': './img/oe_production_yearly_12MMA_by_discovery_decade.png'
+    }
+    for (mode, fil) in files.items():
+        url = "http://localhost:8080/bundle?mode=" + mode
+        cmd = "phantomjs screenshot.js \"%s\" %s" % (url, fil)
         print("executing ", cmd, "...")
         ret = os.system(cmd)
         if ret != 0:
