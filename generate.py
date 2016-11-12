@@ -72,7 +72,7 @@ if __name__=="__main__":
   decades = decade_to_fields.keys()
   decades.sort()
 
-  def write_file_for_property(filename, prop, monthly=False, process = lambda x: x):
+  def write_file_for_property(filename, prop, monthly=False, process = lambda y, x: x):
     prevdates = []
     with open(filename, 'wb') as csvfile:
       writer = csv.writer(csvfile)
@@ -86,6 +86,7 @@ if __name__=="__main__":
       for date in alldates:
         prevdates.append(date)
         yr = date.split("-")[0]
+        year = int(date.split("-")[0])
         month = date.split("-")[1]
         lastrow = date == alldates[-1]
         endofyear = month=="12"
@@ -98,12 +99,12 @@ if __name__=="__main__":
           for decade in decades:
             months = df[df['prfYearMonth'].isin(prevdates)]
             fields = months[months['prfNpdidInformationCarrier'].isin(decade_to_fields[decade])]
-            v = process(fields[prop].sum())
+            v = process(year, fields[prop].sum())
             row.append("%g" % (v))
             print(date, prop, decade, v)
           
           months = df[df['prfYearMonth'].isin(prevdates)]
-          sum = process(months[prop].sum())
+          sum = process(year, months[prop].sum())
           row.append("%g" % (sum))
           if sum == 0 and started_writing == False:
             pass
@@ -116,11 +117,17 @@ if __name__=="__main__":
   write_file_for_property('data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
   write_file_for_property('data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
   
-  def to_mboe_d(x):
+  def is_leap(year):
+    return ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0)
+
+  def to_mboe_d(year, x):
     # http://www.npd.no/no/Nyheter/Produksjonstall/2016/Juli-2016/
     # 1 Sm3 olje ≈ 6,29 fat
     barrels = x*6.29
-    return barrels / 365.0
+    days = 365.0
+    if is_leap(year):
+      days = 366.0
+    return barrels / days
   write_file_for_property('data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=True, process=to_mboe_d)
   write_file_for_property('data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=True, process=to_mboe_d)
   write_file_for_property('data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=True, process=to_mboe_d)
