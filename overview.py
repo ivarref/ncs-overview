@@ -54,7 +54,7 @@ if __name__=="__main__":
                 "som er", 
                 ("%.1f%%" % (100.0 * (last / mx))).replace('.', ','),
                 "av nivået i %s" % (format_date(frame[frame['Sum'] == mx]['Date'].values[0])),
-                ("(%.2f %s)." % (mx, unit)).replace('.', ',')
+                ("(%.2f %s)" % (mx, unit)).replace('.', ',')+'.'
                 )
 
     print("# Oversikt over norsk sokkel\n")
