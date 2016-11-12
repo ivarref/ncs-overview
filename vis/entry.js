@@ -19,6 +19,13 @@ function findGetParameter(parameterName, default_value) {
 }
 
 function show_resource(resource, unit, file) {
+    d3.formatDefaultLocale({
+        'decimal': ',',
+        'thousands': '.',
+        'grouping': [3],
+        'currency': ['$', '']
+    })
+
     var svg = d3.select('body').append('svg')
         .attr('width', 960 / 1.5)
         .attr('height', 500 / 1.5)
@@ -90,7 +97,6 @@ function show_resource(resource, unit, file) {
                 .text(unit);
 
             g.append("g")
-                .attr("transform", "transalte(0,0)")
                 .append("text")
                 .attr('dy', '-.35em')
                 .attr('x', width / 2)

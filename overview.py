@@ -13,7 +13,7 @@ def get_contribution(filename, decade):
     frame = pd.read_csv(filename)
     frame = frame.tail(1)
     p = 100.0*frame[decade] / frame['Sum']
-    return "%.1f" % (p.values[0])
+    return ("%.1f" % (p.values[0])).replace('.', ',')
 
 def show_relative_contribution():
     print("""\n## Prosent av nåværende produksjon
@@ -50,10 +50,11 @@ if __name__=="__main__":
             return datetime.date(int(v.split("-")[0]), int(v.split("-")[1]), 1).strftime('%B %Y')
         
         print(prefix, "per %s er på" % (format_date(frame.tail(1)['Date'].values[0])), 
-                "%.2f %s," % (last, unit), 
-                "som er", "%.1f%%" % (100.0 * (last / mx)),
+                "%s %s," % (("%.2f" % (last)).replace('.', ','), unit), 
+                "som er", 
+                ("%.1f%%" % (100.0 * (last / mx))).replace('.', ','),
                 "av nivået i %s" % (format_date(frame[frame['Sum'] == mx]['Date'].values[0])),
-                "(%.2f %s)." % (mx, unit)
+                ("(%.2f %s)." % (mx, unit)).replace('.', ',')
                 )
 
     print("# Oversikt over norsk sokkel\n")
