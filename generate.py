@@ -27,9 +27,9 @@ def get_discovery_years(ids):
     years = m['dscDiscoveryYear'].unique()
     # Likvern:
     # Om jeg husker riktig så pågår det ”prøveproduksjon” fra ”Delta 33/9-6". Funnet ble gjort i 1976 er nå formelt vedtatt utbygd og estimert utvinnbart er rundt 0,074 millioner Sm3 (0,47 millioner fat) olje.
-    if len(years) == 0 and npdid_name(id) == "33/9-6 DELTA":
-      years = [1976]
-    
+    #if len(years) == 0 and npdid_name(id) == "33/9-6 DELTA":
+    #  years = [1976]
+      
     if len(years) != 1:
       print("warning: npdid", id, npdid_name(id), "with", len(years), "matches", years)
 
