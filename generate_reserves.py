@@ -28,6 +28,8 @@ if __name__=="__main__":
 
   # group fields by discovery decade
   decade_to_fields = generate.get_decade_to_fields(generate.get_discovery_years(ids))
+  region_to_fields = generate.get_discovery_region_to_fields(ids)
+
   print("reserves")
   print("-"*80)
   
@@ -56,19 +58,24 @@ if __name__=="__main__":
         if (idx == 0):
           write(wfd, ",".join(d.keys()))
         write(wfd, ",".join([str(x) for x in d.values()]))
+    print("-"*80)
 
   decades = decade_to_fields.items()
   decades.append(('Sum', ids))
 
+  regions = region_to_fields.items()
+  regions.append(('Sum', ids))
+
   write_file(decades, './data/decade/reserves_OEMillSm3_by_decade.csv')
+  write_file(regions, './data/region/reserves_OEMillSm3_by_region.csv')
 
   o = sum_entry('Sum', ids)
   def relative(prop, v):
     return "%.2f" % ((100.0*v) / o[prop])
   write_file(decades, './data/decade/reserves_percentage_by_decade.csv', relative)
+  write_file(regions, './data/region/reserves_percentage_by_region.csv', relative)
 
   def gboe(prop, v):
     return "%.1f" % ((v*6.29) / 1000.0)
   write_file(decades, './data/decade/reserves_gboe_by_decade.csv', gboe)
-
-  print("-"*80)
+  write_file(regions, './data/region/reserves_gboe_by_region.csv', gboe)
