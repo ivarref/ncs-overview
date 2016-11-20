@@ -146,4 +146,8 @@ if __name__=="__main__":
   write_file_for_property(region_to_fields, 'data/gas_production_yearly_12MMA_BillSm3_by_region.csv', 'prfPrdGasNetBillSm3')
   write_file_for_property(region_to_fields, 'data/oe_production_yearly_12MMA_MillSm3_by_region.csv', 'prfPrdOeNetMillSm3')
 
+  write_file_for_property(region_to_fields, 'data/oil_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(region_to_fields, 'data/gas_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(region_to_fields, 'data/oe_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
+
   print("exiting generate.py ...")
