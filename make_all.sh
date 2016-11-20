@@ -5,7 +5,7 @@ set -ex
 ./download.sh
 ./generate.py
 ./generate_reserves.py
-./make_readme.sh
+./overview.py > README.md
 
 # create those screenshots....
 rm -rf img/

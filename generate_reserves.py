@@ -46,26 +46,23 @@ if __name__=="__main__":
         sum_prop('remainingGas', 'fldRemainingGas'),
         sum_prop('remainingOE', 'fldRemainingOE')])
     return d
-  
+
+  def write(wfd, line):
+    wfd.write(line)
+    wfd.write("\n")
+    print(line)
+
   with codecs.open('./data/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
-    def write(line):
-      wfd.write(line)
-      wfd.write("\n")
-      print(line)
     decades = decade_to_fields.items()
     decades.append(('Sum', ids))
     for (idx, (decade, fields)) in enumerate(decades):
       d = sum_entry(decade, fields)
       if (idx == 0):
-        write(",".join(d.keys()))
-      write(",".join([str(x) for x in d.values()]))
+        write(wfd, ",".join(d.keys()))
+      write(wfd, ",".join([str(x) for x in d.values()]))
   print("-"*80)
 
   with codecs.open('./data/reserves_percentage_by_decade.csv', mode='w', encoding='utf8') as wfd:
-    def write(line):
-      wfd.write(line)
-      wfd.write("\n")
-      print(line)
     decades = decade_to_fields.items()
     decades.append(('Sum', ids))
     o = sum_entry('Sum', ids)
@@ -74,6 +71,18 @@ if __name__=="__main__":
         return "%.2f" % ((100.0*v) / o[prop])
       d = sum_entry(decade, fields, relative)
       if (idx == 0):
-        write(",".join(d.keys()))
-      write(",".join([str(x) for x in d.values()]))
+        write(wfd, ",".join(d.keys()))
+      write(wfd, ",".join([str(x) for x in d.values()]))
+  print("-"*80)
+
+  with codecs.open('./data/reserves_gboe_by_decade.csv', mode='w', encoding='utf8') as wfd:
+    decades = decade_to_fields.items()
+    decades.append(('Sum', ids))
+    for (idx, (decade, fields)) in enumerate(decades):
+      def gboe(prop, v):
+        return "%.1f" % ((v*6.29) / 1000.0)
+      d = sum_entry(decade, fields, gboe)
+      if (idx == 0):
+        write(wfd, ",".join(d.keys()))
+      write(wfd, ",".join([str(x) for x in d.values()]))
   print("-"*80)
