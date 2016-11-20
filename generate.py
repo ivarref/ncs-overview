@@ -27,27 +27,31 @@ def get_discovery_years(ids):
   for (idx, id) in enumerate(ids):
     m = frame[frame['fldNpdidField'] == id]
     years = m['dscDiscoveryYear'].unique()
-    # Likvern:
-    # Om jeg husker riktig så pågår det ”prøveproduksjon” fra ”Delta 33/9-6". Funnet ble gjort i 1976 er nå formelt vedtatt utbygd og estimert utvinnbart er rundt 0,074 millioner Sm3 (0,47 millioner fat) olje.
-    #if len(years) == 0 and npdid_name(id) == "33/9-6 DELTA":
-    #  years = [1976]
-      
     if len(years) != 1:
-      print("error: npdid", id, npdid_name(id), "with", len(years), "matches", years)
+      print("get_discovery_years error: npdid", id, npdid_name(id), "with", len(years), "matches", years)
       sys.exit(1)
-
     year = min(years)
     res.append((id, year))
   return dict(res)
 
+def get_discovery_region_to_fields(ids):
+  frame = pd.read_csv('./data/raw_discovery_overview.csv')
+  frame = frame[frame['dscCurrentActivityStatus'] != 'INCLUDED IN OTHER DISCOVERY']
+  d = collections.defaultdict(list)
+  for (idx, id) in enumerate(ids):
+    m = frame[frame['fldNpdidField'] == id]
+    region = m['nmaName'].unique()
+    if len(region) != 1:
+      print("get_discovery_region_name error: npdid", id, npdid_name(id), "with", len(region), "matches", region)
+      sys.exit(1)
+    d[region[0]].append(id)
+  return collections.OrderedDict(sorted(d.items()))
+
 def get_decade_to_fields(id_to_year):
-  decade_to_fields = {}
+  decade_to_fields = collections.defaultdict(list)
   decade_of_year = lambda x: x - (x%10)
   for (id, year) in id_to_year.items():
-    decade = decade_of_year(year)
-    if decade not in decade_to_fields:
-      decade_to_fields[decade] = []
-    decade_to_fields[decade].append(id)
+    decade_to_fields[decade_of_year(year)].append(id)
   return collections.OrderedDict(sorted(decade_to_fields.items()))
 
 if __name__=="__main__":
@@ -113,9 +117,6 @@ if __name__=="__main__":
             writer.writerow(row)
         prevdates.remove(prevdates[0])
   
-  write_file_for_property('data/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
-  write_file_for_property('data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
-  write_file_for_property('data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
   
   def is_leap(year):
     return ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0)
@@ -128,6 +129,11 @@ if __name__=="__main__":
     if is_leap(year):
       days = 366.0
     return barrels / days
+
+  write_file_for_property('data/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
+  write_file_for_property('data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property('data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
+
   write_file_for_property('data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=True, process=to_mboe_d)
   write_file_for_property('data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=True, process=to_mboe_d)
   write_file_for_property('data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=True, process=to_mboe_d)
@@ -135,5 +141,8 @@ if __name__=="__main__":
   write_file_for_property('data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
   write_file_for_property('data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
   write_file_for_property('data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
-  
+
+  # region_to_fields = get_discovery_region_to_fields(ids)
+  # print(region_to_fields.keys())
+
   print("exiting generate.py ...")
