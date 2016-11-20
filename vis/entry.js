@@ -5,6 +5,10 @@ function isNumeric(num) {
     return !isNaN(num);
 }
 
+function isGroup(v) {
+    return v!=='Date' && v!=='date' && v!=='Sum';
+}
+
 function findGetParameter(parameterName, default_value) {
     var result = default_value,
         tmp = [];
@@ -18,7 +22,7 @@ function findGetParameter(parameterName, default_value) {
     return result;
 }
 
-function show_resource(resource, unit, file) {
+function show_resource(resource, group, unit, file) {
     d3.formatDefaultLocale({
         'decimal': ',',
         'thousands': '.',
@@ -56,7 +60,7 @@ function show_resource(resource, unit, file) {
     d3.csv(file,
         function (d) {
             d.date = parseTime(d.Date);
-            Object.keys(d).filter(isNumeric).forEach(function (k) {
+            Object.keys(d).filter(isGroup).forEach(function (k) {
                 d[k] = +d[k];
             });
             d.Sum = +d.Sum;
@@ -64,7 +68,7 @@ function show_resource(resource, unit, file) {
         },
         function (error, data) {
             if (error) throw error;
-            var keys = data.columns.filter(isNumeric);
+            var keys = data.columns.filter(isGroup);
 
             x.domain(d3.extent(data, function (d) { return d.date; }));
             y.domain([0, d3.max(data, function (d) { return d.Sum; })]);
@@ -102,13 +106,13 @@ function show_resource(resource, unit, file) {
                 .attr('x', width / 2)
                 .style("text-anchor", "middle")
                 .classed("heading", true)
-                .text("Norsk " + resource + " etter funntiår")
+                .text("Norsk " + resource + " etter " + group)
 
             g.append('text')
                 .attr("transform", "translate(15,7)")
                 .attr("dy", "0.35em")
                 .style('font-weight', 'bold')
-                .text('Funntiår')
+                .text(group[0].toUpperCase() + group.substr(1))
 
             var legend = g.append("g")
                 .attr("transform", "translate(15,15)")
@@ -124,11 +128,17 @@ function show_resource(resource, unit, file) {
                 .attr('height', 18)
                 .attr('fill', z);
 
+            var translate = {
+                'Norwegian sea': 'Norskehavet',
+                'North sea': 'Nordsjøen',
+                'Barents sea': 'Barentshavet' 
+            };
+            
             legend.append('text')
                 .attr("x", 18 + 4)
                 .attr('y', 9)
                 .attr("dy", "0.35em")
-                .text(function (d) { return d });
+                .text(function (d) { return d in translate ? translate[d] : d });
         });
 }
 
@@ -136,22 +146,43 @@ var m = {
     oil: {
         title: 'oljeproduksjon',
         unit: 'Millioner fat/dag',
+        group: 'funntiår',
         filename: '/data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     gas: {
         title: 'gassproduksjon',
         unit: 'Millioner fat oljeekvivalenter/dag',
+        group: 'funntiår',
         filename: '/data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     petroleum: {
         title: 'petroleumproduksjon',
         unit: 'Millioner fat oljeekvivalenter/dag',
+        group: 'funntiår',
         filename: '/data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
+    },
+    oil_region: {
+        title: 'oljeproduksjon',
+        unit: 'Millioner fat/dag',
+        group: 'region',
+        filename: '/data/region/oil_production_yearly_12MMA_mboe_d_by_region.csv'
+    },
+    gas_region: {
+        title: 'gassproduksjon',
+        unit: 'Millioner fat oljeekvivalenter/dag',
+        group: 'region',
+        filename: '/data/region/gas_production_yearly_12MMA_mboe_d_by_region.csv'
+    },
+    petroleum_region: {
+        title: 'petroleumproduksjon',
+        unit: 'Millioner fat oljeekvivalenter/dag',
+        group: 'region',
+        filename: '/data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv'
     }
 };
 
 var mode = findGetParameter('mode', 'oil');
-show_resource(m[mode].title, m[mode].unit, m[mode].filename);
+show_resource(m[mode].title, m[mode].group, m[mode].unit, m[mode].filename);
 
 // show_resource('oljeproduksjon', 'Millioner fat/dag', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
 // show_resource('gassproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');

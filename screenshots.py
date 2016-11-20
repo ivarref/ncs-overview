@@ -8,7 +8,10 @@ if __name__=="__main__":
     files = {
         'oil': './img/oil_production_yearly_12MMA_by_discovery_decade.png',
         'gas': './img/gas_production_yearly_12MMA_by_discovery_decade.png',
-        'petroleum': './img/oe_production_yearly_12MMA_by_discovery_decade.png'
+        'petroleum': './img/oe_production_yearly_12MMA_by_discovery_decade.png',
+        'oil_region': './img/oil_production_yearly_12MMA_by_region.png',
+        'gas_region': './img/gas_production_yearly_12MMA_by_region.png',
+        'petroleum_region': './img/oe_production_yearly_12MMA_by_region.png'
     }
     for (mode, fil) in files.items():
         url = "http://localhost:8080/bundle?mode=" + mode
