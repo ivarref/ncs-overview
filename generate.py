@@ -54,6 +54,59 @@ def get_decade_to_fields(id_to_year):
     decade_to_fields[decade_of_year(year)].append(id)
   return collections.OrderedDict(sorted(decade_to_fields.items()))
 
+def write_file_for_property(group_to_ids, filename, prop, monthly=False, process = lambda y, x: x):
+  # get all production dates
+  df = pd.read_csv('./data/raw_production_monthly_field.csv')
+  df['prfMonthStr'] = df['prfMonth'].astype(str)
+  mask = df['prfMonthStr'].str.len() == 1
+  df.loc[mask, 'prfMonthStr'] = '0' + df['prfMonthStr']
+  df['prfYearMonth'] = df['prfYear'].astype(str) + '-' + df['prfMonthStr']
+  alldates = df['prfYearMonth'].unique()
+  alldates.sort()
+
+  prevdates = []
+  with open(filename, 'wb') as csvfile:
+    writer = csv.writer(csvfile)
+    header = ['Date']
+    header.extend(group_to_ids.keys())
+    header.append('Sum')
+    writer.writerow(header)
+    
+    started_writing = False
+
+    for date in alldates:
+      prevdates.append(date)
+      yr = date.split("-")[0]
+      year = int(date.split("-")[0])
+      month = date.split("-")[1]
+      lastrow = date == alldates[-1]
+      endofyear = month=="12"
+      if len(prevdates) != 12:
+        continue
+      elif endofyear or lastrow or monthly:
+        if monthly:
+          yr = date
+        row = [yr]
+        for (group, group_fields) in group_to_ids.items():
+          months = df[df['prfYearMonth'].isin(prevdates)]
+          fields = months[months['prfNpdidInformationCarrier'].isin(group_fields)]
+          v = process(year, fields[prop].sum())
+          row.append("%g" % (v))
+          print(date, prop, group, v)
+        
+        months = df[df['prfYearMonth'].isin(prevdates)]
+        sum = process(year, months[prop].sum())
+        row.append("%g" % (sum))
+        if sum == 0 and started_writing == False:
+          pass
+        else:
+          started_writing = True
+          writer.writerow(row)
+      prevdates.remove(prevdates[0])
+
+def is_leap(year):
+  return ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0)
+
 if __name__=="__main__":
   print("start generate.py ...")
   
@@ -67,60 +120,6 @@ if __name__=="__main__":
   # group fields by discovery decade
   decade_to_fields = get_decade_to_fields(id_to_year)
 
-  # get all production dates
-  df = pd.read_csv('./data/raw_production_monthly_field.csv')
-  df['prfMonthStr'] = df['prfMonth'].astype(str)
-  mask = df['prfMonthStr'].str.len() == 1
-  df.loc[mask, 'prfMonthStr'] = '0' + df['prfMonthStr']
-  df['prfYearMonth'] = df['prfYear'].astype(str) + '-' + df['prfMonthStr']
-  alldates = df['prfYearMonth'].unique()
-  alldates.sort()
-  
-  def write_file_for_property(filename, prop, monthly=False, process = lambda y, x: x):
-    prevdates = []
-    with open(filename, 'wb') as csvfile:
-      writer = csv.writer(csvfile)
-      header = ['Date']
-      header.extend(decade_to_fields.keys())
-      header.append('Sum')
-      writer.writerow(header)
-      
-      started_writing = False
-
-      for date in alldates:
-        prevdates.append(date)
-        yr = date.split("-")[0]
-        year = int(date.split("-")[0])
-        month = date.split("-")[1]
-        lastrow = date == alldates[-1]
-        endofyear = month=="12"
-        if len(prevdates) != 12:
-          continue
-        elif endofyear or lastrow or monthly:
-          if monthly:
-            yr = date
-          row = [yr]
-          for (decade, decade_fields) in decade_to_fields.items():
-            months = df[df['prfYearMonth'].isin(prevdates)]
-            fields = months[months['prfNpdidInformationCarrier'].isin(decade_fields)]
-            v = process(year, fields[prop].sum())
-            row.append("%g" % (v))
-            print(date, prop, decade, v)
-          
-          months = df[df['prfYearMonth'].isin(prevdates)]
-          sum = process(year, months[prop].sum())
-          row.append("%g" % (sum))
-          if sum == 0 and started_writing == False:
-            pass
-          else:
-            started_writing = True
-            writer.writerow(row)
-        prevdates.remove(prevdates[0])
-  
-  
-  def is_leap(year):
-    return ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0)
-
   def to_mboe_d(year, x):
     # http://www.npd.no/no/Nyheter/Produksjonstall/2016/Juli-2016/
     # 1 Sm3 olje ≈ 6,29 fat
@@ -130,19 +129,21 @@ if __name__=="__main__":
       days = 366.0
     return barrels / days
 
-  write_file_for_property('data/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
-  write_file_for_property('data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
-  write_file_for_property('data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
+  write_file_for_property(decade_to_fields, 'data/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
+  write_file_for_property(decade_to_fields, 'data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property(decade_to_fields, 'data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
 
-  write_file_for_property('data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=True, process=to_mboe_d)
-  write_file_for_property('data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=True, process=to_mboe_d)
-  write_file_for_property('data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=True, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=True, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=True, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=True, process=to_mboe_d)
 
-  write_file_for_property('data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
-  write_file_for_property('data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
-  write_file_for_property('data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
 
-  # region_to_fields = get_discovery_region_to_fields(ids)
-  # print(region_to_fields.keys())
+  region_to_fields = get_discovery_region_to_fields(ids)
+  write_file_for_property(region_to_fields, 'data/oil_production_yearly_12MMA_MillSm3_by_region.csv', 'prfPrdOilNetMillSm3')
+  write_file_for_property(region_to_fields, 'data/gas_production_yearly_12MMA_BillSm3_by_region.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property(region_to_fields, 'data/oe_production_yearly_12MMA_MillSm3_by_region.csv', 'prfPrdOeNetMillSm3')
 
   print("exiting generate.py ...")
