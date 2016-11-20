@@ -2,6 +2,11 @@
 
 set -ex
 
+rm -rf data/
+rm -rf tmp_data/
+mkdir data/
+mkdir tmp_data/
+
 ./download.sh
 ./generate.py
 ./generate_reserves.py
@@ -16,3 +21,5 @@ sleep 5 # such hack...
 echo "starting to take screenshots ..."
 ./screenshots.py
 kill $SERVER_PID
+
+rm -rf tmp_data/

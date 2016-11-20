@@ -26,11 +26,8 @@ if __name__=="__main__":
   # get distinct field ids
   ids = get_distinct_fields()
 
-  # get discovery year for each id
-  id_to_year = generate.get_discovery_years(ids)
-
   # group fields by discovery decade
-  decade_to_fields = generate.get_decade_to_fields(id_to_year)
+  decade_to_fields = generate.get_decade_to_fields(generate.get_discovery_years(ids))
   print("reserves")
   print("-"*80)
   

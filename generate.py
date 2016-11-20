@@ -5,6 +5,7 @@ from __future__ import print_function
 
 import collections
 import csv
+import sys
 
 import pandas as pd
 
@@ -32,7 +33,8 @@ def get_discovery_years(ids):
     #  years = [1976]
       
     if len(years) != 1:
-      print("warning: npdid", id, npdid_name(id), "with", len(years), "matches", years)
+      print("error: npdid", id, npdid_name(id), "with", len(years), "matches", years)
+      sys.exit(1)
 
     year = min(years)
     res.append((id, year))
