@@ -22,7 +22,7 @@ Tabellen under angir prosentvis bidrag til petroleumsproduksjon på norsk sokkel
 Disse er gruppert på funntiår.
 Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produksjonen. 
 \n""")
-    frame = pd.read_csv('./data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv')
+    frame = pd.read_csv('./data/decade/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv')
     frame = frame.tail(1)
     decades = frame.columns
     decades = decades[decades.str.isnumeric()].values
@@ -30,9 +30,9 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
     print("| ---- | ---: | ---: | ---: |")
     for dec in decades:
         v = []
-        v.append(get_contribution('./data/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', dec))
-        v.append(get_contribution('./data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', dec))
-        v.append(get_contribution('./data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', dec))
+        v.append(get_contribution('./data/decade/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', dec))
+        v.append(get_contribution('./data/decade/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', dec))
+        v.append(get_contribution('./data/decade/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', dec))
         print("|", dec, "|", " | ".join(v), "|")
 
 if __name__=="__main__":
@@ -58,9 +58,9 @@ if __name__=="__main__":
                 )
 
     print("# Oversikt over norsk sokkel\n")
-    short_summary('Olje', 'Oljeproduksjonen', './data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png')
-    short_summary('Gass', 'Gassproduksjonen', './data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/gas_production_yearly_12MMA_by_discovery_decade.png')
-    short_summary('Petroleum', 'Petroleumproduksjonen', './data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/oe_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Olje', 'Oljeproduksjonen', './data/decade/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Gass', 'Gassproduksjonen', './data/decade/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/gas_production_yearly_12MMA_by_discovery_decade.png')
+    short_summary('Petroleum', 'Petroleumproduksjonen', './data/decade/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/oe_production_yearly_12MMA_by_discovery_decade.png')
 
     print("")
 

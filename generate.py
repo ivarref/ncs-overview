@@ -5,6 +5,7 @@ from __future__ import print_function
 
 import collections
 import csv
+import os
 import sys
 
 import pandas as pd
@@ -129,25 +130,27 @@ if __name__=="__main__":
       days = 366.0
     return barrels / days
 
-  write_file_for_property(decade_to_fields, 'data/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
-  write_file_for_property(decade_to_fields, 'data/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
-  write_file_for_property(decade_to_fields, 'data/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
+  os.makedirs('data/decade')
+  write_file_for_property(decade_to_fields, 'data/decade/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
+  write_file_for_property(decade_to_fields, 'data/decade/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property(decade_to_fields, 'data/decade/oe_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOeNetMillSm3')
 
-  write_file_for_property(decade_to_fields, 'data/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=True, process=to_mboe_d)
-  write_file_for_property(decade_to_fields, 'data/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=True, process=to_mboe_d)
-  write_file_for_property(decade_to_fields, 'data/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=True, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/decade/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=True, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/decade/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=True, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/decade/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=True, process=to_mboe_d)
 
-  write_file_for_property(decade_to_fields, 'data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
-  write_file_for_property(decade_to_fields, 'data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
-  write_file_for_property(decade_to_fields, 'data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(decade_to_fields, 'data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
 
   region_to_fields = get_discovery_region_to_fields(ids)
-  write_file_for_property(region_to_fields, 'data/oil_production_yearly_12MMA_MillSm3_by_region.csv', 'prfPrdOilNetMillSm3')
-  write_file_for_property(region_to_fields, 'data/gas_production_yearly_12MMA_BillSm3_by_region.csv', 'prfPrdGasNetBillSm3')
-  write_file_for_property(region_to_fields, 'data/oe_production_yearly_12MMA_MillSm3_by_region.csv', 'prfPrdOeNetMillSm3')
+  os.makedirs('data/region')
+  write_file_for_property(region_to_fields, 'data/region/oil_production_yearly_12MMA_MillSm3_by_region.csv', 'prfPrdOilNetMillSm3')
+  write_file_for_property(region_to_fields, 'data/region/gas_production_yearly_12MMA_BillSm3_by_region.csv', 'prfPrdGasNetBillSm3')
+  write_file_for_property(region_to_fields, 'data/region/oe_production_yearly_12MMA_MillSm3_by_region.csv', 'prfPrdOeNetMillSm3')
 
-  write_file_for_property(region_to_fields, 'data/oil_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
-  write_file_for_property(region_to_fields, 'data/gas_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
-  write_file_for_property(region_to_fields, 'data/oe_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(region_to_fields, 'data/region/oil_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(region_to_fields, 'data/region/gas_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(region_to_fields, 'data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
 
   print("exiting generate.py ...")

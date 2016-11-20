@@ -136,17 +136,17 @@ var m = {
     oil: {
         title: 'oljeproduksjon',
         unit: 'Millioner fat/dag',
-        filename: '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
+        filename: '/data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     gas: {
         title: 'gassproduksjon',
         unit: 'Millioner fat oljeekvivalenter/dag',
-        filename: '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
+        filename: '/data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     petroleum: {
         title: 'petroleumproduksjon',
         unit: 'Millioner fat oljeekvivalenter/dag',
-        filename: '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
+        filename: '/data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     }
 };
 
