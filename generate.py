@@ -23,7 +23,6 @@ def get_distinct_fields():
 
 def get_discovery_years(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
-  frame = frame[frame['dscCurrentActivityStatus'] != 'INCLUDED IN OTHER DISCOVERY']
   res = []
   for (idx, id) in enumerate(ids):
     m = frame[frame['fldNpdidField'] == id]
@@ -37,7 +36,6 @@ def get_discovery_years(ids):
 
 def get_discovery_region_to_fields(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
-  frame = frame[frame['dscCurrentActivityStatus'] != 'INCLUDED IN OTHER DISCOVERY']
   d = collections.defaultdict(list)
   for (idx, id) in enumerate(ids):
     m = frame[frame['fldNpdidField'] == id]
