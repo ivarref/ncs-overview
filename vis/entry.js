@@ -48,8 +48,8 @@ function show_resource(resource, group, unit, file) {
     var y = d3.scaleLinear()
         .range([height, 0]);
 
-    var z = d3.scaleOrdinal(d3.schemeCategory10);
-
+    var colorscheme = group === 'funntiår' ? d3.schemeCategory10 : ["#bcbd22", "#17becf", "#e377c2"];
+    var z = d3.scaleOrdinal(colorscheme);
     var stack = d3.stack();
 
     var area = d3.area()
