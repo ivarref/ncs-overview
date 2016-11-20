@@ -1,4 +1,4 @@
 #!/bin/bash
 
 clear
-./overview.py
+./generate_reserves.py

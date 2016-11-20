@@ -3,7 +3,9 @@
 
 from __future__ import print_function
 
-import csv
+import codecs
+import collections
+import sys
 
 import pandas as pd
 
@@ -21,23 +23,35 @@ def remaining_reserve(field_id, kind):
   return f[kind].values[0]
 
 if __name__=="__main__":
-    # get distinct field ids
-    ids = get_distinct_fields()
+  # get distinct field ids
+  ids = get_distinct_fields()
 
-    # get discovery year for each id
-    id_to_year = generate.get_discovery_years(ids)
+  # get discovery year for each id
+  id_to_year = generate.get_discovery_years(ids)
 
-    # group fields by discovery decade
-    decade_to_fields = generate.get_decade_to_fields(id_to_year)
-    decades = decade_to_fields.keys()
-    decades.sort()
-    print("reserves")
-    print("-"*80)
-    for decade in decades:
-        remaining_oil = sum([remaining_reserve(field_id, 'fldRemainingOil') for field_id in decade_to_fields[decade]])
-        remaining_gas = sum([remaining_reserve(field_id, 'fldRemainingGas') for field_id in decade_to_fields[decade]])
-        remaining_oe = sum([remaining_reserve(field_id, 'fldRemainingOE') for field_id in decade_to_fields[decade]])
-        print(decade, remaining_oil, remaining_gas, remaining_oe)
-    print("-"*80)
+  # group fields by discovery decade
+  decade_to_fields = generate.get_decade_to_fields(id_to_year)
+  print("reserves")
+  print("-"*80)
+  with codecs.open('./data/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
+    for (idx, (decade, fields)) in enumerate(decade_to_fields.items()):
+      def write(line):
+        wfd.write(line)
+        wfd.write("\n")
+        print(line)
+      
+      def sum_prop(prop):
+        return sum([remaining_reserve(field_id, prop) for field_id in fields])
 
-    
+      d = collections.OrderedDict([
+          ('name', str(decade)),
+          ('recoverableOil', sum_prop('fldRecoverableOil')),
+          ('recoverableGas', sum_prop('fldRecoverableGas')),
+          ('recoverableOE', sum_prop('fldRecoverableOE')),
+          ('remainingOil', sum_prop('fldRemainingOil')),
+          ('remainingGas', sum_prop('fldRemainingGas')),
+          ('remainingOE', sum_prop('fldRemainingOE'))])
+      if (idx == 0):
+        write(",".join(d.keys()))
+      write(",".join([str(x) for x in d.values()]))
+  print("-"*80)

@@ -3,6 +3,7 @@
 
 from __future__ import print_function
 
+import collections
 import csv
 
 import pandas as pd
@@ -45,7 +46,7 @@ def get_decade_to_fields(id_to_year):
     if decade not in decade_to_fields:
       decade_to_fields[decade] = []
     decade_to_fields[decade].append(id)
-  return decade_to_fields
+  return collections.OrderedDict(sorted(decade_to_fields.items()))
 
 if __name__=="__main__":
   print("start generate.py ...")

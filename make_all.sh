@@ -4,6 +4,7 @@ set -ex
 
 ./download.sh
 ./generate.py
+./generate_reserves.py
 ./make_readme.sh
 
 # create those screenshots....
