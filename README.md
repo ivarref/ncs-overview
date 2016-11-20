@@ -1,15 +1,15 @@
-# Oversikt over norsk sokkel
+# Oversikt over norsk sokkel etter funntiår
 
 ## Olje
-![Oljeproduksjonen etter funntiår](img/oil_production_yearly_12MMA_by_discovery_decade.png)
+![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_discovery_decade.png)
 
 Oljeproduksjonen per september 2016 er på 1,59 millioner fat/dag, som er 50,8% av nivået i januar 2001 (3,13 millioner fat/dag).
 ## Gass
-![Gassproduksjonen etter funntiår](img/gas_production_yearly_12MMA_by_discovery_decade.png)
+![Gassproduksjonen](img/gas_production_yearly_12MMA_by_discovery_decade.png)
 
 Gassproduksjonen per september 2016 er på 2,01 millioner fat oljeekvivalenter/dag, som er 95,6% av nivået i mai 2016 (2,10 millioner fat oljeekvivalenter/dag).
 ## Petroleum
-![Petroleumproduksjonen etter funntiår](img/oe_production_yearly_12MMA_by_discovery_decade.png)
+![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_discovery_decade.png)
 
 Petroleumproduksjonen per september 2016 er på 3,98 millioner fat oljeekvivalenter/dag, som er 86,1% av nivået i juli 2004 (4,62 millioner fat oljeekvivalenter/dag).
 
@@ -29,3 +29,15 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 | 1990 | 18,9 | 28,3 | 23,4 |
 | 2000 | 12,7 | 1,5 | 6,2 |
 | 2010 | 0,0 | 0,5 | 0,2 |
+
+# Oversikt over norsk sokkel etter region
+
+## Olje
+![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_region.png)
+
+## Gass
+![Gassproduksjonen](img/gas_production_yearly_12MMA_by_region.png)
+
+## Petroleum
+![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_region.png)
+

@@ -38,26 +38,27 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 if __name__=="__main__":
     locale.setlocale(locale.LC_TIME, 'no_NO') # needed for month formatting (august, juni, etc.)
 
-    def short_summary(title, prefix, filename, unit, image):
+    def short_summary(title, prefix, filename, unit, image, include_text_description=True):
         frame = pd.read_csv(filename)
         last = frame.tail(1)['Sum'].values[0]
         mx = frame['Sum'].max()
         print("## " + title)
-        print("![%s etter funntiår](%s)" % (prefix, image))
+        print("![%s](%s)" % (prefix, image))
         print("")
 
         def format_date(v):
             return datetime.date(int(v.split("-")[0]), int(v.split("-")[1]), 1).strftime('%B %Y')
         
-        print(prefix, "per %s er på" % (format_date(frame.tail(1)['Date'].values[0])), 
-                "%s %s," % (("%.2f" % (last)).replace('.', ','), unit), 
-                "som er", 
-                ("%.1f%%" % (100.0 * (last / mx))).replace('.', ','),
-                "av nivået i %s" % (format_date(frame[frame['Sum'] == mx]['Date'].values[0])),
-                ("(%.2f %s)" % (mx, unit)).replace('.', ',')+'.'
-                )
+        if include_text_description:
+            print(prefix, "per %s er på" % (format_date(frame.tail(1)['Date'].values[0])), 
+                    "%s %s," % (("%.2f" % (last)).replace('.', ','), unit), 
+                    "som er", 
+                    ("%.1f%%" % (100.0 * (last / mx))).replace('.', ','),
+                    "av nivået i %s" % (format_date(frame[frame['Sum'] == mx]['Date'].values[0])),
+                    ("(%.2f %s)" % (mx, unit)).replace('.', ',')+'.'
+                    )
 
-    print("# Oversikt over norsk sokkel\n")
+    print("# Oversikt over norsk sokkel etter funntiår\n")
     short_summary('Olje', 'Oljeproduksjonen', './data/decade/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png')
     short_summary('Gass', 'Gassproduksjonen', './data/decade/gas_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/gas_production_yearly_12MMA_by_discovery_decade.png')
     short_summary('Petroleum', 'Petroleumproduksjonen', './data/decade/oe_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat oljeekvivalenter/dag', 'img/oe_production_yearly_12MMA_by_discovery_decade.png')
@@ -65,3 +66,10 @@ if __name__=="__main__":
     print("")
 
     show_relative_contribution()
+
+    print("")
+    print("# Oversikt over norsk sokkel etter region\n")
+
+    short_summary('Olje', 'Oljeproduksjonen', './data/region/oil_production_monthly_12MMA_mboe_d_by_region.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_region.png', False)
+    short_summary('Gass', 'Gassproduksjonen', './data/region/gas_production_monthly_12MMA_mboe_d_by_region.csv', 'millioner fat oljeekvivalenter/dag', 'img/gas_production_yearly_12MMA_by_region.png', False)
+    short_summary('Petroleum', 'Petroleumproduksjonen', './data/region/oe_production_monthly_12MMA_mboe_d_by_region.csv', 'millioner fat oljeekvivalenter/dag', 'img/oe_production_yearly_12MMA_by_region.png', False)
