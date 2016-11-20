@@ -70,15 +70,12 @@ if __name__=="__main__":
   alldates = df['prfYearMonth'].unique()
   alldates.sort()
   
-  decades = decade_to_fields.keys()
-  decades.sort()
-
   def write_file_for_property(filename, prop, monthly=False, process = lambda y, x: x):
     prevdates = []
     with open(filename, 'wb') as csvfile:
       writer = csv.writer(csvfile)
       header = ['Date']
-      header.extend(decades)
+      header.extend(decade_to_fields.keys())
       header.append('Sum')
       writer.writerow(header)
       
@@ -97,9 +94,9 @@ if __name__=="__main__":
           if monthly:
             yr = date
           row = [yr]
-          for decade in decades:
+          for (decade, decade_fields) in decade_to_fields.items():
             months = df[df['prfYearMonth'].isin(prevdates)]
-            fields = months[months['prfNpdidInformationCarrier'].isin(decade_to_fields[decade])]
+            fields = months[months['prfNpdidInformationCarrier'].isin(decade_fields)]
             v = process(year, fields[prop].sum())
             row.append("%g" % (v))
             print(date, prop, decade, v)
