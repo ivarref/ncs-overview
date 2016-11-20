@@ -34,7 +34,9 @@ if __name__=="__main__":
   print("reserves")
   print("-"*80)
   with codecs.open('./data/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
-    for (idx, (decade, fields)) in enumerate(decade_to_fields.items()):
+    decades = decade_to_fields.items()
+    decades.append(('Sum', ids))
+    for (idx, (decade, fields)) in enumerate(decades):
       def write(line):
         wfd.write(line)
         wfd.write("\n")
@@ -45,9 +47,9 @@ if __name__=="__main__":
 
       d = collections.OrderedDict([
           ('name', str(decade)),
-          ('recoverableOil', sum_prop('fldRecoverableOil')),
-          ('recoverableGas', sum_prop('fldRecoverableGas')),
-          ('recoverableOE', sum_prop('fldRecoverableOE')),
+          ('origRecoverableOil', sum_prop('fldRecoverableOil')),
+          ('origRecoverableGas', sum_prop('fldRecoverableGas')),
+          ('origRecoverableOE', sum_prop('fldRecoverableOE')),
           ('remainingOil', sum_prop('fldRemainingOil')),
           ('remainingGas', sum_prop('fldRemainingGas')),
           ('remainingOE', sum_prop('fldRemainingOE'))])

@@ -1,7 +1,8 @@
-name,recoverableOil,recoverableGas,recoverableOE,remainingOil,remainingGas,remainingOE
+name,origRecoverableOil,origRecoverableGas,origRecoverableOE,remainingOil,remainingGas,remainingOE
 1960,622.7,168.0,819.2,97.9,14.8,114.98
 1970,2527.974,2283.4,5069.75,269.0,1076.4,1422.7
 1980,1009.6,874.7,2206.78,142.9,456.8,718.16
 1990,479.0,592.4,1144.7,101.9,282.9,418.46
 2000,154.5,26.2,190.58,106.9,14.4,127.95
 2010,304.8,12.2,327.83,304.6,11.6,327.03
+Sum,5098.574,3956.9,9758.84,1023.2,1856.9,3129.28
