@@ -1,26 +1,11 @@
 var d3 = require("d3");
+var findGetParameter = require('./findgetparameter.js');
 require('./style.css');
-
-function isNumeric(num) {
-    return !isNaN(num);
-}
 
 function isGroup(v) {
     return v!=='Date' && v!=='date' && v!=='Sum';
 }
 
-function findGetParameter(parameterName, default_value) {
-    var result = default_value,
-        tmp = [];
-    location.search
-        .substr(1)
-        .split("&")
-        .forEach(function (item) {
-            tmp = item.split("=");
-            if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-        });
-    return result;
-}
 
 function show_resource(resource, group, unit, file) {
     d3.formatDefaultLocale({
