@@ -47,12 +47,12 @@ if __name__=="__main__":
 
       d = collections.OrderedDict([
           ('name', str(decade)),
-          ('origRecoverableOil', sum_prop('fldRecoverableOil')),
-          ('origRecoverableGas', sum_prop('fldRecoverableGas')),
-          ('origRecoverableOE', sum_prop('fldRecoverableOE')),
-          ('remainingOil', sum_prop('fldRemainingOil')),
-          ('remainingGas', sum_prop('fldRemainingGas')),
-          ('remainingOE', sum_prop('fldRemainingOE'))])
+          ('origRecoverableOilMillSm3', sum_prop('fldRecoverableOil')),
+          ('origRecoverableGasBillSm3', sum_prop('fldRecoverableGas')),
+          ('origRecoverableOEMillSm3', sum_prop('fldRecoverableOE')),
+          ('remainingOilMillSm3', sum_prop('fldRemainingOil')),
+          ('remainingGasBillSm3', sum_prop('fldRemainingGas')),
+          ('remainingOEMillSm3', sum_prop('fldRemainingOE'))])
       if (idx == 0):
         write(",".join(d.keys()))
       write(",".join([str(x) for x in d.values()]))

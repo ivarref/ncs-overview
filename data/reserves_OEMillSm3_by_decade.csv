@@ -1,4 +1,4 @@
-name,origRecoverableOil,origRecoverableGas,origRecoverableOE,remainingOil,remainingGas,remainingOE
+name,origRecoverableOilMillSm3,origRecoverableGasBillSm3,origRecoverableOEMillSm3,remainingOilMillSm3,remainingGasBillSm3,remainingOEMillSm3
 1960,622.7,168.0,819.2,97.9,14.8,114.98
 1970,2527.974,2283.4,5069.75,269.0,1076.4,1422.7
 1980,1009.6,874.7,2206.78,142.9,456.8,718.16
