@@ -49,7 +49,10 @@ if __name__=="__main__":
     wfd.write("\n")
     print(line)
 
-  with codecs.open('./data/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
+  # def write_file(filname, group_to_ids, mod_fn: lambda prop, v: v):
+  #   with codecs.open('./data/decade/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
+
+  with codecs.open('./data/decade/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
     decades = decade_to_fields.items()
     decades.append(('Sum', ids))
     for (idx, (decade, fields)) in enumerate(decades):
@@ -59,7 +62,7 @@ if __name__=="__main__":
       write(wfd, ",".join([str(x) for x in d.values()]))
   print("-"*80)
 
-  with codecs.open('./data/reserves_percentage_by_decade.csv', mode='w', encoding='utf8') as wfd:
+  with codecs.open('./data/decade/reserves_percentage_by_decade.csv', mode='w', encoding='utf8') as wfd:
     decades = decade_to_fields.items()
     decades.append(('Sum', ids))
     o = sum_entry('Sum', ids)
@@ -72,7 +75,7 @@ if __name__=="__main__":
       write(wfd, ",".join([str(x) for x in d.values()]))
   print("-"*80)
 
-  with codecs.open('./data/reserves_gboe_by_decade.csv', mode='w', encoding='utf8') as wfd:
+  with codecs.open('./data/decade/reserves_gboe_by_decade.csv', mode='w', encoding='utf8') as wfd:
     decades = decade_to_fields.items()
     decades.append(('Sum', ids))
     for (idx, (decade, fields)) in enumerate(decades):
