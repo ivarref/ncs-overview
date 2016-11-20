@@ -44,7 +44,16 @@ def get_discovery_region_to_fields(ids):
       print("get_discovery_region_name error: npdid", id, npdid_name(id), "with", len(region), "matches", region)
       sys.exit(1)
     d[region[0]].append(id)
-  return collections.OrderedDict(sorted(d.items()))
+  
+  order = ['North sea', 'Norwegian sea', 'Barents sea']
+  r = collections.OrderedDict()
+  for k in d.keys():
+    if k not in order:
+      print("did not find key", k)
+      sys.exit(1)
+  for k in order:
+    r[k] = d[k]
+  return r
 
 def get_decade_to_fields(id_to_year):
   decade_to_fields = collections.defaultdict(list)

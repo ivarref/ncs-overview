@@ -2,3 +2,4 @@ node_modules/
 yarn.lock
 *.pyc
 tmp_data/
+.DS_Store
