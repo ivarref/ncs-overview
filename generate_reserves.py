@@ -49,40 +49,26 @@ if __name__=="__main__":
     wfd.write("\n")
     print(line)
 
-  # def write_file(filname, group_to_ids, mod_fn: lambda prop, v: v):
-  #   with codecs.open('./data/decade/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
+  def write_file(group_to_ids, filname, mod_fn=lambda prop, v: v):
+    with codecs.open(filname, mode='w', encoding='utf8') as wfd:
+      for (idx, (group, fields)) in enumerate(group_to_ids):
+        d = sum_entry(group, fields, mod_fn)
+        if (idx == 0):
+          write(wfd, ",".join(d.keys()))
+        write(wfd, ",".join([str(x) for x in d.values()]))
 
-  with codecs.open('./data/decade/reserves_OEMillSm3_by_decade.csv', mode='w', encoding='utf8') as wfd:
-    decades = decade_to_fields.items()
-    decades.append(('Sum', ids))
-    for (idx, (decade, fields)) in enumerate(decades):
-      d = sum_entry(decade, fields)
-      if (idx == 0):
-        write(wfd, ",".join(d.keys()))
-      write(wfd, ",".join([str(x) for x in d.values()]))
-  print("-"*80)
+  decades = decade_to_fields.items()
+  decades.append(('Sum', ids))
 
-  with codecs.open('./data/decade/reserves_percentage_by_decade.csv', mode='w', encoding='utf8') as wfd:
-    decades = decade_to_fields.items()
-    decades.append(('Sum', ids))
-    o = sum_entry('Sum', ids)
-    for (idx, (decade, fields)) in enumerate(decades):
-      def relative(prop, v):
-        return "%.2f" % ((100.0*v) / o[prop])
-      d = sum_entry(decade, fields, relative)
-      if (idx == 0):
-        write(wfd, ",".join(d.keys()))
-      write(wfd, ",".join([str(x) for x in d.values()]))
-  print("-"*80)
+  write_file(decades, './data/decade/reserves_OEMillSm3_by_decade.csv')
 
-  with codecs.open('./data/decade/reserves_gboe_by_decade.csv', mode='w', encoding='utf8') as wfd:
-    decades = decade_to_fields.items()
-    decades.append(('Sum', ids))
-    for (idx, (decade, fields)) in enumerate(decades):
-      def gboe(prop, v):
-        return "%.1f" % ((v*6.29) / 1000.0)
-      d = sum_entry(decade, fields, gboe)
-      if (idx == 0):
-        write(wfd, ",".join(d.keys()))
-      write(wfd, ",".join([str(x) for x in d.values()]))
+  o = sum_entry('Sum', ids)
+  def relative(prop, v):
+    return "%.2f" % ((100.0*v) / o[prop])
+  write_file(decades, './data/decade/reserves_percentage_by_decade.csv', relative)
+
+  def gboe(prop, v):
+    return "%.1f" % ((v*6.29) / 1000.0)
+  write_file(decades, './data/decade/reserves_gboe_by_decade.csv', gboe)
+
   print("-"*80)
