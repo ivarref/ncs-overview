@@ -11,6 +11,7 @@ curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/discovery&rs:Com
 diff <(head -n 1 data/raw_discovery_overview.csv) <(./extra_data/generate_discovery_overview_extra_csv.py | head -n 1)
 ./extra_data/generate_discovery_overview_extra_csv.py | tail -n +2 >> data/raw_discovery_overview.csv
 ./drop_columns.py ./data/raw_discovery_overview.csv dscDateUpdated dscDateUpdatedMax DatesyncNPD
+./explode_csv.py ./data/raw_discovery_overview.csv ./data/raw_discovery_overview.json
 
 curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field_production_monthly&rs:Command=Render&rc:Toolbar=false&rc:Parameters=f&rs:Format=CSV&Top100=false&IpAddress=80.213.255.240&CultureCode=en" \
 | tr -d '\r' \
