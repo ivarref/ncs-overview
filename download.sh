@@ -27,6 +27,6 @@ curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field_reserves&r
 diff <(head -n 1 tmp_data/raw_reserves_field.csv) <(head -n 1 extra_data/field_reserves_extra.csv)
 awk 'NF' extra_data/field_reserves_extra.csv > data/raw_reserves_field.csv
 cat tmp_data/raw_reserves_field.csv | tail -n +2 >> data/raw_reserves_field.csv
-./drop_columns.py data/raw_reserves_field.csv DatesyncNPD
+./drop_columns.py data/raw_reserves_field.csv DatesyncNPD fldDateOffResEstDisplay
 
 echo "download.sh OK"
