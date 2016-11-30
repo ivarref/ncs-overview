@@ -5,6 +5,7 @@ from __future__ import print_function
 
 import collections
 import csv
+import inspect
 import os
 import sys
 
@@ -28,7 +29,7 @@ def get_discovery_years(ids):
     m = frame[frame['fldNpdidField'] == id]
     years = m['dscDiscoveryYear'].unique()
     if len(years) != 1:
-      print("get_discovery_years error: npdid", id, npdid_name(id), "with", len(years), "matches", years)
+      print("%s:%d get_discovery_years error: npdid" % (__file__, inspect.stack()[0][2]), id, npdid_name(id), "with", len(years), "matches", years)
       sys.exit(1)
     year = min(years)
     res.append((id, year))
@@ -41,7 +42,7 @@ def get_discovery_region_to_fields(ids):
     m = frame[frame['fldNpdidField'] == id]
     region = m['nmaName'].unique()
     if len(region) != 1:
-      print("get_discovery_region_name error: npdid", id, npdid_name(id), "with", len(region), "matches", region)
+      print("%s:%d get_discovery_region_name error: npdid" % (__file__, inspect.stack()[0][2]), id, npdid_name(id), "with", len(region), "matches", region)
       sys.exit(1)
     d[region[0]].append(id)
   
@@ -49,7 +50,7 @@ def get_discovery_region_to_fields(ids):
   r = collections.OrderedDict()
   for k in d.keys():
     if k not in order:
-      print("did not find key", k)
+      print("%s:%d did not find key" % (__file__, inspect.stack()[0][2]), k)
       sys.exit(1)
   for k in order:
     r[k] = d[k]
