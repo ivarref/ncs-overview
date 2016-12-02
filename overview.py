@@ -36,7 +36,10 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
         print("|", dec, "|", " | ".join(v), "|")
 
 if __name__=="__main__":
-    locale.setlocale(locale.LC_TIME, 'no_NO') # needed for month formatting (august, juni, etc.)
+    try:
+        locale.setlocale(locale.LC_TIME, 'nb_NO.UTF-8') # needed for month formatting (august, juni, etc.)
+    except:
+        locale.setlocale(locale.LC_TIME, 'no_NO') # needed for month formatting (august, juni, etc.)
 
     def short_summary(title, prefix, filename, unit, image, include_text_description=True):
         frame = pd.read_csv(filename)

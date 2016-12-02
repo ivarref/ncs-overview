@@ -10,6 +10,9 @@ import sys
 import collections
 
 if __name__=="__main__":
+  if len(sys.argv) < 3:
+    print("usage: ", sys.argv[0], "input.csv", "output.json")
+    sys.exit(1)
   fil = sys.argv[1]
   output = sys.argv[2]
 
