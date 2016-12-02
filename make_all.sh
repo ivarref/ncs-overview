@@ -11,6 +11,6 @@ mkdir tmp_data/
 ./generate.py
 ./generate_reserves.py
 ./overview.py > README.md
-./screenshots.sh
+./docker_screenshots.sh
 
 rm -rf tmp_data/
