@@ -11,17 +11,17 @@ if [[ "$unamestr" == "Darwin" ]]; then
   echo "setting up for OS X..."
   docker-machine --version
   docker-machine status default
-  docker-machine start default || echo -n ""
+  docker-machine start default &>/dev/null || true
   docker_ip="$(docker-machine ip default)"
   echo "docker ip is $docker_ip"
   self_ip="10.0.2.2"
   echo "setting up for OS X... OK"
 fi
 
-docker stop manet || echo "ignore"
-docker rm manet || echo "ignore"
+docker stop manet &>/dev/null || true
+docker rm manet &>/dev/null || true
 
-CONTAINER=$(docker run -d --net=host --name=manet -p=8891:8891 pdelsante/manet)
+docker run -d --net=host --name=manet -p=8891:8891 pdelsante/manet
 
 ./node_modules/.bin/webpack-dev-server ./vis/entry --hot --inline --module-bind "css=style\!css" &
 SERVER_PID=$!
