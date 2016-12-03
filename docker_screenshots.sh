@@ -29,13 +29,13 @@ sleep 5 # such hack...
 
 echo "starting to take screenshots"
 
-curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=oil", "clipRect": "0,0,642,335", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oil_production_yearly_12MMA_by_discovery_decade.png
-curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=gas", "clipRect": "0,0,642,335", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/gas_production_yearly_12MMA_by_discovery_decade.png
-curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=petroleum", "clipRect": "0,0,642,335", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oe_production_yearly_12MMA_by_discovery_decade.png
+curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=oil", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oil_production_yearly_12MMA_by_discovery_decade.png
+curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=gas", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/gas_production_yearly_12MMA_by_discovery_decade.png
+curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=petroleum", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oe_production_yearly_12MMA_by_discovery_decade.png
 
-curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=oil_region", "clipRect": "0,0,642,335", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oil_production_yearly_12MMA_by_region.png
-curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=gas_region", "clipRect": "0,0,642,335", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/gas_production_yearly_12MMA_by_region.png
-curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=petroleum_region", "clipRect": "0,0,642,335", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oe_production_yearly_12MMA_by_region.png
+curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=oil_region", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oil_production_yearly_12MMA_by_region.png
+curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=gas_region", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/gas_production_yearly_12MMA_by_region.png
+curl -H "Content-Type: application/json" -d '{"url":"'$self_ip':8080/bundle?mode=petroleum_region", "force": true, "width": 10, "height": 10}' http://$docker_ip:8891/ > ./img/oe_production_yearly_12MMA_by_region.png
 
 docker stop manet
 docker rm manet
