@@ -1,6 +1,5 @@
 body {
     background: white;
-    margin: 0;
 }
 
 text {
@@ -9,8 +8,4 @@ text {
 
 .heading {
     font: 22px sans-serif;
-}
-
-svg {
-    border: 0;
 }
