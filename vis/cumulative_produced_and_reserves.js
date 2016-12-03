@@ -48,18 +48,20 @@ function show_resource(unit_key, resource, group, unit, file) {
         .append('g')
         .attr('transform', function(d, i) { return 'translate(' + i*50 + ',0)'; });
       
-      // bar.append('rect')
-      // .attr('width', 15)
-      // .attr('height', function(d) { return y(d.produced)} )
-      // .style('fill', function(d, i) { return colorscheme[i] })
-      // .style('fill-opacity', '0.45');
-
       bar.append('g')
       .append('rect')
       .attr('width', 15)
       .attr('y', function(d) { return y(d.remaining)} )
       .attr('height', function(d) { return height - y(d.remaining)} )
       .style('fill', function(d, i) { return colorscheme[i] })
+
+      bar.append('g')
+      .append('rect')
+      .attr('width', 15)
+      .attr('y', function(d) { return y(d.origRecoverable)} )
+      .attr('height', function(d) { return height - y(d.produced) } )
+      .style('fill', function(d, i) { return colorscheme[i] })
+      .style('fill-opacity', '0.5')
 
       bar
         .append('text')
