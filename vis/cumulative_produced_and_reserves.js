@@ -14,7 +14,7 @@ function show_resource(unit_key, resource, group, unit, file) {
   var svg = d3.select('body').append('svg')
     .attr('width', 960 / 1.5)
     .attr('height', 500 / 1.5)
-    //.style('border', "1px solid #000000")
+  //.style('border', "1px solid #000000")
 
 
   var margin = { top: 40, right: 20, bottom: 30, left: 50 },
@@ -78,13 +78,47 @@ function show_resource(unit_key, resource, group, unit, file) {
         .style('fill', function (d, i) { return colorscheme[i] })
         .style('fill-opacity', '0.45')
 
-      // bar
-      //   .append('text')
-      //   .style('text-anchor', 'middle')
-      //   .attr('x', x.bandwidth() / 2)
-      //   .attr('y', function (d) { return y(d.origRecoverable) + 3 })
-      //   .attr('dy', '.75em')
-      //   .text(function (d) { return d.origRecoverable })
+      var w = 20;
+      var legend_produced = svg.append("g")
+        .attr("transform", "translate(" + (width - keys.length * w) + ",15)");
+
+      legend_produced.append('text')
+        .style('text-anchor', 'end')
+        .style('font-weight', 'bold')
+        .attr('dx', '-.5em')
+        .attr('dy', '1.15em')
+        .text('Produsert')
+
+      legend_produced.selectAll('g')
+        .data(keys.slice(0).reverse())
+        .enter().append('g')
+        .attr("transform", function (d, i) { return "translate(" + (i * w) + ", 0)"; })
+        .style('fill-opacity', '0.45')
+        .style("font", "10px sans-serif")
+        .append('rect')
+        .attr('width', 18)
+        .attr('height', 18)
+        .attr('fill', function (d, i) { return colorscheme[i]; });
+
+      var legend_reserves = svg.append("g")
+        .attr("transform", "translate(" + (width - keys.length * w) + ",35)");
+
+      legend_reserves.append('text')
+        .style('text-anchor', 'end')
+        .style('font-weight', 'bold')
+        .attr('dx', '-.5em')
+        .attr('dy', '1.15em')
+        .text('Reserver')
+
+      legend_reserves.selectAll('g')
+        .data(keys.slice(0).reverse())
+        .enter().append('g')
+        .attr("transform", function (d, i) { return "translate(" + (i * w) + ", 0)"; })
+        .style("font", "10px sans-serif")
+        .append('rect')
+        .attr('width', 18)
+        .attr('height', 18)
+        .attr('fill', function (d, i) { return colorscheme[i]; });
 
       svg.append("g")
         .call(d3.axisLeft(y))
@@ -100,7 +134,6 @@ function show_resource(unit_key, resource, group, unit, file) {
       svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
-
     });
 }
 
