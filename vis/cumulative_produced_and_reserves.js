@@ -146,42 +146,42 @@ function show_resource(unit_key, resource, group, unit, file) {
 var m = {
   oil: {
     title: 'Olje',
-    unit: 'Milliarder fat',
+    unit: 'Milliardar fat',
     unit_key: 'Oil',
     group: 'funntiår',
     filename: '/data/decade/reserves_gboe_by_decade.csv'
   },
   gas: {
     title: 'Gass',
-    unit: 'Milliarder fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalenter',
     unit_key: 'Gas',
     group: 'funntiår',
     filename: '/data/decade/reserves_gboe_by_decade.csv'
   },
   petroleum: {
     title: 'Petroleum',
-    unit: 'Milliarder fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalenter',
     unit_key: 'OE',
     group: 'funntiår',
     filename: '/data/decade/reserves_gboe_by_decade.csv'
   },
   oil_region: {
     title: 'Olje',
-    unit: 'Milliarder fat',
+    unit: 'Milliardar fat',
     unit_key: 'Oil',
     group: 'region',
     filename: '/data/region/reserves_gboe_by_region.csv'
   },
   gas_region: {
     title: 'Gass',
-    unit: 'Milliarder fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalenter',
     unit_key: 'Gas',
     group: 'region',
     filename: '/data/region/reserves_gboe_by_region.csv'
   },
   petroleum_region: {
     title: 'Petroleum',
-    unit: 'Milliarder fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalenter',
     unit_key: 'OE',
     group: 'region',
     filename: '/data/region/reserves_gboe_by_region.csv'

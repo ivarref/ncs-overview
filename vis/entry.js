@@ -129,37 +129,37 @@ function show_resource(resource, group, unit, file) {
 var m = {
     oil: {
         title: 'oljeproduksjon',
-        unit: 'Millioner fat/dag',
+        unit: 'Millionar fat/dag',
         group: 'funntiår',
         filename: '/data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     gas: {
         title: 'gassproduksjon',
-        unit: 'Millioner fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalenter/dag',
         group: 'funntiår',
         filename: '/data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     petroleum: {
         title: 'petroleumproduksjon',
-        unit: 'Millioner fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalenter/dag',
         group: 'funntiår',
         filename: '/data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     oil_region: {
         title: 'oljeproduksjon',
-        unit: 'Millioner fat/dag',
+        unit: 'Millionar fat/dag',
         group: 'region',
         filename: '/data/region/oil_production_yearly_12MMA_mboe_d_by_region.csv'
     },
     gas_region: {
         title: 'gassproduksjon',
-        unit: 'Millioner fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalenter/dag',
         group: 'region',
         filename: '/data/region/gas_production_yearly_12MMA_mboe_d_by_region.csv'
     },
     petroleum_region: {
         title: 'petroleumproduksjon',
-        unit: 'Millioner fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalenter/dag',
         group: 'region',
         filename: '/data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv'
     }
@@ -168,6 +168,6 @@ var m = {
 var mode = findGetParameter('mode', 'oil');
 show_resource(m[mode].title, m[mode].group, m[mode].unit, m[mode].filename);
 
-// show_resource('oljeproduksjon', 'Millioner fat/dag', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-// show_resource('gassproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-// show_resource('petroleumproduksjon', 'Millioner fat oljeekvivalenter/dag', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('oljeproduksjon', 'Millionar fat/dag', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('gassproduksjon', 'Millionar fat oljeekvivalenter/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('petroleumproduksjon', 'Millionar fat oljeekvivalenter/dag', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
