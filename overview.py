@@ -76,8 +76,17 @@ if __name__=="__main__":
         print(add_norwegian_comma_and_dot("Dei opprinnelig utvinnbare %s er på %.1f milliarder %s" % (reserve_name, originally_in_place, unit)))
         print(add_norwegian_comma_and_dot("Totalt %.1f%% av desse er henta ut" % (produced_percentage)))
         print(add_norwegian_comma_and_dot("Gjenverande reservar er på %.1f milliarder %s" % (remaining, unit)))
+
+        try:
+            frame = pd.read_csv('./data/decade/%s_production_yearly_12MMA_MillSm3_by_discovery_decade.csv' % (resource_key.lower()))
+        except:
+            frame = pd.read_csv('./data/decade/%s_production_yearly_12MMA_BillSm3_by_discovery_decade.csv' % (resource_key.lower()))
+        current_production_millSm3 = frame.tail(1)['Sum'].values[0]
+        current_production_gboe = (current_production_millSm3*6.29) / 1000.0
+        num_years = remaining / current_production_gboe
+        print(add_norwegian_comma_and_dot("Med noverande produksjonstempo er desse reservane utvunne på %.1f år" % (num_years)))
         print("")
-        pass
+        
     print("# Oversikt over norsk sokkel etter funntiår\n")
     short_summary('Olje', 'Oljeproduksjonen', './data/decade/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png', 'img/oil_produced_reserves_by_discovery_decade.png')
     percentage_produced('Oil', "oljereservane", "fat")
