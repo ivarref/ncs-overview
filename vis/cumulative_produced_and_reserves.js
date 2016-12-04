@@ -84,7 +84,6 @@ function show_resource(unit_key, resource, group, unit, file) {
 
       legend_produced.append('text')
         .style('text-anchor', 'end')
-        .style('font-weight', 'bold')
         .attr('dx', '-.5em')
         .attr('dy', '1.15em')
         .text('Produsert')
@@ -105,7 +104,6 @@ function show_resource(unit_key, resource, group, unit, file) {
 
       legend_reserves.append('text')
         .style('text-anchor', 'end')
-        .style('font-weight', 'bold')
         .attr('dx', '-.5em')
         .attr('dy', '1.15em')
         .text('Reserver')

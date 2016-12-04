@@ -15,6 +15,7 @@ if [[ "$unamestr" == "Darwin" ]]; then
   docker_ip="$(docker-machine ip default)"
   echo "docker ip is $docker_ip"
   self_ip="10.0.2.2"
+  eval "$(docker-machine env --shell bash default)"
   echo "setting up for OS X... OK"
 fi
 
