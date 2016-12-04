@@ -60,6 +60,9 @@ if __name__=="__main__":
                     "av nivået i %s" % (format_date(frame[frame['Sum'] == mx]['Date'].values[0])),
                     ("(%.2f %s)" % (mx, unit)).replace('.', ',')+'.'
                     )
+        print("")
+        print("![Produsert og reserver](%s)" % (image_produced_reserves))
+        print("")
 
     print("# Oversikt over norsk sokkel etter funntiår\n")
     short_summary('Olje', 'Oljeproduksjonen', './data/decade/oil_production_monthly_12MMA_mboe_d_by_discovery_decade.csv', 'millioner fat/dag', 'img/oil_production_yearly_12MMA_by_discovery_decade.png', 'img/oil_produced_reserves_by_discovery_decade.png')
