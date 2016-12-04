@@ -135,13 +135,13 @@ var m = {
     },
     gas: {
         title: 'gassproduksjon',
-        unit: 'Millionar fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'funntiår',
         filename: '/data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
     petroleum: {
         title: 'petroleumproduksjon',
-        unit: 'Millionar fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'funntiår',
         filename: '/data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
     },
@@ -153,13 +153,13 @@ var m = {
     },
     gas_region: {
         title: 'gassproduksjon',
-        unit: 'Millionar fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'region',
         filename: '/data/region/gas_production_yearly_12MMA_mboe_d_by_region.csv'
     },
     petroleum_region: {
         title: 'petroleumproduksjon',
-        unit: 'Millionar fat oljeekvivalenter/dag',
+        unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'region',
         filename: '/data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv'
     }
@@ -169,5 +169,5 @@ var mode = findGetParameter('mode', 'oil');
 show_resource(m[mode].title, m[mode].group, m[mode].unit, m[mode].filename);
 
 // show_resource('oljeproduksjon', 'Millionar fat/dag', '/data/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-// show_resource('gassproduksjon', 'Millionar fat oljeekvivalenter/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
-// show_resource('petroleumproduksjon', 'Millionar fat oljeekvivalenter/dag', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('gassproduksjon', 'Millionar fat oljeekvivalentar/dag', '/data/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');
+// show_resource('petroleumproduksjon', 'Millionar fat oljeekvivalentar/dag', '/data/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv');

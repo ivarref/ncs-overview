@@ -153,14 +153,14 @@ var m = {
   },
   gas: {
     title: 'Gass',
-    unit: 'Milliardar fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalentar',
     unit_key: 'Gas',
     group: 'funntiår',
     filename: '/data/decade/reserves_gboe_by_decade.csv'
   },
   petroleum: {
     title: 'Petroleum',
-    unit: 'Milliardar fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalentar',
     unit_key: 'OE',
     group: 'funntiår',
     filename: '/data/decade/reserves_gboe_by_decade.csv'
@@ -174,14 +174,14 @@ var m = {
   },
   gas_region: {
     title: 'Gass',
-    unit: 'Milliardar fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalentar',
     unit_key: 'Gas',
     group: 'region',
     filename: '/data/region/reserves_gboe_by_region.csv'
   },
   petroleum_region: {
     title: 'Petroleum',
-    unit: 'Milliardar fat oljeekvivalenter',
+    unit: 'Milliardar fat oljeekvivalentar',
     unit_key: 'OE',
     group: 'region',
     filename: '/data/region/reserves_gboe_by_region.csv'

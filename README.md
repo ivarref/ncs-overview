@@ -15,7 +15,7 @@ Med noverande produksjonstempo er desse reservane utvunne på 11,0 år.
 ## Gass
 ![Gassproduksjonen](img/gas_production_yearly_12MMA_by_discovery_decade.png)
 
-Gassproduksjonen per september 2016 er på 2,01 millionar fat oljeekvivalenter/dag, som er 95,6% av nivået i mai 2016 (2,10 millionar fat oljeekvivalenter/dag).
+Gassproduksjonen per september 2016 er på 2,01 millionar fat oljeekvivalentar/dag, som er 95,6% av nivået i mai 2016 (2,10 millionar fat oljeekvivalentar/dag).
 
 ![Produsert og reserver](img/gas_produced_reserves_by_discovery_decade.png)
 
@@ -27,7 +27,7 @@ Med noverande produksjonstempo er desse reservane utvunne på 15,9 år.
 ## Petroleum
 ![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_discovery_decade.png)
 
-Petroleumproduksjonen per september 2016 er på 3,98 millionar fat oljeekvivalenter/dag, som er 86,1% av nivået i juli 2004 (4,62 millionar fat oljeekvivalenter/dag).
+Petroleumproduksjonen per september 2016 er på 3,98 millionar fat oljeekvivalentar/dag, som er 86,1% av nivået i juli 2004 (4,62 millionar fat oljeekvivalentar/dag).
 
 ![Produsert og reserver](img/oe_produced_reserves_by_discovery_decade.png)
 
