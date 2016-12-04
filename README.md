@@ -8,7 +8,7 @@ Oljeproduksjonen per september 2016 er på 1,59 millioner fat/dag, som er 50,8% 
 ![Produsert og reserver](img/oil_produced_reserves_by_discovery_decade.png)
 
 Dei opprinnelig utvinnbare oljereservane er på 32,1 milliarder fat.
-Totalt 80,1% av desse er henta ut.
+Totalt 80,1% av desse er utvunne.
 Gjenverande reservar er på 6,4 milliarder fat.
 Med noverande produksjonstempo er desse reservane utvunne på 11,0 år.
 
@@ -20,7 +20,7 @@ Gassproduksjonen per september 2016 er på 2,01 millioner fat oljeekvivalenter/d
 ![Produsert og reserver](img/gas_produced_reserves_by_discovery_decade.png)
 
 Dei opprinnelig utvinnbare gassreservane er på 24,9 milliarder fat oljeekvivalent.
-Totalt 53,0% av desse er henta ut.
+Totalt 53,0% av desse er utvunne.
 Gjenverande reservar er på 11,7 milliarder fat oljeekvivalent.
 Med noverande produksjonstempo er desse reservane utvunne på 15,9 år.
 
@@ -32,7 +32,7 @@ Petroleumproduksjonen per september 2016 er på 3,98 millioner fat oljeekvivalen
 ![Produsert og reserver](img/oe_produced_reserves_by_discovery_decade.png)
 
 Dei opprinnelig utvinnbare petroleumreservane er på 61,4 milliarder fat oljeekvivalent.
-Totalt 67,9% av desse er henta ut.
+Totalt 67,9% av desse er utvunne.
 Gjenverande reservar er på 19,7 milliarder fat oljeekvivalent.
 Med noverande produksjonstempo er desse reservane utvunne på 13,5 år.
 

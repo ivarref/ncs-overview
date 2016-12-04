@@ -74,7 +74,7 @@ if __name__=="__main__":
         produced = originally_in_place - remaining
         produced_percentage = (produced*100.0) / originally_in_place
         print(add_norwegian_comma_and_dot("Dei opprinnelig utvinnbare %s er på %.1f milliarder %s" % (reserve_name, originally_in_place, unit)))
-        print(add_norwegian_comma_and_dot("Totalt %.1f%% av desse er henta ut" % (produced_percentage)))
+        print(add_norwegian_comma_and_dot("Totalt %.1f%% av desse er utvunne" % (produced_percentage)))
         print(add_norwegian_comma_and_dot("Gjenverande reservar er på %.1f milliarder %s" % (remaining, unit)))
 
         try:
