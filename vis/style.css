@@ -9,3 +9,11 @@ text {
 .heading {
     font: 22px sans-serif;
 }
+
+.produced_soft {
+    fill-opacity: 0.45;
+}
+
+.legend_caption {
+    font-weight: bold;
+}

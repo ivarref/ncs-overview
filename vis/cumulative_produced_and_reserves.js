@@ -82,7 +82,7 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr('y', function (d) { return y(d.origRecoverable) })
         .attr('height', function (d) { return height - y(d.produced) })
         .style('fill', function (d, i) { return colorscheme[i] })
-        .style('fill-opacity', '0.45')
+        .classed('produced_soft', true)
 
       var w = 20;
       var legend_produced = svg.append("g")
@@ -92,13 +92,14 @@ function show_resource(unit_key, resource, group, unit, file) {
         .style('text-anchor', 'end')
         .attr('dx', '-.5em')
         .attr('dy', '1.15em')
+        .classed('legend_caption', true)
         .text('Produsert')
 
       legend_produced.selectAll('g')
         .data(keys.slice(0).reverse())
         .enter().append('g')
         .attr("transform", function (d, i) { return "translate(" + (i * w) + ", 0)"; })
-        .style('fill-opacity', '0.45')
+        .classed('produced_soft', true)
         .style("font", "10px sans-serif")
         .append('rect')
         .attr('width', 18)
@@ -112,6 +113,7 @@ function show_resource(unit_key, resource, group, unit, file) {
         .style('text-anchor', 'end')
         .attr('dx', '-.5em')
         .attr('dy', '1.15em')
+        .classed('legend_caption', true)
         .text('Reserver')
 
       legend_reserves.selectAll('g')
