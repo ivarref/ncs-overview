@@ -24,8 +24,14 @@ function show_resource(unit_key, resource, group, unit, file) {
 
   d3.csv(file,
     function (d) {
+      var translate = {
+        'Norwegian sea': 'Norskehavet',
+        'North sea': 'Nordsjøen',
+        'Barents sea': 'Barentshavet'
+      };
+
       return {
-        'name': d['name'],
+        'name': d['name'] in translate ? translate[d['name']] : d['name'],
         'origRecoverable': +d['origRecoverable' + unit_key],
         'produced': +d['origRecoverable' + unit_key] - +d['remaining' + unit_key],
         'remaining': +d['remaining' + unit_key],
@@ -180,5 +186,5 @@ var m = {
   }
 };
 
-var mode = findGetParameter('mode', 'oil');
+var mode = findGetParameter('mode', 'oil_region');
 show_resource(m[mode].unit_key, m[mode].title, m[mode].group, m[mode].unit, m[mode].filename);
