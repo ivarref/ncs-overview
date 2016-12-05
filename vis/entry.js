@@ -16,8 +16,8 @@ function show_resource(resource, group, unit, file) {
     })
 
     var svg = d3.select('body').append('svg')
-        .attr('width', 960 / 1.5)
-        .attr('height', 500 / 1.5);
+        .attr('width', 960)
+        .attr('height', 500);
 
     var margin = { top: 40, right: 20, bottom: 30, left: 50 },
         width = +svg.attr("width") - margin.left - margin.right,
