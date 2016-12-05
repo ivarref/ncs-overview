@@ -12,8 +12,8 @@ function show_resource(unit_key, resource, group, unit, file) {
   });
 
   var svg = d3.select('body').append('svg')
-    .attr('width', 960 / 1.5)
-    .attr('height', 500 / 1.5)
+    .attr('width', 960)
+    .attr('height', 500)
   //.style('border', "1px solid #000000")
 
 
