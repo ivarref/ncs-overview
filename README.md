@@ -12,7 +12,6 @@ Totalt 80,1% av desse er utvunne.
 Gjenverande reservar er på 6,4 milliardar fat.
 Med noverande produksjonstempo er desse reservane utvunne på 11,0 år.
 
-****
 ## Gass
 ![Gassproduksjonen](img/gas_production_yearly_12MMA_by_discovery_decade.png)
 
@@ -25,7 +24,6 @@ Totalt 53,0% av desse er utvunne.
 Gjenverande reservar er på 11,7 milliardar fat oljeekvivalent.
 Med noverande produksjonstempo er desse reservane utvunne på 15,9 år.
 
-****
 ## Petroleum
 ![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_discovery_decade.png)
 
@@ -56,7 +54,6 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 | 2000 | 12,7 | 1,5 | 6,2 |
 | 2010 | 0,0 | 0,5 | 0,2 |
 
-****
 # Oversikt over norsk sokkel etter region
 
 ## Olje
@@ -65,14 +62,12 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 
 ![Produsert og reserver](img/oil_produced_reserves_by_region.png)
 
-****
 ## Gass
 ![Gassproduksjonen](img/gas_production_yearly_12MMA_by_region.png)
 
 
 ![Produsert og reserver](img/gas_produced_reserves_by_region.png)
 
-****
 ## Petroleum
 ![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_region.png)
 
