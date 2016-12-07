@@ -13,5 +13,6 @@ mkdir tmp_data/
 ./overview.py > README.md
 ./screenshots_production.sh
 ./screenshots_produced_reserves.sh
+./screens_from_page.sh ./vis/raudgrøne.js
 
 rm -rf tmp_data/
