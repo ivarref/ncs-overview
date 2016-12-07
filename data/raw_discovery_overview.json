@@ -58,7 +58,7 @@
     },
     {
         "dscName": "1/3-3 TAMBAR",
-        "cmpLongName": "BP Norge AS",
+        "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "1/3-3",
@@ -96,7 +96,7 @@
     },
     {
         "dscName": "1/3-K-5 TAMBAR \u00d8ST",
-        "cmpLongName": "BP Norge AS",
+        "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "1/3-K-5",
@@ -534,7 +534,7 @@
     {
         "dscName": "15/8-1 UTGARD",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Decided for production",
         "dscHcType": "GAS",
         "wlbName": "15/8-1",
         "nmaName": "North sea",
@@ -1008,7 +1008,7 @@
     },
     {
         "dscName": "2/11-2 HOD",
-        "cmpLongName": "BP Norge AS",
+        "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "2/11-2",
@@ -1540,7 +1540,7 @@
     },
     {
         "dscName": "2/8-6 VALHALL",
-        "cmpLongName": "BP Norge AS",
+        "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "2/8-6",
@@ -3764,7 +3764,7 @@
     {
         "dscName": "35/11-13 BYRDING",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Decided for production",
         "dscHcType": "OIL/GAS",
         "wlbName": "35/11-13",
         "nmaName": "North sea",
@@ -4562,7 +4562,7 @@
     {
         "dscName": "6406/3-2 (Trestakk)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Decided for production",
         "dscHcType": "OIL",
         "wlbName": "6406/3-2",
         "nmaName": "Norwegian sea",
@@ -5359,7 +5359,7 @@
     },
     {
         "dscName": "6507/5-1 SKARV",
-        "cmpLongName": "BP Norge AS",
+        "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL/GAS",
         "wlbName": "6507/5-1",
@@ -5398,7 +5398,7 @@
     {
         "dscName": "6507/7-14 S DVALIN",
         "cmpLongName": "DEA Norge AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Decided for production",
         "dscHcType": "GAS",
         "wlbName": "6507/7-14 S",
         "nmaName": "Norwegian sea",
@@ -5853,7 +5853,7 @@
     },
     {
         "dscName": "7/12-2 ULA",
-        "cmpLongName": "BP Norge AS",
+        "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "7/12-2",
@@ -5872,7 +5872,7 @@
     },
     {
         "dscName": "7/12-5 (Ula North)",
-        "cmpLongName": "BP Norge AS",
+        "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
         "wlbName": "7/12-5",
@@ -6652,7 +6652,7 @@
     {
         "dscName": "8/10-4 S ODA",
         "cmpLongName": "Centrica Resources (Norge) AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Decided for production",
         "dscHcType": "OIL",
         "wlbName": "8/10-4 S",
         "nmaName": "North sea",
