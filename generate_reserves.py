@@ -14,12 +14,12 @@ import generate
 
 def get_distinct_fields():
   frame = pd.read_csv('./data/raw_reserves_field.csv')
-  ids = frame[u'fldNpdidField'].unique()
+  ids = frame[u'fldName'].unique()
   return ids
 
 def remaining_reserve(field_id, kind):
   frame = pd.read_csv('./data/raw_reserves_field.csv')
-  f = frame[frame[u'fldNpdidField'] == field_id]
+  f = frame[frame[u'fldName'] == field_id]
   return f[kind].values[0]
 
 if __name__=="__main__":

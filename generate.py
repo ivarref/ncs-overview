@@ -6,6 +6,7 @@ from __future__ import print_function
 import collections
 import csv
 import inspect
+import json
 import os
 import sys
 
@@ -19,14 +20,14 @@ def npdid_name(id):
 
 def get_distinct_fields():
   frame = pd.read_csv('./data/raw_production_monthly_field.csv')
-  ids = frame[u'prfNpdidInformationCarrier'].unique()
+  ids = frame[u'prfInformationCarrier'].unique()
   return ids
 
 def get_discovery_years(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
   res = []
   for (idx, id) in enumerate(ids):
-    m = frame[frame['fldNpdidField'] == id]
+    m = frame[frame['fldName'] == id]
     years = m['dscDiscoveryYear'].unique()
     if len(years) != 1:
       print("%s:%d get_discovery_years error: npdid" % (__file__, inspect.stack()[0][2]), id, npdid_name(id), "with", len(years), "matches", years)
@@ -39,7 +40,7 @@ def get_discovery_region_to_fields(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
   d = collections.defaultdict(list)
   for (idx, id) in enumerate(ids):
-    m = frame[frame['fldNpdidField'] == id]
+    m = frame[frame['fldName'] == id]
     region = m['nmaName'].unique()
     if len(region) != 1:
       print("%s:%d get_discovery_region_name error: npdid" % (__file__, inspect.stack()[0][2]), id, npdid_name(id), "with", len(region), "matches", region)
@@ -98,7 +99,7 @@ def write_file_for_property(group_to_ids, filename, prop, monthly=False, process
         row = [yr]
         for (group, group_fields) in group_to_ids.items():
           months = df[df['prfYearMonth'].isin(prevdates)]
-          fields = months[months['prfNpdidInformationCarrier'].isin(group_fields)]
+          fields = months[months['prfInformationCarrier'].isin(group_fields)]
           v = process(year, fields[prop].sum())
           row.append("%g" % (v))
           print(date, prop, group, v)
@@ -128,6 +129,9 @@ if __name__=="__main__":
 
   # group fields by discovery decade
   decade_to_fields = get_decade_to_fields(id_to_year)
+  with open('./data/decade_to_fields_production.json', 'w') as wfd:
+    json.dump(decade_to_fields, wfd, sort_keys=True, indent=2)
+
 
   def to_mboe_d(year, x):
     # http://www.npd.no/no/Nyheter/Produksjonstall/2016/Juli-2016/
@@ -156,6 +160,9 @@ if __name__=="__main__":
   write_file_for_property(decade_to_fields, 'data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
 
   region_to_fields = get_discovery_region_to_fields(ids)
+  with open('./data/region_to_fields_production.json', 'w') as wfd:
+    json.dump(region_to_fields, wfd, sort_keys=True, indent=2)
+
   try:
     os.makedirs('data/region')
   except:
