@@ -32,7 +32,7 @@ function show_resource(resource, group, unit, file) {
     var y = d3.scaleLinear()
         .range([height, 0]);
 
-    var colorscheme = group === 'funntiår' ? d3.schemeCategory10 : ["#bcbd22", "#17becf", "#e377c2"];
+    var colorscheme = group === 'funntiår' ? d3.schemeCategory10 : require('./colors_region.js').colors;
     var z = d3.scaleOrdinal(colorscheme);
     var stack = d3.stack();
 

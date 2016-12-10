@@ -51,7 +51,7 @@ function show_resource(unit_key, resource, group, unit, file) {
         .padding(0.1)
         .rangeRound([0, width])
 
-      var colorscheme = group === 'funntiår' ? d3.schemeCategory10 : ["#bcbd22", "#17becf", "#e377c2"];
+      var colorscheme = group === 'funntiår' ? d3.schemeCategory10 : require('./colors_region.js').colors;
 
       var barWidth = width / data.length;
 
