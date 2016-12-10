@@ -13,6 +13,6 @@ mkdir img/
 ./generate.py
 ./generate_reserves.py
 ./overview.py > README.md
-./make_screen.sh
+./make_screens.sh
 
 rm -rf tmp_data/

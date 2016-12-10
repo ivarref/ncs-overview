@@ -131,37 +131,43 @@ var m = {
         title: 'oljeproduksjon',
         unit: 'Millionar fat/dag',
         group: 'funntiår',
-        filename: '/data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
+        filename: '/data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
+        screenshot: 'oil_production_yearly_12MMA_by_discovery_decade.png'
     },
     gas: {
         title: 'gassproduksjon',
         unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'funntiår',
-        filename: '/data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
+        filename: '/data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
+        screenshot: 'gas_production_yearly_12MMA_by_discovery_decade.png'
     },
     petroleum: {
         title: 'petroleumproduksjon',
         unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'funntiår',
-        filename: '/data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv'
+        filename: '/data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
+        screenshot: 'oe_production_yearly_12MMA_by_discovery_decade.png'
     },
     oil_region: {
         title: 'oljeproduksjon',
         unit: 'Millionar fat/dag',
         group: 'region',
-        filename: '/data/region/oil_production_yearly_12MMA_mboe_d_by_region.csv'
+        filename: '/data/region/oil_production_yearly_12MMA_mboe_d_by_region.csv',
+        screenshot: 'oil_production_yearly_12MMA_by_region.png'
     },
     gas_region: {
         title: 'gassproduksjon',
         unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'region',
-        filename: '/data/region/gas_production_yearly_12MMA_mboe_d_by_region.csv'
+        filename: '/data/region/gas_production_yearly_12MMA_mboe_d_by_region.csv',
+        screenshot: 'gas_production_yearly_12MMA_by_region.png'
     },
     petroleum_region: {
         title: 'petroleumproduksjon',
         unit: 'Millionar fat oljeekvivalentar/dag',
         group: 'region',
-        filename: '/data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv'
+        filename: '/data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv',
+        screenshot: 'oe_production_yearly_12MMA_by_region.png'
     }
 };
 
