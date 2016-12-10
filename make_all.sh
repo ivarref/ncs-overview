@@ -12,6 +12,7 @@ mkdir img/
 ./download.sh
 ./generate.py
 ./generate_reserves.py
+./split_monthly_production.py
 ./overview.py > README.md
 ./make_screens.sh
 

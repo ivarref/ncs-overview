@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./overview.py > README.md
+./split_monthly_production.py
 echo "****"
