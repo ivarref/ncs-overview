@@ -32,7 +32,7 @@ sleep 5 # such hack...
 
 echo "starting to take screenshots ..."
 
-./screens_from_page.py $1
+self_ip="$self_ip" docker_ip="$docker_ip" ./screens_from_page.py $1
 
 docker stop manet
 docker rm manet
