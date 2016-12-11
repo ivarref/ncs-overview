@@ -5,6 +5,7 @@ from __future__ import print_function
 
 import codecs
 import collections
+import json
 import sys
 
 import pandas as pd
@@ -29,6 +30,12 @@ if __name__=="__main__":
   # group fields by discovery decade
   decade_to_fields = generate.get_decade_to_fields(generate.get_discovery_years(ids))
   region_to_fields = generate.get_discovery_region_to_fields(ids)
+  with open('./data/region_to_fields_reserves.json', 'w') as wfd:
+    json.dump(region_to_fields, wfd, sort_keys=True, indent=2)
+  
+  with open('./data/decade_to_fields_reserves.json', 'w') as wfd:
+    json.dump(decade_to_fields, wfd, sort_keys=True, indent=2)
+
 
   print("reserves")
   print("-"*80)
