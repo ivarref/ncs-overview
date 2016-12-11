@@ -1,0 +1,19 @@
+{
+  "dscName": "1/2-1 BLANE",
+  "cmpLongName": "Repsol Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "1/2-1",
+  "nmaName": "North sea",
+  "fldName": "BLANE",
+  "dscDateFromInclInField": "01.07.2005",
+  "dscDiscoveryYear": "1989",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "BLANE UNIT",
+  "dscNpdidDiscovery": "43814",
+  "fldNpdidField": "3437650",
+  "wlbNpdidWellbore": "1382",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43814",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=3437650"
+}

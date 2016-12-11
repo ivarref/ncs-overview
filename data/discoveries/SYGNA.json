@@ -1,0 +1,19 @@
+{
+  "dscName": "33/9-19 S SYGNA",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "33/9-19 S",
+  "nmaName": "North sea",
+  "fldName": "SYGNA",
+  "dscDateFromInclInField": "30.04.1999",
+  "dscDiscoveryYear": "1996",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "SYGNA UNIT",
+  "dscNpdidDiscovery": "44564",
+  "fldNpdidField": "104718",
+  "wlbNpdidWellbore": "2830",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44564",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=104718"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "2/7-1 ELDFISK",
+  "cmpLongName": "ConocoPhillips Skandinavia AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "2/7-1",
+  "nmaName": "North sea",
+  "fldName": "ELDFISK",
+  "dscDateFromInclInField": "25.04.1975",
+  "dscDiscoveryYear": "1970",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "018",
+  "dscNpdidDiscovery": "44114",
+  "fldNpdidField": "43527",
+  "wlbNpdidWellbore": "179",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44114",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43527"
+}

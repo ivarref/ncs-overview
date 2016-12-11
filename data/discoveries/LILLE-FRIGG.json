@@ -1,0 +1,19 @@
+{
+  "dscName": "25/2-4 LILLE-FRIGG",
+  "cmpLongName": "",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "25/2-4",
+  "nmaName": "North sea",
+  "fldName": "LILLE-FRIGG",
+  "dscDateFromInclInField": "06.09.1991",
+  "dscDiscoveryYear": "1975",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "",
+  "dscOwnerName": "",
+  "dscNpdidDiscovery": "44240",
+  "fldNpdidField": "43583",
+  "wlbNpdidWellbore": "356",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44240",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43583"
+}

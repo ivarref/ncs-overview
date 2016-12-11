@@ -1,0 +1,19 @@
+{
+  "dscName": "6608/10-2 NORNE",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "6608/10-2",
+  "nmaName": "Norwegian sea",
+  "fldName": "NORNE",
+  "dscDateFromInclInField": "09.03.1995",
+  "dscDiscoveryYear": "1992",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "NORNE INSIDE",
+  "dscNpdidDiscovery": "44942",
+  "fldNpdidField": "43778",
+  "wlbNpdidWellbore": "1782",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44942",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43778"
+}

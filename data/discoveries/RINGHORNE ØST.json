@@ -1,0 +1,19 @@
+{
+  "dscName": "25/8-14 S",
+  "cmpLongName": "ExxonMobil Exploration and Production Norway AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "25/8-14 S",
+  "nmaName": "North sea",
+  "fldName": "RINGHORNE \u00d8ST",
+  "dscDateFromInclInField": "25.11.2005",
+  "dscDiscoveryYear": "2003",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "RINGHORNE \u00d8ST UNIT",
+  "dscNpdidDiscovery": "2472571",
+  "fldNpdidField": "3505505",
+  "wlbNpdidWellbore": "4805",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=2472571",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=3505505"
+}

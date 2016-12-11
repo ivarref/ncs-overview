@@ -1,0 +1,19 @@
+{
+  "dscName": "6/3-1 PI",
+  "cmpLongName": "A/S Norske Shell",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "6/3-1",
+  "nmaName": "North sea",
+  "fldName": "GAUPE",
+  "dscDateFromInclInField": "25.06.2010",
+  "dscDiscoveryYear": "1985",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "292",
+  "dscNpdidDiscovery": "44804",
+  "fldNpdidField": "18161341",
+  "wlbNpdidWellbore": "450",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44804",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=18161341"
+}

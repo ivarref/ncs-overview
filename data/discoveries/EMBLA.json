@@ -1,0 +1,19 @@
+{
+  "dscName": "2/7-20 EMBLA",
+  "cmpLongName": "ConocoPhillips Skandinavia AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "2/7-20",
+  "nmaName": "North sea",
+  "fldName": "EMBLA",
+  "dscDateFromInclInField": "14.12.1990",
+  "dscDiscoveryYear": "1988",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "018",
+  "dscNpdidDiscovery": "44132",
+  "fldNpdidField": "43534",
+  "wlbNpdidWellbore": "1062",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44132",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43534"
+}

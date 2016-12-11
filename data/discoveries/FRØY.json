@@ -1,0 +1,19 @@
+{
+  "dscName": "25/5-1 FR\u00d8Y",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "OIL",
+  "wlbName": "25/5-1",
+  "nmaName": "North sea",
+  "fldName": "FR\u00d8Y",
+  "dscDateFromInclInField": "18.05.1992",
+  "dscDiscoveryYear": "1987",
+  "dscResInclInDiscoveryName": "25/5-1 FR\u00d8Y",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "364",
+  "dscNpdidDiscovery": "44264",
+  "fldNpdidField": "43597",
+  "wlbNpdidWellbore": "884",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44264",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43597"
+}

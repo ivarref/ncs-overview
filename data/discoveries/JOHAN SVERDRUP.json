@@ -1,0 +1,19 @@
+{
+  "dscName": "16/2-6 JOHAN SVERDRUP",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "OIL",
+  "wlbName": "16/2-6",
+  "nmaName": "North sea",
+  "fldName": "JOHAN SVERDRUP",
+  "dscDateFromInclInField": "18.06.2015",
+  "dscDiscoveryYear": "2010",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "JOHAN SVERDRUP UNIT",
+  "dscNpdidDiscovery": "18387202",
+  "fldNpdidField": "26376286",
+  "wlbNpdidWellbore": "6374",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=18387202",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=26376286"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "25/11-16 SVALIN",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "25/11-16",
+  "nmaName": "North sea",
+  "fldName": "SVALIN",
+  "dscDateFromInclInField": "23.11.2012",
+  "dscDiscoveryYear": "1992",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "169",
+  "dscNpdidDiscovery": "44222",
+  "fldNpdidField": "22507971",
+  "wlbNpdidWellbore": "1920",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44222",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=22507971"
+}

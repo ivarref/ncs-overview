@@ -29,7 +29,3 @@ if __name__=="__main__":
             writer.writerow([x for x in row])
           elif row[row_to_idx[u'prfInformationCarrier']] == name:
             writer.writerow([x for x in row])
-          
-#    f = frame[frame[u'prfInformationCarrier'] == name]
- #   f.to_csv(fil, line_terminator='\n')
- #   print("generated", fil)

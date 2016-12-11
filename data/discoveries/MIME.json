@@ -1,0 +1,19 @@
+{
+  "dscName": "7/11-5 MIME",
+  "cmpLongName": "",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "OIL",
+  "wlbName": "7/11-5",
+  "nmaName": "North sea",
+  "fldName": "MIME",
+  "dscDateFromInclInField": "06.11.1992",
+  "dscDiscoveryYear": "1982",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "",
+  "dscOwnerName": "",
+  "dscNpdidDiscovery": "44966",
+  "fldNpdidField": "43792",
+  "wlbNpdidWellbore": "42",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44966",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43792"
+}

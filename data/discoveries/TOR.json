@@ -1,0 +1,19 @@
+{
+  "dscName": "2/5-1 TOR",
+  "cmpLongName": "ConocoPhillips Skandinavia AS",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "OIL",
+  "wlbName": "2/5-1",
+  "nmaName": "North sea",
+  "fldName": "TOR",
+  "dscDateFromInclInField": "04.05.1973",
+  "dscDiscoveryYear": "1970",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "TOR UNIT",
+  "dscNpdidDiscovery": "44084",
+  "fldNpdidField": "43520",
+  "wlbNpdidWellbore": "178",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44084",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43520"
+}

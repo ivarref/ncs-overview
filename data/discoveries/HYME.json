@@ -1,0 +1,19 @@
+{
+  "dscName": "6407/8-5 S HYME",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "6407/8-5 S",
+  "nmaName": "Norwegian sea",
+  "fldName": "HYME",
+  "dscDateFromInclInField": "24.06.2011",
+  "dscDiscoveryYear": "2009",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "348",
+  "dscNpdidDiscovery": "5506881",
+  "fldNpdidField": "20474183",
+  "wlbNpdidWellbore": "6110",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=5506881",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=20474183"
+}

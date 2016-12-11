@@ -1,0 +1,19 @@
+{
+  "dscName": "6608/10-6 SVALE",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "6608/10-6",
+  "nmaName": "Norwegian sea",
+  "fldName": "URD",
+  "dscDateFromInclInField": "02.07.2004",
+  "dscDiscoveryYear": "2000",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "128",
+  "dscNpdidDiscovery": "1030536",
+  "fldNpdidField": "2834734",
+  "wlbNpdidWellbore": "3260",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=1030536",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=2834734"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "6507/3-1 ALVE",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "6507/3-1",
+  "nmaName": "Norwegian sea",
+  "fldName": "ALVE",
+  "dscDateFromInclInField": "16.03.2007",
+  "dscDiscoveryYear": "1990",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "159 B",
+  "dscNpdidDiscovery": "44924",
+  "fldNpdidField": "4444332",
+  "wlbNpdidWellbore": "1533",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44924",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4444332"
+}

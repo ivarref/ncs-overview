@@ -1,0 +1,19 @@
+{
+  "dscName": "25/8-17 JETTE",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "25/8-17",
+  "nmaName": "North sea",
+  "fldName": "JETTE",
+  "dscDateFromInclInField": "17.02.2012",
+  "dscDiscoveryYear": "2009",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "JETTE UNIT",
+  "dscNpdidDiscovery": "17238186",
+  "fldNpdidField": "21613906",
+  "wlbNpdidWellbore": "6185",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=17238186",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=21613906"
+}

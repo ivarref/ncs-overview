@@ -1,0 +1,19 @@
+{
+  "dscName": "6707/10-1 AASTA HANSTEEN",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "GAS",
+  "wlbName": "6707/10-1",
+  "nmaName": "Norwegian sea",
+  "fldName": "AASTA HANSTEEN",
+  "dscDateFromInclInField": "07.06.2013",
+  "dscDiscoveryYear": "1997",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "218",
+  "dscNpdidDiscovery": "44954",
+  "fldNpdidField": "23395946",
+  "wlbNpdidWellbore": "3075",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44954",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=23395946"
+}

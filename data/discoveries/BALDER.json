@@ -1,0 +1,19 @@
+{
+  "dscName": "25/11-1 BALDER",
+  "cmpLongName": "ExxonMobil Exploration and Production Norway AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "25/11-1",
+  "nmaName": "North sea",
+  "fldName": "BALDER",
+  "dscDateFromInclInField": "02.02.1996",
+  "dscDiscoveryYear": "1967",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "001",
+  "dscNpdidDiscovery": "44210",
+  "fldNpdidField": "43562",
+  "wlbNpdidWellbore": "143",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44210",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43562"
+}

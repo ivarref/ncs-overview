@@ -1,0 +1,19 @@
+{
+  "dscName": "30/7-6 MARTIN LINGE",
+  "cmpLongName": "Total E&P Norge AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "GAS",
+  "wlbName": "30/7-6 R",
+  "nmaName": "North sea",
+  "fldName": "MARTIN LINGE",
+  "dscDateFromInclInField": "11.06.2012",
+  "dscDiscoveryYear": "1978",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "MARTIN LINGE UNIT",
+  "dscNpdidDiscovery": "44450",
+  "fldNpdidField": "21675447",
+  "wlbNpdidWellbore": "507",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44450",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=21675447"
+}

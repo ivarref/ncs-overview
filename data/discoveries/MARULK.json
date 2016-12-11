@@ -1,0 +1,19 @@
+{
+  "dscName": "6507/2-2 MARULK",
+  "cmpLongName": "Eni Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS",
+  "wlbName": "6507/2-2",
+  "nmaName": "Norwegian sea",
+  "fldName": "MARULK",
+  "dscDateFromInclInField": "15.07.2010",
+  "dscDiscoveryYear": "1992",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "122",
+  "dscNpdidDiscovery": "44918",
+  "fldNpdidField": "18212090",
+  "wlbNpdidWellbore": "1840",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44918",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=18212090"
+}

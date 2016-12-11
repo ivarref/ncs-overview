@@ -1,0 +1,19 @@
+{
+  "dscName": "6608/10-12 SKULD",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "6608/10-12",
+  "nmaName": "Norwegian sea",
+  "fldName": "SKULD",
+  "dscDateFromInclInField": "20.01.2012",
+  "dscDiscoveryYear": "2008",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "128",
+  "dscNpdidDiscovery": "5818165",
+  "fldNpdidField": "21350124",
+  "wlbNpdidWellbore": "5949",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=5818165",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=21350124"
+}

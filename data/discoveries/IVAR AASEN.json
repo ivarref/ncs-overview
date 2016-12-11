@@ -1,0 +1,19 @@
+{
+  "dscName": "16/1-9 IVAR AASEN",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "OIL",
+  "wlbName": "16/1-9",
+  "nmaName": "North sea",
+  "fldName": "IVAR AASEN",
+  "dscDateFromInclInField": "21.05.2013",
+  "dscDiscoveryYear": "2008",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "IVAR AASEN UNIT",
+  "dscNpdidDiscovery": "4972697",
+  "fldNpdidField": "23384520",
+  "wlbNpdidWellbore": "5773",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=4972697",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=23384520"
+}

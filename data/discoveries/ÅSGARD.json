@@ -1,0 +1,19 @@
+{
+  "dscName": "6507/11-1 MIDGARD",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "6507/11-1",
+  "nmaName": "Norwegian sea",
+  "fldName": "\u00c5SGARD",
+  "dscDateFromInclInField": "14.06.1996",
+  "dscDiscoveryYear": "1981",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "\u00c5SGARD UNIT",
+  "dscNpdidDiscovery": "44912",
+  "fldNpdidField": "43765",
+  "wlbNpdidWellbore": "68",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44912",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43765"
+}

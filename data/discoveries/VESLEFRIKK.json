@@ -1,0 +1,19 @@
+{
+  "dscName": "30/3-2  VESLEFRIKK",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "30/3-2 R",
+  "nmaName": "North sea",
+  "fldName": "VESLEFRIKK",
+  "dscDateFromInclInField": "02.06.1987",
+  "dscDiscoveryYear": "1981",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "052",
+  "dscNpdidDiscovery": "44378",
+  "fldNpdidField": "43618",
+  "wlbNpdidWellbore": "508",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44378",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43618"
+}

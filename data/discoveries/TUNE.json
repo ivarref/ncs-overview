@@ -1,0 +1,19 @@
+{
+  "dscName": "30/8-1 S TUNE",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "30/8-1 S",
+  "nmaName": "North sea",
+  "fldName": "TUNE",
+  "dscDateFromInclInField": "17.12.1999",
+  "dscDiscoveryYear": "1995",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "190",
+  "dscNpdidDiscovery": "44456",
+  "fldNpdidField": "853376",
+  "wlbNpdidWellbore": "2430",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44456",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=853376"
+}

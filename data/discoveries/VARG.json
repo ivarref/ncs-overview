@@ -1,0 +1,19 @@
+{
+  "dscName": "15/12-4 VARG",
+  "cmpLongName": "Repsol Norge AS",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "OIL",
+  "wlbName": "15/12-4",
+  "nmaName": "North sea",
+  "fldName": "VARG",
+  "dscDateFromInclInField": "03.05.1996",
+  "dscDiscoveryYear": "1984",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "038",
+  "dscNpdidDiscovery": "43868",
+  "fldNpdidField": "43451",
+  "wlbNpdidWellbore": "438",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43868",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43451"
+}

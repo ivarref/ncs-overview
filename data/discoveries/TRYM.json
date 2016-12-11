@@ -1,0 +1,19 @@
+{
+  "dscName": "3/7-4 TRYM",
+  "cmpLongName": "DONG E&P Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "3/7-4",
+  "nmaName": "North sea",
+  "fldName": "TRYM",
+  "dscDateFromInclInField": "26.03.2010",
+  "dscDiscoveryYear": "1990",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "147",
+  "dscNpdidDiscovery": "44354",
+  "fldNpdidField": "18081500",
+  "wlbNpdidWellbore": "1467",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44354",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=18081500"
+}

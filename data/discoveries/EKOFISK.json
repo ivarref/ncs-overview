@@ -1,0 +1,19 @@
+{
+  "dscName": "2/4-2 EKOFISK",
+  "cmpLongName": "ConocoPhillips Skandinavia AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "2/4-2",
+  "nmaName": "North sea",
+  "fldName": "EKOFISK",
+  "dscDateFromInclInField": "01.03.1972",
+  "dscDiscoveryYear": "1969",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "018",
+  "dscNpdidDiscovery": "44072",
+  "fldNpdidField": "43506",
+  "wlbNpdidWellbore": "172",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44072",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43506"
+}

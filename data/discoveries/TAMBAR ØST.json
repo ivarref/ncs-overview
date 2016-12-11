@@ -1,0 +1,19 @@
+{
+  "dscName": "1/3-K-5 TAMBAR \u00d8ST",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "1/3-K-5",
+  "nmaName": "North sea",
+  "fldName": "TAMBAR \u00d8ST",
+  "dscDateFromInclInField": "28.06.2007",
+  "dscDiscoveryYear": "2007",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "TAMBAR \u00d8ST UNIT",
+  "dscNpdidDiscovery": "4999519",
+  "fldNpdidField": "4999528",
+  "wlbNpdidWellbore": "5485",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=4999519",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4999528"
+}

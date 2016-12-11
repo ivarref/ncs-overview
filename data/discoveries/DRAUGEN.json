@@ -1,0 +1,19 @@
+{
+  "dscName": "6407/9-1 DRAUGEN",
+  "cmpLongName": "A/S Norske Shell",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "6407/9-1",
+  "nmaName": "Norwegian sea",
+  "fldName": "DRAUGEN",
+  "dscDateFromInclInField": "19.12.1988",
+  "dscDiscoveryYear": "1984",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "093",
+  "dscNpdidDiscovery": "44888",
+  "fldNpdidField": "43758",
+  "wlbNpdidWellbore": "133",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44888",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43758"
+}

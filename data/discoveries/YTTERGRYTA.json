@@ -1,0 +1,19 @@
+{
+  "dscName": "6507/11-8",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "GAS",
+  "wlbName": "6507/11-8",
+  "nmaName": "Norwegian sea",
+  "fldName": "YTTERGRYTA",
+  "dscDateFromInclInField": "21.05.2008",
+  "dscDiscoveryYear": "2007",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "062",
+  "dscNpdidDiscovery": "4475288",
+  "fldNpdidField": "4973114",
+  "wlbNpdidWellbore": "5562",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=4475288",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4973114"
+}

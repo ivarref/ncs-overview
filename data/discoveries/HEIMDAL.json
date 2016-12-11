@@ -1,0 +1,19 @@
+{
+  "dscName": "25/4-1 HEIMDAL",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS",
+  "wlbName": "25/4-1",
+  "nmaName": "North sea",
+  "fldName": "HEIMDAL",
+  "dscDateFromInclInField": "10.06.1981",
+  "dscDiscoveryYear": "1972",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "036 BS",
+  "dscNpdidDiscovery": "44252",
+  "fldNpdidField": "43590",
+  "wlbNpdidWellbore": "359",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44252",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43590"
+}

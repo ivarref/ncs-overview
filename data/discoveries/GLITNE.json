@@ -1,0 +1,19 @@
+{
+  "dscName": "15/5-5 GLITNE",
+  "cmpLongName": "",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "OIL",
+  "wlbName": "15/5-5",
+  "nmaName": "North sea",
+  "fldName": "GLITNE",
+  "dscDateFromInclInField": "08.09.2000",
+  "dscDiscoveryYear": "1995",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "",
+  "dscOwnerName": "",
+  "dscNpdidDiscovery": "43904",
+  "fldNpdidField": "1272071",
+  "wlbNpdidWellbore": "2635",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43904",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1272071"
+}

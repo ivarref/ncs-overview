@@ -1,0 +1,19 @@
+{
+  "dscName": "2/11-2 HOD",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "2/11-2",
+  "nmaName": "North sea",
+  "fldName": "HOD",
+  "dscDateFromInclInField": "26.06.1988",
+  "dscDiscoveryYear": "1974",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "033",
+  "dscNpdidDiscovery": "44000",
+  "fldNpdidField": "43485",
+  "wlbNpdidWellbore": "285",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44000",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43485"
+}

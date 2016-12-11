@@ -1,0 +1,19 @@
+{
+  "dscName": "15/5 ENOCH/SELE",
+  "cmpLongName": "Talisman Sinopec North Sea Limited",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "?",
+  "nmaName": "North sea",
+  "fldName": "ENOCH",
+  "dscDateFromInclInField": "01.07.2005",
+  "dscDiscoveryYear": "1991",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "ENOCH UNIT",
+  "dscNpdidDiscovery": "48253",
+  "fldNpdidField": "3437659",
+  "wlbNpdidWellbore": "0",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=48253",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=3437659"
+}

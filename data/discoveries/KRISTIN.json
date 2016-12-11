@@ -1,0 +1,19 @@
+{
+  "dscName": "6406/2-3 KRISTIN",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "6406/2-3",
+  "nmaName": "Norwegian sea",
+  "fldName": "KRISTIN",
+  "dscDateFromInclInField": "17.12.2001",
+  "dscDiscoveryYear": "1997",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "HALTENBANKEN VEST UNIT",
+  "dscNpdidDiscovery": "44840",
+  "fldNpdidField": "1854729",
+  "wlbNpdidWellbore": "2849",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44840",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1854729"
+}

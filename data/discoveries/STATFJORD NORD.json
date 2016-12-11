@@ -1,0 +1,19 @@
+{
+  "dscName": "33/9-8 STATFJORD NORD",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "33/9-8",
+  "nmaName": "North sea",
+  "fldName": "STATFJORD NORD",
+  "dscDateFromInclInField": "11.12.1990",
+  "dscDiscoveryYear": "1977",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "037",
+  "dscNpdidDiscovery": "44588",
+  "fldNpdidField": "43679",
+  "wlbNpdidWellbore": "413",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44588",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43679"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "25/4-6 S VALE",
+  "cmpLongName": "Centrica Resources (Norge) AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "25/4-6 S",
+  "nmaName": "North sea",
+  "fldName": "VALE",
+  "dscDateFromInclInField": "23.03.2001",
+  "dscDiscoveryYear": "1991",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "036",
+  "dscNpdidDiscovery": "44258",
+  "fldNpdidField": "1578893",
+  "wlbNpdidWellbore": "1703",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44258",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1578893"
+}

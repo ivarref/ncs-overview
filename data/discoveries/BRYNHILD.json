@@ -1,0 +1,19 @@
+{
+  "dscName": "7/7-2 BRYNHILD",
+  "cmpLongName": "Lundin Norway AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "7/7-2",
+  "nmaName": "North sea",
+  "fldName": "BRYNHILD",
+  "dscDateFromInclInField": "11.11.2011",
+  "dscDiscoveryYear": "1992",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "148",
+  "dscNpdidDiscovery": "44984",
+  "fldNpdidField": "21123063",
+  "wlbNpdidWellbore": "1868",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44984",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=21123063"
+}

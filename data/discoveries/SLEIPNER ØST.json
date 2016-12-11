@@ -1,0 +1,19 @@
+{
+  "dscName": "15/9-9 SLEIPNER \u00d8ST",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "15/9-9",
+  "nmaName": "North sea",
+  "fldName": "SLEIPNER \u00d8ST",
+  "dscDateFromInclInField": "15.12.1986",
+  "dscDiscoveryYear": "1981",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "SLEIPNER \u00d8ST UNIT",
+  "dscNpdidDiscovery": "43946",
+  "fldNpdidField": "43478",
+  "wlbNpdidWellbore": "328",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43946",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43478"
+}

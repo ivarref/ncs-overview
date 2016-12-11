@@ -1,0 +1,19 @@
+{
+  "dscName": "9/2-1 YME",
+  "cmpLongName": "Repsol Norge AS",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "OIL",
+  "wlbName": "9/2-1",
+  "nmaName": "North sea",
+  "fldName": "YME",
+  "dscDateFromInclInField": "06.01.1995",
+  "dscDiscoveryYear": "1987",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "316",
+  "dscNpdidDiscovery": "45098",
+  "fldNpdidField": "43807",
+  "wlbNpdidWellbore": "1038",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=45098",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43807"
+}

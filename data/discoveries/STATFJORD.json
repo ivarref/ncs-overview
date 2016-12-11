@@ -1,0 +1,19 @@
+{
+  "dscName": "33/12-1 STATFJORD",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "33/12-1",
+  "nmaName": "North sea",
+  "fldName": "STATFJORD",
+  "dscDateFromInclInField": "16.06.1976",
+  "dscDiscoveryYear": "1974",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "STATFJORD UNIT",
+  "dscNpdidDiscovery": "44558",
+  "fldNpdidField": "43658",
+  "wlbNpdidWellbore": "417",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44558",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43658"
+}

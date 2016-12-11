@@ -1,0 +1,19 @@
+{
+  "dscName": "30/2-1 HULDRA",
+  "cmpLongName": "",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "30/2-1",
+  "nmaName": "North sea",
+  "fldName": "HULDRA",
+  "dscDateFromInclInField": "02.02.1999",
+  "dscDiscoveryYear": "1982",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "",
+  "dscOwnerName": "",
+  "dscNpdidDiscovery": "44372",
+  "fldNpdidField": "97002",
+  "wlbNpdidWellbore": "72",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44372",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=97002"
+}

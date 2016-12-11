@@ -1,0 +1,19 @@
+{
+  "dscName": "35/11-15 S FRAM H-NORD",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "35/11-15 S",
+  "nmaName": "North sea",
+  "fldName": "FRAM H-NORD",
+  "dscDateFromInclInField": "07.06.2013",
+  "dscDiscoveryYear": "2007",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "FRAM H-NORD UNIT",
+  "dscNpdidDiscovery": "4475297",
+  "fldNpdidField": "23410947",
+  "wlbNpdidWellbore": "5517",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=4475297",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=23410947"
+}

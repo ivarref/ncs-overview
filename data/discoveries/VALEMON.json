@@ -1,0 +1,19 @@
+{
+  "dscName": "34/10-23 VALEMON",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "34/10-23",
+  "nmaName": "North sea",
+  "fldName": "VALEMON",
+  "dscDateFromInclInField": "09.06.2011",
+  "dscDiscoveryYear": "1985",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "VALEMON UNIT",
+  "dscNpdidDiscovery": "44618",
+  "fldNpdidField": "20460969",
+  "wlbNpdidWellbore": "476",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44618",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=20460969"
+}

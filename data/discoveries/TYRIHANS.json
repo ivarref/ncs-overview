@@ -1,0 +1,19 @@
+{
+  "dscName": "6407/1-2 TYRIHANS S\u00d8R",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "6407/1-2",
+  "nmaName": "Norwegian sea",
+  "fldName": "TYRIHANS",
+  "dscDateFromInclInField": "16.02.2006",
+  "dscDiscoveryYear": "1983",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "TYRIHANS UNIT",
+  "dscNpdidDiscovery": "44852",
+  "fldNpdidField": "3960848",
+  "wlbNpdidWellbore": "61",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44852",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=3960848"
+}

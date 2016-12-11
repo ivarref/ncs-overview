@@ -1,0 +1,19 @@
+{
+  "dscName": "7121/4-1 SN\u00d8HVIT",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "7121/4-1",
+  "nmaName": "Barents sea",
+  "fldName": "SN\u00d8HVIT",
+  "dscDateFromInclInField": "07.03.2002",
+  "dscDiscoveryYear": "1984",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "SN\u00d8HVIT UNIT",
+  "dscNpdidDiscovery": "45038",
+  "fldNpdidField": "2053062",
+  "wlbNpdidWellbore": "135",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=45038",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=2053062"
+}

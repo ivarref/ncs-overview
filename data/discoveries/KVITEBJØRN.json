@@ -1,0 +1,19 @@
+{
+  "dscName": "34/11-1 KVITEBJ\u00d8RN",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "34/11-1",
+  "nmaName": "North sea",
+  "fldName": "KVITEBJ\u00d8RN",
+  "dscDateFromInclInField": "14.06.2000",
+  "dscDiscoveryYear": "1994",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "193",
+  "dscNpdidDiscovery": "44642",
+  "fldNpdidField": "1036101",
+  "wlbNpdidWellbore": "2377",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44642",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1036101"
+}

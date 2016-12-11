@@ -1,0 +1,19 @@
+{
+  "dscName": "7122/7-1 GOLIAT",
+  "cmpLongName": "Eni Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "7122/7-1",
+  "nmaName": "Barents sea",
+  "fldName": "GOLIAT",
+  "dscDateFromInclInField": "18.06.2009",
+  "dscDiscoveryYear": "2000",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "229",
+  "dscNpdidDiscovery": "1340775",
+  "fldNpdidField": "5774394",
+  "wlbNpdidWellbore": "4173",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=1340775",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=5774394"
+}

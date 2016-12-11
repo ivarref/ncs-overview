@@ -1,0 +1,19 @@
+{
+  "dscName": "29/6 ISLAY",
+  "cmpLongName": "Total E&P UK Ltd",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS",
+  "wlbName": "?",
+  "nmaName": "North sea",
+  "fldName": "ISLAY",
+  "dscDateFromInclInField": "05.07.2010",
+  "dscDiscoveryYear": "2008",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "ISLAY UNIT",
+  "dscNpdidDiscovery": "21104520",
+  "fldNpdidField": "21105675",
+  "wlbNpdidWellbore": "0",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=21104520",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=21105675"
+}

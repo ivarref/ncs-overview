@@ -1,0 +1,19 @@
+{
+  "dscName": "7/11-1 COD",
+  "cmpLongName": "ConocoPhillips Skandinavia AS",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "7/11-1",
+  "nmaName": "North sea",
+  "fldName": "COD",
+  "dscDateFromInclInField": "04.05.1973",
+  "dscDiscoveryYear": "1968",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "018",
+  "dscNpdidDiscovery": "44960",
+  "fldNpdidField": "43785",
+  "wlbNpdidWellbore": "149",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44960",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43785"
+}

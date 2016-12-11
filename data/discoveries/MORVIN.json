@@ -1,0 +1,19 @@
+{
+  "dscName": "6506/11-7 MORVIN",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "6506/11-7",
+  "nmaName": "Norwegian sea",
+  "fldName": "MORVIN",
+  "dscDateFromInclInField": "25.04.2008",
+  "dscDiscoveryYear": "2001",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "134 B",
+  "dscNpdidDiscovery": "1630175",
+  "fldNpdidField": "4966234",
+  "wlbNpdidWellbore": "3322",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=1630175",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4966234"
+}

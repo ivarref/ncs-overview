@@ -1,0 +1,19 @@
+{
+  "dscName": "24/9-9 S B\u00d8YLA",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "24/9-9 S",
+  "nmaName": "North sea",
+  "fldName": "B\u00d8YLA",
+  "dscDateFromInclInField": "26.10.2012",
+  "dscDiscoveryYear": "2009",
+  "dscResInclInDiscoveryName": "24/9-9 S B\u00d8YLA",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "340",
+  "dscNpdidDiscovery": "17237206",
+  "fldNpdidField": "22492497",
+  "wlbNpdidWellbore": "6222",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=17237206",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=22492497"
+}

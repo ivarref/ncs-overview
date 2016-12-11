@@ -1,0 +1,19 @@
+{
+  "dscName": "16/7-4 SIGYN",
+  "cmpLongName": "ExxonMobil Exploration and Production Norway AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "16/7-4",
+  "nmaName": "North sea",
+  "fldName": "SIGYN",
+  "dscDateFromInclInField": "31.08.2001",
+  "dscDiscoveryYear": "1982",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "072",
+  "dscNpdidDiscovery": "45625",
+  "fldNpdidField": "1630100",
+  "wlbNpdidWellbore": "91",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=45625",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1630100"
+}

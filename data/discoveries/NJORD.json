@@ -1,0 +1,19 @@
+{
+  "dscName": "6407/7-1 S NJORD",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "6407/7-1 S",
+  "nmaName": "Norwegian sea",
+  "fldName": "NJORD",
+  "dscDateFromInclInField": "12.06.1995",
+  "dscDiscoveryYear": "1986",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "NJORD UNIT",
+  "dscNpdidDiscovery": "44876",
+  "fldNpdidField": "43751",
+  "wlbNpdidWellbore": "474",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44876",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43751"
+}

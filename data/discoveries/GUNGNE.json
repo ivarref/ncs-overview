@@ -1,0 +1,19 @@
+{
+  "dscName": "15/9-15 GUNGNE",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS",
+  "wlbName": "15/9-15",
+  "nmaName": "North sea",
+  "fldName": "GUNGNE",
+  "dscDateFromInclInField": "29.08.1995",
+  "dscDiscoveryYear": "1982",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "046",
+  "dscNpdidDiscovery": "43922",
+  "fldNpdidField": "43464",
+  "wlbNpdidWellbore": "74",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43922",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43464"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "34/7-12 TORDIS",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "34/7-12",
+  "nmaName": "North sea",
+  "fldName": "TORDIS",
+  "dscDateFromInclInField": "14.05.1991",
+  "dscDiscoveryYear": "1987",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "089",
+  "dscNpdidDiscovery": "44666",
+  "fldNpdidField": "43725",
+  "wlbNpdidWellbore": "1187",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44666",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43725"
+}

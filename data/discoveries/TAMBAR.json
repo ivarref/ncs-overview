@@ -1,0 +1,19 @@
+{
+  "dscName": "1/3-3 TAMBAR",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "1/3-3",
+  "nmaName": "North sea",
+  "fldName": "TAMBAR",
+  "dscDateFromInclInField": "10.04.2000",
+  "dscDiscoveryYear": "1983",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "065",
+  "dscNpdidDiscovery": "43826",
+  "fldNpdidField": "1028599",
+  "wlbNpdidWellbore": "87",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43826",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1028599"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "25/1-4 NORD\u00d8ST FRIGG",
+  "cmpLongName": "",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "GAS",
+  "wlbName": "25/1-4",
+  "nmaName": "North sea",
+  "fldName": "NORD\u00d8ST FRIGG",
+  "dscDateFromInclInField": "12.09.1980",
+  "dscDiscoveryYear": "1974",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "",
+  "dscOwnerName": "",
+  "dscNpdidDiscovery": "44228",
+  "fldNpdidField": "43568",
+  "wlbNpdidWellbore": "350",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44228",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43568"
+}

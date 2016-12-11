@@ -1,0 +1,19 @@
+{
+  "dscName": "25/5-3 SKIRNE",
+  "cmpLongName": "Total E&P Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "25/5-3",
+  "nmaName": "North sea",
+  "fldName": "SKIRNE",
+  "dscDateFromInclInField": "05.07.2002",
+  "dscDiscoveryYear": "1990",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "102",
+  "dscNpdidDiscovery": "44270",
+  "fldNpdidField": "2138816",
+  "wlbNpdidWellbore": "1488",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44270",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=2138816"
+}

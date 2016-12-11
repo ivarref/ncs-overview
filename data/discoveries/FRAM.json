@@ -1,0 +1,19 @@
+{
+  "dscName": "35/11-4 FRAM",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "35/11-4",
+  "nmaName": "North sea",
+  "fldName": "FRAM",
+  "dscDateFromInclInField": "23.03.2001",
+  "dscDiscoveryYear": "1990",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "090",
+  "dscNpdidDiscovery": "44750",
+  "fldNpdidField": "1578840",
+  "wlbNpdidWellbore": "1523",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44750",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1578840"
+}

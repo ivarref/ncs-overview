@@ -1,0 +1,19 @@
+{
+  "dscName": "25/5-7 ATLA",
+  "cmpLongName": "Total E&P Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "25/5-7",
+  "nmaName": "North sea",
+  "fldName": "ATLA",
+  "dscDateFromInclInField": "04.11.2011",
+  "dscDiscoveryYear": "2010",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "102 C",
+  "dscNpdidDiscovery": "18404420",
+  "fldNpdidField": "21106284",
+  "wlbNpdidWellbore": "6423",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=18404420",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=21106284"
+}

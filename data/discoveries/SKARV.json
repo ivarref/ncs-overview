@@ -1,0 +1,19 @@
+{
+  "dscName": "6507/5-1 SKARV",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "6507/5-1",
+  "nmaName": "Norwegian sea",
+  "fldName": "SKARV",
+  "dscDateFromInclInField": "18.12.2007",
+  "dscDiscoveryYear": "1998",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "SKARV UNIT",
+  "dscNpdidDiscovery": "45801",
+  "fldNpdidField": "4704482",
+  "wlbNpdidWellbore": "3683",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=45801",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4704482"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "2/7-4 EDDA",
+  "cmpLongName": "ConocoPhillips Skandinavia AS",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "OIL",
+  "wlbName": "2/7-4",
+  "nmaName": "North sea",
+  "fldName": "EDDA",
+  "dscDateFromInclInField": "25.04.1975",
+  "dscDiscoveryYear": "1972",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "018",
+  "dscNpdidDiscovery": "44150",
+  "fldNpdidField": "43541",
+  "wlbNpdidWellbore": "263",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44150",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43541"
+}

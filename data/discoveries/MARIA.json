@@ -1,0 +1,19 @@
+{
+  "dscName": "6406/3-8 MARIA",
+  "cmpLongName": "Wintershall Norge AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "6406/3-8",
+  "nmaName": "Norwegian sea",
+  "fldName": "MARIA",
+  "dscDateFromInclInField": "04.09.2015",
+  "dscDiscoveryYear": "2010",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "475 BS",
+  "dscNpdidDiscovery": "18212080",
+  "fldNpdidField": "26465170",
+  "wlbNpdidWellbore": "6350",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=18212080",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=26465170"
+}

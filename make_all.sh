@@ -13,6 +13,7 @@ mkdir img/
 ./generate.py
 ./generate_reserves.py
 ./split_monthly_production.py
+./split_discoveries.py
 ./overview.py > README.md
 ./make_screens.sh
 

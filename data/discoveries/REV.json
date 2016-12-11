@@ -1,0 +1,19 @@
+{
+  "dscName": "15/12-12 REV",
+  "cmpLongName": "Repsol Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "15/12-12",
+  "nmaName": "North sea",
+  "fldName": "REV",
+  "dscDateFromInclInField": "15.06.2007",
+  "dscDiscoveryYear": "2001",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "038 C",
+  "dscNpdidDiscovery": "1626017",
+  "fldNpdidField": "4467554",
+  "wlbNpdidWellbore": "3391",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=1626017",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4467554"
+}

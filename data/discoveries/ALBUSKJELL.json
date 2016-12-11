@@ -1,0 +1,19 @@
+{
+  "dscName": "1/6-1 ALBUSKJELL",
+  "cmpLongName": "ConocoPhillips Skandinavia AS",
+  "dscCurrentActivityStatus": "Shut down",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "1/6-1",
+  "nmaName": "North sea",
+  "fldName": "ALBUSKJELL",
+  "dscDateFromInclInField": "25.04.1975",
+  "dscDiscoveryYear": "1972",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "018",
+  "dscNpdidDiscovery": "43844",
+  "fldNpdidField": "43437",
+  "wlbNpdidWellbore": "239",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43844",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43437"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "34/4-1 SNORRE",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "34/4-1",
+  "nmaName": "North sea",
+  "fldName": "SNORRE",
+  "dscDateFromInclInField": "27.05.1988",
+  "dscDiscoveryYear": "1979",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "SNORRE UNIT",
+  "dscNpdidDiscovery": "44654",
+  "fldNpdidField": "43718",
+  "wlbNpdidWellbore": "422",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44654",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43718"
+}

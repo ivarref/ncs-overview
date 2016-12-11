@@ -1,0 +1,19 @@
+{
+  "dscName": "6305/5-1 ORMEN LANGE",
+  "cmpLongName": "A/S Norske Shell",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS",
+  "wlbName": "6305/5-1",
+  "nmaName": "Norwegian sea",
+  "fldName": "ORMEN LANGE",
+  "dscDateFromInclInField": "02.04.2004",
+  "dscDiscoveryYear": "1997",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "ORMEN LANGE UNIT",
+  "dscNpdidDiscovery": "44822",
+  "fldNpdidField": "2762452",
+  "wlbNpdidWellbore": "3144",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44822",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=2762452"
+}

@@ -1,0 +1,19 @@
+{
+  "dscName": "34/10-48 S GIMLE",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "34/10-48 S",
+  "nmaName": "North sea",
+  "fldName": "GIMLE",
+  "dscDateFromInclInField": "18.05.2006",
+  "dscDiscoveryYear": "2004",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "GIMLE UNIT",
+  "dscNpdidDiscovery": "3000688",
+  "fldNpdidField": "4005142",
+  "wlbNpdidWellbore": "4902",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=3000688",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4005142"
+}

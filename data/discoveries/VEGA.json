@@ -1,0 +1,19 @@
+{
+  "dscName": "35/8-1 VEGA",
+  "cmpLongName": "Wintershall Norge AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "GAS/CONDENSATE",
+  "wlbName": "35/8-1",
+  "nmaName": "North sea",
+  "fldName": "VEGA",
+  "dscDateFromInclInField": "14.06.2007",
+  "dscDiscoveryYear": "1981",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "VEGA UNIT",
+  "dscNpdidDiscovery": "44774",
+  "fldNpdidField": "4467595",
+  "wlbNpdidWellbore": "205",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44774",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4467595"
+}

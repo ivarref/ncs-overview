@@ -1,0 +1,19 @@
+{
+  "dscName": "7/12-2 ULA",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "7/12-2",
+  "nmaName": "North sea",
+  "fldName": "ULA",
+  "dscDateFromInclInField": "30.05.1980",
+  "dscDiscoveryYear": "1976",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "019",
+  "dscNpdidDiscovery": "44972",
+  "fldNpdidField": "43800",
+  "wlbNpdidWellbore": "295",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44972",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43800"
+}

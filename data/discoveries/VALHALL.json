@@ -1,0 +1,19 @@
+{
+  "dscName": "2/8-6 VALHALL",
+  "cmpLongName": "Aker BP ASA",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL",
+  "wlbName": "2/8-6",
+  "nmaName": "North sea",
+  "fldName": "VALHALL",
+  "dscDateFromInclInField": "02.06.1977",
+  "dscDiscoveryYear": "1975",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "VALHALL UNIT",
+  "dscNpdidDiscovery": "44162",
+  "fldNpdidField": "43548",
+  "wlbNpdidWellbore": "276",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44162",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43548"
+}

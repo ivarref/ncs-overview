@@ -1,0 +1,19 @@
+{
+  "dscName": "30/6-1 OSEBERG",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Producing",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "30/6-1",
+  "nmaName": "North sea",
+  "fldName": "OSEBERG",
+  "dscDateFromInclInField": "05.06.1984",
+  "dscDiscoveryYear": "1979",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "OSEBERG AREA UNIT",
+  "dscNpdidDiscovery": "44396",
+  "fldNpdidField": "43625",
+  "wlbNpdidWellbore": "380",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44396",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43625"
+}
