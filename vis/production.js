@@ -129,7 +129,7 @@ function show_resource(resource, group, unit, file) {
 var m = {
     oil: {
         title: 'oljeproduksjon',
-        unit: 'Millionar fat/dag',
+        unit: 'Millionar fat olje/dag',
         group: 'funntiår',
         filename: '/data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
         screenshot: 'oil_production_yearly_12MMA_by_discovery_decade.png'
@@ -150,7 +150,7 @@ var m = {
     },
     oil_region: {
         title: 'oljeproduksjon',
-        unit: 'Millionar fat/dag',
+        unit: 'Millionar fat olje/dag',
         group: 'region',
         filename: '/data/region/oil_production_yearly_12MMA_mboe_d_by_region.csv',
         screenshot: 'oil_production_yearly_12MMA_by_region.png'

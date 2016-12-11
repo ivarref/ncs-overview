@@ -146,7 +146,7 @@ function show_resource(unit_key, resource, group, unit, file) {
 var m = {
   oil: {
     title: 'Olje',
-    unit: 'Milliardar fat',
+    unit: 'Milliardar fat olje',
     unit_key: 'Oil',
     group: 'funntiår',
     filename: '/data/decade/reserves_gboe_by_decade.csv',
@@ -170,7 +170,7 @@ var m = {
   },
   oil_region: {
     title: 'Olje',
-    unit: 'Milliardar fat',
+    unit: 'Milliardar fat olje',
     unit_key: 'Oil',
     group: 'region',
     filename: '/data/region/reserves_gboe_by_region.csv',
