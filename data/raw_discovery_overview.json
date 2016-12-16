@@ -77,7 +77,7 @@
     },
     {
         "dscName": "1/3-6 OSELVAR",
-        "cmpLongName": "DONG E&P Norge AS",
+        "cmpLongName": "Faroe Petroleum Norge AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "1/3-6",
@@ -268,7 +268,7 @@
     {
         "dscName": "15/12-21 (Grevling)",
         "cmpLongName": "Repsol Norge AS",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
         "wlbName": "15/12-21",
         "nmaName": "North sea",
@@ -496,7 +496,7 @@
     {
         "dscName": "15/6-13",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL/GAS",
         "wlbName": "15/6-13",
         "nmaName": "North sea",
@@ -838,7 +838,7 @@
     {
         "dscName": "16/4-6 S (Luno II)",
         "cmpLongName": "Lundin Norway AS",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production in clarification phase",
         "dscHcType": "OIL",
         "wlbName": "16/4-6 S",
         "nmaName": "North sea",
@@ -914,7 +914,7 @@
     {
         "dscName": "17/12-1 VETTE",
         "cmpLongName": "Aker BP ASA",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
         "wlbName": "17/12-1 R",
         "nmaName": "North sea",
@@ -1218,7 +1218,7 @@
     {
         "dscName": "2/4-21 (King Lear)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "2/4-21",
         "nmaName": "North sea",
@@ -1237,7 +1237,7 @@
     {
         "dscName": "2/4-22 S (Romeo)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
         "wlbName": "2/4-22 S",
         "nmaName": "North sea",
@@ -2282,7 +2282,7 @@
     {
         "dscName": "25/8-17 JETTE",
         "cmpLongName": "Aker BP ASA",
-        "dscCurrentActivityStatus": "Producing",
+        "dscCurrentActivityStatus": "Shut down",
         "dscHcType": "OIL",
         "wlbName": "25/8-17",
         "nmaName": "North sea",
@@ -2358,7 +2358,7 @@
     {
         "dscName": "26/10-1 (Zulu \u00d8st)",
         "cmpLongName": "Lundin Norway AS",
-        "dscCurrentActivityStatus": "Production is unlikely",
+        "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "GAS",
         "wlbName": "26/10-1",
         "nmaName": "North sea",
@@ -2414,7 +2414,7 @@
     },
     {
         "dscName": "3/7-4 TRYM",
-        "cmpLongName": "DONG E&P Norge AS",
+        "cmpLongName": "Faroe Petroleum Norge AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "3/7-4",
@@ -2510,7 +2510,7 @@
     {
         "dscName": "30/11-8 S (Krafla)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "OIL",
         "wlbName": "30/11-8 S",
         "nmaName": "North sea",
@@ -2795,7 +2795,7 @@
     {
         "dscName": "30/9-28 S",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "GAS",
         "wlbName": "30/9-28 S",
         "nmaName": "North sea",
@@ -2852,7 +2852,7 @@
     {
         "dscName": "31/2-N-11 H",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Decided for production",
         "dscHcType": "OIL",
         "wlbName": "31/2-N-11 H",
         "nmaName": "North sea",
@@ -2890,7 +2890,7 @@
     {
         "dscName": "31/7-1 (Brasse)",
         "cmpLongName": "Faroe Petroleum Norge AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "OIL/GAS",
         "wlbName": "31/7-1",
         "nmaName": "North sea",
@@ -3232,7 +3232,7 @@
     {
         "dscName": "34/4-10 (Beta Brent)",
         "cmpLongName": "Suncor Energy Norge AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
         "wlbName": "34/4-10 R",
         "nmaName": "North sea",
@@ -3251,7 +3251,7 @@
     {
         "dscName": "34/4-11 (Beta)",
         "cmpLongName": "Suncor Energy Norge AS",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production in clarification phase",
         "dscHcType": "OIL",
         "wlbName": "34/4-11",
         "nmaName": "North sea",
@@ -3327,7 +3327,7 @@
     {
         "dscName": "34/6-2 S (Garantiana)",
         "cmpLongName": "Total E&P Norge AS",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production in clarification phase",
         "dscHcType": "OIL",
         "wlbName": "34/6-2 S",
         "nmaName": "North sea",
@@ -3574,7 +3574,7 @@
     {
         "dscName": "35/11-17 (F-Vest)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "OIL/GAS",
         "wlbName": "35/11-17",
         "nmaName": "North sea",
@@ -4296,7 +4296,7 @@
     {
         "dscName": "6406/2-8 (Imsa S\u00f8r)",
         "cmpLongName": "",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
         "wlbName": "6406/2-8",
         "nmaName": "Norwegian sea",
@@ -4410,7 +4410,7 @@
     {
         "dscName": "6406/6-4 S",
         "cmpLongName": "",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "6406/6-4 S",
         "nmaName": "Norwegian sea",
@@ -4429,7 +4429,7 @@
     {
         "dscName": "6406/9-1 LINNORM",
         "cmpLongName": "A/S Norske Shell",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "GAS",
         "wlbName": "6406/9-1",
         "nmaName": "Norwegian sea",
@@ -4486,7 +4486,7 @@
     {
         "dscName": "6407/1-6 S",
         "cmpLongName": "",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "6407/1-6 S",
         "nmaName": "Norwegian sea",
@@ -4505,7 +4505,7 @@
     {
         "dscName": "6407/1-7",
         "cmpLongName": "",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "6407/1-7",
         "nmaName": "Norwegian sea",
@@ -4619,7 +4619,7 @@
     {
         "dscName": "6407/6-6 MIKKEL S\u00d8R",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production in clarification phase",
+        "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "GAS",
         "wlbName": "6407/6-6",
         "nmaName": "Norwegian sea",
@@ -4809,7 +4809,7 @@
     {
         "dscName": "6407/9-9 (Hasselmus)",
         "cmpLongName": "A/S Norske Shell",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL/GAS",
         "wlbName": "6407/9-9",
         "nmaName": "Norwegian sea",
@@ -5075,7 +5075,7 @@
     {
         "dscName": "6507/3-7 (Idun Nord)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "GAS",
         "wlbName": "6507/3-7",
         "nmaName": "Norwegian sea",
@@ -5094,7 +5094,7 @@
     {
         "dscName": "6507/3-8 (Gj\u00f8k)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production in clarification phase",
         "dscHcType": "GAS",
         "wlbName": "6507/3-8",
         "nmaName": "Norwegian sea",
@@ -5417,7 +5417,7 @@
     {
         "dscName": "6706/12-2 (Snefrid Nord)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production in clarification phase",
         "dscHcType": "OIL/GAS",
         "wlbName": "6706/12-2",
         "nmaName": "Norwegian sea",
@@ -5455,7 +5455,7 @@
     {
         "dscName": "6706/6-1 (Hvitveis)",
         "cmpLongName": "Wintershall Norge AS",
-        "dscCurrentActivityStatus": "Production is unlikely",
+        "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "GAS",
         "wlbName": "6706/6-1",
         "nmaName": "Norwegian sea",
@@ -5759,7 +5759,7 @@
     {
         "dscName": "7120/2-3 S (Skalle)",
         "cmpLongName": "",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS",
         "wlbName": "7120/2-3 S",
         "nmaName": "Barents sea",
@@ -5797,7 +5797,7 @@
     {
         "dscName": "7121/5-2 (Sn\u00f8hvit Beta)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL/GAS",
         "wlbName": "7121/5-2",
         "nmaName": "Barents sea",
@@ -5930,7 +5930,7 @@
     {
         "dscName": "7130/4-1",
         "cmpLongName": "Lundin Norway AS",
-        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS",
         "wlbName": "7130/4-1",
         "nmaName": "Barents sea",
