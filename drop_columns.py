@@ -1,7 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-from __future__ import print_function
 
 import csv
 import os
@@ -15,15 +13,15 @@ if __name__=="__main__":
   if os.path.exists(fil+'.tmp'):
     os.remove(fil+'.tmp')
 
-  with open(fil, 'rb') as fd:
-    with open(fil+'.tmp', 'wb') as wfd:
+  with open(fil, 'r') as fd:
+    with open(fil+'.tmp', 'w') as wfd:
       reader = csv.reader(fd)
       writer = csv.writer(wfd, lineterminator='\n')
       skip_idx = []
       for (idx, row) in enumerate(reader):
         if idx == 0:
           for (col_idx, cell) in enumerate(row):
-            if unicode(cell, 'utf-8') in columns:
+            if cell in columns:
               skip_idx.append(col_idx)
           print("dropping columns indexes", skip_idx)
         row_filtered = [cell for (col_idx, cell) in enumerate(row) if col_idx not in skip_idx]
