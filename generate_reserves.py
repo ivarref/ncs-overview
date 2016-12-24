@@ -28,11 +28,16 @@ if __name__=="__main__":
   # group fields by discovery decade
   decade_to_fields = generate.get_decade_to_fields(generate.get_discovery_years(ids))
   region_to_fields = generate.get_discovery_region_to_fields(ids)
+  millennium_to_fields = generate.get_production_years(get_distinct_fields())
+
   with open('./data/region_to_fields_reserves.json', 'w') as wfd:
     json.dump(region_to_fields, wfd, sort_keys=True, indent=2)
   
   with open('./data/decade_to_fields_reserves.json', 'w') as wfd:
     json.dump(decade_to_fields, wfd, sort_keys=True, indent=2)
+
+  with open('./data/startproduction_to_fields_reserves.json', 'w') as wfd:
+    json.dump(millennium_to_fields, wfd, sort_keys=False, indent=2)
 
 
   print("reserves")
@@ -73,16 +78,23 @@ if __name__=="__main__":
   regions.extend(region_to_fields.items())
   regions.append(('Sum', ids))
 
+  millenniums = []
+  millenniums.extend(millennium_to_fields.items())
+  millenniums.append(('Sum', ids))
+
   write_file(decades, './data/decade/reserves_OEMillSm3_by_decade.csv')
   write_file(regions, './data/region/reserves_OEMillSm3_by_region.csv')
+  write_file(millenniums, './data/region/reserves_OEMillSm3_by_startproduction.csv')
 
   o = sum_entry('Sum', ids)
   def relative(prop, v):
     return "%.2f" % ((100.0*v) / o[prop])
   write_file(decades, './data/decade/reserves_percentage_by_decade.csv', relative)
   write_file(regions, './data/region/reserves_percentage_by_region.csv', relative)
+  write_file(millenniums, './data/region/reserves_percentage_by_startproduction.csv', relative)
 
   def gboe(prop, v):
     return "%.1f" % ((v*6.29) / 1000.0)
   write_file(decades, './data/decade/reserves_gboe_by_decade.csv', gboe)
   write_file(regions, './data/region/reserves_gboe_by_region.csv', gboe)
+  write_file(millenniums, './data/region/reserves_gboe_by_startproduction.csv', gboe)
