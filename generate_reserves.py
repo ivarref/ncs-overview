@@ -1,7 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-from __future__ import print_function
 
 import codecs
 import collections
@@ -16,7 +14,7 @@ import generate
 def get_distinct_fields():
   frame = pd.read_csv('./data/raw_reserves_field.csv')
   ids = frame[u'fldName'].unique()
-  return ids
+  return sorted(ids)
 
 def remaining_reserve(field_id, kind):
   frame = pd.read_csv('./data/raw_reserves_field.csv')
@@ -67,10 +65,12 @@ if __name__=="__main__":
         write(wfd, ",".join([str(x) for x in d.values()]))
     print("-"*80)
 
-  decades = decade_to_fields.items()
+  decades = []
+  decades.extend(decade_to_fields.items())
   decades.append(('Sum', ids))
 
-  regions = region_to_fields.items()
+  regions = []
+  regions.extend(region_to_fields.items())
   regions.append(('Sum', ids))
 
   write_file(decades, './data/decade/reserves_OEMillSm3_by_decade.csv')
