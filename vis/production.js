@@ -154,21 +154,21 @@ var m = {
     oil_startproduction: {
         title: 'oljeproduksjon',
         unit: 'Millionar fat olje/dag',
-        group: 'startproduksjonsår',
+        group: 'startår',
         filename: '/data/millennium/oil_production_yearly_12MMA_mboe_d_by_startproduction.csv',
         screenshot: 'oil_production_yearly_12MMA_by_startproduction.png'
     },
     gas_startproduction: {
         title: 'gassproduksjon',
         unit: 'Millionar fat oljeekvivalentar/dag',
-        group: 'startproduksjonsår',
+        group: 'startår',
         filename: '/data/millennium/gas_production_yearly_12MMA_mboe_d_by_startproduction.csv',
         screenshot: 'gas_production_yearly_12MMA_by_startproduction.png'
     },
     petroleum_startproduction: {
         title: 'petroleumproduksjon',
         unit: 'Millionar fat oljeekvivalentar/dag',
-        group: 'startproduksjonsår',
+        group: 'startår',
         filename: '/data/millennium/oe_production_yearly_12MMA_mboe_d_by_startproduction.csv',
         screenshot: 'oe_production_yearly_12MMA_by_startproduction.png'
     },
