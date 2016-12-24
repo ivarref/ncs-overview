@@ -72,6 +72,9 @@ function show_resource(resource, group, unit, file) {
             g.append("g")
                 .attr("transform", "translate(0," + height + ")")
                 .call(d3.axisBottom(x));
+            // g.append("g")
+            //     .attr("transform", "translate(0," + 0 + ")")
+            //     .call(d3.axisTop(x));
 
             g.append("g")
                 .call(d3.axisLeft(y))
@@ -147,6 +150,27 @@ var m = {
         group: 'funntiår',
         filename: '/data/decade/oil_production_yearly_12MMA_mboe_d_by_discovery_decade.csv',
         screenshot: 'oil_production_yearly_12MMA_by_discovery_decade.png'
+    },
+    oil_startproduction: {
+        title: 'oljeproduksjon',
+        unit: 'Millionar fat olje/dag',
+        group: 'startproduksjonsår',
+        filename: '/data/millennium/oil_production_yearly_12MMA_mboe_d_by_startproduction.csv',
+        screenshot: 'oil_production_yearly_12MMA_by_startproduction.png'
+    },
+    gas_startproduction: {
+        title: 'gassproduksjon',
+        unit: 'Millionar fat oljeekvivalentar/dag',
+        group: 'startproduksjonsår',
+        filename: '/data/millennium/gas_production_yearly_12MMA_mboe_d_by_startproduction.csv',
+        screenshot: 'gas_production_yearly_12MMA_by_startproduction.png'
+    },
+    petroleum_startproduction: {
+        title: 'petroleumproduksjon',
+        unit: 'Millionar fat oljeekvivalentar/dag',
+        group: 'startproduksjonsår',
+        filename: '/data/millennium/oe_production_yearly_12MMA_mboe_d_by_startproduction.csv',
+        screenshot: 'oe_production_yearly_12MMA_by_startproduction.png'
     },
     gas: {
         title: 'gassproduksjon',

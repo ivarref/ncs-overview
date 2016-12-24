@@ -21,6 +21,24 @@ def get_distinct_fields():
   ids = frame[u'prfInformationCarrier'].unique()
   return sorted(ids)
 
+def get_production_years(ids):
+  frame = pd.read_csv('./data/raw_production_monthly_field.csv')
+  res = []
+  before = 'Før 2000'
+  after = 'Etter 2000'
+  d = collections.OrderedDict()
+  d[before] = []
+  d[after] = []
+  for (idx, id) in enumerate(ids):
+    m = frame[frame['prfInformationCarrier'] == id]
+    year = m['prfYear'].min()
+    if year < 2000:
+      yr = before
+    else:
+      yr = after
+    d[yr].append(id)
+  return d
+
 def get_discovery_years(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
   res = []
@@ -62,7 +80,7 @@ def get_decade_to_fields(id_to_year):
     decade_to_fields[decade_of_year(year)].append(id)
   return collections.OrderedDict(sorted([(k, sorted(v)) for (k,v) in decade_to_fields.items()]))
 
-def write_file_for_property(group_to_ids, filename, prop, monthly=False, process = lambda y, x: x):
+def write_file_for_property(group_to_ids, filename, prop, monthly=False, process = lambda y, x: x, should_write = lambda y: True):
   # get all production dates
   df = pd.read_csv('./data/raw_production_monthly_field.csv')
   df['prfMonthStr'] = df['prfMonth'].astype(str)
@@ -115,9 +133,21 @@ def write_file_for_property(group_to_ids, filename, prop, monthly=False, process
 def is_leap(year):
   return ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0)
 
-if __name__=="__main__":
-  print("start generate.py ...")
-  
+def to_mboe_d(year, x):
+  # http://www.npd.no/no/Nyheter/Produksjonstall/2016/Juli-2016/
+  # 1 Sm3 olje ≈ 6,29 fat
+  barrels = x*6.29
+  days = 365.0
+  if is_leap(year):
+    days = 366.0
+  return barrels / days
+
+def generate_decade():
+  try:
+    os.makedirs('data/decade')
+  except:
+    pass
+
   # get distinct field ids
   ids = get_distinct_fields()
   print("number of distinct field ids", len(ids))
@@ -129,21 +159,6 @@ if __name__=="__main__":
   decade_to_fields = get_decade_to_fields(id_to_year)
   with open('./data/decade_to_fields_production.json', 'w') as wfd:
     json.dump(decade_to_fields, wfd, sort_keys=True, indent=2)
-
-
-  def to_mboe_d(year, x):
-    # http://www.npd.no/no/Nyheter/Produksjonstall/2016/Juli-2016/
-    # 1 Sm3 olje ≈ 6,29 fat
-    barrels = x*6.29
-    days = 365.0
-    if is_leap(year):
-      days = 366.0
-    return barrels / days
-
-  try:
-    os.makedirs('data/decade')
-  except:
-    pass
 
   write_file_for_property(decade_to_fields, 'data/decade/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
   write_file_for_property(decade_to_fields, 'data/decade/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
@@ -157,7 +172,8 @@ if __name__=="__main__":
   write_file_for_property(decade_to_fields, 'data/decade/gas_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
   write_file_for_property(decade_to_fields, 'data/decade/oe_production_yearly_12MMA_mboe_d_by_discovery_decade.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
 
-  region_to_fields = get_discovery_region_to_fields(ids)
+def generate_region():
+  region_to_fields = get_discovery_region_to_fields(get_distinct_fields())
   with open('./data/region_to_fields_production.json', 'w') as wfd:
     json.dump(region_to_fields, wfd, sort_keys=True, indent=2)
 
@@ -176,5 +192,22 @@ if __name__=="__main__":
   write_file_for_property(region_to_fields, 'data/region/oil_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
   write_file_for_property(region_to_fields, 'data/region/gas_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
   write_file_for_property(region_to_fields, 'data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
+
+def generate_millennium():
+  millennium_to_fields = get_production_years(get_distinct_fields())
+  try:
+    os.makedirs('data/millennium')
+  except:
+    pass
+  write_file_for_property(millennium_to_fields, 'data/millennium/oil_production_yearly_12MMA_mboe_d_by_startproduction.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d, should_write=lambda y: y>=2000)
+  write_file_for_property(millennium_to_fields, 'data/millennium/gas_production_yearly_12MMA_mboe_d_by_startproduction.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d, should_write=lambda y: y>=2000)
+  write_file_for_property(millennium_to_fields, 'data/millennium/oe_production_yearly_12MMA_mboe_d_by_startproduction.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d, should_write=lambda y: y>=2000)
+
+
+if __name__=="__main__":
+  print("start generate.py ...")
+  generate_decade()
+  generate_region()
+  generate_millennium()
 
   print("exiting generate.py ...")
