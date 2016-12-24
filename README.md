@@ -54,6 +54,27 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 | 2000 | 13,4 | 1,5 | 6,5 |
 | 2010 | 0,0 | 0,5 | 0,3 |
 
+# Oversikt over norsk sokkel etter produksjonsstartår
+
+## Olje
+![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_startproduction.png)
+
+
+![Produsert og reserver](img/oil_produced_reserves_by_startproduction.png)
+
+## Gass
+![Gassproduksjonen](img/gas_production_yearly_12MMA_by_startproduction.png)
+
+
+![Produsert og reserver](img/gas_produced_reserves_by_startproduction.png)
+
+## Petroleum
+![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_startproduction.png)
+
+
+![Produsert og reserver](img/oe_produced_reserves_by_startproduction.png)
+
+
 # Oversikt over norsk sokkel etter region
 
 ## Olje

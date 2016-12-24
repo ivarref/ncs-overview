@@ -99,6 +99,12 @@ if __name__=="__main__":
     show_relative_contribution()
 
     print("")
+    print("# Oversikt over norsk sokkel etter produksjonsstartår\n")
+    short_summary('Olje', 'Oljeproduksjonen', './data/region/oil_production_monthly_12MMA_mboe_d_by_region.csv', 'millionar fat/dag', 'img/oil_production_yearly_12MMA_by_startproduction.png', 'img/oil_produced_reserves_by_startproduction.png', False)
+    short_summary('Gass', 'Gassproduksjonen', './data/region/gas_production_monthly_12MMA_mboe_d_by_region.csv', 'millionar fat oljeekvivalentar/dag', 'img/gas_production_yearly_12MMA_by_startproduction.png', 'img/gas_produced_reserves_by_startproduction.png', False)
+    short_summary('Petroleum', 'Petroleumproduksjonen', './data/region/oe_production_monthly_12MMA_mboe_d_by_region.csv', 'millionar fat oljeekvivalentar/dag', 'img/oe_production_yearly_12MMA_by_startproduction.png', 'img/oe_produced_reserves_by_startproduction.png', False)
+
+    print("")
     print("# Oversikt over norsk sokkel etter region\n")
 
     short_summary('Olje', 'Oljeproduksjonen', './data/region/oil_production_monthly_12MMA_mboe_d_by_region.csv', 'millionar fat/dag', 'img/oil_production_yearly_12MMA_by_region.png', 'img/oil_produced_reserves_by_region.png', False)

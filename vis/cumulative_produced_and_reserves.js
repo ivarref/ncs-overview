@@ -191,7 +191,32 @@ var m = {
     group: 'region',
     filename: '/data/region/reserves_gboe_by_region.csv',
     screenshot: 'oe_produced_reserves_by_region.png'
+  },
+  oil_startproduction: {
+    title: 'Olje',
+    unit: 'Milliardar fat olje',
+    unit_key: 'Oil',
+    group: 'startproduksjonsår',
+    filename: '/data/region/reserves_gboe_by_startproduction.csv',
+    screenshot: 'oil_produced_reserves_by_startproduction.png'
+  },
+  gas_startproduction: {
+    title: 'Gass',
+    unit: 'Milliardar fat oljeekvivalentar',
+    unit_key: 'Gas',
+    group: 'startproduksjonsår',
+    filename: '/data/region/reserves_gboe_by_startproduction.csv',
+    screenshot: 'gas_produced_reserves_by_startproduction.png'
+  },
+  petroleum_startproduction: {
+    title: 'Petroleum',
+    unit: 'Milliardar fat oljeekvivalentar',
+    unit_key: 'OE',
+    group: 'startproduksjonsår',
+    filename: '/data/region/reserves_gboe_by_startproduction.csv',
+    screenshot: 'oe_produced_reserves_by_startproduction.png'
   }
+
 };
 
 var mode = findGetParameter('mode', 'oil_region');
