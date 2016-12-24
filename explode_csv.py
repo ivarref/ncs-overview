@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
@@ -18,16 +18,16 @@ if __name__=="__main__":
   fil = argv[1]
   output = argv[2]
 
-  with open(fil, 'rb') as fd:
+  with open(fil, 'r') as fd:
     reader = csv.reader(fd)
     columns = []
     res = []
     for (row_idx, row) in enumerate(reader):
       if row_idx == 0:
-        w = [unicode(cell, 'utf-8') for cell in row]
+        w = [cell for cell in row]
         columns = w
       else:
-        kv = [(k, unicode(cell, 'utf-8')) for (k, cell) in zip(columns, row)]
+        kv = [(k, cell) for (k, cell) in zip(columns, row)]
         res.append(collections.OrderedDict(kv))
     with open(output, 'wb') as fd:
       if do_module_export:
