@@ -3,7 +3,7 @@ var findGetParameter = require('./findgetparameter.js');
 require('./style.css');
 
 function isGroup(v) {
-    return v!=='Date' && v!=='date' && v!=='Sum';
+    return v !== 'Date' && v !== 'date' && v !== 'Sum';
 }
 
 
@@ -19,7 +19,7 @@ function show_resource(resource, group, unit, file) {
         .attr('width', 960)
         .attr('height', 500);
 
-    var margin = { top: 40, right: 20, bottom: 30, left: 50 },
+    var margin = { top: 40, right: 50, bottom: 30, left: 50 },
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -85,6 +85,20 @@ function show_resource(resource, group, unit, file) {
                 .text(unit);
 
             g.append("g")
+                .attr("transform", "translate(" + width + ",0)")
+                .call(d3.axisRight(y))
+                .append("g")
+                .attr("transform", "translate(0," + (height/2) + ")")
+                .append("text")
+                .attr("fill", "#000")
+                .attr("transform", "rotate(90)")
+                .attr("y", -margin.right + 8)
+                .attr("dy", "0.71em")
+                .style("text-anchor", "middle")
+                .text(unit);
+
+
+            g.append("g")
                 .append("text")
                 .attr('dy', '-.35em')
                 .attr('x', width / 2)
@@ -115,9 +129,9 @@ function show_resource(resource, group, unit, file) {
             var translate = {
                 'Norwegian sea': 'Norskehavet',
                 'North sea': 'Nordsjøen',
-                'Barents sea': 'Barentshavet' 
+                'Barents sea': 'Barentshavet'
             };
-            
+
             legend.append('text')
                 .attr("x", 18 + 4)
                 .attr('y', 9)
