@@ -3,3 +3,4 @@ yarn.lock
 *.pyc
 tmp_data/
 .DS_Store
+notes.txt

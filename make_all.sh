@@ -2,14 +2,18 @@
 
 set -ex
 
-rm -rf data/
-rm -rf img/
-rm -rf tmp_data/
-mkdir data/
-mkdir tmp_data/
-mkdir img/
+mkdir -p data/
+mkdir -p tmp_data/
+mkdir -p img/
 
-./download.sh
+if [[ $1 == "--no-download" ]]; then
+  echo "not downloading ..."
+else
+  rm -rf data/*
+  rm -rf tmp_data/*
+  ./download.sh
+fi
+
 ./generate.py
 ./generate_reserves.py
 ./split_monthly_production.py
