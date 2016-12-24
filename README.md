@@ -51,7 +51,7 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 | 1970 | 34,4 | 39,5 | 36,6 |
 | 1980 | 23,8 | 29,3 | 28,9 |
 | 1990 | 18,8 | 28,4 | 23,4 |
-| 2000 | 13,5 | 1,5 | 6,5 |
+| 2000 | 13,4 | 1,5 | 6,5 |
 | 2010 | 0,0 | 0,5 | 0,3 |
 
 # Oversikt over norsk sokkel etter region
