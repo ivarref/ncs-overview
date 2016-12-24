@@ -1,7 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-from __future__ import print_function
 
 import collections
 import csv
@@ -21,7 +19,7 @@ def npdid_name(id):
 def get_distinct_fields():
   frame = pd.read_csv('./data/raw_production_monthly_field.csv')
   ids = frame[u'prfInformationCarrier'].unique()
-  return ids
+  return sorted(ids)
 
 def get_discovery_years(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
@@ -34,7 +32,7 @@ def get_discovery_years(ids):
       sys.exit(1)
     year = min(years)
     res.append((id, year))
-  return dict(res)
+  return collections.OrderedDict(res)
 
 def get_discovery_region_to_fields(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
@@ -59,10 +57,10 @@ def get_discovery_region_to_fields(ids):
 
 def get_decade_to_fields(id_to_year):
   decade_to_fields = collections.defaultdict(list)
-  decade_of_year = lambda x: x - (x%10)
+  decade_of_year = lambda x: str(x - (x%10))
   for (id, year) in id_to_year.items():
     decade_to_fields[decade_of_year(year)].append(id)
-  return collections.OrderedDict(sorted(decade_to_fields.items()))
+  return collections.OrderedDict(sorted([(k, sorted(v)) for (k,v) in decade_to_fields.items()]))
 
 def write_file_for_property(group_to_ids, filename, prop, monthly=False, process = lambda y, x: x):
   # get all production dates
@@ -75,7 +73,7 @@ def write_file_for_property(group_to_ids, filename, prop, monthly=False, process
   alldates.sort()
 
   prevdates = []
-  with open(filename, 'wb') as csvfile:
+  with open(filename, 'w') as csvfile:
     writer = csv.writer(csvfile)
     header = ['Date']
     header.extend(group_to_ids.keys())
