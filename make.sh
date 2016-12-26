@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./split_monthly_production.py
+./calc_wells.py
 echo "****"
