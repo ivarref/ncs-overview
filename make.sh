@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./calc_wells.py
+./split_wellbores.py
 echo "****"

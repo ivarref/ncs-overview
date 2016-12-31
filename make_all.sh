@@ -12,12 +12,15 @@ else
   rm -rf data/*
   rm -rf tmp_data/*
   ./download.sh
+  ./download_well.sh
 fi
 
 ./generate.py
 ./generate_reserves.py
+./calc_wells.py
 ./split_monthly_production.py
 ./split_discoveries.py
+./split_wellbores.py
 ./overview.py > README.md
 ./make_screens.sh
 
