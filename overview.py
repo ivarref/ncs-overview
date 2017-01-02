@@ -129,9 +129,11 @@ def oversikt_etter_region(remainingField='remainingOil', prefixFilename='oil', r
     Barentshavet %Barents sea%%.
 
     ![Produsert og reserver](img/oil_produced_reserves_by_region.png)
-    Nordsjøen har %North sea reserves% av reservane,
-    Norskehavet %Norwegian sea reserves% og
-    Barentshavet %Barents sea reserves%.
+    Nordsjøen har %North sea reserves% av %resource%reservane.
+
+    Norskehavet har %Norwegian sea reserves% av %resource%reservane.
+    
+    Barentshavet har %Barents sea reserves% av %resource%reservane.
     """)
     .replace('oil', prefixFilename)
     .replace('%resource%', resource)

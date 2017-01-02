@@ -102,9 +102,11 @@ Norskehavet 16% og
 Barentshavet 2%.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_region.png)
-Nordsjøen har 86% (5.5 millionar fat olje) av reservane,
-Norskehavet 12% (0.8 millionar fat olje) og
-Barentshavet 3% (0.2 millionar fat olje).
+Nordsjøen har 86% (5.5 millionar fat olje) av oljereservane.
+
+Norskehavet har 12% (0.8 millionar fat olje) av oljereservane.
+
+Barentshavet har 3% (0.2 millionar fat olje) av oljereservane.
 
 
 ## Gass
@@ -115,9 +117,11 @@ Norskehavet 34% og
 Barentshavet 5%.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_region.png)
-Nordsjøen har 68% (8.0 millionar fat oljeekvivalentar) av reservane,
-Norskehavet 21% (2.4 millionar fat oljeekvivalentar) og
-Barentshavet 10% (1.2 millionar fat oljeekvivalentar).
+Nordsjøen har 68% (8.0 millionar fat oljeekvivalentar) av gassreservane.
+
+Norskehavet har 21% (2.4 millionar fat oljeekvivalentar) av gassreservane.
+
+Barentshavet har 10% (1.2 millionar fat oljeekvivalentar) av gassreservane.
 
 
 ## Petroleum
@@ -128,7 +132,9 @@ Norskehavet 27% og
 Barentshavet 4%.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_region.png)
-Nordsjøen har 73% (14.4 millionar fat oljeekvivalentar) av reservane,
-Norskehavet 19% (3.7 millionar fat oljeekvivalentar) og
-Barentshavet 8% (1.6 millionar fat oljeekvivalentar).
+Nordsjøen har 73% (14.4 millionar fat oljeekvivalentar) av petroleumreservane.
+
+Norskehavet har 19% (3.7 millionar fat oljeekvivalentar) av petroleumreservane.
+
+Barentshavet har 8% (1.6 millionar fat oljeekvivalentar) av petroleumreservane.
 
