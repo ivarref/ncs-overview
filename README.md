@@ -57,23 +57,37 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 # Oversikt over norsk sokkel etter produksjonsstartår
 
 ## Olje
-![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_startproduction.png)
-
+![Produksjon](img/oil_production_yearly_12MMA_by_startproduction.png)
+Felt med produksjonsstart før år 2000 står for 62% av dagens oljeproduksjon.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_startproduction.png)
 
-## Gass
-![Gassproduksjonen](img/gas_production_yearly_12MMA_by_startproduction.png)
+Reservane for felt med produksjonsstart etter år 2000 er på 3,4 milliardar fat olje.
+Johan Sverdrup (med planlagt produksjonsstart i 2019) har 52% av desse (1,8 milliardar fat olje).
+Reservane for felt med produksjonsstart før år 2000 er på 3,0 milliardar fat olje, og
+totalt har desse felta produsert 23,6 milliardar fat olje.
 
+## Gass
+![Produksjon](img/gas_production_yearly_12MMA_by_startproduction.png)
+Felt med produksjonsstart før år 2000 står for 52% av dagens gassproduksjon.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_startproduction.png)
 
-## Petroleum
-![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_startproduction.png)
+Reservane for felt med produksjonsstart etter år 2000 er på 4,1 milliardar fat oljeekvivalentar.
+Johan Sverdrup (med planlagt produksjonsstart i 2019) har 1% av desse (0,1 milliardar fat oljeekvivalentar).
+Reservane for felt med produksjonsstart før år 2000 er på 7,6 milliardar fat oljeekvivalentar, og
+totalt har desse felta produsert 10,5 milliardar fat oljeekvivalentar.
 
+## Petroleum
+![Produksjon](img/oe_production_yearly_12MMA_by_startproduction.png)
+Felt med produksjonsstart før år 2000 står for 56% av dagens petroleumproduksjon.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_startproduction.png)
 
+Reservane for felt med produksjonsstart etter år 2000 er på 8,4 milliardar fat oljeekvivalentar.
+Johan Sverdrup (med planlagt produksjonsstart i 2019) har 22% av desse (1,9 milliardar fat oljeekvivalentar).
+Reservane for felt med produksjonsstart før år 2000 er på 11,3 milliardar fat oljeekvivalentar, og
+totalt har desse felta produsert 36,4 milliardar fat oljeekvivalentar.
 
 # Oversikt over norsk sokkel etter region
 

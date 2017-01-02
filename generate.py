@@ -91,6 +91,7 @@ def write_file_for_property(group_to_ids, filename, prop, monthly=False, process
   alldates.sort()
 
   prevdates = []
+  print('writing file', filename)
   with open(filename, 'w') as csvfile:
     writer = csv.writer(csvfile)
     header = ['Date']
@@ -118,7 +119,7 @@ def write_file_for_property(group_to_ids, filename, prop, monthly=False, process
           fields = months[months['prfInformationCarrier'].isin(group_fields)]
           v = process(year, fields[prop].sum())
           row.append("%g" % (v))
-          print(date, prop, group, v)
+          #print(date, prop, group, v)
         
         months = df[df['prfYearMonth'].isin(prevdates)]
         sum = process(year, months[prop].sum())
