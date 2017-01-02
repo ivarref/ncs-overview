@@ -96,18 +96,19 @@ def oversikt_etter_produksjonsstartår(remainingField='remainingOil', remainingF
 
     ![Produsert og reserver](img/oil_produced_reserves_by_startproduction.png)
 
-    Reservane for felt med produksjonsstart etter år 2000 er på {} milliardar fat %UNIT%.
-    Johan Sverdrup (med planlagt produksjonsstart i 2019) har {}% av desse ({} milliardar fat %UNIT%).
     Reservane for felt med produksjonsstart før år 2000 er på {} milliardar fat %UNIT%, og
     totalt har desse felta produsert {} milliardar fat %UNIT%.
+
+    Reservane for felt med produksjonsstart etter år 2000 er på {} milliardar fat %UNIT%.
+    Johan Sverdrup (med planlagt produksjonsstart i 2019) har {}% av desse ({} milliardar fat %UNIT%).
     """.format(
         ("%.0f" % (før_2000_prosent_produksjon.values[0])).replace(".", ","),
         resource,
-        str(etter_2000_reserves_gb).replace(".", ","),
-        ("%.0f" % ((100.0*sverdrup_reserver_db) / etter_2000_reserves_gb)).replace(".", ","),
-        ("%.1f" % (sverdrup_reserver_db)).replace(".", ","),
         str(før_2000_reserves_gb).replace(".", ","),
         str(før_2000_produsert_gb).replace(".", ","),
+        str(etter_2000_reserves_gb).replace(".", ","),
+        ("%.0f" % ((100.0*sverdrup_reserver_db) / etter_2000_reserves_gb)).replace(".", ","),
+        ("%.1f" % (sverdrup_reserver_db)).replace(".", ",")
     )).strip().replace('oil', prefixFilename).replace('%UNIT%', unit)
     )
 
