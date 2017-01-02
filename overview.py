@@ -112,6 +112,37 @@ def oversikt_etter_produksjonsstartår(remainingField='remainingOil', remainingF
     )).strip().replace('oil', prefixFilename).replace('%UNIT%', unit)
     )
 
+
+def oversikt_etter_region(remainingField='remainingOil', prefixFilename='oil', resource='olje', unit='olje'):
+    last_production = pd.read_csv('./data/region/' + prefixFilename + '_production_yearly_12MMA_mboe_d_by_region.csv').tail(1)
+    regions = ['North sea']
+
+    def reserves(region):
+        frame = pd.read_csv('./data/region/reserves_gboe_by_region.csv')
+        sm = frame[frame['name'] == 'Sum'][remainingField].values[0]
+        region_value = frame[frame['name'] == region][remainingField].values[0]
+        return "%.f%% (%.1f millionar fat %s)" % (region_value*100 / sm, region_value, unit)
+    print(textwrap.dedent("""
+    ![Produksjon](img/oil_production_yearly_12MMA_by_region.png)
+    Nordsjøen står for %North sea%% av %resource%produksjonen,
+    Norskehavet %Norwegian sea%% og
+    Barentshavet %Barents sea%%.
+
+    ![Produsert og reserver](img/oil_produced_reserves_by_region.png)
+    Nordsjøen har %North sea reserves% av reservane,
+    Norskehavet %Norwegian sea reserves% og
+    Barentshavet %Barents sea reserves%.
+    """)
+    .replace('oil', prefixFilename)
+    .replace('%resource%', resource)
+    .replace('%North sea%', "%.0f" % (last_production['North sea']*100.0 / last_production['Sum']).values[0])
+    .replace('%Norwegian sea%', "%.0f" % (last_production['Norwegian sea']*100.0 / last_production['Sum']).values[0])
+    .replace('%Barents sea%', "%.0f" % (last_production['Barents sea']*100.0 / last_production['Sum']).values[0])
+    .replace('%North sea reserves%', reserves('North sea'))
+    .replace('%Norwegian sea reserves%', reserves('Norwegian sea'))
+    .replace('%Barents sea reserves%', reserves('Barents sea'))
+    )
+
 if __name__=="__main__":
     try:
         locale.setlocale(locale.LC_TIME, 'nb_NO.UTF-8') # needed for month formatting (august, juni, etc.)
@@ -143,7 +174,9 @@ if __name__=="__main__":
     
     print("")
     print("# Oversikt over norsk sokkel etter region\n")
-
-    short_summary('Olje', 'Oljeproduksjonen', './data/region/oil_production_monthly_12MMA_mboe_d_by_region.csv', 'millionar fat/dag', 'img/oil_production_yearly_12MMA_by_region.png', 'img/oil_produced_reserves_by_region.png', False)
-    short_summary('Gass', 'Gassproduksjonen', './data/region/gas_production_monthly_12MMA_mboe_d_by_region.csv', 'millionar fat oljeekvivalentar/dag', 'img/gas_production_yearly_12MMA_by_region.png', 'img/gas_produced_reserves_by_region.png', False)
-    short_summary('Petroleum', 'Petroleumproduksjonen', './data/region/oe_production_monthly_12MMA_mboe_d_by_region.csv', 'millionar fat oljeekvivalentar/dag', 'img/oe_production_yearly_12MMA_by_region.png', 'img/oe_produced_reserves_by_region.png', False)
+    print("## Olje")
+    oversikt_etter_region()
+    print("\n## Gass")
+    oversikt_etter_region(prefixFilename='gas', resource='gass', remainingField='remainingGas', unit='oljeekvivalentar')
+    print("\n## Petroleum")
+    oversikt_etter_region(prefixFilename='oe', resource='petroleum', remainingField='remainingOE', unit='oljeekvivalentar')

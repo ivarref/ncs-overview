@@ -95,20 +95,40 @@ Johan Sverdrup (med planlagt produksjonsstart i 2019) har 22% av desse (1,9 mill
 # Oversikt over norsk sokkel etter region
 
 ## Olje
-![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_region.png)
 
+![Produksjon](img/oil_production_yearly_12MMA_by_region.png)
+Nordsjøen står for 82% av oljeproduksjonen,
+Norskehavet 16% og
+Barentshavet 2%.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_region.png)
+Nordsjøen har 86% (5.5 millionar fat olje) av reservane,
+Norskehavet 12% (0.8 millionar fat olje) og
+Barentshavet 3% (0.2 millionar fat olje).
+
 
 ## Gass
-![Gassproduksjonen](img/gas_production_yearly_12MMA_by_region.png)
 
+![Produksjon](img/gas_production_yearly_12MMA_by_region.png)
+Nordsjøen står for 61% av gassproduksjonen,
+Norskehavet 34% og
+Barentshavet 5%.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_region.png)
+Nordsjøen har 68% (8.0 millionar fat oljeekvivalentar) av reservane,
+Norskehavet 21% (2.4 millionar fat oljeekvivalentar) og
+Barentshavet 10% (1.2 millionar fat oljeekvivalentar).
+
 
 ## Petroleum
-![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_region.png)
 
+![Produksjon](img/oe_production_yearly_12MMA_by_region.png)
+Nordsjøen står for 69% av petroleumproduksjonen,
+Norskehavet 27% og
+Barentshavet 4%.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_region.png)
+Nordsjøen har 73% (14.4 millionar fat oljeekvivalentar) av reservane,
+Norskehavet 19% (3.7 millionar fat oljeekvivalentar) og
+Barentshavet 8% (1.6 millionar fat oljeekvivalentar).
 

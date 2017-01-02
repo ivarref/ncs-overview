@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./split_wellbores.py
-echo "****"
+./overview.py
+echo "---ooo---"
