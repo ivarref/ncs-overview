@@ -121,7 +121,7 @@ def oversikt_etter_region(remainingField='remainingOil', prefixFilename='oil', r
         frame = pd.read_csv('./data/region/reserves_gboe_by_region.csv')
         sm = frame[frame['name'] == 'Sum'][remainingField].values[0]
         region_value = frame[frame['name'] == region][remainingField].values[0]
-        return ("%.f%% (%.1f millionar fat %s)" % (region_value*100 / sm, region_value, unit)).replace('.', ',')
+        return ("%.f%% (%.1f milliardar fat %s)" % (region_value*100 / sm, region_value, unit)).replace('.', ',')
     print(textwrap.dedent("""
     ![Produksjon](img/oil_production_yearly_12MMA_by_region.png)
     Nordsjøen står for %North sea%% av %resource%produksjonen,
