@@ -4,10 +4,11 @@
 ![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_discovery_decade.png)
 
 Oljeproduksjonen per oktober 2016 er på 1,60 millionar fat/dag, som er 51,1% av nivået i januar 2001 (3,13 millionar fat/dag).
+Dette gjev ein årleg produksjon på 0,6 milliardar fat.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_discovery_decade.png)
 
-Dei opprinnelig utvinnbare oljereservane er på 32,1 milliardar fat.
+Dei opphavlege utvinnbare oljereservane er på 32,1 milliardar fat.
 Totalt 80,1% av desse er utvunne.
 Gjenverande reservar er på 6,4 milliardar fat.
 Med noverande produksjonstempo er desse reservane utvunne på 10,9 år.
@@ -16,10 +17,11 @@ Med noverande produksjonstempo er desse reservane utvunne på 10,9 år.
 ![Gassproduksjonen](img/gas_production_yearly_12MMA_by_discovery_decade.png)
 
 Gassproduksjonen per oktober 2016 er på 2,01 millionar fat oljeekvivalentar/dag, som er 95,6% av nivået i mai 2016 (2,10 millionar fat oljeekvivalentar/dag).
+Dette gjev ein årleg produksjon på 0,7 milliardar fat.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_discovery_decade.png)
 
-Dei opprinnelig utvinnbare gassreservane er på 24,9 milliardar fat oljeekvivalent.
+Dei opphavlege utvinnbare gassreservane er på 24,9 milliardar fat oljeekvivalent.
 Totalt 53,0% av desse er utvunne.
 Gjenverande reservar er på 11,7 milliardar fat oljeekvivalent.
 Med noverande produksjonstempo er desse reservane utvunne på 15,9 år.
@@ -28,10 +30,11 @@ Med noverande produksjonstempo er desse reservane utvunne på 15,9 år.
 ![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_discovery_decade.png)
 
 Petroleumproduksjonen per oktober 2016 er på 3,99 millionar fat oljeekvivalentar/dag, som er 86,3% av nivået i juli 2004 (4,62 millionar fat oljeekvivalentar/dag).
+Dette gjev ein årleg produksjon på 1,5 milliardar fat.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_discovery_decade.png)
 
-Dei opprinnelig utvinnbare petroleumreservane er på 61,4 milliardar fat oljeekvivalent.
+Dei opphavlege utvinnbare petroleumreservane er på 61,4 milliardar fat oljeekvivalent.
 Totalt 67,9% av desse er utvunne.
 Gjenverande reservar er på 19,7 milliardar fat oljeekvivalent.
 Med noverande produksjonstempo er desse reservane utvunne på 13,5 år.

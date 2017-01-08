@@ -52,6 +52,8 @@ def short_summary(title, prefix, filename, unit, image, image_produced_reserves,
                 "av nivået i %s" % (format_date(frame[frame['Sum'] == mx]['Date'].values[0])),
                 ("(%.2f %s)" % (mx, unit)).replace('.', ',')+'.'
                 )
+        print("Dette gjev ein årleg produksjon på", ("%.1f" % ((last*365.0)/1000.0)).replace('.', ','), "milliardar fat.")
+            
     print("")
     print("![Produsert og reserver](%s)" % (image_produced_reserves))
     print("")
@@ -65,7 +67,7 @@ def percentage_produced(resource_key, reserve_name, unit):
     (originally_in_place, remaining) = (frame.tail(1)["origRecoverable" + resource_key].values[0], frame.tail(1)["remaining" + resource_key].values[0])
     produced = originally_in_place - remaining
     produced_percentage = (produced*100.0) / originally_in_place
-    print(add_norwegian_comma_and_dot("Dei opprinnelig utvinnbare %s er på %.1f milliardar %s" % (reserve_name, originally_in_place, unit)))
+    print(add_norwegian_comma_and_dot("Dei opphavlege utvinnbare %s er på %.1f milliardar %s" % (reserve_name, originally_in_place, unit)))
     print(add_norwegian_comma_and_dot("Totalt %.1f%% av desse er utvunne" % (produced_percentage)))
     print(add_norwegian_comma_and_dot("Gjenverande reservar er på %.1f milliardar %s" % (remaining, unit)))
 

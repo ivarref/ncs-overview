@@ -971,7 +971,7 @@
     {
         "dscName": "18/10-1 (Mackerel)",
         "cmpLongName": "",
-        "dscCurrentActivityStatus": "Production likely, but unclarified",
+        "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
         "wlbName": "18/10-1",
         "nmaName": "North sea",
@@ -2984,7 +2984,7 @@
     },
     {
         "dscName": "33/9-6 DELTA",
-        "cmpLongName": "Wintershall Norge AS",
+        "cmpLongName": "",
         "dscCurrentActivityStatus": "Shut down",
         "dscHcType": "OIL",
         "wlbName": "33/9-6",
@@ -2993,8 +2993,8 @@
         "dscDateFromInclInField": "",
         "dscDiscoveryYear": "1976",
         "dscResInclInDiscoveryName": "",
-        "dscOwnerKind": "PRODUCTION LICENSE",
-        "dscOwnerName": "037 D",
+        "dscOwnerKind": "",
+        "dscOwnerName": "",
         "dscNpdidDiscovery": "44576",
         "fldNpdidField": "",
         "wlbNpdidWellbore": "411",
