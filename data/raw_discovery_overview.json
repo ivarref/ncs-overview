@@ -388,7 +388,7 @@
         "nmaName": "North sea",
         "fldName": "ENOCH",
         "dscDateFromInclInField": "01.07.2005",
-        "dscDiscoveryYear": "1991",
+        "dscDiscoveryYear": "1985",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
         "dscOwnerName": "ENOCH UNIT",
@@ -3895,7 +3895,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=44798"
     },
     {
-        "dscName": "36/7-4",
+        "dscName": "36/7-4 (Cara)",
         "cmpLongName": "ENGIE E&P Norge AS",
         "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "OIL/GAS",
@@ -5797,7 +5797,7 @@
     {
         "dscName": "7121/5-2 (Sn\u00f8hvit Beta)",
         "cmpLongName": "Statoil Petroleum AS",
-        "dscCurrentActivityStatus": "Production is unlikely",
+        "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "OIL/GAS",
         "wlbName": "7121/5-2",
         "nmaName": "Barents sea",
