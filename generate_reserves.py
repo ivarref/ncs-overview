@@ -31,13 +31,13 @@ if __name__=="__main__":
   millennium_to_fields = generate.get_production_years(get_distinct_fields())
 
   with open('./data/region_to_fields_reserves.json', 'w') as wfd:
-    json.dump(region_to_fields, wfd, sort_keys=True, indent=2)
+    json.dump(region_to_fields, wfd, sort_keys=True, indent=2, ensure_ascii=False)
   
   with open('./data/decade_to_fields_reserves.json', 'w') as wfd:
-    json.dump(decade_to_fields, wfd, sort_keys=True, indent=2)
+    json.dump(decade_to_fields, wfd, sort_keys=True, indent=2, ensure_ascii=False)
 
   with open('./data/startproduction_to_fields_reserves.json', 'w') as wfd:
-    json.dump(millennium_to_fields, wfd, sort_keys=False, indent=2)
+    json.dump(millennium_to_fields, wfd, sort_keys=False, indent=2, ensure_ascii=False)
 
 
   print("reserves")

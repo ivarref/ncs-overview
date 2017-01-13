@@ -34,4 +34,4 @@ if __name__=="__main__":
             vals = [(idx_to_col[idx], val) for (idx, val) in enumerate(row)]
             d = collections.OrderedDict(vals)
             with open(fil, 'w') as wfd:
-              json.dump(d, wfd, indent=2)
+              json.dump(d, wfd, indent=2, ensure_ascii=False)

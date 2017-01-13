@@ -1,7 +1,7 @@
 {
   "Barents sea": [
     "GOLIAT",
-    "SN\u00d8HVIT"
+    "SNØHVIT"
   ],
   "North sea": [
     "33/9-6 DELTA",
@@ -12,7 +12,7 @@
     "BLANE",
     "BRAGE",
     "BRYNHILD",
-    "B\u00d8YLA",
+    "BØYLA",
     "COD",
     "EDDA",
     "EDVARD GRIEG",
@@ -23,15 +23,15 @@
     "FRAM",
     "FRAM H-NORD",
     "FRIGG",
-    "FR\u00d8Y",
+    "FRØY",
     "GAUPE",
     "GIMLE",
-    "GJ\u00d8A",
+    "GJØA",
     "GLITNE",
     "GRANE",
     "GUDRUN",
     "GULLFAKS",
-    "GULLFAKS S\u00d8R",
+    "GULLFAKS SØR",
     "GUNGNE",
     "GYDA",
     "HEIMDAL",
@@ -41,26 +41,26 @@
     "JETTE",
     "JOTUN",
     "KNARR",
-    "KVITEBJ\u00d8RN",
+    "KVITEBJØRN",
     "LILLE-FRIGG",
     "MIME",
     "MURCHISON",
-    "NORD\u00d8ST FRIGG",
+    "NORDØST FRIGG",
     "ODIN",
     "OSEBERG",
-    "OSEBERG S\u00d8R",
-    "OSEBERG \u00d8ST",
+    "OSEBERG SØR",
+    "OSEBERG ØST",
     "OSELVAR",
     "REV",
-    "RINGHORNE \u00d8ST",
+    "RINGHORNE ØST",
     "SIGYN",
     "SKIRNE",
     "SLEIPNER VEST",
-    "SLEIPNER \u00d8ST",
+    "SLEIPNER ØST",
     "SNORRE",
     "STATFJORD",
     "STATFJORD NORD",
-    "STATFJORD \u00d8ST",
+    "STATFJORD ØST",
     "SVALIN",
     "SYGNA",
     "TAMBAR",
@@ -81,11 +81,11 @@
     "VIGDIS",
     "VILJE",
     "VISUND",
-    "VISUND S\u00d8R",
+    "VISUND SØR",
     "VOLUND",
     "VOLVE",
     "YME",
-    "\u00d8ST FRIGG"
+    "ØST FRIGG"
   ],
   "Norwegian sea": [
     "ALVE",
@@ -104,6 +104,6 @@
     "TYRIHANS",
     "URD",
     "YTTERGRYTA",
-    "\u00c5SGARD"
+    "ÅSGARD"
   ]
 }

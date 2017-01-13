@@ -42,5 +42,5 @@ if __name__=="__main__":
         print("writing", name, "with entryYear", entryYear)
         fil = './data/wellbores/' + entryYear + '/' + urllib.parse.quote(name, safe='') + '.json'
         with open(fil, 'w') as wfd:
-          json.dump(d, wfd, indent=2)
+          json.dump(d, wfd, indent=2, ensure_ascii=False)
 

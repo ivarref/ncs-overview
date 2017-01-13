@@ -29,7 +29,7 @@ if __name__=="__main__":
       else:
         kv = [(k, cell) for (k, cell) in zip(columns, row)]
         res.append(collections.OrderedDict(kv))
-    with open(output, 'wb') as fd:
+    with open(output, 'w') as fd:
       if do_module_export:
         fd.write('module.exports = ')
-      fd.write(json.dumps(res, indent=4, separators=(',', ': ')).encode('utf-8'))
+      fd.write(json.dumps(res, indent=4, separators=(',', ': '), ensure_ascii=False))

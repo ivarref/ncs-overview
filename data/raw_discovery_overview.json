@@ -95,18 +95,18 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=5506919"
     },
     {
-        "dscName": "1/3-K-5 TAMBAR \u00d8ST",
+        "dscName": "1/3-K-5 TAMBAR ØST",
         "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "1/3-K-5",
         "nmaName": "North sea",
-        "fldName": "TAMBAR \u00d8ST",
+        "fldName": "TAMBAR ØST",
         "dscDateFromInclInField": "28.06.2007",
         "dscDiscoveryYear": "2007",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
-        "dscOwnerName": "TAMBAR \u00d8ST UNIT",
+        "dscOwnerName": "TAMBAR ØST UNIT",
         "dscNpdidDiscovery": "4999519",
         "fldNpdidField": "4999528",
         "wlbNpdidWellbore": "5485",
@@ -589,18 +589,18 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=3420717"
     },
     {
-        "dscName": "15/9-9 SLEIPNER \u00d8ST",
+        "dscName": "15/9-9 SLEIPNER ØST",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "15/9-9",
         "nmaName": "North sea",
-        "fldName": "SLEIPNER \u00d8ST",
+        "fldName": "SLEIPNER ØST",
         "dscDateFromInclInField": "15.12.1986",
         "dscDiscoveryYear": "1981",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
-        "dscOwnerName": "SLEIPNER \u00d8ST UNIT",
+        "dscOwnerName": "SLEIPNER ØST UNIT",
         "dscNpdidDiscovery": "43946",
         "fldNpdidField": "43478",
         "wlbNpdidWellbore": "328",
@@ -1026,7 +1026,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43485"
     },
     {
-        "dscName": "2/12-1 MJ\u00d8LNER",
+        "dscName": "2/12-1 MJØLNER",
         "cmpLongName": "DONG E&P Norge AS",
         "dscCurrentActivityStatus": "Production in clarification phase",
         "dscHcType": "OIL",
@@ -1064,7 +1064,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43492"
     },
     {
-        "dscName": "2/2-1 (M\u00f8yfrid)",
+        "dscName": "2/2-1 (Møyfrid)",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL/GAS",
@@ -1121,7 +1121,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=44036"
     },
     {
-        "dscName": "2/3-1 (L\u00f8ven)",
+        "dscName": "2/3-1 (Løven)",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS",
@@ -1311,7 +1311,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=46293"
     },
     {
-        "dscName": "2/5-3 (S\u00f8r\u00f8st Tor)",
+        "dscName": "2/5-3 (Sørøst Tor)",
         "cmpLongName": "Faroe Petroleum Norge AS",
         "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "OIL",
@@ -1653,16 +1653,16 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4380167"
     },
     {
-        "dscName": "24/9-9 S B\u00d8YLA",
+        "dscName": "24/9-9 S BØYLA",
         "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "24/9-9 S",
         "nmaName": "North sea",
-        "fldName": "B\u00d8YLA",
+        "fldName": "BØYLA",
         "dscDateFromInclInField": "26.10.2012",
         "dscDiscoveryYear": "2009",
-        "dscResInclInDiscoveryName": "24/9-9 S B\u00d8YLA",
+        "dscResInclInDiscoveryName": "24/9-9 S BØYLA",
         "dscOwnerKind": "PRODUCTION LICENSE",
         "dscOwnerName": "340",
         "dscNpdidDiscovery": "17237206",
@@ -1805,7 +1805,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=22507971"
     },
     {
-        "dscName": "25/11-24 (Jakob S\u00f8r)",
+        "dscName": "25/11-24 (Jakob Sør)",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
@@ -1843,13 +1843,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=23395692"
     },
     {
-        "dscName": "25/1-4 NORD\u00d8ST FRIGG",
+        "dscName": "25/1-4 NORDØST FRIGG",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Shut down",
         "dscHcType": "GAS",
         "wlbName": "25/1-4",
         "nmaName": "North sea",
-        "fldName": "NORD\u00d8ST FRIGG",
+        "fldName": "NORDØST FRIGG",
         "dscDateFromInclInField": "12.09.1980",
         "dscDiscoveryYear": "1974",
         "dscResInclInDiscoveryName": "",
@@ -1881,13 +1881,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=2786238"
     },
     {
-        "dscName": "25/2-1 \u00d8ST FRIGG",
+        "dscName": "25/2-1 ØST FRIGG",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Shut down",
         "dscHcType": "GAS",
         "wlbName": "25/2-1",
         "nmaName": "North sea",
-        "fldName": "\u00d8ST FRIGG",
+        "fldName": "ØST FRIGG",
         "dscDateFromInclInField": "14.12.1984",
         "dscDiscoveryYear": "1973",
         "dscResInclInDiscoveryName": "",
@@ -1957,7 +1957,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43583"
     },
     {
-        "dscName": "25/2-5 LILLE FR\u00d8Y",
+        "dscName": "25/2-5 LILLE FRØY",
         "cmpLongName": "Total E&P Norge AS",
         "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "OIL/GAS",
@@ -2090,16 +2090,16 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=3392471"
     },
     {
-        "dscName": "25/5-1 FR\u00d8Y",
+        "dscName": "25/5-1 FRØY",
         "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Shut down",
         "dscHcType": "OIL",
         "wlbName": "25/5-1",
         "nmaName": "North sea",
-        "fldName": "FR\u00d8Y",
+        "fldName": "FRØY",
         "dscDateFromInclInField": "18.05.1992",
         "dscDiscoveryYear": "1987",
-        "dscResInclInDiscoveryName": "25/5-1 FR\u00d8Y",
+        "dscResInclInDiscoveryName": "25/5-1 FRØY",
         "dscOwnerKind": "PRODUCTION LICENSE",
         "dscOwnerName": "364",
         "dscNpdidDiscovery": "44264",
@@ -2204,7 +2204,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=44288"
     },
     {
-        "dscName": "25/6-5 S (Skirne \u00d8st)",
+        "dscName": "25/6-5 S (Skirne Øst)",
         "cmpLongName": "Total E&P Norge AS",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS/CONDENSATE",
@@ -2248,12 +2248,12 @@
         "dscHcType": "OIL",
         "wlbName": "25/8-14 S",
         "nmaName": "North sea",
-        "fldName": "RINGHORNE \u00d8ST",
+        "fldName": "RINGHORNE ØST",
         "dscDateFromInclInField": "25.11.2005",
         "dscDiscoveryYear": "2003",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
-        "dscOwnerName": "RINGHORNE \u00d8ST UNIT",
+        "dscOwnerName": "RINGHORNE ØST UNIT",
         "dscNpdidDiscovery": "2472571",
         "fldNpdidField": "3505505",
         "wlbNpdidWellbore": "4805",
@@ -2356,7 +2356,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=44342"
     },
     {
-        "dscName": "26/10-1 (Zulu \u00d8st)",
+        "dscName": "26/10-1 (Zulu Øst)",
         "cmpLongName": "Lundin Norway AS",
         "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "GAS",
@@ -2432,7 +2432,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=18081500"
     },
     {
-        "dscName": "3/7-8 S (Trym S\u00f8r)",
+        "dscName": "3/7-8 S (Trym Sør)",
         "cmpLongName": "DONG E&P Norge AS",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL/GAS",
@@ -2660,13 +2660,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=44414"
     },
     {
-        "dscName": "30/6-5 OSEBERG \u00d8ST",
+        "dscName": "30/6-5 OSEBERG ØST",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "30/6-5",
         "nmaName": "North sea",
-        "fldName": "OSEBERG \u00d8ST",
+        "fldName": "OSEBERG ØST",
         "dscDateFromInclInField": "11.10.1996",
         "dscDiscoveryYear": "1981",
         "dscResInclInDiscoveryName": "",
@@ -2812,13 +2812,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=28123140"
     },
     {
-        "dscName": "30/9-3 OSEBERG S\u00d8R",
+        "dscName": "30/9-3 OSEBERG SØR",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "30/9-3",
         "nmaName": "North sea",
-        "fldName": "OSEBERG S\u00d8R",
+        "fldName": "OSEBERG SØR",
         "dscDateFromInclInField": "10.06.1997",
         "dscDiscoveryYear": "1984",
         "dscResInclInDiscoveryName": "",
@@ -3002,18 +3002,18 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=44576"
     },
     {
-        "dscName": "33/9-7 STATFJORD \u00d8ST",
+        "dscName": "33/9-7 STATFJORD ØST",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL",
         "wlbName": "33/9-7",
         "nmaName": "North sea",
-        "fldName": "STATFJORD \u00d8ST",
+        "fldName": "STATFJORD ØST",
         "dscDateFromInclInField": "11.12.1990",
         "dscDiscoveryYear": "1976",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
-        "dscOwnerName": "STATFJORD \u00d8ST UNIT",
+        "dscOwnerName": "STATFJORD ØST UNIT",
         "dscNpdidDiscovery": "44582",
         "fldNpdidField": "43672",
         "wlbNpdidWellbore": "412",
@@ -3059,13 +3059,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43686"
     },
     {
-        "dscName": "34/10-2 GULLFAKS S\u00d8R",
+        "dscName": "34/10-2 GULLFAKS SØR",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL/GAS",
         "wlbName": "34/10-2",
         "nmaName": "North sea",
-        "fldName": "GULLFAKS S\u00d8R",
+        "fldName": "GULLFAKS SØR",
         "dscDateFromInclInField": "29.03.1996",
         "dscDiscoveryYear": "1978",
         "dscResInclInDiscoveryName": "",
@@ -3135,13 +3135,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=4005142"
     },
     {
-        "dscName": "34/11-1 KVITEBJ\u00d8RN",
+        "dscName": "34/11-1 KVITEBJØRN",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "GAS/CONDENSATE",
         "wlbName": "34/11-1",
         "nmaName": "North sea",
-        "fldName": "KVITEBJ\u00d8RN",
+        "fldName": "KVITEBJØRN",
         "dscDateFromInclInField": "14.06.2000",
         "dscDiscoveryYear": "1994",
         "dscResInclInDiscoveryName": "",
@@ -3154,7 +3154,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1036101"
     },
     {
-        "dscName": "34/11-2 S (N\u00f8kken)",
+        "dscName": "34/11-2 S (Nøkken)",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "GAS",
@@ -3439,13 +3439,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43745"
     },
     {
-        "dscName": "34/8-14 S VISUND S\u00d8R",
+        "dscName": "34/8-14 S VISUND SØR",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL/GAS",
         "wlbName": "34/8-14 S",
         "nmaName": "North sea",
-        "fldName": "VISUND S\u00d8R",
+        "fldName": "VISUND SØR",
         "dscDateFromInclInField": "09.06.2011",
         "dscDiscoveryYear": "2008",
         "dscResInclInDiscoveryName": "",
@@ -3800,13 +3800,13 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=28183437"
     },
     {
-        "dscName": "35/9-1 GJ\u00d8A",
+        "dscName": "35/9-1 GJØA",
         "cmpLongName": "ENGIE E&P Norge AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL/GAS",
         "wlbName": "35/9-1",
         "nmaName": "North sea",
-        "fldName": "GJ\u00d8A",
+        "fldName": "GJØA",
         "dscDateFromInclInField": "14.06.2007",
         "dscDiscoveryYear": "1989",
         "dscResInclInDiscoveryName": "",
@@ -4161,7 +4161,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=45707"
     },
     {
-        "dscName": "6406/1-2 (Sklinna S\u00f8r)",
+        "dscName": "6406/1-2 (Sklinna Sør)",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS/CONDENSATE",
@@ -4294,7 +4294,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=916112"
     },
     {
-        "dscName": "6406/2-8 (Imsa S\u00f8r)",
+        "dscName": "6406/2-8 (Imsa Sør)",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL",
@@ -4389,7 +4389,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=2074021"
     },
     {
-        "dscName": "6406/6-3 (Mj\u00f8sa)",
+        "dscName": "6406/6-3 (Mjøsa)",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS",
@@ -4446,7 +4446,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=3435686"
     },
     {
-        "dscName": "6406/9-3 (Onyx S\u00f8r)",
+        "dscName": "6406/9-3 (Onyx Sør)",
         "cmpLongName": "",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS",
@@ -4465,7 +4465,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=23761877"
     },
     {
-        "dscName": "6407/1-2 TYRIHANS S\u00d8R",
+        "dscName": "6407/1-2 TYRIHANS SØR",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "GAS/CONDENSATE",
@@ -4560,7 +4560,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=18104628"
     },
     {
-        "dscName": "6407/4-1 (Spinell S\u00f8r)",
+        "dscName": "6407/4-1 (Spinell Sør)",
         "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS/CONDENSATE",
@@ -4617,7 +4617,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=1630514"
     },
     {
-        "dscName": "6407/6-6 MIKKEL S\u00d8R",
+        "dscName": "6407/6-6 MIKKEL SØR",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "GAS",
@@ -4946,12 +4946,12 @@
         "dscHcType": "OIL/GAS",
         "wlbName": "6507/11-1",
         "nmaName": "Norwegian sea",
-        "fldName": "\u00c5SGARD",
+        "fldName": "ÅSGARD",
         "dscDateFromInclInField": "14.06.1996",
         "dscDiscoveryYear": "1981",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
-        "dscOwnerName": "\u00c5SGARD UNIT",
+        "dscOwnerName": "ÅSGARD UNIT",
         "dscNpdidDiscovery": "44912",
         "fldNpdidField": "43765",
         "wlbNpdidWellbore": "68",
@@ -5092,7 +5092,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=5818184"
     },
     {
-        "dscName": "6507/3-8 (Gj\u00f8k)",
+        "dscName": "6507/3-8 (Gjøk)",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production in clarification phase",
         "dscHcType": "GAS",
@@ -5719,7 +5719,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=3000739"
     },
     {
-        "dscName": "7120/12-2 (Alke S\u00f8r)",
+        "dscName": "7120/12-2 (Alke Sør)",
         "cmpLongName": "Eni Norge AS",
         "dscCurrentActivityStatus": "Production likely, but unclarified",
         "dscHcType": "GAS",
@@ -5776,18 +5776,18 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=20485020"
     },
     {
-        "dscName": "7121/4-1 SN\u00d8HVIT",
+        "dscName": "7121/4-1 SNØHVIT",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Producing",
         "dscHcType": "OIL/GAS",
         "wlbName": "7121/4-1",
         "nmaName": "Barents sea",
-        "fldName": "SN\u00d8HVIT",
+        "fldName": "SNØHVIT",
         "dscDateFromInclInField": "07.03.2002",
         "dscDiscoveryYear": "1984",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
-        "dscOwnerName": "SN\u00d8HVIT UNIT",
+        "dscOwnerName": "SNØHVIT UNIT",
         "dscNpdidDiscovery": "45038",
         "fldNpdidField": "2053062",
         "wlbNpdidWellbore": "135",
@@ -5795,7 +5795,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=2053062"
     },
     {
-        "dscName": "7121/5-2 (Sn\u00f8hvit Beta)",
+        "dscName": "7121/5-2 (Snøhvit Beta)",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "OIL/GAS",
@@ -5806,7 +5806,7 @@
         "dscDiscoveryYear": "1986",
         "dscResInclInDiscoveryName": "",
         "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
-        "dscOwnerName": "SN\u00d8HVIT UNIT",
+        "dscOwnerName": "SNØHVIT UNIT",
         "dscNpdidDiscovery": "45050",
         "fldNpdidField": "",
         "wlbNpdidWellbore": "907",
@@ -6023,7 +6023,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=25165539"
     },
     {
-        "dscName": "7220/4-1 (Kramsn\u00f8)",
+        "dscName": "7220/4-1 (Kramsnø)",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "GAS",

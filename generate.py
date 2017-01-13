@@ -159,7 +159,7 @@ def generate_decade():
   # group fields by discovery decade
   decade_to_fields = get_decade_to_fields(id_to_year)
   with open('./data/decade_to_fields_production.json', 'w') as wfd:
-    json.dump(decade_to_fields, wfd, sort_keys=True, indent=2)
+    json.dump(decade_to_fields, wfd, sort_keys=True, indent=2, ensure_ascii=False)
 
   write_file_for_property(decade_to_fields, 'data/decade/oil_production_yearly_12MMA_MillSm3_by_discovery_decade.csv', 'prfPrdOilNetMillSm3')
   write_file_for_property(decade_to_fields, 'data/decade/gas_production_yearly_12MMA_BillSm3_by_discovery_decade.csv', 'prfPrdGasNetBillSm3')
@@ -176,7 +176,7 @@ def generate_decade():
 def generate_region():
   region_to_fields = get_discovery_region_to_fields(get_distinct_fields())
   with open('./data/region_to_fields_production.json', 'w') as wfd:
-    json.dump(region_to_fields, wfd, sort_keys=True, indent=2)
+    json.dump(region_to_fields, wfd, sort_keys=True, indent=2, ensure_ascii=False)
 
   try:
     os.makedirs('data/region')
