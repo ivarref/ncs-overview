@@ -2,6 +2,8 @@
 
 set -ex
 
+[ -d "node_modules" ] || yarn
+
 mkdir -p data/
 mkdir -p tmp_data/
 mkdir -p img/

@@ -3458,7 +3458,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=20461008"
     },
     {
-        "dscName": "34/8-16 S (Tarvos)",
+        "dscName": "34/8-16 S (Iapetus Øst)",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production not evaluated",
         "dscHcType": "GAS/CONDENSATE",
