@@ -30,7 +30,6 @@ def cumulative_recoverable_since(since_year):
     recoverableOil = sum([recoverable(field, 'fldRecoverableOil') for field in fields])
     recoverableGas = sum([recoverable(field, 'fldRecoverableGas') for field in fields])
     recoverableOE = sum([recoverable(field, 'fldRecoverableOE') for field in fields])
-    # fldRecoverableOil,fldRecoverableGas,fldRecoverableOE
     result.append((year, recoverableOil, recoverableGas, recoverableOE))
   return result
 
@@ -72,3 +71,4 @@ if __name__=="__main__":
         writer.writerow([reserve_year, fmt(reserve_oil), fmt(reserve_gas), fmt(reserve_oe), fmt(prod_oil), fmt(prod_gas), fmt(prod_oe)])
 
   process_year(2000)
+  process_year(1990)
