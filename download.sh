@@ -29,4 +29,10 @@ awk 'NF' extra_data/field_reserves_extra.csv > data/raw_reserves_field.csv
 cat tmp_data/raw_reserves_field.csv | tail -n +2 >> data/raw_reserves_field.csv
 ./drop_columns.py data/raw_reserves_field.csv DatesyncNPD fldDateOffResEstDisplay
 
+# factpages.npd.no -> Field -> Table view -> Production -> Saleable -> Yearly - total
+curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field_production_totalt_NCS_year__DisplayAllRows&rs:Command=Render&rc:Toolbar=false&rc:Parameters=f&rs:Format=CSV&Top100=false&IpAddress=80.213.255.240&CultureCode=en" \
+| tr -d '\r' \
+| awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}{print}' \
+| awk 'NF' > data/raw_production_yearly_total.csv
+
 echo "download.sh OK"

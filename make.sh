@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./overview.py
-echo "---ooo---"
+./generate_kumulativ_reservetilvekst_vs_produksjon.py
+echo "---ooo---ooo---ooo---"
