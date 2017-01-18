@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./add_discovery_year.py
+./generate_field_percentage_produced.py
 echo "---ooo---ooo---ooo---"
