@@ -36,7 +36,7 @@ function show_resource(config) {
         .y0(function (d) { return y(d[0]); })
         .y1(function (d) { return y(d[1]); });
 
-    d3.csv('/data/cumulative/cumulative_reserves_vs_production_since_2000_gboe.csv',
+    d3.csv(config.filename,
         function (d) {
             d.date = parseTime(d.year);
             d.reserveOil = +d.reserveOil;
@@ -179,19 +179,43 @@ var m = {
         title: 'olje',
         unit: 'Milliardar fat olje',
         keys: ['producedOil', 'reserveOil'],
-        screenshot: 'cumulative_oil_production_vs_reserve_growth_since_2000.png'
+        screenshot: 'cumulative_oil_production_vs_reserve_growth_since_2000.png',
+        filename: '/data/cumulative/cumulative_reserves_vs_production_since_2000_gboe.csv'
+    },
+    oil1990: {
+        title: 'olje',
+        unit: 'Milliardar fat olje',
+        keys: ['producedOil', 'reserveOil'],
+        screenshot: 'cumulative_oil_production_vs_reserve_growth_since_1990.png',
+        filename: '/data/cumulative/cumulative_reserves_vs_production_since_1990_gboe.csv'
     },
     gas: {
         title: 'gass',
         unit: 'Milliardar fat oljeekvivalentar',
         keys: ['producedGas', 'reserveGas'],
-        screenshot: 'cumulative_gas_production_vs_reserve_growth_since_2000.png'
+        screenshot: 'cumulative_gas_production_vs_reserve_growth_since_2000.png',
+        filename: '/data/cumulative/cumulative_reserves_vs_production_since_2000_gboe.csv'
+    },
+    gas1990: {
+        title: 'gass',
+        unit: 'Milliardar fat oljeekvivalentar',
+        keys: ['producedGas', 'reserveGas'],
+        screenshot: 'cumulative_gas_production_vs_reserve_growth_since_1990.png',
+        filename: '/data/cumulative/cumulative_reserves_vs_production_since_1990_gboe.csv'
     },
     oe: {
         title: 'petroleum',
         unit: 'Milliardar fat oljeekvivalentar',
         keys: ['producedOE', 'reserveOE'],
-        screenshot: 'cumulative_oe_production_vs_reserve_growth_since_2000.png'
+        screenshot: 'cumulative_oe_production_vs_reserve_growth_since_2000.png',
+        filename: '/data/cumulative/cumulative_reserves_vs_production_since_2000_gboe.csv'
+    },
+    oe1990: {
+        title: 'petroleum',
+        unit: 'Milliardar fat oljeekvivalentar',
+        keys: ['producedOE', 'reserveOE'],
+        screenshot: 'cumulative_oe_production_vs_reserve_growth_since_1990.png',
+        filename: '/data/cumulative/cumulative_reserves_vs_production_since_1990_gboe.csv'
     },
 };
 
