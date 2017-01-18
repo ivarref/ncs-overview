@@ -184,3 +184,6 @@ if __name__=="__main__":
     oversikt_etter_region(prefixFilename='gas', resource='gass', remainingField='remainingGas', unit='oljeekvivalentar')
     print("\n## Petroleum")
     oversikt_etter_region(prefixFilename='oe', resource='petroleum', remainingField='remainingOE', unit='oljeekvivalentar')
+
+    #print("")
+    #print("# Oversikt over norsk sokkel etter region\n")

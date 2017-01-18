@@ -75,8 +75,6 @@ function show_resource(config) {
                 .attr("transform", "translate(0," + height + ")")
                 .call(d3.axisBottom(x));
 
-            var resource = "<<resource>>";
-
             g.append("g")
                 .call(d3.axisLeft(y))
                 .append("text")

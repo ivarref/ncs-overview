@@ -19,6 +19,7 @@ fi
 
 ./generate.py
 ./generate_reserves.py
+./add_discovery_year.py
 ./generate_kumulativ_reservetilvekst_vs_produksjon.py
 ./calc_wells.py
 ./split_monthly_production.py

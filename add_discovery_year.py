@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+import csv
+import sys
+
+import pandas as pd
+
+import generate
+
+if __name__=="__main__":
+  frame = pd.read_csv('./data/raw_discovery_overview.csv')
+
+  with open('./data/raw_reserves_field_discovery_year.csv', 'w') as wfd:
+    writer = csv.writer(wfd)
+
+    with open('./data/raw_reserves_field.csv', 'r') as rfd:
+      reader = csv.reader(rfd)
+      for (idx, row) in enumerate(reader):
+        if idx==0:
+          if row[0] != 'fldName':
+            print("format changed, expected fldName for first column, was", row[0])
+            sys.exit(1)
+          header = [row[0], 'fldDiscoveryYear'] + row[1:]
+          writer.writerow(header)
+        else:
+          fldName = row[0]
+          f = frame[frame['fldName'] == fldName]
+          years = f['dscDiscoveryYear'].unique()
+          if len(years) != 1:
+            print("expected a single year, got", len(years), "for field", fldName)
+            sys.exit(1)
+          writer.writerow([row[0], years[0]] + row[1:])
