@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./generate_field_percentage_produced.py
+./generate_giants.py
 echo "---ooo---ooo---ooo---"
