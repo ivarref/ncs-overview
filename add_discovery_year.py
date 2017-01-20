@@ -22,17 +22,18 @@ if __name__=="__main__":
             if row[0] != 'fldName':
               print("format changed, expected fldName for first column, was", row[0])
               sys.exit(1)
-            header = [row[0], 'fldDiscoveryYear'] + row[1:]
+            header = [row[0], 'fldDiscoveryYear', 'fldCurrentActivityStatus'] + row[1:]
             writer.writerow(header)
             writer_gboe.writerow(header)
           else:
             fldName = row[0]
             f = frame[frame['fldName'] == fldName]
             years = f['dscDiscoveryYear'].unique()
-            if len(years) != 1:
+            dscCurrentActivityStatus = f['dscCurrentActivityStatus'].unique()
+            if len(years) != 1 or len(dscCurrentActivityStatus) != 1:
               print("expected a single year, got", len(years), "for field", fldName)
               sys.exit(1)
-            writer.writerow([row[0], years[0]] + row[1:])
+            writer.writerow([row[0], years[0], dscCurrentActivityStatus[0]] + row[1:])
             def to_gboe(items):
               return ["%.1f" % (float(x)*6.29) for x in items]
-            writer_gboe.writerow([row[0], years[0]] + to_gboe(row[1:-1]) + [row[-1]])
+            writer_gboe.writerow([row[0], years[0], dscCurrentActivityStatus[0]] + to_gboe(row[1:-1]) + [row[-1]])
