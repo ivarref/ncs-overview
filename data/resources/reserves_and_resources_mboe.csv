@@ -1,0 +1,10 @@
+status,oil_mboe,gas_mboe,oe_mboe
+"Approved for production",2102.5,578.4,2846.0
+"Decided for production",101.9,126.1,239.0
+"Producing",4355.2,11121.3,16890.2
+"Production in clarification phase",995.4,407.3,1453.3
+"Production is unlikely",120.4,67.1,196.6
+"Production likely, but unclarified",912.3,1005.4,2026.6
+"Production not evaluated",111.6,297.2,433.9
+"Shut down",5.0,1.9,6.9
+"Sum",8704.4,13604.7,24092.5

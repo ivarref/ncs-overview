@@ -23,9 +23,11 @@ fi
 ./drop_columns.py data/raw_reserves_field_discovery_year_mboe.csv fldRecoverableNGL fldRecoverableCondensate fldRemainingNGL fldRemainingCondensate
 ./generate_field_percentage_produced.py
 ./generate_giants.py
+./generate_2000s.py
 ./generate_kumulativ_reservetilvekst_vs_produksjon.py
 ./calc_wells.py
-./calc_resources2.py > data/reserves_and_resources_mboe.csv
+mkdir -p data/resources
+./calc_resources2.py > data/resources/reserves_and_resources_mboe.csv
 ./split_monthly_production.py
 ./split_discoveries.py
 ./split_wellbores.py
