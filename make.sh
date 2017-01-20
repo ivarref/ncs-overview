@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./calc_resources2.py
+./generate_reserves.py
 echo "---ooo---ooo---ooo---"

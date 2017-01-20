@@ -3,6 +3,7 @@
 
 import codecs
 import collections
+import csv
 import json
 import sys
 
@@ -98,3 +99,28 @@ if __name__=="__main__":
   write_file(decades, './data/decade/reserves_gboe_by_decade.csv', gboe)
   write_file(regions, './data/region/reserves_gboe_by_region.csv', gboe)
   write_file(millenniums, './data/region/reserves_gboe_by_startproduction.csv', gboe)
+
+  oil_giants = generate.get_giant_status(get_distinct_fields(), 'fldRecoverableOil')
+  gas_giants = generate.get_giant_status(get_distinct_fields(), 'fldRecoverableGas')
+  oe_giants = generate.get_giant_status(get_distinct_fields(), 'fldRecoverableOE')
+  
+  frame = pd.read_csv('./data/raw_reserves_field.csv')
+  # name,origRecoverableOil,origRecoverableGas,origRecoverableOE,remainingOil,remainingGas,remainingOE
+
+  gigant = []
+  ikkje_gigant = []
+  def produce_row(kind):
+    fldNames = oil_giants[kind]
+    origRecoverableOil = gboe('', frame[frame.fldName.isin(fldNames)].fldRecoverableOil.sum())
+    origRecoverableGas = gboe('', frame[frame.fldName.isin(fldNames)].fldRecoverableGas.sum())
+    origRecoverableOE = gboe('', frame[frame.fldName.isin(fldNames)].fldRecoverableOE.sum())
+    remainingOil = gboe('', frame[frame.fldName.isin(fldNames)].fldRemainingOil.sum())
+    remainingGas = gboe('', frame[frame.fldName.isin(fldNames)].fldRemainingGas.sum())
+    remainingOE = gboe('', frame[frame.fldName.isin(fldNames)].fldRemainingOE.sum())
+
+    return [kind, origRecoverableOil, origRecoverableGas, origRecoverableOE, remainingOil, remainingGas, remainingOE]
+  with open('./data/giants/reserves_gboe_by_fieldsize.csv', 'w') as wfd:
+    writer = csv.writer(wfd)
+    writer.writerow('name,origRecoverableOil,origRecoverableGas,origRecoverableOE,remainingOil,remainingGas,remainingOE'.split(","))
+    writer.writerow(produce_row('Gigant'))
+    writer.writerow(produce_row('Ikkje gigant'))

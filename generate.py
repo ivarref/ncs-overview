@@ -234,9 +234,9 @@ def generate_giants():
   
 if __name__=="__main__":
   print("start generate.py ...")
-  #generate_decade()
-  #generate_region()
-  #generate_millennium()
+  generate_decade()
+  generate_region()
+  generate_millennium()
   generate_giants()
 
   print("exiting generate.py ...")

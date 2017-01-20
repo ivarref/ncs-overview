@@ -215,6 +215,30 @@ var m = {
     group: 'startproduksjonsår',
     filename: '/data/region/reserves_gboe_by_startproduction.csv',
     screenshot: 'oe_produced_reserves_by_startproduction.png'
+  },
+  oil_giants: {
+    title: 'Olje',
+    unit: 'Milliardar fat olje',
+    unit_key: 'Oil',
+    group: 'feltstorleik',
+    filename: '/data/giants/reserves_gboe_by_fieldsize.csv',
+    screenshot: 'oil_produced_reserves_by_fieldsize.png'
+  },
+  gas_giants: {
+    title: 'Gass',
+    unit: 'Milliardar fat oljeekvivalentar',
+    unit_key: 'Gas',
+    group: 'feltstorleik',
+    filename: '/data/giants/reserves_gboe_by_fieldsize.csv',
+    screenshot: 'gas_produced_reserves_by_fieldsize.png'
+  },
+  petroleum_giants: {
+    title: 'Petroleum',
+    unit: 'Milliardar fat oljeekvivalentar',
+    unit_key: 'OE',
+    group: 'feltstorleik',
+    filename: '/data/giants/reserves_gboe_by_fieldsize.csv',
+    screenshot: 'oe_produced_reserves_by_fieldsize.png'
   }
 
 };
