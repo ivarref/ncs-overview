@@ -39,6 +39,25 @@ def get_production_years(ids):
     d[yr].append(id)
   return d
 
+def get_giant_status(ids, prop):
+  frame = pd.read_csv('./data/raw_reserves_field_discovery_year_mboe.csv')
+  res = []
+  before = 'Gigant'
+  after = 'Ikkje gigant'
+  d = collections.OrderedDict()
+  d[before] = []
+  d[after] = []
+  for (idx, id) in enumerate(ids):
+    m = frame[frame['fldName'] == id]
+    kind = m[prop].min()
+    if kind >= 1000:
+      kind = before
+    else:
+      kind = after
+    d[kind].append(id)
+  return d
+
+
 def get_discovery_years(ids):
   frame = pd.read_csv('./data/raw_discovery_overview.csv')
   res = []
@@ -204,11 +223,20 @@ def generate_millennium():
   write_file_for_property(millennium_to_fields, 'data/millennium/gas_production_yearly_12MMA_mboe_d_by_startproduction.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d, should_write=lambda y: y>=2000)
   write_file_for_property(millennium_to_fields, 'data/millennium/oe_production_yearly_12MMA_mboe_d_by_startproduction.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d, should_write=lambda y: y>=2000)
 
-
+def generate_giants():
+  try:
+    os.makedirs('data/giants')
+  except:
+    pass
+  write_file_for_property(get_giant_status(get_distinct_fields(), 'fldRecoverableOil'), 'data/giants/oil_production_yearly_12MMA_mboe_d_by_fieldsize.csv', 'prfPrdOilNetMillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(get_giant_status(get_distinct_fields(), 'fldRecoverableGas'), 'data/giants/gas_production_yearly_12MMA_mboe_d_by_fieldsize.csv', 'prfPrdGasNetBillSm3', monthly=False, process=to_mboe_d)
+  write_file_for_property(get_giant_status(get_distinct_fields(), 'fldRecoverableOE'), 'data/giants/oe_production_yearly_12MMA_mboe_d_by_fieldsize.csv', 'prfPrdOeNetMillSm3', monthly=False, process=to_mboe_d)
+  
 if __name__=="__main__":
   print("start generate.py ...")
-  generate_decade()
-  generate_region()
-  generate_millennium()
+  #generate_decade()
+  #generate_region()
+  #generate_millennium()
+  generate_giants()
 
   print("exiting generate.py ...")

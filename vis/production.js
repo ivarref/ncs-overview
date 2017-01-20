@@ -206,7 +206,28 @@ var m = {
         group: 'region',
         filename: '/data/region/oe_production_yearly_12MMA_mboe_d_by_region.csv',
         screenshot: 'oe_production_yearly_12MMA_by_region.png'
-    }
+    },
+    oil_giants: {
+        title: 'oljeproduksjon',
+        unit: 'Millionar fat olje/dag',
+        group: 'feltstorleik',
+        filename: '/data/giants/oil_production_yearly_12MMA_mboe_d_by_fieldsize.csv',
+        screenshot: 'oil_production_yearly_12MMA_by_fieldsize.png'
+    },
+    gas_giants: {
+        title: 'gassproduksjon',
+        unit: 'Millionar fat oljeekvivalentar/dag',
+        group: 'feltstorleik',
+        filename: '/data/giants/gas_production_yearly_12MMA_mboe_d_by_fieldsize.csv',
+        screenshot: 'gas_production_yearly_12MMA_by_fieldsize.png'
+    },
+    oe_giants: {
+        title: 'petroleumproduksjon',
+        unit: 'Millionar fat oljeekvivalentar/dag',
+        group: 'feltstorleik',
+        filename: '/data/giants/oe_production_yearly_12MMA_mboe_d_by_fieldsize.csv',
+        screenshot: 'oe_production_yearly_12MMA_by_fieldsize.png'
+    },
 };
 
 var mode = findGetParameter('mode', 'oil');
