@@ -17,12 +17,13 @@ else
   ./download_well.sh
 fi
 
-./generate.py
-./generate_reserves.py
 ./add_discovery_year.py
+./drop_columns.py data/raw_reserves_field_discovery_year_mboe.csv fldRecoverableNGL fldRecoverableCondensate fldRemainingNGL fldRemainingCondensate
 cp -fv ./data/raw_reserves_field_discovery_year.csv ./data/raw_reserves_field.csv
 
-./drop_columns.py data/raw_reserves_field_discovery_year_mboe.csv fldRecoverableNGL fldRecoverableCondensate fldRemainingNGL fldRemainingCondensate
+./generate.py
+./generate_reserves.py
+
 ./generate_field_percentage_produced.py
 ./generate_giants.py
 ./generate_2000s.py
