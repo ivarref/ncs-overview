@@ -10,7 +10,7 @@
   "wlbSubSea": " NO",
   "wlbEntryDate": "18.07.1981",
   "wlbCompletionDate": "07.01.1982",
-  "wlbField": "",
+  "wlbField": "UTGARD",
   "wlbDrillPermit": "298-L",
   "wlbDiscovery": "15/8-1 UTGARD",
   "wlbDiscoveryWellbore": "YES",
@@ -73,7 +73,7 @@
   "wlbReleasedDate": "07.01.1984",
   "wlbNpdidWellbore": "321",
   "dscNpdidDiscovery": "43916",
-  "fldNpdidField": "",
+  "fldNpdidField": "28975098",
   "fclNpdidFacilityDrilling": "288091",
   "wlbNpdidWellboreReclass": "0",
   "prlNpdidProductionLicence": "21156"

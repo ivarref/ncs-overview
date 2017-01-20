@@ -1,0 +1,19 @@
+{
+  "dscName": "15/8-1 UTGARD",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "GAS",
+  "wlbName": "15/8-1",
+  "nmaName": "North sea",
+  "fldName": "UTGARD",
+  "dscDateFromInclInField": "17.01.2017",
+  "dscDiscoveryYear": "1982",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "UTGARD UNIT",
+  "dscNpdidDiscovery": "43916",
+  "fldNpdidField": "28975098",
+  "wlbNpdidWellbore": "321",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=43916",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=28975098"
+}

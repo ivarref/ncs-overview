@@ -10,7 +10,7 @@
   "wlbSubSea": " NO",
   "wlbEntryDate": "18.03.2005",
   "wlbCompletionDate": "28.05.2005",
-  "wlbField": "",
+  "wlbField": "BYRDING",
   "wlbDrillPermit": "1092-L",
   "wlbDiscovery": "35/11-13 BYRDING",
   "wlbDiscoveryWellbore": "YES",
@@ -73,7 +73,7 @@
   "wlbReleasedDate": "28.05.2007",
   "wlbNpdidWellbore": "5063",
   "dscNpdidDiscovery": "3465388",
-  "fldNpdidField": "",
+  "fldNpdidField": "28975067",
   "fclNpdidFacilityDrilling": "296164",
   "wlbNpdidWellboreReclass": "0",
   "prlNpdidProductionLicence": "21524"
