@@ -25,6 +25,7 @@ fi
 ./generate_giants.py
 ./generate_kumulativ_reservetilvekst_vs_produksjon.py
 ./calc_wells.py
+./calc_resources2.py > data/reserves_and_resources_mboe.csv
 ./split_monthly_production.py
 ./split_discoveries.py
 ./split_wellbores.py

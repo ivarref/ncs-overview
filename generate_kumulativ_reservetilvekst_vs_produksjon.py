@@ -21,7 +21,7 @@ def recoverable(field_id, kind):
 def cumulative_recoverable_since(since_year):
   field_to_year = generate.get_discovery_years(generate_reserves.get_distinct_fields())
   sidan_x = collections.OrderedDict([(field, str(year)) for (field, year) in field_to_year.items() if year >= since_year])
-  with open('./data/discoveries_since_%d.json' % (since_year), 'w') as wfd:
+  with open('./data/fields_since_%d.json' % (since_year), 'w') as wfd:
     json.dump(sidan_x, wfd, indent=2, ensure_ascii=False)
   
   result = []
