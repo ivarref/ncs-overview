@@ -139,7 +139,7 @@ function show_resource(config) {
                 .attr("dy", "0.35em")
                 .text(function (d) { 
                 if (d.indexOf("reserve") != -1) {
-                    return "Kumulativ reservevekst (nye funn sidan " + data[0].date.getFullYear() + ")";
+                    return "Kumulativ reservevekst (nye felt sidan " + data[0].date.getFullYear() + ")";
                 } else {
                     return "Kumulativ produksjon (sidan " + data[0].date.getFullYear() + ")";
                 }
@@ -155,7 +155,7 @@ function show_resource(config) {
             .replace("{år}", data[0].date.getFullYear())
             .replace("{produsert}", format(endData[config.keys[0]]))
             ,
-            "I den samme perioden har nye funn gjeve ein reservevekst på {reservar} {unit}."
+            "I den samme perioden har nye felt gjeve ein reservevekst på {reservar} {unit}."
             .replace("{unit}", config.unit.toLowerCase())
             .replace("{reservar}", format(endData[config.keys[1]])),
             "Dette betyr at ein har produsert {x} gonger så mykje som ein har funne."
