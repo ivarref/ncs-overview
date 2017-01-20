@@ -47,6 +47,7 @@ if __name__=="__main__":
       res = []
       for fldName in reserves[mask_reserves].fldName.unique():
         d = []
+        d.append(('discoveryYear', str(reserves[reserves.fldName == fldName].fldDiscoveryYear.values[0])))
         d.append(('oil_mboe', fmt(reserves[reserves.fldName == fldName].fldRemainingOil.sum())))
         d.append(('gas_mboe', fmt(reserves[reserves.fldName == fldName].fldRemainingGas.sum())))
         d.append(('oe_mboe', fmt(reserves[reserves.fldName == fldName].fldRemainingOE.sum())))
@@ -57,6 +58,8 @@ if __name__=="__main__":
       res = []
       for dscName in resources[mask].dscName.unique():
         d = []
+        
+        d.append(('discoveryYear', str(resources[resources.dscName == dscName].dscDiscoveryYear.values[0])))
         d.append(('oil_mboe', fmt(resources[resources.dscName == dscName].dscRecoverableOil.sum())))
         d.append(('gas_mboe', fmt(resources[resources.dscName == dscName].dscRecoverableGas.sum())))
         d.append(('oe_mboe', fmt(resources[resources.dscName == dscName].dscRecoverableOe.sum())))

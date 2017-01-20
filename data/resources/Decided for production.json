@@ -9,21 +9,25 @@
   "fields": {},
   "discoveries": {
     "31/2-N-11 H": {
+      "discoveryYear": "2005",
       "oil_mboe": "2.1",
       "gas_mboe": "0.0",
       "oe_mboe": "2.1"
     },
     "6406/3-2 (Trestakk)": {
+      "discoveryYear": "1986",
       "oil_mboe": "58.9",
       "gas_mboe": "11.5",
       "oe_mboe": "76.0"
     },
     "6507/7-14 S (Zidane)": {
+      "discoveryYear": "2010",
       "oil_mboe": "0.0",
       "gas_mboe": "112.7",
       "oe_mboe": "118.1"
     },
     "8/10-4 S (Butch)": {
+      "discoveryYear": "2011",
       "oil_mboe": "40.9",
       "gas_mboe": "1.8",
       "oe_mboe": "42.8"

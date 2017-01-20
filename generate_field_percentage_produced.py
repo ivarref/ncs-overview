@@ -8,7 +8,7 @@ import pandas as pd
 import generate
 
 if __name__=="__main__":
-  with open('./data/raw_reserves_field_discovery_year.csv', 'r') as rfd:
+  with open('./data/raw_reserves_field.csv', 'r') as rfd:
     reader = csv.reader(rfd)
 
     with open('./data/field_percentage_produced.csv', 'w') as wfd:

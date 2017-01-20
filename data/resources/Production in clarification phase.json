@@ -9,71 +9,85 @@
   "fields": {},
   "discoveries": {
     "16/4-6 S (Luno II)": {
+      "discoveryYear": "2013",
       "oil_mboe": "54.0",
       "gas_mboe": "15.5",
       "oe_mboe": "69.6"
     },
     "2/12-1 MJØLNER": {
+      "discoveryYear": "1987",
       "oil_mboe": "27.2",
       "gas_mboe": "5.3",
       "oe_mboe": "32.5"
     },
     "25/2-10 S (Frigg-GammaDelta)": {
+      "discoveryYear": "1986",
       "oil_mboe": "79.9",
       "gas_mboe": "0.0",
       "oe_mboe": "79.9"
     },
     "34/4-11 (Beta)": {
+      "discoveryYear": "2010",
       "oil_mboe": "23.0",
       "gas_mboe": "2.1",
       "oe_mboe": "28.1"
     },
     "34/6-2 S (Garantiana)": {
+      "discoveryYear": "2012",
       "oil_mboe": "76.2",
       "gas_mboe": "3.1",
       "oe_mboe": "79.3"
     },
     "35/9-7 (Skarfjell)": {
+      "discoveryYear": "2012",
       "oil_mboe": "69.3",
       "gas_mboe": "26.6",
       "oe_mboe": "111.3"
     },
     "6406/12-3 S (Pil)": {
+      "discoveryYear": "2014",
       "oil_mboe": "69.8",
       "gas_mboe": "26.4",
       "oe_mboe": "106.6"
     },
     "6407/8-6 (Snilehorn)": {
+      "discoveryYear": "2013",
       "oil_mboe": "46.9",
       "gas_mboe": "13.2",
       "oe_mboe": "67.1"
     },
     "6506/9-2 S (Fogelberg)": {
+      "discoveryYear": "2010",
       "oil_mboe": "8.9",
       "gas_mboe": "47.6",
       "oe_mboe": "65.1"
     },
     "6507/3-8 (Gjøk)": {
+      "discoveryYear": "2009",
       "oil_mboe": "0.0",
       "gas_mboe": "8.9",
       "oe_mboe": "12.0"
     },
     "6705/10-1 (Asterix)": {
+      "discoveryYear": "2009",
       "oil_mboe": "0.0",
       "gas_mboe": "108.0",
       "oe_mboe": "109.8"
     },
     "6706/12-2 (Snefrid Nord)": {
+      "discoveryYear": "2015",
       "oil_mboe": "0.0",
       "gas_mboe": "39.6",
       "oe_mboe": "39.6"
     },
     "7122/6-1 (Tornerose)": {
+      "discoveryYear": "1987",
       "oil_mboe": "0.0",
       "gas_mboe": "23.2",
       "oe_mboe": "24.3"
     },
     "7220/8-1 JOHAN CASTBERG": {
+      "discoveryYear": "2011",
       "oil_mboe": "540.1",
       "gas_mboe": "87.8",
       "oe_mboe": "627.9"
