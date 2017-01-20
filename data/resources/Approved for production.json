@@ -1,0 +1,58 @@
+{
+  "status": "Approved for production",
+  "oil_production_kboe_d_rp=10": "576",
+  "gas_production_kboe_d_rp=10": "158",
+  "oe_production_kboe_d_rp=10": "780",
+  "oil_mboe": "2102.5",
+  "gas_mboe": "578.4",
+  "oe_mboe": "2846.0",
+  "fields": {
+    "FLYNDRE": {
+      "oil_mboe": "2.5",
+      "gas_mboe": "0.6",
+      "oe_mboe": "3.1"
+    },
+    "GINA KROG": {
+      "oil_mboe": "106.3",
+      "gas_mboe": "75.5",
+      "oe_mboe": "221.2"
+    },
+    "HANZ": {
+      "oil_mboe": "14.5",
+      "gas_mboe": "2.5",
+      "oe_mboe": "18.2"
+    },
+    "JOHAN SVERDRUP": {
+      "oil_mboe": "1758.1",
+      "gas_mboe": "53.5",
+      "oe_mboe": "1855.7"
+    },
+    "MARIA": {
+      "oil_mboe": "157.2",
+      "gas_mboe": "15.7",
+      "oe_mboe": "196.9"
+    },
+    "MARTIN LINGE": {
+      "oil_mboe": "37.1",
+      "gas_mboe": "122.7",
+      "oe_mboe": "199.1"
+    },
+    "AASTA HANSTEEN": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "286.2",
+      "oe_mboe": "291.9"
+    }
+  },
+  "discoveries": {
+    "15/8-1 (Alpha)": {
+      "oil_mboe": "16.2",
+      "gas_mboe": "19.9",
+      "oe_mboe": "47.2"
+    },
+    "35/11-13 (Astero)": {
+      "oil_mboe": "10.6",
+      "gas_mboe": "1.9",
+      "oe_mboe": "12.8"
+    }
+  }
+}

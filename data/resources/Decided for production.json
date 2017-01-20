@@ -1,0 +1,32 @@
+{
+  "status": "Decided for production",
+  "oil_production_kboe_d_rp=10": "28",
+  "gas_production_kboe_d_rp=10": "35",
+  "oe_production_kboe_d_rp=10": "65",
+  "oil_mboe": "101.9",
+  "gas_mboe": "126.1",
+  "oe_mboe": "239.0",
+  "fields": {},
+  "discoveries": {
+    "31/2-N-11 H": {
+      "oil_mboe": "2.1",
+      "gas_mboe": "0.0",
+      "oe_mboe": "2.1"
+    },
+    "6406/3-2 (Trestakk)": {
+      "oil_mboe": "58.9",
+      "gas_mboe": "11.5",
+      "oe_mboe": "76.0"
+    },
+    "6507/7-14 S (Zidane)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "112.7",
+      "oe_mboe": "118.1"
+    },
+    "8/10-4 S (Butch)": {
+      "oil_mboe": "40.9",
+      "gas_mboe": "1.8",
+      "oe_mboe": "42.8"
+    }
+  }
+}

@@ -6439,24 +6439,5 @@
         "wlbNpdidWellbore": "1038",
         "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=45098",
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43807"
-    },
-    {
-        "dscName": "33/9-6 DELTA",
-        "cmpLongName": "Wintershall Norge AS",
-        "dscCurrentActivityStatus": "Shut down",
-        "dscHcType": "???",
-        "wlbName": "???",
-        "nmaName": "North sea",
-        "fldName": "33/9-6 DELTA",
-        "dscDateFromInclInField": "???",
-        "dscDiscoveryYear": "1976",
-        "dscResInclInDiscoveryName": "???",
-        "dscOwnerKind": "???",
-        "dscOwnerName": "???",
-        "dscNpdidDiscovery": "???",
-        "fldNpdidField": "44576",
-        "wlbNpdidWellbore": "???",
-        "dscFactPageUrl": "???",
-        "dscFactMapUrl": "???"
     }
 ]

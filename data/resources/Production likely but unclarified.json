@@ -1,0 +1,182 @@
+{
+  "status": "Production likely, but unclarified",
+  "oil_production_kboe_d_rp=10": "250",
+  "gas_production_kboe_d_rp=10": "275",
+  "oe_production_kboe_d_rp=10": "555",
+  "oil_mboe": "912.3",
+  "gas_mboe": "1005.4",
+  "oe_mboe": "2026.6",
+  "fields": {},
+  "discoveries": {
+    "1/9-1 TOMMELITEN ALPHA": {
+      "oil_mboe": "52.1",
+      "gas_mboe": "91.6",
+      "oe_mboe": "150.3"
+    },
+    "15/5-2 EIRIN": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "38.4",
+      "oe_mboe": "41.8"
+    },
+    "16/1-12 (Rolvsnes)": {
+      "oil_mboe": "32.0",
+      "gas_mboe": "2.8",
+      "oe_mboe": "37.1"
+    },
+    "16/1-14 (Apollo)": {
+      "oil_mboe": "32.6",
+      "gas_mboe": "1.1",
+      "oe_mboe": "34.6"
+    },
+    "2/4-21 (King Lear)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "50.9",
+      "oe_mboe": "85.5"
+    },
+    "2/5-3 (Sørøst Tor)": {
+      "oil_mboe": "19.5",
+      "gas_mboe": "5.5",
+      "oe_mboe": "25.0"
+    },
+    "24/9-10 S (Caterpillar)": {
+      "oil_mboe": "7.5",
+      "gas_mboe": "0.6",
+      "oe_mboe": "8.1"
+    },
+    "25/1-11 R (Storklakken)": {
+      "oil_mboe": "10.9",
+      "gas_mboe": "0.0",
+      "oe_mboe": "10.9"
+    },
+    "25/11-27": {
+      "oil_mboe": "27.4",
+      "gas_mboe": "0.0",
+      "oe_mboe": "27.4"
+    },
+    "25/2-5 LILLE FRØY": {
+      "oil_mboe": "19.6",
+      "gas_mboe": "7.2",
+      "oe_mboe": "26.7"
+    },
+    "25/4-3 (Gekko)": {
+      "oil_mboe": "1.3",
+      "gas_mboe": "17.9",
+      "oe_mboe": "19.1"
+    },
+    "25/5-9 (Trell)": {
+      "oil_mboe": "9.6",
+      "gas_mboe": "0.0",
+      "oe_mboe": "9.6"
+    },
+    "25/8-4 (D-struktur)": {
+      "oil_mboe": "52.5",
+      "gas_mboe": "0.0",
+      "oe_mboe": "52.5"
+    },
+    "30/11-8 S (Krafla)": {
+      "oil_mboe": "63.5",
+      "gas_mboe": "23.7",
+      "oe_mboe": "96.1"
+    },
+    "30/5-3 S (Corvus)": {
+      "oil_mboe": "2.8",
+      "gas_mboe": "34.5",
+      "oe_mboe": "37.4"
+    },
+    "34/11-2 S (Nøkken)": {
+      "oil_mboe": "10.8",
+      "gas_mboe": "24.5",
+      "oe_mboe": "40.9"
+    },
+    "34/12-1 (Afrodite)": {
+      "oil_mboe": "10.4",
+      "gas_mboe": "100.0",
+      "oe_mboe": "120.5"
+    },
+    "35/11-17 (F-Vest)": {
+      "oil_mboe": "3.1",
+      "gas_mboe": "1.7",
+      "oe_mboe": "4.8"
+    },
+    "35/2-1 (Peon)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "122.9",
+      "oe_mboe": "122.9"
+    },
+    "6406/2-1 LAVRANS": {
+      "oil_mboe": "15.3",
+      "gas_mboe": "58.7",
+      "oe_mboe": "83.1"
+    },
+    "6406/2-7 (Erlend)": {
+      "oil_mboe": "5.5",
+      "gas_mboe": "6.4",
+      "oe_mboe": "14.7"
+    },
+    "6407/6-6 MIKKEL SØR": {
+      "oil_mboe": "4.0",
+      "gas_mboe": "13.5",
+      "oe_mboe": "24.0"
+    },
+    "6407/7-8 (Noatun)": {
+      "oil_mboe": "3.1",
+      "gas_mboe": "12.8",
+      "oe_mboe": "19.2"
+    },
+    "6506/11-2 (Lange)": {
+      "oil_mboe": "3.4",
+      "gas_mboe": "1.5",
+      "oe_mboe": "5.5"
+    },
+    "6506/12-3 (Lysing)": {
+      "oil_mboe": "7.5",
+      "gas_mboe": "1.1",
+      "oe_mboe": "9.0"
+    },
+    "6506/6-1 (Victoria)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "168.5",
+      "oe_mboe": "168.5"
+    },
+    "6507/11-6 SIGRID": {
+      "oil_mboe": "2.3",
+      "gas_mboe": "12.1",
+      "oe_mboe": "18.3"
+    },
+    "6507/3-7 (Idun Nord)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "5.0",
+      "oe_mboe": "5.0"
+    },
+    "6507/7-13": {
+      "oil_mboe": "5.7",
+      "gas_mboe": "0.3",
+      "oe_mboe": "6.0"
+    },
+    "6607/12-2 S (Alve Nord)": {
+      "oil_mboe": "13.5",
+      "gas_mboe": "30.6",
+      "oe_mboe": "44.0"
+    },
+    "7120/12-2 (Alke Sør)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "71.5",
+      "oe_mboe": "81.3"
+    },
+    "7120/1-3 (Gohta)": {
+      "oil_mboe": "91.6",
+      "gas_mboe": "39.1",
+      "oe_mboe": "130.8"
+    },
+    "7220/11-1 (Alta)": {
+      "oil_mboe": "164.2",
+      "gas_mboe": "61.0",
+      "oe_mboe": "225.2"
+    },
+    "7324/8-1 (Wisting)": {
+      "oil_mboe": "240.9",
+      "gas_mboe": "0.0",
+      "oe_mboe": "240.9"
+    }
+  }
+}

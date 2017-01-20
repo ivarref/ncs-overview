@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./generate_giants.py
+./add_discovery_year2.py
 echo "---ooo---ooo---ooo---"

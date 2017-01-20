@@ -1,0 +1,82 @@
+{
+  "status": "Production in clarification phase",
+  "oil_production_kboe_d_rp=10": "273",
+  "gas_production_kboe_d_rp=10": "112",
+  "oe_production_kboe_d_rp=10": "398",
+  "oil_mboe": "995.4",
+  "gas_mboe": "407.3",
+  "oe_mboe": "1453.3",
+  "fields": {},
+  "discoveries": {
+    "16/4-6 S (Luno II)": {
+      "oil_mboe": "54.0",
+      "gas_mboe": "15.5",
+      "oe_mboe": "69.6"
+    },
+    "2/12-1 MJØLNER": {
+      "oil_mboe": "27.2",
+      "gas_mboe": "5.3",
+      "oe_mboe": "32.5"
+    },
+    "25/2-10 S (Frigg-GammaDelta)": {
+      "oil_mboe": "79.9",
+      "gas_mboe": "0.0",
+      "oe_mboe": "79.9"
+    },
+    "34/4-11 (Beta)": {
+      "oil_mboe": "23.0",
+      "gas_mboe": "2.1",
+      "oe_mboe": "28.1"
+    },
+    "34/6-2 S (Garantiana)": {
+      "oil_mboe": "76.2",
+      "gas_mboe": "3.1",
+      "oe_mboe": "79.3"
+    },
+    "35/9-7 (Skarfjell)": {
+      "oil_mboe": "69.3",
+      "gas_mboe": "26.6",
+      "oe_mboe": "111.3"
+    },
+    "6406/12-3 S (Pil)": {
+      "oil_mboe": "69.8",
+      "gas_mboe": "26.4",
+      "oe_mboe": "106.6"
+    },
+    "6407/8-6 (Snilehorn)": {
+      "oil_mboe": "46.9",
+      "gas_mboe": "13.2",
+      "oe_mboe": "67.1"
+    },
+    "6506/9-2 S (Fogelberg)": {
+      "oil_mboe": "8.9",
+      "gas_mboe": "47.6",
+      "oe_mboe": "65.1"
+    },
+    "6507/3-8 (Gjøk)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "8.9",
+      "oe_mboe": "12.0"
+    },
+    "6705/10-1 (Asterix)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "108.0",
+      "oe_mboe": "109.8"
+    },
+    "6706/12-2 (Snefrid Nord)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "39.6",
+      "oe_mboe": "39.6"
+    },
+    "7122/6-1 (Tornerose)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "23.2",
+      "oe_mboe": "24.3"
+    },
+    "7220/8-1 JOHAN CASTBERG": {
+      "oil_mboe": "540.1",
+      "gas_mboe": "87.8",
+      "oe_mboe": "627.9"
+    }
+  }
+}

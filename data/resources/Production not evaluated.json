@@ -1,0 +1,92 @@
+{
+  "status": "Production not evaluated",
+  "oil_production_kboe_d_rp=10": "31",
+  "gas_production_kboe_d_rp=10": "81",
+  "oe_production_kboe_d_rp=10": "119",
+  "oil_mboe": "111.6",
+  "gas_mboe": "297.2",
+  "oe_mboe": "433.9",
+  "fields": {},
+  "discoveries": {
+    "16/2-3 (Ragnarock)": {
+      "oil_mboe": "18.2",
+      "gas_mboe": "2.5",
+      "oe_mboe": "20.8"
+    },
+    "16/2-4": {
+      "oil_mboe": "8.6",
+      "gas_mboe": "1.1",
+      "oe_mboe": "18.4"
+    },
+    "16/2-5": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "12.0",
+      "oe_mboe": "13.2"
+    },
+    "2/4-17 TJALVE": {
+      "oil_mboe": "3.7",
+      "gas_mboe": "5.3",
+      "oe_mboe": "8.9"
+    },
+    "34/8-16 S (Tarvos)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "3.5",
+      "oe_mboe": "4.7"
+    },
+    "35/10-2": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "17.6",
+      "oe_mboe": "22.5"
+    },
+    "35/11-18": {
+      "oil_mboe": "12.6",
+      "gas_mboe": "0.0",
+      "oe_mboe": "12.6"
+    },
+    "35/12-2 (Grosbeak)": {
+      "oil_mboe": "30.2",
+      "gas_mboe": "4.4",
+      "oe_mboe": "34.6"
+    },
+    "6406/12-4 S": {
+      "oil_mboe": "20.0",
+      "gas_mboe": "2.0",
+      "oe_mboe": "22.0"
+    },
+    "6406/9-1 LINNORM": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "153.2",
+      "oe_mboe": "156.8"
+    },
+    "6407/2-5 S (Nona)": {
+      "oil_mboe": "18.3",
+      "gas_mboe": "8.2",
+      "oe_mboe": "26.9"
+    },
+    "6407/2-6 S (Flyndretind)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "12.0",
+      "oe_mboe": "15.1"
+    },
+    "6706/11-2 (Gymir)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "12.6",
+      "oe_mboe": "12.6"
+    },
+    "6706/12-3 (Roald Rygg)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "15.1",
+      "oe_mboe": "15.1"
+    },
+    "6707/10-3 S (Ivory)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "32.1",
+      "oe_mboe": "32.1"
+    },
+    "7121/5-2 (Snøhvit Beta)": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "15.7",
+      "oe_mboe": "17.6"
+    }
+  }
+}

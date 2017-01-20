@@ -1,0 +1,412 @@
+{
+  "status": "Producing",
+  "oil_production_kboe_d_rp=10": "1193",
+  "gas_production_kboe_d_rp=10": "3047",
+  "oe_production_kboe_d_rp=10": "4627",
+  "oil_mboe": "4355.2",
+  "gas_mboe": "11121.3",
+  "oe_mboe": "16890.2",
+  "fields": {
+    "ALVE": {
+      "oil_mboe": "1.9",
+      "gas_mboe": "11.3",
+      "oe_mboe": "16.8"
+    },
+    "ALVHEIM": {
+      "oil_mboe": "91.8",
+      "gas_mboe": "30.2",
+      "oe_mboe": "122.0"
+    },
+    "ATLA": {
+      "oil_mboe": "0.6",
+      "gas_mboe": "3.8",
+      "oe_mboe": "4.4"
+    },
+    "BALDER": {
+      "oil_mboe": "71.7",
+      "gas_mboe": "2.5",
+      "oe_mboe": "74.2"
+    },
+    "BLANE": {
+      "oil_mboe": "1.3",
+      "gas_mboe": "0.0",
+      "oe_mboe": "1.3"
+    },
+    "BRAGE": {
+      "oil_mboe": "24.5",
+      "gas_mboe": "12.6",
+      "oe_mboe": "43.1"
+    },
+    "BRYNHILD": {
+      "oil_mboe": "3.8",
+      "gas_mboe": "0.0",
+      "oe_mboe": "3.8"
+    },
+    "BØYLA": {
+      "oil_mboe": "16.4",
+      "gas_mboe": "0.6",
+      "oe_mboe": "17.0"
+    },
+    "DRAUGEN": {
+      "oil_mboe": "47.2",
+      "gas_mboe": "0.6",
+      "oe_mboe": "51.4"
+    },
+    "EDVARD GRIEG": {
+      "oil_mboe": "163.5",
+      "gas_mboe": "11.3",
+      "oe_mboe": "180.8"
+    },
+    "EKOFISK": {
+      "oil_mboe": "544.1",
+      "gas_mboe": "90.6",
+      "oe_mboe": "649.0"
+    },
+    "ELDFISK": {
+      "oil_mboe": "153.5",
+      "gas_mboe": "13.8",
+      "oe_mboe": "164.9"
+    },
+    "EMBLA": {
+      "oil_mboe": "12.6",
+      "gas_mboe": "12.0",
+      "oe_mboe": "26.9"
+    },
+    "ENOCH": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.0"
+    },
+    "FRAM": {
+      "oil_mboe": "39.6",
+      "gas_mboe": "45.3",
+      "oe_mboe": "92.1"
+    },
+    "FRAM H-NORD": {
+      "oil_mboe": "1.9",
+      "gas_mboe": "0.0",
+      "oe_mboe": "1.9"
+    },
+    "GAUPE": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.0"
+    },
+    "GIMLE": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "0.6",
+      "oe_mboe": "0.6"
+    },
+    "GJØA": {
+      "oil_mboe": "21.4",
+      "gas_mboe": "122.7",
+      "oe_mboe": "201.2"
+    },
+    "GOLIAT": {
+      "oil_mboe": "179.3",
+      "gas_mboe": "0.0",
+      "oe_mboe": "179.3"
+    },
+    "GRANE": {
+      "oil_mboe": "260.4",
+      "gas_mboe": "0.0",
+      "oe_mboe": "260.4"
+    },
+    "GUDRUN": {
+      "oil_mboe": "48.4",
+      "gas_mboe": "25.2",
+      "oe_mboe": "85.5"
+    },
+    "GULLFAKS": {
+      "oil_mboe": "103.2",
+      "gas_mboe": "0.0",
+      "oe_mboe": "103.2"
+    },
+    "GULLFAKS SØR": {
+      "oil_mboe": "86.8",
+      "gas_mboe": "267.3",
+      "oe_mboe": "434.2"
+    },
+    "GUNGNE": {
+      "oil_mboe": "0.6",
+      "gas_mboe": "3.1",
+      "oe_mboe": "5.6"
+    },
+    "GYDA": {
+      "oil_mboe": "1.3",
+      "gas_mboe": "0.6",
+      "oe_mboe": "1.9"
+    },
+    "HEIDRUN": {
+      "oil_mboe": "217.0",
+      "gas_mboe": "201.9",
+      "oe_mboe": "442.8"
+    },
+    "HEIMDAL": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.0"
+    },
+    "HOD": {
+      "oil_mboe": "4.4",
+      "gas_mboe": "0.6",
+      "oe_mboe": "7.4"
+    },
+    "HYME": {
+      "oil_mboe": "16.4",
+      "gas_mboe": "2.5",
+      "oe_mboe": "20.1"
+    },
+    "ISLAY": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.0"
+    },
+    "IVAR AASEN": {
+      "oil_mboe": "146.6",
+      "gas_mboe": "27.7",
+      "oe_mboe": "185.0"
+    },
+    "KNARR": {
+      "oil_mboe": "47.8",
+      "gas_mboe": "0.6",
+      "oe_mboe": "54.4"
+    },
+    "KRISTIN": {
+      "oil_mboe": "23.9",
+      "gas_mboe": "42.8",
+      "oe_mboe": "82.2"
+    },
+    "KVITEBJØRN": {
+      "oil_mboe": "55.4",
+      "gas_mboe": "220.2",
+      "oe_mboe": "353.2"
+    },
+    "MARULK": {
+      "oil_mboe": "1.9",
+      "gas_mboe": "20.8",
+      "oe_mboe": "26.2"
+    },
+    "MIKKEL": {
+      "oil_mboe": "13.8",
+      "gas_mboe": "85.5",
+      "oe_mboe": "143.6"
+    },
+    "MORVIN": {
+      "oil_mboe": "22.0",
+      "gas_mboe": "13.8",
+      "oe_mboe": "44.2"
+    },
+    "NJORD": {
+      "oil_mboe": "18.9",
+      "gas_mboe": "53.5",
+      "oe_mboe": "101.0"
+    },
+    "NORNE": {
+      "oil_mboe": "13.8",
+      "gas_mboe": "22.6",
+      "oe_mboe": "42.5"
+    },
+    "ORMEN LANGE": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "876.2",
+      "oe_mboe": "922.1"
+    },
+    "OSEBERG": {
+      "oil_mboe": "195.0",
+      "gas_mboe": "498.8",
+      "oe_mboe": "735.6"
+    },
+    "OSEBERG SØR": {
+      "oil_mboe": "105.7",
+      "gas_mboe": "69.2",
+      "oe_mboe": "189.2"
+    },
+    "OSEBERG ØST": {
+      "oil_mboe": "52.2",
+      "gas_mboe": "0.6",
+      "oe_mboe": "54.0"
+    },
+    "OSELVAR": {
+      "oil_mboe": "2.5",
+      "gas_mboe": "1.3",
+      "oe_mboe": "3.8"
+    },
+    "REV": {
+      "oil_mboe": "0.6",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.6"
+    },
+    "RINGHORNE ØST": {
+      "oil_mboe": "27.7",
+      "gas_mboe": "0.6",
+      "oe_mboe": "28.3"
+    },
+    "SIGYN": {
+      "oil_mboe": "4.4",
+      "gas_mboe": "5.0",
+      "oe_mboe": "9.9"
+    },
+    "SKARV": {
+      "oil_mboe": "58.5",
+      "gas_mboe": "208.8",
+      "oe_mboe": "312.7"
+    },
+    "SKIRNE": {
+      "oil_mboe": "1.9",
+      "gas_mboe": "0.0",
+      "oe_mboe": "1.9"
+    },
+    "SKULD": {
+      "oil_mboe": "15.7",
+      "gas_mboe": "0.6",
+      "oe_mboe": "16.4"
+    },
+    "SLEIPNER VEST": {
+      "oil_mboe": "13.2",
+      "gas_mboe": "62.3",
+      "oe_mboe": "84.5"
+    },
+    "SLEIPNER ØST": {
+      "oil_mboe": "0.6",
+      "gas_mboe": "2.5",
+      "oe_mboe": "3.1"
+    },
+    "SNORRE": {
+      "oil_mboe": "409.5",
+      "gas_mboe": "1.9",
+      "oe_mboe": "412.6"
+    },
+    "SNØHVIT": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "1189.4",
+      "oe_mboe": "1388.9"
+    },
+    "STATFJORD": {
+      "oil_mboe": "35.2",
+      "gas_mboe": "61.6",
+      "oe_mboe": "148.4"
+    },
+    "STATFJORD NORD": {
+      "oil_mboe": "32.7",
+      "gas_mboe": "-0.6",
+      "oe_mboe": "35.7"
+    },
+    "STATFJORD ØST": {
+      "oil_mboe": "5.0",
+      "gas_mboe": "0.0",
+      "oe_mboe": "13.4"
+    },
+    "SVALIN": {
+      "oil_mboe": "29.6",
+      "gas_mboe": "0.0",
+      "oe_mboe": "29.6"
+    },
+    "SYGNA": {
+      "oil_mboe": "6.9",
+      "gas_mboe": "0.0",
+      "oe_mboe": "6.9"
+    },
+    "TAMBAR": {
+      "oil_mboe": "3.1",
+      "gas_mboe": "0.6",
+      "oe_mboe": "7.4"
+    },
+    "TAMBAR ØST": {
+      "oil_mboe": "0.0",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.0"
+    },
+    "TORDIS": {
+      "oil_mboe": "48.4",
+      "gas_mboe": "3.1",
+      "oe_mboe": "54.0"
+    },
+    "TROLL": {
+      "oil_mboe": "196.2",
+      "gas_mboe": "5608.2",
+      "oe_mboe": "5980.4"
+    },
+    "TRYM": {
+      "oil_mboe": "2.5",
+      "gas_mboe": "9.4",
+      "oe_mboe": "12.0"
+    },
+    "TUNE": {
+      "oil_mboe": "-1.3",
+      "gas_mboe": "-6.3",
+      "oe_mboe": "-7.5"
+    },
+    "TYRIHANS": {
+      "oil_mboe": "61.6",
+      "gas_mboe": "244.1",
+      "oe_mboe": "389.4"
+    },
+    "ULA": {
+      "oil_mboe": "58.5",
+      "gas_mboe": "0.0",
+      "oe_mboe": "64.5"
+    },
+    "URD": {
+      "oil_mboe": "10.1",
+      "gas_mboe": "0.6",
+      "oe_mboe": "10.7"
+    },
+    "VALE": {
+      "oil_mboe": "3.1",
+      "gas_mboe": "4.4",
+      "oe_mboe": "7.5"
+    },
+    "VALEMON": {
+      "oil_mboe": "27.7",
+      "gas_mboe": "143.4",
+      "oe_mboe": "185.4"
+    },
+    "VALHALL": {
+      "oil_mboe": "204.4",
+      "gas_mboe": "32.7",
+      "oe_mboe": "255.1"
+    },
+    "VEGA": {
+      "oil_mboe": "21.4",
+      "gas_mboe": "64.2",
+      "oe_mboe": "138.0"
+    },
+    "VESLEFRIKK": {
+      "oil_mboe": "6.3",
+      "gas_mboe": "11.3",
+      "oe_mboe": "20.0"
+    },
+    "VIGDIS": {
+      "oil_mboe": "71.7",
+      "gas_mboe": "0.0",
+      "oe_mboe": "75.3"
+    },
+    "VILJE": {
+      "oil_mboe": "17.6",
+      "gas_mboe": "-3.1",
+      "oe_mboe": "14.5"
+    },
+    "VISUND": {
+      "oil_mboe": "56.6",
+      "gas_mboe": "286.8",
+      "oe_mboe": "416.3"
+    },
+    "VISUND SØR": {
+      "oil_mboe": "6.3",
+      "gas_mboe": "34.6",
+      "oe_mboe": "50.4"
+    },
+    "VOLUND": {
+      "oil_mboe": "26.4",
+      "gas_mboe": "2.5",
+      "oe_mboe": "28.9"
+    },
+    "ÅSGARD": {
+      "oil_mboe": "79.9",
+      "gas_mboe": "359.8",
+      "oe_mboe": "566.4"
+    }
+  },
+  "discoveries": {}
+}
