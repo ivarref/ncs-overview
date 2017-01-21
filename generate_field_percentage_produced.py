@@ -47,3 +47,5 @@ if __name__=="__main__":
     for f in ['./data/field_since_2000_percentage_produced.csv', './data/field_percentage_produced.csv']:
       frame = pd.read_csv(f)
       frame.sort_values(by='percentageProducedOE', ascending=False).to_csv(f, index=False)
+    pd.read_csv('./data/field_percentage_produced.csv').sort_values(by='percentageProducedOil', ascending=False).to_csv('./data/field_percentage_produced_oil.csv', index=False)
+    pd.read_csv('./data/field_percentage_produced.csv').sort_values(by='percentageProducedGas', ascending=False).to_csv('./data/field_percentage_produced_gas.csv', index=False)
