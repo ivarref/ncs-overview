@@ -185,5 +185,11 @@ if __name__=="__main__":
     print("\n## Petroleum")
     oversikt_etter_region(prefixFilename='oe', resource='petroleum', remainingField='remainingOE', unit='oljeekvivalentar')
 
-    #print("")
-    #print("# Oversikt over norsk sokkel etter region\n")
+    print("")
+    print("# Oversikt over kumulativ produksjon vs nye felt sidan år 2000\n")
+    print("Sidan årtusenskiftet har produksjonen på norsk sokkel vore fleire gonger større enn funna som er gjort.\n")
+    print("![olje](img/cumulative_oil_production_vs_reserve_growth_since_2000.png)\n")
+    print("![gass](img/cumulative_gas_production_vs_reserve_growth_since_2000.png)\n")
+    print("![petroleum](img/cumulative_oe_production_vs_reserve_growth_since_2000.png)\n")
+    print("")
+

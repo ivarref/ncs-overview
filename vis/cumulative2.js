@@ -84,6 +84,7 @@ function show_resource(config) {
                 .attr("x", -height / 2)
                 .attr("dy", "0.71em")
                 .style("text-anchor", "middle")
+                .classed('biggertext', true)
                 .text(config.unit);
 
             g.append("g")
@@ -97,6 +98,7 @@ function show_resource(config) {
                 .attr("y", -margin.right + 8)
                 .attr("dy", "0.71em")
                 .style("text-anchor", "middle")
+                .classed('biggertext', true)
                 .text(config.unit);
 
             g.append("g")
@@ -107,19 +109,12 @@ function show_resource(config) {
                 .classed("heading", true)
                 .text("Norsk " + config.title + ": Kumulativ produksjon og reservevekst sidan år " + data[0].date.getFullYear())
 
-            // g.append('text')
-            //     .attr("transform", "translate(15,7)")
-            //     .attr("dy", "0.35em")
-            //     .style('font-weight', 'bold')
-            //     .text("woohoo")
-
             var legend = g.append("g")
                 .attr("transform", "translate(15,15)")
                 .selectAll('g')
                 .data(keys.slice(0).reverse())
                 .enter().append('g')
                 .attr("transform", function (d, i) { return "translate(0," + (i * 20) + ")"; })
-                .style("font", "10px sans-serif");
 
             legend
                 .append('rect')
@@ -137,37 +132,42 @@ function show_resource(config) {
                 .attr("x", 18 + 4)
                 .attr('y', 9)
                 .attr("dy", "0.35em")
-                .text(function (d) { 
-                if (d.indexOf("reserve") != -1) {
-                    return "Kumulativ reservevekst (nye felt sidan " + data[0].date.getFullYear() + ")";
-                } else {
-                    return "Kumulativ produksjon (sidan " + data[0].date.getFullYear() + ")";
-                }
-            });
+                .classed('biggertext', true)
+                .text(function (d) {
+                    if (d.indexOf("reserve") != -1) {
+                        return "Kumulativ reservevekst (brutto, nye felt sidan " + data[0].date.getFullYear() + ")";
+                    } else {
+                        return "Kumulativ produksjon (sidan " + data[0].date.getFullYear() + ")";
+                    }
+                });
 
-            var format = function(x) {
+            var format = function (x) {
                 return x.toFixed(1).replace(".", ",");
             };
 
             var lines =
-            ["Sidan år {år} har ein produsert {produsert} {unit}."
-            .replace("{unit}", config.unit.toLowerCase())
-            .replace("{år}", data[0].date.getFullYear())
-            .replace("{produsert}", format(endData[config.keys[0]]))
-            ,
-            "I den samme perioden har nye felt gjeve ein reservevekst på {reservar} {unit}."
-            .replace("{unit}", config.unit.toLowerCase())
-            .replace("{reservar}", format(endData[config.keys[1]])),
-            "Dette betyr at ein har produsert {x} gonger så mykje som ein har funne."
-            .replace("{x}", format(endData[config.keys[0]] / endData[config.keys[1]]))
-            ];
+                [
+                    "Sidan år {år} har nye felt gjeve ein reservevekst på {reservar} {unit}."
+                        .replace("{unit}", config.unit.toLowerCase())
+                        .replace("{år}", data[0].date.getFullYear())
+                        .replace("{reservar}", format(endData[config.keys[1]])),
+                    "I den samme perioden har ein produsert {produsert} {unit}."
+                        .replace("{unit}", config.unit.toLowerCase())
+                        .replace("{år}", data[0].date.getFullYear())
+                        .replace("{produsert}", format(endData[config.keys[0]]))
+                    ,
+
+                    "Ein har dermed produsert {x} gonger så mykje som ein har funne."
+                        .replace("{x}", format(endData[config.keys[0]] / endData[config.keys[1]]))
+                ];
             g.append("g")
-                .attr("transform", "translate(15,95)")
+                .attr("transform", "translate(15,75)")
                 .selectAll('g')
                 .data(lines)
                 .enter().append('g')
                 .attr("transform", function (d, i) { return "translate(0," + (i * 20) + ")"; })
                 .append('text')
+                .classed('biggertext', true)
                 .text(Object)
         });
 }

@@ -141,3 +141,15 @@ Norskehavet har 19% (3,7 milliardar fat oljeekvivalentar) av petroleumreservane.
 
 Barentshavet har 8% (1,6 milliardar fat oljeekvivalentar) av petroleumreservane.
 
+
+# Oversikt over kumulativ produksjon vs nye felt sidan år 2000
+
+Sidan årtusenskiftet har produksjonen på norsk sokkel vore fleire gonger større enn funna som er gjort.
+
+![olje](img/cumulative_oil_production_vs_reserve_growth_since_2000.png)
+
+![gass](img/cumulative_gas_production_vs_reserve_growth_since_2000.png)
+
+![petroleum](img/cumulative_oe_production_vs_reserve_growth_since_2000.png)
+
+
