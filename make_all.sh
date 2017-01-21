@@ -28,11 +28,10 @@ cp -fv ./data/raw_reserves_field_discovery_year.csv ./data/raw_reserves_field.cs
 ./generate_giants.py
 ./generate_2000s.py
 ./generate_kumulativ_reservetilvekst_vs_produksjon.py
-./generate_field_cumulative_reserves.py
-
 ./calc_wells.py
 mkdir -p data/resources
 ./calc_resources2.py > data/resources/reserves_and_resources_mboe.csv
+./generate_field_cumulative_reserves.py
 ./split_monthly_production.py
 ./split_discoveries.py
 ./split_wellbores.py
