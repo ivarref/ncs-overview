@@ -37,10 +37,11 @@ if __name__=="__main__":
     mode = k
     img = './img/' + v['screenshot']
     cmd = """curl -s -H "Content-Type: application/json" -d '{"url":"%s:8080/bundle?mode=%s", "force": true, "width": 10, "height": 10}' http://%s:8891/ -o %s""" % (self_ip, mode, docker_ip, img)
-    print(cmd.encode('utf8'))
+    #print(cmd.encode('utf8'))
     def screenshot(retries=0):
+      print("fetching image", img, "...")
       ret = os.system(cmd.encode('utf8'))
-      print("command returned with", ret)
+      #print("command returned with", ret)
       if ret != 0:
         print("failure!")
         sys.exit(1)
@@ -51,4 +52,6 @@ if __name__=="__main__":
       elif os.stat(img).st_size == 2779:
         print("could not generate non-white screenshot for img", img, "!")
         sys.exit(1)
+      else:
+        print("fetching image", img, "... OK!")
     screenshot()
