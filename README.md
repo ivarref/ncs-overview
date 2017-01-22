@@ -155,6 +155,6 @@ Sidan årtusenskiftet har produksjonen på norsk sokkel vore fleire gonger stør
 
 ## Noter
 
-Alle data som er brukt er henta frå (http://factpages.npd.no/factpages/)[Oljedirektoratets faktasider].
+Alle data som er brukt er henta frå [Oljedirektoratets faktasider](http://factpages.npd.no/factpages/).
 
-Spørsmål, kontakt eller bruk? (mailto:refsdal.ivar@gmail.com)[refsdal.ivar@gmail.com]
+Spørsmål, kontakt eller bruk? [refsdal.ivar@gmail.com](mailto:refsdal.ivar@gmail.com)

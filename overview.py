@@ -194,6 +194,6 @@ if __name__=="__main__":
     print("")
 
     print("## Noter\n")
-    print("Alle data som er brukt er henta frå (http://factpages.npd.no/factpages/)[Oljedirektoratets faktasider].\n")
-    print("Spørsmål, kontakt eller bruk? (mailto:refsdal.ivar@gmail.com)[refsdal.ivar@gmail.com]")
+    print("Alle data som er brukt er henta frå [Oljedirektoratets faktasider](http://factpages.npd.no/factpages/).\n")
+    print("Spørsmål, kontakt eller bruk? [refsdal.ivar@gmail.com](mailto:refsdal.ivar@gmail.com)")
 
