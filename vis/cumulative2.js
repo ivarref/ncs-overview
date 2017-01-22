@@ -169,6 +169,17 @@ function show_resource(config) {
                 .append('text')
                 .classed('biggertext', true)
                 .text(Object)
+
+            g.append("g")
+                .attr("transform", "translate(" + width + "," + height + ")")
+                .append('text')
+                .classed('biggertext', true)
+                .attr('dy', '-.3em')
+                .attr('dx', '-.3em')
+                .style('text-anchor', 'end')
+                .style('fill', 'white')
+                .text("Basert på data frå OD. Diagram: Refsdal.Ivar@gmail.com")
+
         });
 }
 

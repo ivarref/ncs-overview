@@ -153,3 +153,8 @@ Sidan årtusenskiftet har produksjonen på norsk sokkel vore fleire gonger stør
 ![petroleum](img/cumulative_oe_production_vs_reserve_growth_since_2000.png)
 
 
+## Noter
+
+Alle data som er brukt er henta frå (http://factpages.npd.no/factpages/)[Oljedirektoratets faktasider].
+
+Spørsmål, kontakt eller bruk? (mailto:refsdal.ivar@gmail.com)[refsdal.ivar@gmail.com]

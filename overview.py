@@ -193,3 +193,7 @@ if __name__=="__main__":
     print("![petroleum](img/cumulative_oe_production_vs_reserve_growth_since_2000.png)\n")
     print("")
 
+    print("## Noter\n")
+    print("Alle data som er brukt er henta frå (http://factpages.npd.no/factpages/)[Oljedirektoratets faktasider].\n")
+    print("Spørsmål, kontakt eller bruk? (mailto:refsdal.ivar@gmail.com)[refsdal.ivar@gmail.com]")
+
