@@ -59,4 +59,11 @@ curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/discovery_reserv
 mv -fv tmp.csv data/raw_discovery_resources.csv
 ./explode_csv.py data/raw_discovery_resources.csv data/raw_discovery_resources.json
 
+# factpages.npd.no -> Field -> Table view -> Production -> Saleable -> Yearly - by field
+curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field_production_yearly&rs:Command=Render&rc:Toolbar=false&rc:Parameters=f&rs:Format=CSV&Top100=false&IpAddress=129.177.92.109&CultureCode=en" \
+| tr -d '\r' \
+| awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}{print}' \
+| sed '/33\/9-6 DELTA/d' \
+| awk 'NF' > data/raw_production_yearly_field.csv
+
 echo "download.sh OK"

@@ -28,6 +28,7 @@ cp -fv ./data/raw_reserves_field_discovery_year.csv ./data/raw_reserves_field.cs
 ./generate_giants.py
 ./generate_2000s.py
 ./generate_kumulativ_reservetilvekst_vs_produksjon.py
+./generate_kumulativ_netto_reserver.py
 ./calc_wells.py
 ./calc_wells2.py
 ./calc_wells3.py
