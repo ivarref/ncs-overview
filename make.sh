@@ -1,5 +1,5 @@
 #!/bin/bash
 
 clear
-./generate_field_cumulative_reserves.py
+./calc_wells2.py
 echo "---ooo---ooo---ooo---"
