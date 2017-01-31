@@ -19,7 +19,7 @@ function show_resource(resource, group, unit, file) {
         .attr('width', 960)
         .attr('height', 500);
 
-    var margin = { top: 40, right: 50, bottom: 30, left: 50 },
+    var margin = { top: 40, right: 50, bottom: 40, left: 50 },
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -140,6 +140,24 @@ function show_resource(resource, group, unit, file) {
                 .attr('y', 9)
                 .attr("dy", "0.35em")
                 .text(function (d) { return d in translate ? translate[d] : d });
+
+            g.append("g")
+                .attr("transform", "translate(" + 0 + "," + (height+margin.bottom) + ")")
+                .append('text')
+                .classed('biggertext', true)
+                .attr('dy', '-.31em')
+                .style('text-anchor', 'start')
+                .text("Basert på data frå Oljedirektoratet")
+            
+            g.append("g")
+                .attr("transform", "translate(" + width + "," + (height+margin.bottom) + ")")
+                .append('text')
+                .classed('biggertext', true)
+                .attr('dy', '-.31em')
+                .style('text-anchor', 'end')
+                //.style('font-variant', 'small-caps')
+                .text("Diagram: Refsdal.Ivar@gmail.com")
+
         });
 }
 
