@@ -26,13 +26,13 @@ if __name__=="__main__":
       for (decade, fields) in decade_to_fields.items():
         cumulative_reserves = reserves[(reserves.fldDiscoveryYear <= year)  & reserves.fldName.isin(fields)][reserve_kind].sum()
         cumulative_produced = production[(production.prfYear <= year)  & production.prfInformationCarrier.isin(fields)][prod_kind].sum()
-        mboe = 6.29*(cumulative_reserves - cumulative_produced)
-        r.append(mboe)
+        gboe = 6.29*(cumulative_reserves - cumulative_produced) / 1000.0
+        r.append(gboe)
       res.append([year] + r + [sum(r)])
-    frame = pd.DataFrame(res, columns=['year'] + list(decade_to_fields.keys()) + ['Sum'])
+    frame = pd.DataFrame(res, columns=['Date'] + list(decade_to_fields.keys()) + ['Sum'])
     return frame
   
-  process('fldRecoverableOil', 'prfPrdOilNetMillSm3').to_csv('./data/cumulative net reserves oil mboe.csv', index=False, float_format="%.1f")
-  process('fldRecoverableGas', 'prfPrdGasNetBillSm3').to_csv('./data/cumulative net reserves gas mboe.csv', index=False, float_format="%.1f")
-  process('fldRecoverableOE', 'prfPrdOeNetMillSm3').to_csv('./data/cumulative net reserves oe mboe.csv', index=False, float_format="%.1f")
+  process('fldRecoverableOil', 'prfPrdOilNetMillSm3').to_csv('./data/cumulative net reserves oil gboe.csv', index=False, float_format="%.1f")
+  process('fldRecoverableGas', 'prfPrdGasNetBillSm3').to_csv('./data/cumulative net reserves gas gboe.csv', index=False, float_format="%.1f")
+  process('fldRecoverableOE', 'prfPrdOeNetMillSm3').to_csv('./data/cumulative net reserves oe gboe.csv', index=False, float_format="%.1f")
   

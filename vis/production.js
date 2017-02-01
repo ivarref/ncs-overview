@@ -85,6 +85,7 @@ function show_resource(resource, group, unit, file) {
                 .attr("x", -height / 2)
                 .attr("dy", "0.71em")
                 .style("text-anchor", "middle")
+                .classed('biggertext', true)
                 .text(unit);
 
             g.append("g")
@@ -98,21 +99,27 @@ function show_resource(resource, group, unit, file) {
                 .attr("y", -margin.right + 8)
                 .attr("dy", "0.71em")
                 .style("text-anchor", "middle")
+                .classed('biggertext', true)
                 .text(unit);
 
 
+            var title = "Norsk " + resource + " etter " + group;
+            if (resource.indexOf(" ") >= 0) {
+                title = resource;
+            }
             g.append("g")
                 .append("text")
                 .attr('dy', '-.35em')
                 .attr('x', width / 2)
                 .style("text-anchor", "middle")
                 .classed("heading", true)
-                .text("Norsk " + resource + " etter " + group)
+                .text(title)
 
             g.append('text')
                 .attr("transform", "translate(15,7)")
                 .attr("dy", "0.35em")
                 .style('font-weight', 'bold')
+                .classed('biggertext', true)
                 .text(group[0].toUpperCase() + group.substr(1))
 
             var legend = g.append("g")
@@ -139,6 +146,7 @@ function show_resource(resource, group, unit, file) {
                 .attr("x", 18 + 4)
                 .attr('y', 9)
                 .attr("dy", "0.35em")
+                .classed('biggertext', true)
                 .text(function (d) { return d in translate ? translate[d] : d });
 
             g.append("g")
@@ -245,6 +253,27 @@ var m = {
         group: 'feltstorleik',
         filename: '/data/giants/oe_production_yearly_12MMA_mboe_d_by_fieldsize.csv',
         screenshot: 'oe_production_yearly_12MMA_by_fieldsize.png'
+    },
+    oil_reserves_history: {
+        title: 'Oljereservar etter funntiår',
+        unit: 'Milliardar fat olje',
+        group: 'funntiår',
+        filename: '/data/cumulative net reserves oil gboe.csv',
+        screenshot: 'reserves history oil gboe.png'
+    },
+    gas_reserves_history: {
+        title: 'Gassreservar etter funntiår',
+        unit: 'Milliardar fat oljeekvivalentar',
+        group: 'funntiår',
+        filename: '/data/cumulative net reserves gas gboe.csv',
+        screenshot: 'reserves history gas gboe.png'
+    },
+    oe_reserves_history: {
+        title: 'Petroleumreservar etter funntiår',
+        unit: 'Milliardar fat oljeekvivalentar',
+        group: 'funntiår',
+        filename: '/data/cumulative net reserves oe gboe.csv',
+        screenshot: 'reserves history oe gboe.png'
     },
 };
 
