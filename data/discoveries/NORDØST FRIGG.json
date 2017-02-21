@@ -1,6 +1,6 @@
 {
   "dscName": "25/1-4 NORDØST FRIGG",
-  "cmpLongName": "",
+  "cmpLongName": "Statoil Petroleum AS",
   "dscCurrentActivityStatus": "Shut down",
   "dscHcType": "GAS",
   "wlbName": "25/1-4",
@@ -9,8 +9,8 @@
   "dscDateFromInclInField": "12.09.1980",
   "dscDiscoveryYear": "1974",
   "dscResInclInDiscoveryName": "",
-  "dscOwnerKind": "",
-  "dscOwnerName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "903",
   "dscNpdidDiscovery": "44228",
   "fldNpdidField": "43568",
   "wlbNpdidWellbore": "350",

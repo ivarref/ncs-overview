@@ -1,6 +1,6 @@
 {
   "dscName": "30/2-1 HULDRA",
-  "cmpLongName": "",
+  "cmpLongName": "Statoil Petroleum AS",
   "dscCurrentActivityStatus": "Shut down",
   "dscHcType": "GAS/CONDENSATE",
   "wlbName": "30/2-1",
@@ -9,8 +9,8 @@
   "dscDateFromInclInField": "02.02.1999",
   "dscDiscoveryYear": "1982",
   "dscResInclInDiscoveryName": "",
-  "dscOwnerKind": "",
-  "dscOwnerName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "878",
   "dscNpdidDiscovery": "44372",
   "fldNpdidField": "97002",
   "wlbNpdidWellbore": "72",

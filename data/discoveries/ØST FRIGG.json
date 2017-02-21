@@ -1,6 +1,6 @@
 {
   "dscName": "25/2-1 ØST FRIGG",
-  "cmpLongName": "",
+  "cmpLongName": "Aker BP ASA",
   "dscCurrentActivityStatus": "Shut down",
   "dscHcType": "GAS",
   "wlbName": "25/2-1",
@@ -9,8 +9,8 @@
   "dscDateFromInclInField": "14.12.1984",
   "dscDiscoveryYear": "1973",
   "dscResInclInDiscoveryName": "",
-  "dscOwnerKind": "",
-  "dscOwnerName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "873",
   "dscNpdidDiscovery": "44234",
   "fldNpdidField": "43576",
   "wlbNpdidWellbore": "353",

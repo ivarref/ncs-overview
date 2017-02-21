@@ -1,6 +1,6 @@
 {
   "dscName": "30/10-2 ODIN",
-  "cmpLongName": "",
+  "cmpLongName": "Statoil Petroleum AS",
   "dscCurrentActivityStatus": "Shut down",
   "dscHcType": "GAS",
   "wlbName": "30/10-2",
@@ -9,8 +9,8 @@
   "dscDateFromInclInField": "18.07.1980",
   "dscDiscoveryYear": "1974",
   "dscResInclInDiscoveryName": "",
-  "dscOwnerKind": "",
-  "dscOwnerName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "903",
   "dscNpdidDiscovery": "44360",
   "fldNpdidField": "43610",
   "wlbNpdidWellbore": "392",
