@@ -17,10 +17,6 @@ else
   ./download_well.sh
 fi
 
-./add_discovery_year.py
-./drop_columns.py data/raw_reserves_field_discovery_year_mboe.csv fldRecoverableNGL fldRecoverableCondensate fldRemainingNGL fldRemainingCondensate
-cp -fv ./data/raw_reserves_field_discovery_year.csv ./data/raw_reserves_field.csv
-
 ./generate.py
 ./generate_reserves.py
 

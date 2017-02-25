@@ -37,10 +37,11 @@ curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field_reserves&r
 | tr -d '\r' \
 | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}{print}' \
 | awk 'NF' > data/raw_reserves_field.csv
-#diff <(head -n 1 tmp_data/raw_reserves_field.csv) <(head -n 1 extra_data/field_reserves_extra.csv)
-#awk 'NF' extra_data/field_reserves_extra.csv > data/raw_reserves_field.csv
-#cat tmp_data/raw_reserves_field.csv | tail -n +2 >> data/raw_reserves_field.csv
 ./drop_columns.py data/raw_reserves_field.csv DatesyncNPD fldDateOffResEstDisplay
+./add_discovery_year.py
+./drop_columns.py data/raw_reserves_field_discovery_year_mboe.csv fldRecoverableNGL fldRecoverableCondensate fldRemainingNGL fldRemainingCondensate
+cp -fv ./data/raw_reserves_field_discovery_year.csv ./data/raw_reserves_field.csv
+
 cp -fv data/raw_reserves_field.csv data/raw_reserves_field_original_recoverable.csv
 ./drop_columns.py data/raw_reserves_field_original_recoverable.csv fldRecoverableNGL fldRecoverableCondensate fldRemainingOil fldRemainingGas fldRemainingNGL fldRemainingCondensate fldRemainingOE
 ./explode_csv.py data/raw_reserves_field_original_recoverable.csv data/raw_reserves_field_original_recoverable.json
