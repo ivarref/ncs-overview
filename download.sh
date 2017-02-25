@@ -41,6 +41,9 @@ curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field_reserves&r
 #awk 'NF' extra_data/field_reserves_extra.csv > data/raw_reserves_field.csv
 #cat tmp_data/raw_reserves_field.csv | tail -n +2 >> data/raw_reserves_field.csv
 ./drop_columns.py data/raw_reserves_field.csv DatesyncNPD fldDateOffResEstDisplay
+cp -fv data/raw_reserves_field.csv data/raw_reserves_field_original_recoverable.csv
+./drop_columns.py data/raw_reserves_field_original_recoverable.csv fldRecoverableNGL fldRecoverableCondensate fldRemainingOil fldRemainingGas fldRemainingNGL fldRemainingCondensate fldRemainingOE
+./explode_csv.py data/raw_reserves_field_original_recoverable.csv data/raw_reserves_field_original_recoverable.json
 
 # factpages.npd.no -> Field -> Table view -> Production -> Saleable -> Yearly - total
 curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field_production_totalt_NCS_year__DisplayAllRows&rs:Command=Render&rc:Toolbar=false&rc:Parameters=f&rs:Format=CSV&Top100=false&IpAddress=80.213.255.240&CultureCode=en" \
