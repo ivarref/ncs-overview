@@ -1,14 +1,14 @@
 dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
-7121/4-1 SNØHVIT,reserve,1984,Producing,0.0,1189.4,1388.9
-7220/8-1 JOHAN CASTBERG,resource,2011,Production in clarification phase,540.1,87.8,627.9
-7324/8-1 (Wisting),resource,2013,"Production likely, but unclarified",240.9,0.0,240.9
-7220/11-1 (Alta),resource,2014,"Production likely, but unclarified",164.2,61.0,225.2
-7122/7-1 GOLIAT,reserve,2000,Producing,179.3,0.0,179.3
-7120/1-3 (Gohta),resource,2013,"Production likely, but unclarified",91.6,39.1,130.8
+7121/4-1 SNØHVIT,reserve,1984,Producing,0.0,1147.3,1339.7
+7220/8-1 JOHAN CASTBERG,resource,2011,Production in clarification phase,554.1,68.6,622.7
+7324/8-1 (Wisting),resource,2013,"Production likely, but unclarified",355.3,0.0,355.3
+7220/11-1 (Alta),resource,2014,"Production likely, but unclarified",166.1,61.0,227.1
+7122/7-1 GOLIAT,reserve,2000,Producing,176.1,0.0,176.1
+7120/1-3 (Gohta),resource,2013,"Production likely, but unclarified",92.0,39.1,131.1
 7120/12-2 (Alke Sør),resource,1981,"Production likely, but unclarified",0.0,71.5,81.3
+7220/6-2 R,resource,2016,Production not evaluated,31.4,9.4,40.9
 7122/6-1 (Tornerose),resource,1987,Production in clarification phase,0.0,23.2,24.3
 7121/5-2 (Snøhvit Beta),resource,1986,Production not evaluated,0.0,15.7,17.6
-7220/6-2 R,unknown,2016,Production not evaluated,0.0,0.0,0.0
-Sum resources,resource,All,Any,1036.8,298.4,1348.0
-Sum reserves,reserve,All,Any,179.3,1189.4,1568.2
-Sum,resource,All,All,1216.1,1487.8,2916.2
+Sum resources,resource,All,Any,1198.9,288.6,1500.3
+Sum reserves,reserve,All,Any,176.1,1147.3,1515.8
+Sum,resource,All,All,1375.1,1435.9,3016.1

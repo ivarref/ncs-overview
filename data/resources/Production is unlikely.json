@@ -1,84 +1,11 @@
 {
   "status": "Production is unlikely",
-  "oil_production_kboe_d_rp=10": "33",
-  "gas_production_kboe_d_rp=10": "18",
-  "oe_production_kboe_d_rp=10": "54",
-  "oil_mboe": "120.4",
-  "gas_mboe": "67.1",
-  "oe_mboe": "196.6",
+  "oil_production_kboe_d_rp=10": "0",
+  "gas_production_kboe_d_rp=10": "0",
+  "oe_production_kboe_d_rp=10": "0",
+  "oil_mboe": "0.0",
+  "gas_mboe": "0.0",
+  "oe_mboe": "0.0",
   "fields": {},
-  "discoveries": {
-    "15/12-21 (Grevling)": {
-      "discoveryYear": "2009",
-      "oil_mboe": "48.4",
-      "gas_mboe": "0.7",
-      "oe_mboe": "49.1"
-    },
-    "15/6-13": {
-      "discoveryYear": "2015",
-      "oil_mboe": "2.8",
-      "gas_mboe": "4.5",
-      "oe_mboe": "8.1"
-    },
-    "17/12-1 VETTE": {
-      "discoveryYear": "1972",
-      "oil_mboe": "46.4",
-      "gas_mboe": "0.4",
-      "oe_mboe": "46.8"
-    },
-    "18/10-1 (Mackerel)": {
-      "discoveryYear": "1980",
-      "oil_mboe": "7.7",
-      "gas_mboe": "0.0",
-      "oe_mboe": "7.7"
-    },
-    "2/4-22 S (Romeo)": {
-      "discoveryYear": "2015",
-      "oil_mboe": "5.9",
-      "gas_mboe": "1.9",
-      "oe_mboe": "7.9"
-    },
-    "34/4-10 (Beta Brent)": {
-      "discoveryYear": "2000",
-      "oil_mboe": "6.2",
-      "gas_mboe": "0.9",
-      "oe_mboe": "7.2"
-    },
-    "6406/2-8 (Imsa Sør)": {
-      "discoveryYear": "2015",
-      "oil_mboe": "3.0",
-      "gas_mboe": "1.4",
-      "oe_mboe": "4.4"
-    },
-    "6406/6-4 S": {
-      "discoveryYear": "2015",
-      "oil_mboe": "0.0",
-      "gas_mboe": "7.6",
-      "oe_mboe": "11.1"
-    },
-    "6407/1-6 S": {
-      "discoveryYear": "2013",
-      "oil_mboe": "0.0",
-      "gas_mboe": "10.7",
-      "oe_mboe": "13.2"
-    },
-    "6407/1-7": {
-      "discoveryYear": "2014",
-      "oil_mboe": "0.0",
-      "gas_mboe": "6.9",
-      "oe_mboe": "8.8"
-    },
-    "6407/9-9 (Hasselmus)": {
-      "discoveryYear": "1999",
-      "oil_mboe": "0.0",
-      "gas_mboe": "0.6",
-      "oe_mboe": "1.0"
-    },
-    "7120/2-3 S (Skalle)": {
-      "discoveryYear": "2011",
-      "oil_mboe": "0.0",
-      "gas_mboe": "31.4",
-      "oe_mboe": "31.4"
-    }
-  }
+  "discoveries": {}
 }

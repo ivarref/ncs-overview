@@ -1,155 +1,155 @@
 {
   "status": "Producing",
-  "oil_production_kboe_d_rp=10": "1193",
-  "gas_production_kboe_d_rp=10": "3047",
-  "oe_production_kboe_d_rp=10": "4627",
-  "oil_mboe": "4355.2",
-  "gas_mboe": "11121.3",
-  "oe_mboe": "16890.2",
+  "oil_production_kboe_d_rp=10": "1089",
+  "gas_production_kboe_d_rp=10": "2873",
+  "oe_production_kboe_d_rp=10": "4327",
+  "oil_mboe": "3974.7",
+  "gas_mboe": "10486.7",
+  "oe_mboe": "15794.8",
   "fields": {
     "ALVE": {
       "discoveryYear": "1990",
-      "oil_mboe": "1.9",
-      "gas_mboe": "11.3",
-      "oe_mboe": "16.8"
+      "oil_mboe": "2.5",
+      "gas_mboe": "12.6",
+      "oe_mboe": "18.7"
     },
     "ALVHEIM": {
       "discoveryYear": "1998",
-      "oil_mboe": "91.8",
-      "gas_mboe": "30.2",
-      "oe_mboe": "122.0"
+      "oil_mboe": "93.7",
+      "gas_mboe": "34.0",
+      "oe_mboe": "127.7"
     },
     "ATLA": {
       "discoveryYear": "2010",
       "oil_mboe": "0.6",
-      "gas_mboe": "3.8",
-      "oe_mboe": "4.4"
+      "gas_mboe": "0.6",
+      "oe_mboe": "1.3"
     },
     "BALDER": {
       "discoveryYear": "1967",
-      "oil_mboe": "71.7",
+      "oil_mboe": "59.8",
       "gas_mboe": "2.5",
-      "oe_mboe": "74.2"
+      "oe_mboe": "62.3"
     },
     "BLANE": {
       "discoveryYear": "1989",
+      "oil_mboe": "0.6",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.6"
+    },
+    "BRAGE": {
+      "discoveryYear": "1980",
+      "oil_mboe": "27.0",
+      "gas_mboe": "4.4",
+      "oe_mboe": "31.4"
+    },
+    "BRYNHILD": {
+      "discoveryYear": "1992",
+      "oil_mboe": "0.6",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.6"
+    },
+    "BØYLA": {
+      "discoveryYear": "2009",
+      "oil_mboe": "12.6",
+      "gas_mboe": "0.6",
+      "oe_mboe": "13.2"
+    },
+    "DRAUGEN": {
+      "discoveryYear": "1984",
+      "oil_mboe": "37.7",
+      "gas_mboe": "0.0",
+      "oe_mboe": "40.1"
+    },
+    "EDVARD GRIEG": {
+      "discoveryYear": "2007",
+      "oil_mboe": "148.4",
+      "gas_mboe": "13.8",
+      "oe_mboe": "169.5"
+    },
+    "EKOFISK": {
+      "discoveryYear": "1969",
+      "oil_mboe": "500.1",
+      "gas_mboe": "85.5",
+      "oe_mboe": "617.9"
+    },
+    "ELDFISK": {
+      "discoveryYear": "1970",
+      "oil_mboe": "146.6",
+      "gas_mboe": "17.6",
+      "oe_mboe": "172.5"
+    },
+    "EMBLA": {
+      "discoveryYear": "1988",
+      "oil_mboe": "6.3",
+      "gas_mboe": "16.4",
+      "oe_mboe": "23.8"
+    },
+    "ENOCH": {
+      "discoveryYear": "1985",
+      "oil_mboe": "0.6",
+      "gas_mboe": "0.0",
+      "oe_mboe": "0.6"
+    },
+    "FRAM": {
+      "discoveryYear": "1990",
+      "oil_mboe": "32.7",
+      "gas_mboe": "39.6",
+      "oe_mboe": "78.3"
+    },
+    "FRAM H-NORD": {
+      "discoveryYear": "2007",
       "oil_mboe": "1.3",
       "gas_mboe": "0.0",
       "oe_mboe": "1.3"
     },
-    "BRAGE": {
-      "discoveryYear": "1980",
-      "oil_mboe": "24.5",
-      "gas_mboe": "12.6",
-      "oe_mboe": "43.1"
-    },
-    "BRYNHILD": {
-      "discoveryYear": "1992",
-      "oil_mboe": "3.8",
-      "gas_mboe": "0.0",
-      "oe_mboe": "3.8"
-    },
-    "BØYLA": {
-      "discoveryYear": "2009",
-      "oil_mboe": "16.4",
-      "gas_mboe": "0.6",
-      "oe_mboe": "17.0"
-    },
-    "DRAUGEN": {
-      "discoveryYear": "1984",
-      "oil_mboe": "47.2",
-      "gas_mboe": "0.6",
-      "oe_mboe": "51.4"
-    },
-    "EDVARD GRIEG": {
-      "discoveryYear": "2007",
-      "oil_mboe": "163.5",
-      "gas_mboe": "11.3",
-      "oe_mboe": "180.8"
-    },
-    "EKOFISK": {
-      "discoveryYear": "1969",
-      "oil_mboe": "544.1",
-      "gas_mboe": "90.6",
-      "oe_mboe": "649.0"
-    },
-    "ELDFISK": {
-      "discoveryYear": "1970",
-      "oil_mboe": "153.5",
-      "gas_mboe": "13.8",
-      "oe_mboe": "164.9"
-    },
-    "EMBLA": {
-      "discoveryYear": "1988",
-      "oil_mboe": "12.6",
-      "gas_mboe": "12.0",
-      "oe_mboe": "26.9"
-    },
-    "ENOCH": {
-      "discoveryYear": "1985",
-      "oil_mboe": "0.0",
-      "gas_mboe": "0.0",
-      "oe_mboe": "0.0"
-    },
-    "FRAM": {
-      "discoveryYear": "1990",
-      "oil_mboe": "39.6",
-      "gas_mboe": "45.3",
-      "oe_mboe": "92.1"
-    },
-    "FRAM H-NORD": {
-      "discoveryYear": "2007",
-      "oil_mboe": "1.9",
-      "gas_mboe": "0.0",
-      "oe_mboe": "1.9"
-    },
     "GAUPE": {
       "discoveryYear": "1985",
-      "oil_mboe": "0.0",
+      "oil_mboe": "1.3",
       "gas_mboe": "0.0",
-      "oe_mboe": "0.0"
+      "oe_mboe": "1.3"
     },
     "GIMLE": {
       "discoveryYear": "2004",
-      "oil_mboe": "0.0",
-      "gas_mboe": "0.6",
-      "oe_mboe": "0.6"
+      "oil_mboe": "1.3",
+      "gas_mboe": "1.3",
+      "oe_mboe": "2.5"
     },
     "GJØA": {
       "discoveryYear": "1989",
-      "oil_mboe": "21.4",
-      "gas_mboe": "122.7",
-      "oe_mboe": "201.2"
+      "oil_mboe": "15.7",
+      "gas_mboe": "98.1",
+      "oe_mboe": "159.0"
     },
     "GOLIAT": {
       "discoveryYear": "2000",
-      "oil_mboe": "179.3",
+      "oil_mboe": "176.1",
       "gas_mboe": "0.0",
-      "oe_mboe": "179.3"
+      "oe_mboe": "176.1"
     },
     "GRANE": {
       "discoveryYear": "1991",
-      "oil_mboe": "260.4",
+      "oil_mboe": "235.9",
       "gas_mboe": "0.0",
-      "oe_mboe": "260.4"
+      "oe_mboe": "235.9"
     },
     "GUDRUN": {
       "discoveryYear": "1975",
-      "oil_mboe": "48.4",
+      "oil_mboe": "36.5",
       "gas_mboe": "25.2",
-      "oe_mboe": "85.5"
+      "oe_mboe": "67.6"
     },
     "GULLFAKS": {
       "discoveryYear": "1978",
-      "oil_mboe": "103.2",
+      "oil_mboe": "101.3",
       "gas_mboe": "0.0",
-      "oe_mboe": "103.2"
+      "oe_mboe": "101.3"
     },
     "GULLFAKS SØR": {
       "discoveryYear": "1978",
-      "oil_mboe": "86.8",
-      "gas_mboe": "267.3",
-      "oe_mboe": "434.2"
+      "oil_mboe": "73.6",
+      "gas_mboe": "239.6",
+      "oe_mboe": "387.3"
     },
     "GUNGNE": {
       "discoveryYear": "1982",
@@ -159,33 +159,33 @@
     },
     "GYDA": {
       "discoveryYear": "1980",
-      "oil_mboe": "1.3",
+      "oil_mboe": "0.6",
       "gas_mboe": "0.6",
-      "oe_mboe": "1.9"
+      "oe_mboe": "1.3"
     },
     "HEIDRUN": {
       "discoveryYear": "1985",
-      "oil_mboe": "217.0",
-      "gas_mboe": "201.9",
-      "oe_mboe": "442.8"
+      "oil_mboe": "195.6",
+      "gas_mboe": "197.5",
+      "oe_mboe": "417.0"
     },
     "HEIMDAL": {
       "discoveryYear": "1972",
-      "oil_mboe": "0.0",
-      "gas_mboe": "0.0",
-      "oe_mboe": "0.0"
+      "oil_mboe": "0.6",
+      "gas_mboe": "3.8",
+      "oe_mboe": "4.4"
     },
     "HOD": {
       "discoveryYear": "1974",
-      "oil_mboe": "4.4",
+      "oil_mboe": "2.5",
       "gas_mboe": "0.6",
-      "oe_mboe": "7.4"
+      "oe_mboe": "5.5"
     },
     "HYME": {
       "discoveryYear": "2009",
-      "oil_mboe": "16.4",
-      "gas_mboe": "2.5",
-      "oe_mboe": "20.1"
+      "oil_mboe": "8.2",
+      "gas_mboe": "3.8",
+      "oe_mboe": "14.3"
     },
     "ISLAY": {
       "discoveryYear": "2008",
@@ -195,33 +195,33 @@
     },
     "IVAR AASEN": {
       "discoveryYear": "2008",
-      "oil_mboe": "146.6",
+      "oil_mboe": "145.9",
       "gas_mboe": "27.7",
-      "oe_mboe": "185.0"
+      "oe_mboe": "184.4"
     },
     "KNARR": {
       "discoveryYear": "2008",
-      "oil_mboe": "47.8",
+      "oil_mboe": "36.5",
       "gas_mboe": "0.6",
-      "oe_mboe": "54.4"
+      "oe_mboe": "39.5"
     },
     "KRISTIN": {
       "discoveryYear": "1997",
-      "oil_mboe": "23.9",
-      "gas_mboe": "42.8",
-      "oe_mboe": "82.2"
+      "oil_mboe": "18.9",
+      "gas_mboe": "33.3",
+      "oe_mboe": "61.8"
     },
     "KVITEBJØRN": {
       "discoveryYear": "1994",
-      "oil_mboe": "55.4",
-      "gas_mboe": "220.2",
-      "oe_mboe": "353.2"
+      "oil_mboe": "45.3",
+      "gas_mboe": "187.4",
+      "oe_mboe": "303.2"
     },
     "MARULK": {
       "discoveryYear": "1992",
-      "oil_mboe": "1.9",
-      "gas_mboe": "20.8",
-      "oe_mboe": "26.2"
+      "oil_mboe": "0.6",
+      "gas_mboe": "15.7",
+      "oe_mboe": "18.7"
     },
     "MIKKEL": {
       "discoveryYear": "1987",
@@ -231,51 +231,51 @@
     },
     "MORVIN": {
       "discoveryYear": "2001",
-      "oil_mboe": "22.0",
-      "gas_mboe": "13.8",
-      "oe_mboe": "44.2"
+      "oil_mboe": "12.0",
+      "gas_mboe": "8.8",
+      "oe_mboe": "25.5"
     },
     "NJORD": {
       "discoveryYear": "1986",
-      "oil_mboe": "18.9",
-      "gas_mboe": "53.5",
-      "oe_mboe": "101.0"
+      "oil_mboe": "32.1",
+      "gas_mboe": "83.0",
+      "oe_mboe": "164.1"
     },
     "NORNE": {
       "discoveryYear": "1992",
-      "oil_mboe": "13.8",
-      "gas_mboe": "22.6",
-      "oe_mboe": "42.5"
+      "oil_mboe": "12.6",
+      "gas_mboe": "18.9",
+      "oe_mboe": "36.2"
     },
     "ORMEN LANGE": {
       "discoveryYear": "1997",
       "oil_mboe": "0.0",
-      "gas_mboe": "876.2",
-      "oe_mboe": "922.1"
+      "gas_mboe": "779.3",
+      "oe_mboe": "822.7"
     },
     "OSEBERG": {
       "discoveryYear": "1979",
-      "oil_mboe": "195.0",
-      "gas_mboe": "498.8",
-      "oe_mboe": "735.6"
+      "oil_mboe": "156.6",
+      "gas_mboe": "449.1",
+      "oe_mboe": "642.8"
     },
     "OSEBERG SØR": {
       "discoveryYear": "1984",
-      "oil_mboe": "105.7",
-      "gas_mboe": "69.2",
-      "oe_mboe": "189.2"
+      "oil_mboe": "79.3",
+      "gas_mboe": "66.0",
+      "oe_mboe": "158.4"
     },
     "OSEBERG ØST": {
       "discoveryYear": "1981",
-      "oil_mboe": "52.2",
+      "oil_mboe": "42.1",
       "gas_mboe": "0.6",
-      "oe_mboe": "54.0"
+      "oe_mboe": "44.0"
     },
     "OSELVAR": {
       "discoveryYear": "1991",
-      "oil_mboe": "2.5",
-      "gas_mboe": "1.3",
-      "oe_mboe": "3.8"
+      "oil_mboe": "1.9",
+      "gas_mboe": "0.6",
+      "oe_mboe": "2.5"
     },
     "REV": {
       "discoveryYear": "2001",
@@ -285,27 +285,27 @@
     },
     "RINGHORNE ØST": {
       "discoveryYear": "2003",
-      "oil_mboe": "27.7",
+      "oil_mboe": "17.6",
       "gas_mboe": "0.6",
-      "oe_mboe": "28.3"
+      "oe_mboe": "18.2"
     },
     "SIGYN": {
       "discoveryYear": "1982",
-      "oil_mboe": "4.4",
-      "gas_mboe": "5.0",
-      "oe_mboe": "9.9"
+      "oil_mboe": "5.7",
+      "gas_mboe": "6.3",
+      "oe_mboe": "17.9"
     },
     "SKARV": {
       "discoveryYear": "1998",
-      "oil_mboe": "58.5",
-      "gas_mboe": "208.8",
-      "oe_mboe": "312.7"
+      "oil_mboe": "51.6",
+      "gas_mboe": "187.4",
+      "oe_mboe": "278.5"
     },
     "SKIRNE": {
       "discoveryYear": "1990",
       "oil_mboe": "1.9",
-      "gas_mboe": "0.0",
-      "oe_mboe": "1.9"
+      "gas_mboe": "3.1",
+      "oe_mboe": "5.0"
     },
     "SKULD": {
       "discoveryYear": "2008",
@@ -315,39 +315,39 @@
     },
     "SLEIPNER VEST": {
       "discoveryYear": "1974",
-      "oil_mboe": "13.2",
-      "gas_mboe": "62.3",
-      "oe_mboe": "84.5"
+      "oil_mboe": "13.8",
+      "gas_mboe": "63.5",
+      "oe_mboe": "85.2"
     },
     "SLEIPNER ØST": {
       "discoveryYear": "1981",
       "oil_mboe": "0.6",
-      "gas_mboe": "2.5",
-      "oe_mboe": "3.1"
+      "gas_mboe": "1.9",
+      "oe_mboe": "2.5"
     },
     "SNORRE": {
       "discoveryYear": "1979",
-      "oil_mboe": "409.5",
+      "oil_mboe": "432.8",
       "gas_mboe": "1.9",
-      "oe_mboe": "412.6"
+      "oe_mboe": "435.8"
     },
     "SNØHVIT": {
       "discoveryYear": "1984",
       "oil_mboe": "0.0",
-      "gas_mboe": "1189.4",
-      "oe_mboe": "1388.9"
+      "gas_mboe": "1147.3",
+      "oe_mboe": "1339.7"
     },
     "STATFJORD": {
       "discoveryYear": "1974",
-      "oil_mboe": "35.2",
-      "gas_mboe": "61.6",
-      "oe_mboe": "148.4"
+      "oil_mboe": "37.1",
+      "gas_mboe": "64.8",
+      "oe_mboe": "147.9"
     },
     "STATFJORD NORD": {
       "discoveryYear": "1977",
-      "oil_mboe": "32.7",
-      "gas_mboe": "-0.6",
-      "oe_mboe": "35.7"
+      "oil_mboe": "23.9",
+      "gas_mboe": "-1.3",
+      "oe_mboe": "26.2"
     },
     "STATFJORD ØST": {
       "discoveryYear": "1976",
@@ -357,15 +357,15 @@
     },
     "SVALIN": {
       "discoveryYear": "1992",
-      "oil_mboe": "29.6",
+      "oil_mboe": "31.4",
       "gas_mboe": "0.0",
-      "oe_mboe": "29.6"
+      "oe_mboe": "31.4"
     },
     "SYGNA": {
       "discoveryYear": "1996",
-      "oil_mboe": "6.9",
+      "oil_mboe": "6.3",
       "gas_mboe": "0.0",
-      "oe_mboe": "6.9"
+      "oe_mboe": "6.3"
     },
     "TAMBAR": {
       "discoveryYear": "1983",
@@ -381,99 +381,99 @@
     },
     "TORDIS": {
       "discoveryYear": "1987",
-      "oil_mboe": "48.4",
+      "oil_mboe": "44.7",
       "gas_mboe": "3.1",
-      "oe_mboe": "54.0"
+      "oe_mboe": "51.4"
     },
     "TROLL": {
       "discoveryYear": "1979",
-      "oil_mboe": "196.2",
-      "gas_mboe": "5608.2",
-      "oe_mboe": "5980.4"
+      "oil_mboe": "176.1",
+      "gas_mboe": "5407.5",
+      "oe_mboe": "5739.3"
     },
     "TRYM": {
       "discoveryYear": "1990",
-      "oil_mboe": "2.5",
-      "gas_mboe": "9.4",
-      "oe_mboe": "12.0"
+      "oil_mboe": "0.6",
+      "gas_mboe": "3.1",
+      "oe_mboe": "3.8"
     },
     "TUNE": {
       "discoveryYear": "1995",
       "oil_mboe": "-1.3",
-      "gas_mboe": "-6.3",
-      "oe_mboe": "-7.5"
+      "gas_mboe": "-5.7",
+      "oe_mboe": "-6.9"
     },
     "TYRIHANS": {
       "discoveryYear": "1983",
-      "oil_mboe": "61.6",
-      "gas_mboe": "244.1",
-      "oe_mboe": "389.4"
+      "oil_mboe": "50.9",
+      "gas_mboe": "228.3",
+      "oe_mboe": "359.3"
     },
     "ULA": {
       "discoveryYear": "1976",
-      "oil_mboe": "58.5",
+      "oil_mboe": "63.5",
       "gas_mboe": "0.0",
-      "oe_mboe": "64.5"
+      "oe_mboe": "69.5"
     },
     "URD": {
       "discoveryYear": "2000",
-      "oil_mboe": "10.1",
-      "gas_mboe": "0.6",
-      "oe_mboe": "10.7"
+      "oil_mboe": "11.3",
+      "gas_mboe": "0.0",
+      "oe_mboe": "11.3"
     },
     "VALE": {
       "discoveryYear": "1991",
-      "oil_mboe": "3.1",
-      "gas_mboe": "4.4",
-      "oe_mboe": "7.5"
+      "oil_mboe": "3.8",
+      "gas_mboe": "6.3",
+      "oe_mboe": "10.1"
     },
     "VALEMON": {
       "discoveryYear": "1985",
-      "oil_mboe": "27.7",
-      "gas_mboe": "143.4",
-      "oe_mboe": "185.4"
+      "oil_mboe": "7.5",
+      "gas_mboe": "77.4",
+      "oe_mboe": "92.1"
     },
     "VALHALL": {
       "discoveryYear": "1975",
-      "oil_mboe": "204.4",
-      "gas_mboe": "32.7",
-      "oe_mboe": "255.1"
+      "oil_mboe": "184.3",
+      "gas_mboe": "34.0",
+      "oe_mboe": "237.4"
     },
     "VEGA": {
       "discoveryYear": "1981",
-      "oil_mboe": "21.4",
-      "gas_mboe": "64.2",
-      "oe_mboe": "138.0"
+      "oil_mboe": "25.8",
+      "gas_mboe": "70.4",
+      "oe_mboe": "143.9"
     },
     "VESLEFRIKK": {
       "discoveryYear": "1981",
-      "oil_mboe": "6.3",
-      "gas_mboe": "11.3",
-      "oe_mboe": "20.0"
+      "oil_mboe": "6.9",
+      "gas_mboe": "13.8",
+      "oe_mboe": "24.3"
     },
     "VIGDIS": {
       "discoveryYear": "1986",
-      "oil_mboe": "71.7",
+      "oil_mboe": "60.4",
       "gas_mboe": "0.0",
-      "oe_mboe": "75.3"
+      "oe_mboe": "62.8"
     },
     "VILJE": {
       "discoveryYear": "2003",
-      "oil_mboe": "17.6",
+      "oil_mboe": "18.9",
       "gas_mboe": "-3.1",
-      "oe_mboe": "14.5"
+      "oe_mboe": "15.7"
     },
     "VISUND": {
       "discoveryYear": "1986",
-      "oil_mboe": "56.6",
-      "gas_mboe": "286.8",
-      "oe_mboe": "416.3"
+      "oil_mboe": "52.2",
+      "gas_mboe": "274.9",
+      "oe_mboe": "400.0"
     },
     "VISUND SØR": {
       "discoveryYear": "2008",
-      "oil_mboe": "6.3",
-      "gas_mboe": "34.6",
-      "oe_mboe": "50.4"
+      "oil_mboe": "5.0",
+      "gas_mboe": "20.1",
+      "oe_mboe": "29.9"
     },
     "VOLUND": {
       "discoveryYear": "1994",
@@ -483,9 +483,9 @@
     },
     "ÅSGARD": {
       "discoveryYear": "1981",
-      "oil_mboe": "79.9",
-      "gas_mboe": "359.8",
-      "oe_mboe": "566.4"
+      "oil_mboe": "71.7",
+      "gas_mboe": "318.9",
+      "oe_mboe": "502.9"
     }
   },
   "discoveries": {}

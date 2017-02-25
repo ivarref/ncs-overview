@@ -1,53 +1,53 @@
 dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
-6305/5-1 ORMEN LANGE,reserve,1997,Producing,0.0,876.2,922.1
-6507/11-1 MIDGARD,reserve,1981,Producing,79.9,359.8,566.4
-6507/7-2 HEIDRUN,reserve,1985,Producing,217.0,201.9,442.8
-6407/1-2 TYRIHANS SØR,reserve,1983,Producing,61.6,244.1,389.4
-6507/5-1 SKARV,reserve,1998,Producing,58.5,208.8,312.7
+6305/5-1 ORMEN LANGE,reserve,1997,Producing,0.0,779.3,822.7
+6507/11-1 MIDGARD,reserve,1981,Producing,71.7,318.9,502.9
+6507/7-2 HEIDRUN,reserve,1985,Producing,195.6,197.5,417.0
+6407/1-2 TYRIHANS SØR,reserve,1983,Producing,50.9,228.3,359.3
 6707/10-1 AASTA HANSTEEN,reserve,1997,Approved for production,0.0,286.2,291.9
-6406/3-8 MARIA,reserve,2010,Approved for production,157.2,15.7,196.9
+6507/5-1 SKARV,reserve,1998,Producing,51.6,187.4,278.5
+6406/3-8 MARIA,reserve,2010,Approved for production,159.1,13.8,195.7
 6506/6-1 (Victoria),resource,2000,"Production likely, but unclarified",0.0,168.5,168.5
+6407/7-1 S NJORD,reserve,1986,Producing,32.1,83.0,164.1
 6406/9-1 LINNORM,resource,2005,Production not evaluated,0.0,153.2,156.8
 6407/6-3 MIKKEL,reserve,1987,Producing,13.8,85.5,143.6
-6507/7-14 S DVALIN,resource,2010,Decided for production,0.0,112.7,118.1
-6705/10-1 (Asterix),resource,2009,Production in clarification phase,0.0,108.0,109.8
-6406/12-3 S (Pil),resource,2014,Production in clarification phase,69.8,26.4,106.6
-6407/7-1 S NJORD,reserve,1986,Producing,18.9,53.5,101.0
-6406/2-1 LAVRANS,resource,1995,"Production likely, but unclarified",15.3,58.7,83.1
-6406/2-3 KRISTIN,reserve,1997,Producing,23.9,42.8,82.2
-6406/3-2 (Trestakk),resource,1986,Decided for production,58.9,11.5,76.0
-6407/8-6 BAUGE,resource,2013,Production in clarification phase,46.9,13.2,67.1
-6506/9-2 S (Fogelberg),resource,2010,Production in clarification phase,8.9,47.6,65.1
-6407/9-1 DRAUGEN,reserve,1984,Producing,47.2,0.6,51.4
-6506/11-7 MORVIN,reserve,2001,Producing,22.0,13.8,44.2
+6406/12-3 S (Pil),resource,2014,Production in clarification phase,89.4,23.1,119.9
+6507/7-14 S DVALIN,resource,2010,Decided for production,0.0,112.8,118.2
+6705/10-1 (Asterix),resource,2009,Production in clarification phase,0.0,108.0,109.9
+6406/2-1 LAVRANS,resource,1995,"Production likely, but unclarified",15.3,58.7,83.2
+6406/3-2 (Trestakk),resource,1986,Decided for production,67.0,4.3,73.0
+6506/9-2 S (Fogelberg),resource,2010,Production in clarification phase,8.7,46.7,64.0
+6407/8-6 BAUGE,resource,2013,Production in clarification phase,42.1,10.5,63.0
+6406/2-3 KRISTIN,reserve,1997,Producing,18.9,33.3,61.8
+6706/6-1 (Hvitveis),resource,2003,Production not evaluated,0.0,47.2,47.2
 6607/12-2 S (Alve Nord),resource,2011,"Production likely, but unclarified",13.5,30.6,44.0
-6608/10-2 NORNE,reserve,1992,Producing,13.8,22.6,42.5
-6706/12-2 (Snefrid Nord),resource,2015,Production in clarification phase,0.0,39.6,39.6
+6407/9-1 DRAUGEN,reserve,1984,Producing,37.7,0.0,40.1
+6608/10-2 NORNE,reserve,1992,Producing,12.6,18.9,36.2
+6407/7-8 (Noatun),resource,2008,"Production likely, but unclarified",5.7,24.0,35.9
 6707/10-3 S (Ivory),resource,2014,Production not evaluated,0.0,32.1,32.1
+6706/12-2 (Snefrid Nord),resource,2015,Production in clarification phase,0.0,31.3,31.4
 6407/2-5 S (Nona),resource,2009,Production not evaluated,18.3,8.2,26.9
-6507/2-2 MARULK,reserve,1992,Producing,1.9,20.8,26.2
+6506/11-7 MORVIN,reserve,2001,Producing,12.0,8.8,25.5
 6407/6-6 MIKKEL SØR,resource,2008,"Production likely, but unclarified",4.0,13.5,24.0
-6406/12-4 S (Boomerang),resource,2015,Production not evaluated,20.0,2.0,22.0
-6407/8-5 S HYME,reserve,2009,Producing,16.4,2.5,20.1
-6407/7-8 (Noatun),resource,2008,"Production likely, but unclarified",3.1,12.8,19.2
+6406/12-4 S (Boomerang),resource,2015,Production not evaluated,20.1,1.9,22.0
+6507/2-2 MARULK,reserve,1992,Producing,0.6,15.7,18.7
+6507/3-1 ALVE,reserve,1990,Producing,2.5,12.6,18.7
 6507/11-6 SIGRID,resource,2001,"Production likely, but unclarified",2.3,12.1,18.3
-6507/3-1 ALVE,reserve,1990,Producing,1.9,11.3,16.8
 6608/10-12 SKULD,reserve,2008,Producing,15.7,0.6,16.4
 6706/12-3 (Roald Rygg),resource,2015,Production not evaluated,0.0,15.1,15.1
 6407/2-6 S (Flyndretind),resource,2010,Production not evaluated,0.0,12.0,15.1
 6406/2-7 (Erlend),resource,1999,"Production likely, but unclarified",5.5,6.4,14.7
+6407/8-5 S HYME,reserve,2009,Producing,8.2,3.8,14.3
 6706/11-2 (Gymir),resource,2015,Production not evaluated,0.0,12.6,12.6
-6507/3-8 (Gjøk),resource,2009,Production in clarification phase,0.0,8.9,12.0
-6608/10-6 SVALE,reserve,2000,Producing,10.1,0.6,10.7
-6506/12-3 (Lysing),resource,1985,"Production likely, but unclarified",7.5,1.1,9.0
+6507/3-8 (Gjøk),resource,2009,Production in clarification phase,0.5,8.8,12.4
+6608/10-6 SVALE,reserve,2000,Producing,11.3,0.0,11.3
+6506/12-3 (Lysing),resource,1985,"Production likely, but unclarified",4.3,1.5,6.6
 6507/7-13,resource,2001,"Production likely, but unclarified",5.7,0.3,6.0
 6506/11-2 (Lange),resource,1991,"Production likely, but unclarified",3.4,1.5,5.5
-6507/3-7 (Idun Nord),resource,2009,"Production likely, but unclarified",0.0,5.0,5.0
+6507/3-7 (Idun Nord),resource,2009,"Production likely, but unclarified",0.2,3.8,5.2
+6407/7-9 S,resource,2016,Production not evaluated,0.7,1.5,2.8
+6407/7-9 A,resource,2016,Production not evaluated,0.0,1.2,1.4
 6608/10-17 S,unknown,2017,Production not evaluated,0.0,0.0,0.0
-6407/7-9 A,unknown,2016,Production not evaluated,0.0,0.0,0.0
-6407/7-9 S,unknown,2016,Production not evaluated,0.0,0.0,0.0
-6706/6-1 (Hvitveis),unknown,2003,Production not evaluated,0.0,0.0,0.0
 6507/11-8,unknown,2007,Shut down,0.0,0.0,0.0
-Sum resources,resource,All,Any,283.0,913.4,1272.3
-Sum reserves,reserve,All,Any,759.8,2447.4,3677.1
-Sum,resource,All,All,1042.8,3360.8,4949.4
+Sum resources,resource,All,Any,306.6,951.2,1335.4
+Sum reserves,reserve,All,Any,694.4,2273.8,3418.9
+Sum,resource,All,All,1001.1,3225.0,4754.3

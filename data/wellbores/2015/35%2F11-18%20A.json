@@ -2,7 +2,7 @@
   "wlbWellboreName": "35/11-18 A",
   "wlbWell": "35/11-18",
   "wlbDrillingOperator": "Wintershall Norge AS",
-  "wlbProductionLicence": "248 F",
+  "wlbProductionLicence": "248 ",
   "wlbPurpose": "APPRAISAL",
   "wlbStatus": "P&A",
   "wlbContent": "OIL/GAS",
@@ -28,7 +28,7 @@
   "wlbDrillingFacility": "BORGLAND DOLPHIN",
   "wlbFacilityTypeDrilling": "SEMISUB STEEL",
   "wlbDrillingFacilityFixedOrMoveable": "MOVEABLE",
-  "wlbLicensingActivity": "Awarded additionally to round NST99",
+  "wlbLicensingActivity": "NST99",
   "wlbMultilateral": "NO",
   "wlbPurposePlanned": "APPRAISAL",
   "wlbEntryYear": "2015",
@@ -76,5 +76,5 @@
   "fldNpdidField": "",
   "fclNpdidFacilityDrilling": "297784",
   "wlbNpdidWellboreReclass": "0",
-  "prlNpdidProductionLicence": "27160027"
+  "prlNpdidProductionLicence": "102285"
 }

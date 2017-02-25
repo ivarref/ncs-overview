@@ -1,84 +1,84 @@
 {
   "status": "Production in clarification phase",
-  "oil_production_kboe_d_rp=10": "273",
-  "gas_production_kboe_d_rp=10": "112",
-  "oe_production_kboe_d_rp=10": "398",
-  "oil_mboe": "995.4",
-  "gas_mboe": "407.3",
-  "oe_mboe": "1453.3",
+  "oil_production_kboe_d_rp=10": "266",
+  "gas_production_kboe_d_rp=10": "102",
+  "oe_production_kboe_d_rp=10": "381",
+  "oil_mboe": "972.5",
+  "gas_mboe": "370.6",
+  "oe_mboe": "1392.4",
   "fields": {},
   "discoveries": {
     "16/4-6 S (Luno II)": {
       "discoveryYear": "2013",
-      "oil_mboe": "54.0",
-      "gas_mboe": "15.5",
-      "oe_mboe": "69.6"
+      "oil_mboe": "38.2",
+      "gas_mboe": "8.8",
+      "oe_mboe": "50.9"
     },
     "2/12-1 MJØLNER": {
       "discoveryYear": "1987",
-      "oil_mboe": "27.2",
-      "gas_mboe": "5.3",
-      "oe_mboe": "32.5"
+      "oil_mboe": "16.0",
+      "gas_mboe": "6.9",
+      "oe_mboe": "22.9"
     },
     "25/2-10 S (Frigg-GammaDelta)": {
       "discoveryYear": "1986",
-      "oil_mboe": "79.9",
-      "gas_mboe": "0.0",
-      "oe_mboe": "79.9"
+      "oil_mboe": "60.6",
+      "gas_mboe": "14.6",
+      "oe_mboe": "75.2"
     },
     "34/4-11 (Beta)": {
       "discoveryYear": "2010",
-      "oil_mboe": "23.0",
-      "gas_mboe": "2.1",
-      "oe_mboe": "28.1"
+      "oil_mboe": "23.5",
+      "gas_mboe": "2.0",
+      "oe_mboe": "28.2"
     },
     "34/6-2 S (Garantiana)": {
       "discoveryYear": "2012",
-      "oil_mboe": "76.2",
-      "gas_mboe": "3.1",
-      "oe_mboe": "79.3"
+      "oil_mboe": "69.8",
+      "gas_mboe": "0.8",
+      "oe_mboe": "70.6"
     },
     "35/9-7 (Skarfjell)": {
       "discoveryYear": "2012",
-      "oil_mboe": "69.3",
-      "gas_mboe": "26.6",
-      "oe_mboe": "111.3"
+      "oil_mboe": "69.4",
+      "gas_mboe": "17.4",
+      "oe_mboe": "97.0"
     },
     "6406/12-3 S (Pil)": {
       "discoveryYear": "2014",
-      "oil_mboe": "69.8",
-      "gas_mboe": "26.4",
-      "oe_mboe": "106.6"
+      "oil_mboe": "89.4",
+      "gas_mboe": "23.1",
+      "oe_mboe": "119.9"
     },
-    "6407/8-6 (Snilehorn)": {
+    "6407/8-6 BAUGE": {
       "discoveryYear": "2013",
-      "oil_mboe": "46.9",
-      "gas_mboe": "13.2",
-      "oe_mboe": "67.1"
+      "oil_mboe": "42.1",
+      "gas_mboe": "10.5",
+      "oe_mboe": "63.0"
     },
     "6506/9-2 S (Fogelberg)": {
       "discoveryYear": "2010",
-      "oil_mboe": "8.9",
-      "gas_mboe": "47.6",
-      "oe_mboe": "65.1"
+      "oil_mboe": "8.7",
+      "gas_mboe": "46.7",
+      "oe_mboe": "64.0"
     },
     "6507/3-8 (Gjøk)": {
       "discoveryYear": "2009",
-      "oil_mboe": "0.0",
-      "gas_mboe": "8.9",
-      "oe_mboe": "12.0"
+      "oil_mboe": "0.5",
+      "gas_mboe": "8.8",
+      "oe_mboe": "12.4"
     },
     "6705/10-1 (Asterix)": {
       "discoveryYear": "2009",
       "oil_mboe": "0.0",
       "gas_mboe": "108.0",
-      "oe_mboe": "109.8"
+      "oe_mboe": "109.9"
     },
     "6706/12-2 (Snefrid Nord)": {
       "discoveryYear": "2015",
       "oil_mboe": "0.0",
-      "gas_mboe": "39.6",
-      "oe_mboe": "39.6"
+      "gas_mboe": "31.3",
+      "oe_mboe": "31.4"
     },
     "7122/6-1 (Tornerose)": {
       "discoveryYear": "1987",
@@ -88,9 +88,9 @@
     },
     "7220/8-1 JOHAN CASTBERG": {
       "discoveryYear": "2011",
-      "oil_mboe": "540.1",
-      "gas_mboe": "87.8",
-      "oe_mboe": "627.9"
+      "oil_mboe": "554.1",
+      "gas_mboe": "68.6",
+      "oe_mboe": "622.7"
     }
   }
 }

@@ -8,10 +8,10 @@ Dette gjev ein årleg produksjon på 0,6 milliardar fat.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_discovery_decade.png)
 
-Dei opphavlege utvinnbare oljereservane er på 32,1 milliardar fat.
-Totalt 80,1% av desse er utvunne.
-Gjenverande reservar er på 6,4 milliardar fat.
-Med noverande produksjonstempo er desse reservane utvunne på 10,8 år.
+Dei opphavlege utvinnbare oljereservane er på 32,3 milliardar fat.
+Totalt 81,1% av desse er utvunne.
+Gjenverande reservar er på 6,1 milliardar fat.
+Med noverande produksjonstempo er desse reservane utvunne på 10,3 år.
 
 ## Gass
 ![Gassproduksjonen](img/gas_production_yearly_12MMA_by_discovery_decade.png)
@@ -21,10 +21,10 @@ Dette gjev ein årleg produksjon på 0,7 milliardar fat.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_discovery_decade.png)
 
-Dei opphavlege utvinnbare gassreservane er på 24,9 milliardar fat oljeekvivalent.
-Totalt 53,0% av desse er utvunne.
-Gjenverande reservar er på 11,7 milliardar fat oljeekvivalent.
-Med noverande produksjonstempo er desse reservane utvunne på 15,9 år.
+Dei opphavlege utvinnbare gassreservane er på 25,0 milliardar fat oljeekvivalent.
+Totalt 55,6% av desse er utvunne.
+Gjenverande reservar er på 11,1 milliardar fat oljeekvivalent.
+Med noverande produksjonstempo er desse reservane utvunne på 15,1 år.
 
 ## Petroleum
 ![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_discovery_decade.png)
@@ -34,10 +34,10 @@ Dette gjev ein årleg produksjon på 1,5 milliardar fat.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_discovery_decade.png)
 
-Dei opphavlege utvinnbare petroleumreservane er på 61,4 milliardar fat oljeekvivalent.
-Totalt 67,9% av desse er utvunne.
-Gjenverande reservar er på 19,7 milliardar fat oljeekvivalent.
-Med noverande produksjonstempo er desse reservane utvunne på 13,5 år.
+Dei opphavlege utvinnbare petroleumreservane er på 61,9 milliardar fat oljeekvivalent.
+Totalt 69,8% av desse er utvunne.
+Gjenverande reservar er på 18,7 milliardar fat oljeekvivalent.
+Med noverande produksjonstempo er desse reservane utvunne på 12,8 år.
 
 
 
@@ -65,11 +65,11 @@ Felt med produksjonsstart før år 2000 står for 61% av dagens oljeproduksjon.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_startproduction.png)
 
-Reservane for felt med produksjonsstart før år 2000 er på 3,0 milliardar fat olje, og
-totalt har desse felta produsert 23,6 milliardar fat olje.
+Reservane for felt med produksjonsstart før år 2000 er på 2,8 milliardar fat olje, og
+totalt har desse felta produsert 24,0 milliardar fat olje.
 
-Reservane for felt med produksjonsstart etter år 2000 er på 3,4 milliardar fat olje.
-Johan Sverdrup (med planlagt produksjonsstart i 2019) har 52% av desse (1,8 milliardar fat olje).
+Reservane for felt med produksjonsstart etter år 2000 er på 3,3 milliardar fat olje.
+Johan Sverdrup (med planlagt produksjonsstart i 2019) har 54% av desse (1,8 milliardar fat olje).
 
 ## Gass
 ![Produksjon](img/gas_production_yearly_12MMA_by_startproduction.png)
@@ -77,10 +77,10 @@ Felt med produksjonsstart før år 2000 står for 52% av dagens gassproduksjon.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_startproduction.png)
 
-Reservane for felt med produksjonsstart før år 2000 er på 7,6 milliardar fat oljeekvivalentar, og
-totalt har desse felta produsert 10,5 milliardar fat oljeekvivalentar.
+Reservane for felt med produksjonsstart før år 2000 er på 7,3 milliardar fat oljeekvivalentar, og
+totalt har desse felta produsert 10,9 milliardar fat oljeekvivalentar.
 
-Reservane for felt med produksjonsstart etter år 2000 er på 4,1 milliardar fat oljeekvivalentar.
+Reservane for felt med produksjonsstart etter år 2000 er på 3,8 milliardar fat oljeekvivalentar.
 Johan Sverdrup (med planlagt produksjonsstart i 2019) har 1% av desse (0,1 milliardar fat oljeekvivalentar).
 
 ## Petroleum
@@ -89,11 +89,11 @@ Felt med produksjonsstart før år 2000 står for 55% av dagens petroleumproduks
 
 ![Produsert og reserver](img/oe_produced_reserves_by_startproduction.png)
 
-Reservane for felt med produksjonsstart før år 2000 er på 11,3 milliardar fat oljeekvivalentar, og
-totalt har desse felta produsert 36,4 milliardar fat oljeekvivalentar.
+Reservane for felt med produksjonsstart før år 2000 er på 10,8 milliardar fat oljeekvivalentar, og
+totalt har desse felta produsert 37,2 milliardar fat oljeekvivalentar.
 
-Reservane for felt med produksjonsstart etter år 2000 er på 8,4 milliardar fat oljeekvivalentar.
-Johan Sverdrup (med planlagt produksjonsstart i 2019) har 22% av desse (1,9 milliardar fat oljeekvivalentar).
+Reservane for felt med produksjonsstart etter år 2000 er på 7,9 milliardar fat oljeekvivalentar.
+Johan Sverdrup (med planlagt produksjonsstart i 2019) har 24% av desse (1,9 milliardar fat oljeekvivalentar).
 
 # Oversikt over norsk sokkel etter region
 
@@ -105,9 +105,9 @@ Norskehavet 15% og
 Barentshavet 3%.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_region.png)
-Nordsjøen har 86% (5,5 milliardar fat olje) av oljereservane.
+Nordsjøen har 85% (5,2 milliardar fat olje) av oljereservane.
 
-Norskehavet har 12% (0,8 milliardar fat olje) av oljereservane.
+Norskehavet har 11% (0,7 milliardar fat olje) av oljereservane.
 
 Barentshavet har 3% (0,2 milliardar fat olje) av oljereservane.
 
@@ -120,11 +120,11 @@ Norskehavet 34% og
 Barentshavet 5%.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_region.png)
-Nordsjøen har 68% (8,0 milliardar fat oljeekvivalentar) av gassreservane.
+Nordsjøen har 69% (7,7 milliardar fat oljeekvivalentar) av gassreservane.
 
-Norskehavet har 21% (2,4 milliardar fat oljeekvivalentar) av gassreservane.
+Norskehavet har 21% (2,3 milliardar fat oljeekvivalentar) av gassreservane.
 
-Barentshavet har 10% (1,2 milliardar fat oljeekvivalentar) av gassreservane.
+Barentshavet har 10% (1,1 milliardar fat oljeekvivalentar) av gassreservane.
 
 
 ## Petroleum
@@ -135,11 +135,11 @@ Norskehavet 26% og
 Barentshavet 4%.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_region.png)
-Nordsjøen har 73% (14,4 milliardar fat oljeekvivalentar) av petroleumreservane.
+Nordsjøen har 74% (13,8 milliardar fat oljeekvivalentar) av petroleumreservane.
 
-Norskehavet har 19% (3,7 milliardar fat oljeekvivalentar) av petroleumreservane.
+Norskehavet har 18% (3,4 milliardar fat oljeekvivalentar) av petroleumreservane.
 
-Barentshavet har 8% (1,6 milliardar fat oljeekvivalentar) av petroleumreservane.
+Barentshavet har 8% (1,5 milliardar fat oljeekvivalentar) av petroleumreservane.
 
 
 # Oversikt over kumulativ produksjon vs nye felt sidan år 2000
