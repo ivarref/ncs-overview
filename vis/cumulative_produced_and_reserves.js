@@ -17,7 +17,7 @@ function show_resource(unit_key, resource, group, unit, file) {
   //.style('border', "1px solid #000000")
 
 
-  var margin = { top: 40, right: 20, bottom: 30, left: 50 },
+  var margin = { top: 40, right: 20, bottom: 40, left: 50 },
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     svg = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -86,7 +86,7 @@ function show_resource(unit_key, resource, group, unit, file) {
 
       var w = 20;
       var legend_produced = svg.append("g")
-        .attr("transform", "translate(" + (width - keys.length * w) + ",15)");
+        .attr("transform", "translate(" + (width - keys.length * w) + ",11)");
 
       legend_produced.append('text')
         .style('text-anchor', 'end')
@@ -100,14 +100,13 @@ function show_resource(unit_key, resource, group, unit, file) {
         .enter().append('g')
         .attr("transform", function (d, i) { return "translate(" + (i * w) + ", 0)"; })
         .classed('produced_soft', true)
-        .style("font", "10px sans-serif")
         .append('rect')
         .attr('width', 18)
         .attr('height', 18)
         .attr('fill', function (d, i) { return colorscheme[i]; });
 
       var legend_reserves = svg.append("g")
-        .attr("transform", "translate(" + (width - keys.length * w) + ",35)");
+        .attr("transform", "translate(" + (width - keys.length * w) + ",31)");
 
       legend_reserves.append('text')
         .style('text-anchor', 'end')
@@ -134,12 +133,31 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr("y", -margin.left + 8)
         .attr("x", -height / 2)
         .attr("dy", "0.71em")
+        .classed('biggertext', true)
         .style("text-anchor", "middle")
         .text(unit);
 
       svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
+
+      svg.append("g")
+          .attr("transform", "translate(" + 0 + "," + (height+margin.bottom) + ")")
+          .append('text')
+          .classed('biggertext', true)
+          .attr('dy', '-.31em')
+          .style('text-anchor', 'start')
+          .text("Basert på data frå Oljedirektoratet")
+
+        svg.append("g")
+          .attr("transform", "translate(" + width + "," + (height+margin.bottom) + ")")
+          .append('text')
+          .classed('biggertext', true)
+          .attr('dy', '-.31em')
+          .style('text-anchor', 'end')
+          //.style('font-variant', 'small-caps')
+          .text("Diagram: Refsdal.Ivar@gmail.com")
+
     });
 }
 
