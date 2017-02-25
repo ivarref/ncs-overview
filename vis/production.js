@@ -81,11 +81,10 @@ function show_resource(resource, group, unit, file) {
                 .append("text")
                 .attr("fill", "#000")
                 .attr("transform", "rotate(-90)")
-                .attr("y", -margin.left + 8)
+                .attr("y", -margin.left + 4)
                 .attr("x", -height / 2)
                 .attr("dy", "0.71em")
                 .style("text-anchor", "middle")
-                .classed('biggertext', true)
                 .text(unit);
 
             g.append("g")
@@ -96,7 +95,7 @@ function show_resource(resource, group, unit, file) {
                 .append("text")
                 .attr("fill", "#000")
                 .attr("transform", "rotate(90)")
-                .attr("y", -margin.right + 8)
+                .attr("y", -margin.right + 4)
                 .attr("dy", "0.71em")
                 .style("text-anchor", "middle")
                 .classed('biggertext', true)
