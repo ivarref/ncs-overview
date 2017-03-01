@@ -5985,6 +5985,25 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=27395608"
     },
     {
+        "dscName": "7219/12-1 (Filicudi)",
+        "cmpLongName": "Lundin Norway AS",
+        "dscCurrentActivityStatus": "Production not evaluated",
+        "dscHcType": "OIL/GAS",
+        "wlbName": "7219/12-1",
+        "nmaName": "Barents sea",
+        "fldName": "",
+        "dscDateFromInclInField": "",
+        "dscDiscoveryYear": "2017",
+        "dscResInclInDiscoveryName": "",
+        "dscOwnerKind": "PRODUCTION LICENSE",
+        "dscOwnerName": "533",
+        "dscNpdidDiscovery": "29346456",
+        "fldNpdidField": "",
+        "wlbNpdidWellbore": "8024",
+        "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=29346456",
+        "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=DiscoveryByNPDID&NPDID=29346456"
+    },
+    {
         "dscName": "7219/8-2 (Iskrystall)",
         "cmpLongName": "Statoil Petroleum AS",
         "dscCurrentActivityStatus": "Production is unlikely",

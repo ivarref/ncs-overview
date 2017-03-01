@@ -9,6 +9,7 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 7220/6-2 R,resource,2016,Production not evaluated,31.4,9.4,40.9
 7122/6-1 (Tornerose),resource,1987,Production in clarification phase,0.0,23.2,24.3
 7121/5-2 (Snøhvit Beta),resource,1986,Production not evaluated,0.0,15.7,17.6
+7219/12-1 (Filicudi),unknown,2017,Production not evaluated,0.0,0.0,0.0
 Sum resources,resource,All,Any,1198.9,288.6,1500.3
 Sum reserves,reserve,All,Any,176.1,1147.3,1515.8
 Sum,resource,All,All,1375.1,1435.9,3016.1
