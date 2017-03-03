@@ -1862,7 +1862,7 @@
         "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=43568"
     },
     {
-        "dscName": "25/1-9",
+        "dscName": "25/1-9 (Litjklakken)",
         "cmpLongName": "Aker BP ASA",
         "dscCurrentActivityStatus": "Production is unlikely",
         "dscHcType": "OIL/GAS",
