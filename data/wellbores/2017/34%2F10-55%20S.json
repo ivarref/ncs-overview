@@ -2,7 +2,7 @@
   "wlbWellboreName": "34/10-55 S",
   "wlbWell": "34/10-55",
   "wlbDrillingOperator": "Statoil Petroleum AS",
-  "wlbProductionLicence": "050 DS",
+  "wlbProductionLicence": "050 ",
   "wlbPurpose": "WILDCAT",
   "wlbStatus": "DRILLING",
   "wlbContent": "",
@@ -76,5 +76,5 @@
   "fldNpdidField": "",
   "fclNpdidFacilityDrilling": "272645",
   "wlbNpdidWellboreReclass": "0",
-  "prlNpdidProductionLicence": "4380141"
+  "prlNpdidProductionLicence": "21188"
 }
