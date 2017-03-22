@@ -47,6 +47,7 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 6407/7-9 S,resource,2016,Production not evaluated,0.7,1.5,2.8
 6407/7-9 A,resource,2016,Production not evaluated,0.0,1.2,1.4
 6608/10-17 S,unknown,2017,Production not evaluated,0.0,0.0,0.0
+6507/3-12,unknown,2017,Production not evaluated,0.0,0.0,0.0
 6507/11-8,unknown,2007,Shut down,0.0,0.0,0.0
 Sum resources,resource,All,Any,306.6,951.2,1335.4
 Sum reserves,reserve,All,Any,694.4,2273.8,3418.9
