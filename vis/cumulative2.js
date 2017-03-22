@@ -14,7 +14,7 @@ function show_resource(config) {
         .attr('width', 960)
         .attr('height', 500)
 
-    var margin = { top: 40, right: 50, bottom: 30, left: 50 },
+    var margin = { top: 40, right: 50, bottom: 40, left: 50 },
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -170,15 +170,22 @@ function show_resource(config) {
                 .classed('biggertext', true)
                 .text(Object)
 
-            g.append("g")
-                .attr("transform", "translate(" + width + "," + height + ")")
-                .append('text')
-                .classed('biggertext', true)
-                .attr('dy', '-.3em')
-                .attr('dx', '-.3em')
-                .style('text-anchor', 'end')
-                .style('fill', 'white')
-                .text("Basert på data frå OD. Diagram: Refsdal.Ivar@gmail.com")
+      g.append("g")
+          .attr("transform", "translate(" + 0 + "," + (height+margin.bottom) + ")")
+          .append('text')
+          .classed('biggertext', true)
+          .attr('dy', '-.31em')
+          .style('text-anchor', 'start')
+          .text("Basert på data frå Oljedirektoratet")
+
+        g.append("g")
+          .attr("transform", "translate(" + width + "," + (height+margin.bottom) + ")")
+          .append('text')
+          .classed('biggertext', true)
+          .attr('dy', '-.31em')
+          .style('text-anchor', 'end')
+          //.style('font-variant', 'small-caps')
+          .text("Diagram: Refsdal.Ivar@gmail.com")
 
         });
 }
