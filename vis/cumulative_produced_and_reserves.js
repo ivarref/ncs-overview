@@ -67,7 +67,7 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr('x', width / 2)
         .style("text-anchor", "middle")
         .classed("heading", true)
-        .text("Norsk " + resource.toLowerCase() + ": Produsert og reservar etter " + group)
+        .text("Norsk " + resource.toLowerCase() + ": Produsert og gjenverande reservar etter " + group)
 
       bar.append('g')
         .append('rect')
@@ -113,7 +113,7 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr('dx', '-.5em')
         .attr('dy', '1.15em')
         .classed('legend_caption', true)
-        .text('Reservar')
+        .text('Gjenverande reservar')
 
       legend_reserves.selectAll('g')
         .data(keys.slice(0).reverse())
