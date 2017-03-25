@@ -56,9 +56,7 @@
   [data kind]
   (reduce + 0 (->> data
                    (map kind)
-                   (map read-string)
-                   )))
-
+                   (map read-string))))
 
 (def diff (- (sum-reserves reserve/data :fldRemainingOE)
              (sum-reserves new-reserves :fldRemainingOE)))
