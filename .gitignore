@@ -5,3 +5,7 @@ tmp_data/
 .DS_Store
 notes.txt
 .vscode/
+derived-remaining/.nrepl-port
+derived-remaining/target/
+derived-remaining/.idea/
+derived-remaining/*.iml
