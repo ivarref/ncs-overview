@@ -19,3 +19,5 @@
 (def oe {:recoverable :fldRecoverableOE
          :remaining   :fldRemainingOE
          :produced    :prfPrdOeNetMillSm3})
+
+(def all [oil gas ngl condensate oe])

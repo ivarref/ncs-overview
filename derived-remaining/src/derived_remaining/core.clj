@@ -1,7 +1,7 @@
 (ns derived-remaining.core
   (:require [derived-remaining.reserve :as reserve]
             [derived-remaining.produced :as produced]
-            [derived-remaining.props :refer [oil gas ngl condensate oe]]))
+            [derived-remaining.props :as props]))
 
 (defn derive-remaining
   [{fldName :fldName :as original-data} {recoverable :recoverable remaining :remaining produced :produced}]
@@ -27,7 +27,7 @@
 (defn derive-field-remaining
   [field]
   (let [original-reserve-data (first (filter #(= field (:fldName %)) reserve/data))]
-    (reduce derive-remaining original-reserve-data [oil gas ngl condensate oe])))
+    (reduce derive-remaining original-reserve-data props/all)))
 
 (def fields (map :fldName reserve/data))
 
