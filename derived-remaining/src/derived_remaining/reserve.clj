@@ -24,3 +24,5 @@
                      :fldDateOffResEstDisplay
                      :fldNpdidField
                      :DatesyncNPD]))
+
+(def field-names (map :fldName data))

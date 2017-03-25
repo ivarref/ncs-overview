@@ -61,4 +61,4 @@
 (def diff (- (sum-reserves reserve/data :fldRemainingOE)
              (sum-reserves new-reserves :fldRemainingOE)))
 
-(println "diff between derived and listed is " (format "%.2f" (* 6.29 diff)) " mboe")
+(println "diff between listed and derived is " (format "%.2f" (* 6.29 diff)) " mboe")
