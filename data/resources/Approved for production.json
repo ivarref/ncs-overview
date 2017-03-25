@@ -1,11 +1,11 @@
 {
   "status": "Approved for production",
   "oil_production_kboe_d_rp=10": "587",
-  "gas_production_kboe_d_rp=10": "166",
-  "oe_production_kboe_d_rp=10": "793",
+  "gas_production_kboe_d_rp=10": "197",
+  "oe_production_kboe_d_rp=10": "825",
   "oil_mboe": "2142.4",
-  "gas_mboe": "605.1",
-  "oe_mboe": "2893.0",
+  "gas_mboe": "717.9",
+  "oe_mboe": "3011.1",
   "fields": {
     "BYRDING": {
       "discoveryYear": "2005",
@@ -62,5 +62,12 @@
       "oe_mboe": "291.9"
     }
   },
-  "discoveries": {}
+  "discoveries": {
+    "6507/7-14 S DVALIN": {
+      "discoveryYear": "2010",
+      "oil_mboe": "0.0",
+      "gas_mboe": "112.8",
+      "oe_mboe": "118.2"
+    }
+  }
 }

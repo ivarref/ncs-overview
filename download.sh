@@ -10,8 +10,6 @@ curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/discovery&rs:Com
 | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}{print}' \
 | awk 'NF' > data/raw_discovery_overview.csv
 head -n1 data/raw_discovery_overview.csv > ./data/ignore_discovery.csv
-#diff <(head -n 1 data/raw_discovery_overview.csv) <(./extra_data/generate_discovery_overview_extra_csv.py | head -n 1)
-#./extra_data/generate_discovery_overview_extra_csv.py | tail -n +2 >> data/raw_discovery_overview.csv
 ./drop_columns.py ./data/raw_discovery_overview.csv dscDateUpdated dscDateUpdatedMax DatesyncNPD
 ./explode_csv.py ./data/raw_discovery_overview.csv ./data/raw_discovery_overview.json
 

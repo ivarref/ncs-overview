@@ -1,0 +1,19 @@
+{
+  "dscName": "6507/7-14 S DVALIN",
+  "cmpLongName": "DEA Norge AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "GAS",
+  "wlbName": "6507/7-14 S",
+  "nmaName": "Norwegian sea",
+  "fldName": "DVALIN",
+  "dscDateFromInclInField": "21.03.2017",
+  "dscDiscoveryYear": "2010",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "435",
+  "dscNpdidDiscovery": "18229140",
+  "fldNpdidField": "29393934",
+  "wlbNpdidWellbore": "6367",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=18229140",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=29393934"
+}

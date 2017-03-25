@@ -1,11 +1,11 @@
 {
   "status": "Decided for production",
   "oil_production_kboe_d_rp=10": "32",
-  "gas_production_kboe_d_rp=10": "33",
-  "oe_production_kboe_d_rp=10": "66",
+  "gas_production_kboe_d_rp=10": "2",
+  "oe_production_kboe_d_rp=10": "34",
   "oil_mboe": "115.6",
-  "gas_mboe": "119.3",
-  "oe_mboe": "242.0",
+  "gas_mboe": "6.5",
+  "oe_mboe": "123.8",
   "fields": {},
   "discoveries": {
     "31/2-N-11 H": {
@@ -19,12 +19,6 @@
       "oil_mboe": "67.0",
       "gas_mboe": "4.3",
       "oe_mboe": "73.0"
-    },
-    "6507/7-14 S DVALIN": {
-      "discoveryYear": "2010",
-      "oil_mboe": "0.0",
-      "gas_mboe": "112.8",
-      "oe_mboe": "118.2"
     },
     "8/10-4 S ODA": {
       "discoveryYear": "2011",
