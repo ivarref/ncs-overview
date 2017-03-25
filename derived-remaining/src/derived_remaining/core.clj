@@ -1,56 +1,37 @@
 (ns derived-remaining.core
   (:require [derived-remaining.reserve :as reserve]
-            [derived-remaining.produced :as produced]))
+            [derived-remaining.produced :as produced]
+            [derived-remaining.props :refer [oil gas ngl condensate oe]]))
 
-(defn derive-stat
-  [{fldName :fldName :as original-data} {recoverable :recoverable original :original produced :produced}]
-  (println "doing field" fldName "for" original)
+(defn derive-remaining
+  [{fldName :fldName :as original-data} {recoverable :recoverable remaining :remaining produced :produced}]
+  (println "doing field" fldName "for" remaining)
   (let [cumulative-produced (produced/produced-field fldName produced)
-        original-value (read-string (get original-data original))
+        original-value (read-string (get original-data remaining))
         new-value (- (read-string (get original-data recoverable)) cumulative-produced)]
     (println "recoverable" recoverable " => " (get original-data recoverable))
     (println "cumulative" produced " => " (format "%.2f" cumulative-produced))
-    (println "original value" original " => " original-value)
-    (println "new value" original " => " (format "%.2f" new-value))
+    (println "remaining value" remaining " => " original-value)
+    (println "new value" remaining " => " (format "%.2f" new-value))
     (cond (< new-value 0)
           (do (println "new values is less than zero, doing nothing.")
               original-data)
           (>= new-value original-value)
           (do
-            (println "new values is bigger or equal to original ... doing nothing.")
+            (println "new values is bigger or equal to remaining ... doing nothing.")
             original-data)
           :else (do
                   (println "updating value ...")
-                  (assoc original-data original (format "%.2f" new-value))))))
+                  (assoc original-data remaining (format "%.2f" new-value))))))
 
-(def oil {:recoverable :fldRecoverableOil
-          :original    :fldRemainingOil
-          :produced    :prfPrdOilNetMillSm3})
-
-(def gas {:recoverable :fldRecoverableGas
-          :original    :fldRemainingGas
-          :produced    :prfPrdGasNetBillSm3})
-
-(def ngl {:recoverable :fldRecoverableNGL
-          :original    :fldRemainingNGL
-          :produced    :prfPrdNGLNetMillSm3})
-
-(def condensate {:recoverable :fldRecoverableCondensate
-                 :original    :fldRemainingCondensate
-                 :produced    :prfPrdCondensateNetMillSm3})
-
-(def oe {:recoverable :fldRecoverableOE
-         :original    :fldRemainingOE
-         :produced    :prfPrdOeNetMillSm3})
-
-(defn do-field
+(defn derive-field-remaining
   [field]
   (let [original-reserve-data (first (filter #(= field (:fldName %)) reserve/data))]
-    (reduce derive-stat original-reserve-data [oil gas ngl condensate oe])))
+    (reduce derive-remaining original-reserve-data [oil gas ngl condensate oe])))
 
 (def fields (map :fldName reserve/data))
 
-(def new-reserves (map do-field fields))
+(def new-reserves (map derive-field-remaining fields))
 
 (defn sum-reserves
   [data kind]
