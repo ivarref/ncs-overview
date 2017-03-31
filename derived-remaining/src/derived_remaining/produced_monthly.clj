@@ -31,18 +31,37 @@
                       (map #(update % :prfPrdOeNetMillSm3 read-string))
                       (map #(assoc % :days-in-month (. (YearMonth/of (:prfYear %) (:prfMonth %)) lengthOfMonth)))
                       (map #(assoc % :date (str (format "%04d-%02d" (:prfYear %) (:prfMonth %)))))
-                      (map (partial mboed-prop :mboed :prfPrdOilNetMillSm3))
+                      (map (partial mboed-prop :oil-mboed :prfPrdOilNetMillSm3))
+                      (map (partial mboed-prop :gas-mboed :prfPrdGasNetBillSm3))
+                      (map (partial mboed-prop :oe-mboed :prfPrdOeNetMillSm3))
                       (sort-by :date)
                       vec))
 
-(defn mma [{date :date}]
+(defn mma [prop {date :date}]
   (let [items (take-last 12 (filter #(>= (compare date (:date %)) 0) parsed-data))
-        production (->> items (map :prfPrdOilNetMillSm3) (reduce + 0))
+        production (->> items (map prop) (reduce + 0))
         days (->> items (map :days-in-month) (reduce + 0))]
-    (/ (* 6.29 production) days)))
+    (format "%.2f" (/ (* 6.29 production) days))))
 
 (def parsed-data-with-mma (->> parsed-data
-                               (mapv #(assoc % :mma (mma %)))
-                               (mapv #(update % :mma (partial format "%.2f")))))
+                               (mapv #(assoc % :oil-mma (mma :prfPrdOilNetMillSm3 %)))
+                               (mapv #(assoc % :gas-mma (mma :prfPrdGasNetBillSm3 %)))
+                               (mapv #(assoc % :oe-mma (mma :prfPrdOeNetMillSm3 %)))))
 
-(csvmap/write-csv "recent-oil-production-monthly.csv" {:columns [:date :mboed :mma] :data    parsed-data-with-mma})
+(csvmap/write-csv "recent-oil-production-monthly.csv" {:columns [:date :mboed :mma] :data
+                                                                (->> parsed-data-with-mma
+                                                                     (mapv #(assoc % :mma (:oil-mma %)))
+                                                                     (mapv #(assoc % :mboed (:oil-mboed %)))
+                                                                     )})
+
+(csvmap/write-csv "recent-gas-production-monthly.csv" {:columns [:date :mboed :mma] :data
+                                                                (->> parsed-data-with-mma
+                                                                     (mapv #(assoc % :mma (:gas-mma %)))
+                                                                     (mapv #(assoc % :mboed (:gas-mboed %)))
+                                                                     )})
+
+(csvmap/write-csv "recent-oe-production-monthly.csv" {:columns [:date :mboed :mma] :data
+                                                               (->> parsed-data-with-mma
+                                                                    (mapv #(assoc % :mma (:oe-mma %)))
+                                                                    (mapv #(assoc % :mboed (:oe-mboed %)))
+                                                                    )})
