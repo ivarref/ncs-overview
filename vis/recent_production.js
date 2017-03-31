@@ -123,7 +123,24 @@ var m = {
     group: 'funntiår',
     filename: '/data/recent-oil-production-monthly.csv',
     screenshot: 'oil_produced_reserves_by_discovery_decade.png'
+  },
+  gas: {
+    title: 'Olje',
+    unit: 'Milliardar fat olje',
+    unit_key: 'Oil',
+    group: 'funntiår',
+    filename: '/data/recent-gas-production-monthly.csv',
+    screenshot: 'oil_produced_reserves_by_discovery_decade.png'
+  },
+  oe: {
+    title: 'Olje',
+    unit: 'Milliardar fat olje',
+    unit_key: 'Oil',
+    group: 'funntiår',
+    filename: '/data/recent-oe-production-monthly.csv',
+    screenshot: 'oil_produced_reserves_by_discovery_decade.png'
   }
+
 };
 
 var mode = findGetParameter('mode', 'oil');
