@@ -2,7 +2,8 @@
   (:require [clj-http.client :as client]
             [clojure.string :as string]
             [clojure.test :as test]
-            [derived-remaining.csvmap :as csvmap])
+            [derived-remaining.csvmap :as csvmap]
+            [clojure.pprint :as pprint])
   (:import [java.time.YearMonth]
            (java.time YearMonth)))
 
@@ -19,18 +20,26 @@
                                  :prfPrdOeNetMillSm3
                                  :prfPrdProducedWaterInFieldMillSm3]))
 
-(def recent-data (->> (:data raw-data)
+(def parsed-data (->> (:data raw-data)
                       (map #(update % :prfYear read-string))
                       (map #(update % :prfMonth read-string))
+                      (map #(update % :prfPrdOilNetMillSm3 read-string))
                       (map #(assoc % :days-in-month (. (YearMonth/of (:prfYear %) (:prfMonth %)) lengthOfMonth)))
                       (map #(assoc % :date (str (format "%04d-%02d" (:prfYear %) (:prfMonth %)))))
                       (map #(assoc % :mboed (:prfPrdOilNetMillSm3 %)))
-                      (map #(update % :mboed read-string))
-                      (filter #(>= (:prfYear %) 2010))
                       (map #(assoc % :mboed (/ (* 6.29 (:mboed %)) (:days-in-month %))))
                       (map #(update % :mboed (fn [x] (format "%.2f" x))))
                       (sort-by :date)
                       vec))
 
-(csvmap/write-csv "recent-oil-production-monthly.csv" {:columns [:date :mboed]
-                                                       :data    recent-data})
+(defn mma [{date :date}]
+  (let [items (take-last 12 (filter #(>= (compare date (:date %)) 0) parsed-data))
+        production (->> items (map :prfPrdOilNetMillSm3) (reduce + 0))
+        days (->> items (map :days-in-month) (reduce + 0))]
+    (/ (* 6.29 production) days)))
+
+(def parsed-data-with-mma (->> parsed-data
+                               (mapv #(assoc % :mma (mma %)))
+                               (mapv #(update % :mma (partial format "%.2f")))))
+
+(csvmap/write-csv "recent-oil-production-monthly.csv" {:columns [:date :mboed :mma] :data    parsed-data-with-mma})
