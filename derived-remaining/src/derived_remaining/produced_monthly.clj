@@ -48,17 +48,17 @@
                                (mapv #(assoc % :gas-mma (mma :prfPrdGasNetBillSm3 %)))
                                (mapv #(assoc % :oe-mma (mma :prfPrdOeNetMillSm3 %)))))
 
-(csvmap/write-csv "recent-oil-production-monthly.csv" {:columns [:date :mboed :mma] :data
-                                                                (->> parsed-data-with-mma
+(csvmap/write-csv "recent-oil-production-monthly.csv" {:columns [:date :mboed :mma]
+                                                       :data    (->> parsed-data-with-mma
                                                                      (mapv #(assoc % :mma (:oil-mma %)))
                                                                      (mapv #(assoc % :mboed (:oil-mboed %))))})
 
-(csvmap/write-csv "recent-gas-production-monthly.csv" {:columns [:date :mboed :mma] :data
-                                                                (->> parsed-data-with-mma
+(csvmap/write-csv "recent-gas-production-monthly.csv" {:columns [:date :mboed :mma]
+                                                       :data    (->> parsed-data-with-mma
                                                                      (mapv #(assoc % :mma (:gas-mma %)))
                                                                      (mapv #(assoc % :mboed (:gas-mboed %))))})
 
-(csvmap/write-csv "recent-oe-production-monthly.csv" {:columns [:date :mboed :mma] :data
-                                                               (->> parsed-data-with-mma
+(csvmap/write-csv "recent-oe-production-monthly.csv" {:columns [:date :mboed :mma]
+                                                      :data    (->> parsed-data-with-mma
                                                                     (mapv #(assoc % :mma (:oe-mma %)))
                                                                     (mapv #(assoc % :mboed (:oe-mboed %))))})
