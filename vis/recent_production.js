@@ -33,16 +33,15 @@ function show_resource(unit_key, resource, group, unit, file) {
     },
     function (error, data) {
       if (error) throw error;
-      data = data.filter(function (x) { return x.date.getFullYear() >= 2005; })
+      data = data.filter(function (x) { return x.date.getFullYear() >= 2009; })
       var y = d3.scaleLinear()
         .domain([0, d3.max(data.map(function (d) { return d3.max([d.mboed, d.mma]) }))])
         .range([height, 0]);
 
       var x = d3.scaleBand()
         .domain(data.map(function (d) { return d.date }))
-        .padding(0)
+        .padding(0.1)
         .rangeRound([0, width]);
-
 
       var x2 = d3.scaleTime()
         .range([0, width]);

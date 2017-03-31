@@ -20,15 +20,18 @@
                                  :prfPrdOeNetMillSm3
                                  :prfPrdProducedWaterInFieldMillSm3]))
 
+(defn mboed-prop [new-prop prop row]
+  (assoc row new-prop (format "%.2f" (/ (* 6.29 (get row prop)) (:days-in-month row)))))
+
 (def parsed-data (->> (:data raw-data)
                       (map #(update % :prfYear read-string))
                       (map #(update % :prfMonth read-string))
                       (map #(update % :prfPrdOilNetMillSm3 read-string))
+                      (map #(update % :prfPrdGasNetBillSm3 read-string))
+                      (map #(update % :prfPrdOeNetMillSm3 read-string))
                       (map #(assoc % :days-in-month (. (YearMonth/of (:prfYear %) (:prfMonth %)) lengthOfMonth)))
                       (map #(assoc % :date (str (format "%04d-%02d" (:prfYear %) (:prfMonth %)))))
-                      (map #(assoc % :mboed (:prfPrdOilNetMillSm3 %)))
-                      (map #(assoc % :mboed (/ (* 6.29 (:mboed %)) (:days-in-month %))))
-                      (map #(update % :mboed (fn [x] (format "%.2f" x))))
+                      (map (partial mboed-prop :mboed :prfPrdOilNetMillSm3))
                       (sort-by :date)
                       vec))
 
