@@ -26,3 +26,11 @@
                      :DatesyncNPD]))
 
 (def field-names (map :fldName data))
+
+(defn get-reserve [field-name kind]
+  {:pre [(some #{field-name} field-names)
+         (some #{kind} [:fldRecoverableOE :fldRecoverableOil :fldRecoverableGas])]}
+  (-> (filter #(= (:fldName %) field-name) data)
+      first
+      (get kind)
+      read-string))
