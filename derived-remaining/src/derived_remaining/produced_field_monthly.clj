@@ -53,21 +53,30 @@
     "NA"))
 
 (defn produce-cumulative
-  [[field production]]
+  [production]
   {:prf [(coll? production)]}
-  [field (->> production
-              (reductions (fn [old n] (update n :oil-cumulative (fn [v] (+ v (:oil-cumulative old))))))
-              (reductions (fn [old n] (update n :gas-cumulative (fn [v] (+ v (:gas-cumulative old))))))
-              (reductions (fn [old n] (update n :oe-cumulative (fn [v] (+ v (:oe-cumulative old))))))
-              (mapv #(assoc % :oil-percentage-produced (percentage-produced :oil-cumulative :fldRecoverableOil %)))
-              (mapv #(assoc % :gas-percentage-produced (percentage-produced :gas-cumulative :fldRecoverableGas %)))
-              (mapv #(assoc % :oe-percentage-produced (percentage-produced :oe-cumulative :fldRecoverableOE %))))])
+  (->> production
+       (reductions (fn [old n] (update n :oil-cumulative (fn [v] (+ v (:oil-cumulative old))))))
+       (reductions (fn [old n] (update n :gas-cumulative (fn [v] (+ v (:gas-cumulative old))))))
+       (reductions (fn [old n] (update n :oe-cumulative (fn [v] (+ v (:oe-cumulative old))))))
+       (mapv #(assoc % :oil-percentage-produced (percentage-produced :oil-cumulative :fldRecoverableOil %)))
+       (mapv #(assoc % :gas-percentage-produced (percentage-produced :gas-cumulative :fldRecoverableGas %)))
+       (mapv #(assoc % :oe-percentage-produced (percentage-produced :oe-cumulative :fldRecoverableOE %)))))
 
 (def fields (distinct (map :prfInformationCarrier data)))
 
-(def with-cumulative (map produce-cumulative (group-by :prfInformationCarrier data)))
+(def with-cumulative (mapcat produce-cumulative (vals (group-by :prfInformationCarrier data))))
 
-(def flat-production (->> (mapcat second with-cumulative)
+(defn bucket
+  [v]
+  (cond (= "NA" v) "NA"
+        (< v 50) "<50"
+        :else ">50"))
+
+(def flat-production (->> with-cumulative
+                          (map #(assoc % :oil-pp-bucket (bucket (:oil-percentage-produced %))))
+                          (map #(assoc % :gas-pp-bucket (bucket (:gas-percentage-produced %))))
+                          (map #(assoc % :oe-pp-bucket (bucket (:oe-percentage-produced %))))
                           (sort-by :date)
                           vec))
 
