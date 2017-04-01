@@ -28,6 +28,8 @@ function show_resource(unit_key, resource, group, unit, file) {
       return {
         'date': parseTime(d.date),
         'mboed': +d.mboed,
+        'fresh': +d['less-than-half-produced'],
+        'old': +d['more-than-half-produced'],
         'mma': +d.mma
       };
     },
@@ -87,6 +89,32 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr("stroke-width", 3.5)
         .attr("d", line);
 
+      var line = d3.line()
+        .x(function (d) { return x(d.date) + (x.bandwidth() / 2.0); })
+        .y(function (d) { return y(d.fresh); });
+
+      svg.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "green")
+        .attr("stroke-linejoin", "round")
+        .attr("stroke-linecap", "round")
+        .attr("stroke-width", 3.5)
+        .attr("d", line);
+
+      var line = d3.line()
+        .x(function (d) { return x(d.date) + (x.bandwidth() / 2.0); })
+        .y(function (d) { return y(d.old); });
+
+      svg.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "red")
+        .attr("stroke-linejoin", "round")
+        .attr("stroke-linecap", "round")
+        .attr("stroke-width", 3.5)
+        .attr("d", line);
+
       // var yearOnly = data.filter(function(x) { return x.date.getMonth() == 11; })
       // svg.append("g")
       // .selectAll('circle')
@@ -121,7 +149,7 @@ var m = {
     unit: 'Milliardar fat olje',
     unit_key: 'Oil',
     group: 'funntiår',
-    filename: '/data/recent-oil-production-monthly.csv',
+    filename: '/data/oil-production-bucket-monthly.csv',
     screenshot: 'oil_produced_reserves_by_discovery_decade.png'
   },
   gas: {
@@ -129,7 +157,7 @@ var m = {
     unit: 'Milliardar fat olje',
     unit_key: 'Oil',
     group: 'funntiår',
-    filename: '/data/recent-gas-production-monthly.csv',
+    filename: '/data/gas-production-bucket-monthly.csv',
     screenshot: 'oil_produced_reserves_by_discovery_decade.png'
   },
   oe: {

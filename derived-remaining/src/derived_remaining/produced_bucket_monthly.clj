@@ -24,7 +24,7 @@
 (defn mboed-prop [new-prop prop row]
   (assoc row new-prop (format "%.2f" (/ (* 6.29 (get row prop)) (:days-in-month row)))))
 
-(defonce parsed-data
+(def parsed-data
   (->> (:data raw-data)
        (map #(update % :prfYear read-string))
        (map #(update % :prfMonth read-string))
@@ -85,6 +85,14 @@
                                  (mapv #(assoc % :less-than-half-produced (:oil-less-than-half-produced-mboed %)))
                                  (mapv #(assoc % :more-than-half-produced (:oil-more-than-half-produced-mboed %)))
                                  (mapv #(assoc % :mboed (:oil-mboed %))))})
+
+(csvmap/write-csv "gas-production-bucket-monthly.csv"
+                  {:columns [:date :less-than-half-produced :more-than-half-produced :mboed :mma]
+                   :data    (->> parsed-data-with-mma
+                                 (mapv #(assoc % :mma (:gas-mma %)))
+                                 (mapv #(assoc % :less-than-half-produced (:gas-less-than-half-produced-mboed %)))
+                                 (mapv #(assoc % :more-than-half-produced (:gas-more-than-half-produced-mboed %)))
+                                 (mapv #(assoc % :mboed (:gas-mboed %))))})
 
 #_(csvmap/write-csv "recent-gas-production-monthly.csv" {:columns [:date :mboed :mma]
                                                          :data    (->> parsed-data-with-mma

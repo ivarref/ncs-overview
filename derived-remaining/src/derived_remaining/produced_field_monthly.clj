@@ -21,7 +21,7 @@
                                  :prfPrdProducedWaterInFieldMillSm3
                                  :prfNpdidInformationCarrier]))
 
-(defonce data (->> raw-data
+(def data (->> raw-data
                :data
                (remove #(= "33/9-6 DELTA" (:prfInformationCarrier %)))
                (map #(update % :prfYear read-string))
@@ -66,13 +66,11 @@
 (defn bucket
   [v]
   (cond (= "NA" v) "NA"
-        (< v 50) "<50"
+        (< v 80) "<50"
         :else ">50"))
 
-(def buckets ["<50" ">50"])
-
-(defonce with-cumulative (mapcat produce-cumulative (vals (group-by :prfInformationCarrier data))))
-(defonce flat-production (->> with-cumulative
+(def with-cumulative (mapcat produce-cumulative (vals (group-by :prfInformationCarrier data))))
+(def flat-production (->> with-cumulative
                           (map #(assoc % :oil-pp-bucket (bucket (:oil-percentage-produced %))))
                           (map #(assoc % :gas-pp-bucket (bucket (:gas-percentage-produced %))))
                           (map #(assoc % :oe-pp-bucket (bucket (:oe-percentage-produced %))))
