@@ -21,7 +21,7 @@
                                  :prfPrdProducedWaterInFieldMillSm3
                                  :prfNpdidInformationCarrier]))
 
-(def data (->> raw-data
+(defonce data (->> raw-data
                :data
                (remove #(= "33/9-6 DELTA" (:prfInformationCarrier %)))
                (map #(update % :prfYear read-string))
@@ -55,7 +55,7 @@
 (defn produce-cumulative
   [production]
   {:prf [(coll? production)]}
-  (->> production
+  (->> (sort-by :date production)
        (reductions (fn [old n] (update n :oil-cumulative (fn [v] (+ v (:oil-cumulative old))))))
        (reductions (fn [old n] (update n :gas-cumulative (fn [v] (+ v (:gas-cumulative old))))))
        (reductions (fn [old n] (update n :oe-cumulative (fn [v] (+ v (:oe-cumulative old))))))
@@ -63,23 +63,29 @@
        (mapv #(assoc % :gas-percentage-produced (percentage-produced :gas-cumulative :fldRecoverableGas %)))
        (mapv #(assoc % :oe-percentage-produced (percentage-produced :oe-cumulative :fldRecoverableOE %)))))
 
-(def fields (distinct (map :prfInformationCarrier data)))
-
-(def with-cumulative (mapcat produce-cumulative (vals (group-by :prfInformationCarrier data))))
-
 (defn bucket
   [v]
   (cond (= "NA" v) "NA"
         (< v 50) "<50"
         :else ">50"))
 
-(def flat-production (->> with-cumulative
+(defonce with-cumulative (mapcat produce-cumulative (vals (group-by :prfInformationCarrier data))))
+(defonce flat-production (->> with-cumulative
                           (map #(assoc % :oil-pp-bucket (bucket (:oil-percentage-produced %))))
                           (map #(assoc % :gas-pp-bucket (bucket (:gas-percentage-produced %))))
                           (map #(assoc % :oe-pp-bucket (bucket (:oe-percentage-produced %))))
                           (sort-by :date)
                           vec))
 
-;(def field (produce-cumulative (get by-field "TROLL")))
+(defn sum-bucket
+  [prop [buck values]]
+  [buck (reduce + 0 (map prop values))])
 
-#_(csvmap/write-csv "field-production-monthly.csv" {:columns [:date :prfInformationCarrier :prfPrdOilNetMillSm3] :data data})
+(defn bucket-sums-for-date
+  [date buck prop]
+  {:pre [(some #{buck} [:oil-pp-bucket :gas-pp-bucket :oe-pp-bucket])
+         (some #{prop} [:prfPrdOeNetMillSm3 :prfPrdOilNetMillSm3 :prfPrdGasNetBillSm3])]}
+  (let [items (filter #(= date (:date %)) flat-production)
+        items (remove #(= "NA" (get % buck)) items)
+        sum-buckets (map (partial sum-bucket prop) (sort-by first (group-by buck items)))]
+    sum-buckets))
