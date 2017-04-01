@@ -84,6 +84,8 @@
   {:pre [(some #{buck} [:oil-pp-bucket :gas-pp-bucket :oe-pp-bucket])]}
   (let [items (filter #(= date (:date %)) flat-production)
         items (filter #(= bucket-value (get % buck)) items)
-        bucket-to-prod {:oil-pp-bucket :prfPrdOilNetMillSm3}
+        bucket-to-prod {:oil-pp-bucket :prfPrdOilNetMillSm3
+                        :gas-pp-bucket :prfPrdGasNetBillSm3
+                        :oe-pp-bucket :prfPrdOeNetMillSm3}
         prop (get bucket-to-prod buck)]
     (reduce + 0 (map prop items))))
