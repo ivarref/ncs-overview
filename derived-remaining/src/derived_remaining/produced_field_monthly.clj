@@ -30,10 +30,13 @@
                (map #(update % :prfPrdGasNetBillSm3 read-string))
                (map #(update % :prfPrdOeNetMillSm3 read-string))
                (map #(assoc % :date (str (format "%04d-%02d" (:prfYear %) (:prfMonth %)))))
+               (map #(assoc % :days-in-month (. (YearMonth/of (:prfYear %) (:prfMonth %)) lengthOfMonth)))
                ; bootstrap cumulative values
                (map #(assoc % :oil-cumulative (:prfPrdOilNetMillSm3 %)))
                (map #(assoc % :gas-cumulative (:prfPrdGasNetBillSm3 %)))
                (map #(assoc % :oe-cumulative (:prfPrdOeNetMillSm3 %)))
+               ; bootstrap start production year
+               (map #(assoc % :start-production (:prfYear %)))
                ; fetch original recoverable reserves
                (map #(assoc % :fldRecoverableOil (reserve/get-reserve (:prfInformationCarrier %) :fldRecoverableOil)))
                (map #(assoc % :fldRecoverableGas (reserve/get-reserve (:prfInformationCarrier %) :fldRecoverableGas)))
@@ -50,12 +53,13 @@
   [production reserve item]
   (if (> (get item reserve) 0)
     (* 100 (/ (get item production) (get item reserve)))
-    "NA"))
+    0.0))
 
 (defn produce-cumulative
   [production]
-  {:prf [(coll? production)]}
+  {:pre [(coll? production)]}
   (->> (sort-by :date production)
+       (reductions (fn [old n] (assoc n :start-production (:start-production old))))
        (reductions (fn [old n] (update n :oil-cumulative (fn [v] (+ v (:oil-cumulative old))))))
        (reductions (fn [old n] (update n :gas-cumulative (fn [v] (+ v (:gas-cumulative old))))))
        (reductions (fn [old n] (update n :oe-cumulative (fn [v] (+ v (:oe-cumulative old))))))
@@ -63,27 +67,49 @@
        (mapv #(assoc % :gas-percentage-produced (percentage-produced :gas-cumulative :fldRecoverableGas %)))
        (mapv #(assoc % :oe-percentage-produced (percentage-produced :oe-cumulative :fldRecoverableOE %)))))
 
-(defn bucket
-  [v]
-  (cond (= "NA" v) "NA"
-        (< v 80) "<50"
-        :else ">50"))
-
 (def with-cumulative (mapcat produce-cumulative (vals (group-by :prfInformationCarrier data))))
-(def flat-production (->> with-cumulative
-                          (map #(assoc % :oil-pp-bucket (bucket (:oil-percentage-produced %))))
-                          (map #(assoc % :gas-pp-bucket (bucket (:gas-percentage-produced %))))
-                          (map #(assoc % :oe-pp-bucket (bucket (:oe-percentage-produced %))))
-                          (sort-by :date)
-                          vec))
 
-(defn bucket-sum-for-date
-  [date buck bucket-value]
-  {:pre [(some #{buck} [:oil-pp-bucket :gas-pp-bucket :oe-pp-bucket])]}
-  (let [items (filter #(= date (:date %)) flat-production)
-        items (filter #(= bucket-value (get % buck)) items)
-        bucket-to-prod {:oil-pp-bucket :prfPrdOilNetMillSm3
-                        :gas-pp-bucket :prfPrdGasNetBillSm3
-                        :oe-pp-bucket :prfPrdOeNetMillSm3}
-        prop (get bucket-to-prod buck)]
-    (reduce + 0 (map prop items))))
+(defn process-date
+  [empty-buckets production]
+  {:pre [(coll? production)]}
+  (let [buckets (group-by :bucket production)
+        days-in-month (:days-in-month (first production))
+        mboe (fn [x] (format "%.2f" (/ (* 6.29 x) days-in-month)))
+        oil-buckets (map #(mboe (reduce + 0.0 (map :prfPrdOilNetMillSm3 %))) (vals buckets))
+        ;gas-buckets (map #(mboe (reduce + 0.0 (map :prfPrdGasNetBillSm3 %))) (vals buckets))
+        ;oe-buckets (map #(mboe (reduce + 0.0 (map :prfPrdOeNetMillSm3 %))) (vals buckets))
+        ]
+    (merge {:date          (:date (first production))
+            :days-in-month days-in-month
+            :total         (reduce + 0 (map :prfPrdOilNetMillSm3 production))
+            :mboed         (mboe (reduce + 0 (map :prfPrdOilNetMillSm3 production)))}
+           (merge empty-buckets (zipmap (keys buckets) oil-buckets)))))
+
+(def with-bucket (->> with-cumulative
+                          (mapv #(assoc % :bucket
+                                          (if (< (:oil-percentage-produced %) 80)
+                                            :less-than-half-produced
+                                            :more-than-half-produced)))))
+
+(def empty-buckets (reduce (fn [o n] (assoc o n "0.00")) {} (distinct (map :bucket with-bucket))))
+
+(def flat-production (->> with-bucket
+                          (group-by :date)
+                          vals
+                          (map (partial process-date empty-buckets))
+                          (sort-by :date)))
+
+(defn mma [{date :date}]
+  (let [items (take-last 12 (filter #(>= (compare date (:date %)) 0) flat-production))
+        production (->> items (map :total) (reduce + 0))
+        days (->> items (map :days-in-month) (reduce + 0))]
+    (format "%.2f" (/ (* 6.29 production) days))))
+
+(def with-mma (->> flat-production
+                   (map #(assoc % :mma (mma %)))
+                   (map #(dissoc % :days-in-month))
+                   (map #(dissoc % :total))))
+
+(csvmap/write-csv "oil-production-bucket-monthly.csv"
+                  {:columns [:date :less-than-half-produced :more-than-half-produced :mboed :mma]
+                   :data    with-mma})
