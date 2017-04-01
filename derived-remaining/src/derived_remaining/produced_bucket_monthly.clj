@@ -3,6 +3,7 @@
             [clojure.string :as string]
             [clojure.test :as test]
             [derived-remaining.csvmap :as csvmap]
+            [derived-remaining.produced-field-monthly :as produced-field-monthly]
             [clojure.pprint :as pprint])
   (:import [java.time.YearMonth]
            (java.time YearMonth)))
@@ -34,6 +35,9 @@
                       (map (partial mboed-prop :oil-mboed :prfPrdOilNetMillSm3))
                       (map (partial mboed-prop :gas-mboed :prfPrdGasNetBillSm3))
                       (map (partial mboed-prop :oe-mboed :prfPrdOeNetMillSm3))
+                      (map #(assoc % :oil-bucket (produced-field-monthly/bucket-sums-for-date (:date %) :oil-pp-bucket :prfPrdOilNetMillSm3)))
+                      ;(map #(assoc % :oil-less-than-half-produced (-> % :oil-bucket (nth 0) (nth 1))))
+                      ;(map #(assoc % :oil-more-than-half-produced (-> % :oil-bucket (nth 1) (nth 1))))
                       (sort-by :date)
                       vec))
 

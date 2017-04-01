@@ -69,6 +69,8 @@
         (< v 50) "<50"
         :else ">50"))
 
+(def buckets ["<50" ">50"])
+
 (defonce with-cumulative (mapcat produce-cumulative (vals (group-by :prfInformationCarrier data))))
 (defonce flat-production (->> with-cumulative
                           (map #(assoc % :oil-pp-bucket (bucket (:oil-percentage-produced %))))
@@ -77,15 +79,11 @@
                           (sort-by :date)
                           vec))
 
-(defn sum-bucket
-  [prop [buck values]]
-  [buck (reduce + 0 (map prop values))])
-
-(defn bucket-sums-for-date
-  [date buck prop]
-  {:pre [(some #{buck} [:oil-pp-bucket :gas-pp-bucket :oe-pp-bucket])
-         (some #{prop} [:prfPrdOeNetMillSm3 :prfPrdOilNetMillSm3 :prfPrdGasNetBillSm3])]}
+(defn bucket-sum-for-date
+  [date buck bucket-value]
+  {:pre [(some #{buck} [:oil-pp-bucket :gas-pp-bucket :oe-pp-bucket])]}
   (let [items (filter #(= date (:date %)) flat-production)
-        items (remove #(= "NA" (get % buck)) items)
-        sum-buckets (map (partial sum-bucket prop) (sort-by first (group-by buck items)))]
-    sum-buckets))
+        items (filter #(= bucket-value (get % buck)) items)
+        bucket-to-prod {:oil-pp-bucket :prfPrdOilNetMillSm3}
+        prop (get bucket-to-prod buck)]
+    (reduce + 0 (map prop items))))
