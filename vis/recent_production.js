@@ -41,14 +41,15 @@ function show_resource(unit_key, resource, group, unit, file) {
         .range(d3.schemeCategory10);
       z.domain(keys);
 
-      data = data.filter(function (x) { return x.datestr >= '2007-12'; })
+      data = data.filter(function (x) { return x.datestr >= '2010-12'; })
       var y = d3.scaleLinear()
         .domain([0, d3.max(data.map(function (d) { return d3.max([d.mma]) }))])
         .range([height, 0]);
 
       var x = d3.scaleBand()
         .domain(data.map(function (d) { return d.date }))
-        .padding(0.1)
+        .paddingInner(0.05)
+        //.align(0.1)
         .rangeRound([0, width]);
 
       var x2 = d3.scaleTime()
@@ -89,10 +90,14 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr("dy", "0.32em")
         .text(function (d) { return d.slice(2); });
 
+      var yearOnly = data.filter(function(x) { return x.date.getMonth() == 0; })
+
       x2.domain(d3.extent(data, function (d) { return d.date; }));
       svg.append("g")
         .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x2));
+        .call(d3.axisBottom(x)
+        .tickValues(yearOnly.map(function(d) { return d.date}))
+        .tickFormat(function(d) { return "Jan " + d.getFullYear() }))
 
       svg.append("g")
         .call(d3.axisLeft(y))

@@ -87,14 +87,20 @@
 
 ;(str (subs (str (:oil-percentage-produced %)) 0 1) "0")
 #_(cond (< (:oil-percentage-produced %) 80) "1-0 - 80% produced"
-      :else "2-80 - 100% produced")
+        :else "2-80 - 100% produced")
 
 (def with-bucket (->> with-cumulative
-                          (mapv #(assoc % :bucket
-                                          (cond (< (:oil-percentage-produced %) 25) "1-0 - 25% produsert"
-                                                (< (:oil-percentage-produced %) 50) "2-25 - 50% produsert"
-                                                (< (:oil-percentage-produced %) 75) "3-50 - 75% produsert"
-                                                :else "4-75 - 100% produsert")))))
+                      ;(filter #(< (:start-production %) 2002))
+                      (mapv #(assoc % :bucket
+                                      (cond
+                                        ;(< (:oil-percentage-produced %) 25) "1-0 - 25% produsert"
+                                        ;(< (:oil-percentage-produced %) 50) "2-25 - 50% produsert"
+                                        (< (:oil-percentage-produced %) 50) "1-0 - 50% produsert"
+                                        (< (:oil-percentage-produced %) 60) "1-50 - 60% produsert"
+                                        (< (:oil-percentage-produced %) 70) "3-60 - 70% produsert"
+                                        (< (:oil-percentage-produced %) 80) "4-70 - 80% produsert"
+                                        (< (:oil-percentage-produced %) 90) "5-80 - 90% produsert"
+                                        :else "6-90 - 100% produsert")))))
 
 (def empty-buckets (reduce (fn [o n] (assoc o n "0.00")) {} (distinct (map :bucket with-bucket))))
 
@@ -103,12 +109,12 @@
                           vals
                           (map (partial process-date empty-buckets))
                           (sort-by :date)))
-
 (defn mma [{date :date}]
   (let [items (take-last 12 (filter #(>= (compare date (:date %)) 0) flat-production))
         production (->> items (map :total) (reduce + 0))
         days (->> items (map :days-in-month) (reduce + 0))]
     (format "%.2f" (/ (* 6.29 production) days))))
+
 
 (def with-mma (->> flat-production
                    (map #(assoc % :mma (mma %)))
