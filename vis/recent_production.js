@@ -30,6 +30,7 @@ function add_mma_line(svg, data, x, y) {
   points.append('text')
     .attr('dy', '-1.71em')
     .style('text-anchor', 'middle')
+    .style('font-weight', 'bold')
     .text(function (d) { return (d.mma + "").replace(".", ",") })
 
   points.append('text')
@@ -90,8 +91,8 @@ function show_resource(unit_key, resource, group, unit, file) {
         "#1f77b4", //blue
         "#17becf", //cyan
         "#e377c2", //pink
-        "#9467bd", //purple
         "#bcbd22", //gusjegul
+        "#9467bd", //purple
         "#7f7f7f", //gray
         "#2ca02c", //green
       ]
@@ -134,12 +135,12 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr("width", x.bandwidth());
 
       var legendbox = svg.append("g")
-        .attr('transform', 'translate(10, ' + (height - (20 * (1 + keys.length))) + ')')
+        .attr('transform', 'translate(10, ' + (height - (20 * (2 + keys.length))) + ')')
       legendbox.append('rect')
         .attr('x', 20)
         .attr('y', -20)
-        .attr('width', 170)
-        .attr('height', 10 + 20 * (1 + keys.length))
+        .attr('width', 180)
+        .attr('height', 10 + 20 * (2 + keys.length))
         .attr('fill', 'white')
         .attr('stroke', 'black')
         .style('fill-opacity', '0.8')
@@ -147,13 +148,38 @@ function show_resource(unit_key, resource, group, unit, file) {
       legendbox.append('text')
         .attr('x', 20 + 10)
         .style('font-weight', 'bold')
-        .text('Prosent produsert')
+        .text('Produksjon')
+
+      legendbox.append('g')
+        .attr('transform', 'translate(10, 20)')
+        .append('text')
+        .attr('x', 24 + 20)
+        .text('12 mnd. gjennomsnitt')
+
+      legendbox.append('g')
+        .attr('transform', 'translate(29, 15)')
+        .append('line')
+        .attr('x1', 0)
+        .attr('x2', 19)
+        .attr('y1', 0)
+        .attr('y2', 0)
+        .style('stroke', 'black')
+        .style('stroke-width', '3')
+
+      legendbox.append('g')
+        .attr('transform', 'translate(29, 15)')
+        .append('circle')
+        .attr('cx', 19 / 2.0)
+        .attr('cy', 0)
+        .style('stroke', 'black')
+        .style('stroke-width', '2')
+        .style('fill', 'yellow')
+        .attr('r', '5')
 
       var legend = svg.append("g")
         .attr('transform', 'translate(20, ' + (5 + height - (20 * (1 + keys.length))) + ')')
         .attr("font-family", "sans-serif")
         .attr("font-size", 10)
-        //.attr("text-anchor", "end")
         .selectAll("g")
         .data(keys.slice().reverse())
         .enter().append("g")
