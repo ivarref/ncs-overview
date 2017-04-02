@@ -26,11 +26,11 @@
   [^String filename {columns :columns data :data}]
   {:pre [(coll? columns) (coll? data)]}
   (with-open [out-file (io/writer filename)]
-    (csv/write-csv out-file
-                   [(mapv #(subs (str %) 1) columns)])
-    (csv/write-csv
-      out-file
-      (mapv
-        (fn [row]
-          (mapv (fn [key] (get row key)) columns))
-        data))))
+    (let [column-names (mapv #(if (string? %) % (subs (str %) 1)) columns)]
+      (csv/write-csv out-file [column-names])
+      (csv/write-csv
+        out-file
+        (mapv
+          (fn [row]
+            (mapv (fn [key] (get row key)) columns))
+          data)))))

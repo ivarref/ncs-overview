@@ -85,11 +85,16 @@
             :mboed         (mboe (reduce + 0 (map :prfPrdOilNetMillSm3 production)))}
            (merge empty-buckets (zipmap (keys buckets) oil-buckets)))))
 
+;(str (subs (str (:oil-percentage-produced %)) 0 1) "0")
+#_(cond (< (:oil-percentage-produced %) 80) "1-0 - 80% produced"
+      :else "2-80 - 100% produced")
+
 (def with-bucket (->> with-cumulative
                           (mapv #(assoc % :bucket
-                                          (if (< (:oil-percentage-produced %) 80)
-                                            :less-than-half-produced
-                                            :more-than-half-produced)))))
+                                          (cond (< (:oil-percentage-produced %) 25) "1-0 - 25% produsert"
+                                                (< (:oil-percentage-produced %) 50) "2-25 - 50% produsert"
+                                                (< (:oil-percentage-produced %) 75) "3-50 - 75% produsert"
+                                                :else "4-75 - 100% produsert")))))
 
 (def empty-buckets (reduce (fn [o n] (assoc o n "0.00")) {} (distinct (map :bucket with-bucket))))
 
@@ -110,6 +115,6 @@
                    (map #(dissoc % :days-in-month))
                    (map #(dissoc % :total))))
 
-(csvmap/write-csv "oil-production-bucket-monthly.csv"
-                  {:columns [:date :less-than-half-produced :more-than-half-produced :mboed :mma]
+(csvmap/write-csv "oil-production-bucket-stacked.csv"
+                  {:columns (cons :date (cons :mma (keys empty-buckets)))
                    :data    with-mma})
