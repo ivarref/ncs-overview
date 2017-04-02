@@ -60,7 +60,7 @@ function show_resource(unit_key, resource, group, unit, file) {
     .attr('height', 500)
     .style('border', "1px solid #000000")
 
-  var margin = { top: 100, right: 50, bottom: 40, left: 50 },
+  var margin = { top: 50, right: 50, bottom: 40, left: 50 },
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     svg = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -80,15 +80,23 @@ function show_resource(unit_key, resource, group, unit, file) {
       var keys = data.columns.filter(function (d) { return remove.indexOf(d) == -1 });
       keys = keys.sort()
       keys = keys.reverse()
+      data = data.filter(function (x) { return x.datestr >= '2010-12'; })
 
       var z = d3.scaleOrdinal()
         .range(d3.schemeCategory10);
       z.domain(keys);
 
-      data = data.filter(function (x) { return x.datestr >= '2010-12'; })
       var y = d3.scaleLinear()
         .domain([0, d3.max(data.map(function (d) { return d3.max([d.mma]) }))])
         .range([height, 0]);
+
+      svg.append("g")
+        .append("text")
+        .attr('dy', '-0.75em')
+        .attr('x', width / 2)
+        .style("text-anchor", "middle")
+        .classed("heading", true)
+        .text("Norsk oljeproduksjon 2010 - " + data[data.length - 1].date.getFullYear() + ", etter feltmodenhet")
 
       var x = d3.scaleBand()
         .domain(data.map(function (d) { return d.date }))
@@ -113,23 +121,23 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr("width", x.bandwidth());
 
       var legendbox = svg.append("g")
-      .attr('transform', 'translate(10, ' + (height-(20 * (1+keys.length))) + ')')
+        .attr('transform', 'translate(10, ' + (height - (20 * (1 + keys.length))) + ')')
       legendbox.append('rect')
-      .attr('x', 20)
-      .attr('y', -20)
-      .attr('width', 170)
-      .attr('height', 10+20*(1+keys.length))
-      .attr('fill', 'white')
-      .attr('stroke', 'black')
-      .style('fill-opacity', '0.8')
+        .attr('x', 20)
+        .attr('y', -20)
+        .attr('width', 170)
+        .attr('height', 10 + 20 * (1 + keys.length))
+        .attr('fill', 'white')
+        .attr('stroke', 'black')
+        .style('fill-opacity', '0.8')
 
       legendbox.append('text')
-      .attr('x', 20+10)
-      .style('font-weight', 'bold')
-      .text('Prosent produsert')
+        .attr('x', 20 + 10)
+        .style('font-weight', 'bold')
+        .text('Prosent produsert')
 
       var legend = svg.append("g")
-        .attr('transform', 'translate(20, ' + (5+height-(20 * (1+keys.length))) + ')')
+        .attr('transform', 'translate(20, ' + (5 + height - (20 * (1 + keys.length))) + ')')
         .attr("font-family", "sans-serif")
         .attr("font-size", 10)
         //.attr("text-anchor", "end")
@@ -161,10 +169,27 @@ function show_resource(unit_key, resource, group, unit, file) {
 
       svg.append("g")
         .call(d3.axisLeft(y))
+        .append("text")
+        .attr("fill", "#000")
+        .attr("transform", "rotate(-90)")
+        .attr("y", -margin.left + 8)
+        .attr("x", -height / 2)
+        .attr("dy", "0.71em")
+        .style("text-anchor", "middle")
+        .text("Millionar fat olje/dag");
 
       svg.append("g")
         .attr("transform", "translate(" + width + ",0)")
         .call(d3.axisRight(y))
+        // svg.append("g")
+        // .append("text")
+        // .attr("fill", "#000")
+        // .attr("transform", "rotate(90)")
+        // .attr("y", -margin.right + 4)
+        // .attr("dy", "0.71em")
+        // .style("text-anchor", "middle")
+        // .text("Millionar fat olje/dag");
+
 
       add_mma_line(svg, data, x, y);
       svg.append("g")
