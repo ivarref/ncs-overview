@@ -3,6 +3,50 @@ require('./style.css');
 
 var findGetParameter = require('./findgetparameter.js');
 
+function add_mma_line(svg, data, x, y) {
+  var line = d3.line()
+    .x(function (d) { return x(d.date) + (x.bandwidth() / 2.0); })
+    .y(function (d) { return y(d.mma); });
+
+  svg.append("path")
+    .datum(data)
+    .attr("fill", "none")
+    .attr("stroke", "black")
+    .attr("stroke-linejoin", "round")
+    .attr("stroke-linecap", "round")
+    .attr("stroke-width", 3.5)
+    .attr("d", line);
+
+  var yearOnly = data.filter(function (x) { return x.date.getMonth() == 11; })
+  var points = svg.append("g")
+    .selectAll('g')
+    .data(yearOnly)
+    .enter()
+    .append('g')
+    .attr('transform', function (d) {
+      return 'translate(' + (x(d.date) + (x.bandwidth() / 2.0)) + ',' + y(d.mma) + ')'
+    })
+
+  points.append('text')
+    .attr('dy', '-1.71em')
+    .style('text-anchor', 'middle')
+    .text(function (d) { return (d.mma + "").replace(".", ",") })
+
+  points.append('text')
+    .attr('dy', '-.71em')
+    .style('text-anchor', 'middle')
+    .text(function (d) { return "(" + d.date.getFullYear() + ")" })
+
+  points
+    .append('circle')
+    .attr('cx', 0)
+    .attr('cy', 0)
+    .style('stroke', 'black')
+    .style('stroke-width', '2')
+    .style('fill', 'yellow')
+    .attr('r', '5')
+}
+
 function show_resource(unit_key, resource, group, unit, file) {
   d3.formatDefaultLocale({
     'decimal': ',',
@@ -68,36 +112,52 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr("height", function (d) { return y(d[0]) - y(d[1]); })
         .attr("width", x.bandwidth());
 
+      var legendbox = svg.append("g")
+      .attr('transform', 'translate(10, ' + (height-(20 * (1+keys.length))) + ')')
+      legendbox.append('rect')
+      .attr('x', 20)
+      .attr('y', -20)
+      .attr('width', 170)
+      .attr('height', 10+20*(1+keys.length))
+      .attr('fill', 'white')
+      .attr('stroke', 'black')
+      .style('fill-opacity', '0.8')
+
+      legendbox.append('text')
+      .attr('x', 20+10)
+      .style('font-weight', 'bold')
+      .text('Prosent produsert')
+
       var legend = svg.append("g")
-        .attr('transform', 'translate(-15, -50)')
+        .attr('transform', 'translate(20, ' + (5+height-(20 * (1+keys.length))) + ')')
         .attr("font-family", "sans-serif")
         .attr("font-size", 10)
-        .attr("text-anchor", "end")
+        //.attr("text-anchor", "end")
         .selectAll("g")
         .data(keys.slice().reverse())
         .enter().append("g")
         .attr("transform", function (d, i) { return "translate(0," + i * 20 + ")"; });
 
       legend.append("rect")
-        .attr("x", width - 19)
+        .attr("x", 19)
         .attr("width", 19)
         .attr("height", 19)
         .attr("fill", z);
 
       legend.append("text")
-        .attr("x", width - 24)
+        .attr("x", 24 + 20)
         .attr("y", 9.5)
         .attr("dy", "0.32em")
         .text(function (d) { return d.slice(2); });
 
-      var yearOnly = data.filter(function(x) { return x.date.getMonth() == 0; })
+      var yearOnly = data.filter(function (x) { return x.date.getMonth() == 0; })
 
       x2.domain(d3.extent(data, function (d) { return d.date; }));
       svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x)
-        .tickValues(yearOnly.map(function(d) { return d.date}))
-        .tickFormat(function(d) { return "Jan " + d.getFullYear() }))
+          .tickValues(yearOnly.map(function (d) { return d.date }))
+          .tickFormat(function (d) { return "Jan " + d.getFullYear() }))
 
       svg.append("g")
         .call(d3.axisLeft(y))
@@ -106,52 +166,10 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr("transform", "translate(" + width + ",0)")
         .call(d3.axisRight(y))
 
-      var line = d3.line()
-        .x(function (d) { return x(d.date) + (x.bandwidth() / 2.0); })
-        .y(function (d) { return y(d.mma); });
-
-      svg.append("path")
-        .datum(data)
-        .attr("fill", "none")
-        .attr("stroke", "black")
-        .attr("stroke-linejoin", "round")
-        .attr("stroke-linecap", "round")
-        .attr("stroke-width", 3.5)
-        .attr("d", line);
-
-      var yearOnly = data.filter(function(x) { return x.date.getMonth() == 11; })
-      var points = svg.append("g")
-      .selectAll('g')
-      .data(yearOnly)
-      .enter()
-      .append('g')
-      .attr('transform', function(d) { 
-        return 'translate(' + (x(d.date) + (x.bandwidth()/2.0)) + ',' + y(d.mma) + ')'
-      })
-
-      points.append('text')
-      .attr('dy', '-1.71em')
-      .style('text-anchor', 'middle')
-      .text(function(d) { return (d.mma+"").replace(".", ",") })
-
-      points.append('text')
-      .attr('dy', '-.71em')
-      .style('text-anchor', 'middle')
-      .text(function(d) { return "(" + d.date.getFullYear() + ")" })
-
-      points
-      .append('circle')
-      .attr('cx', 0)
-      .attr('cy', 0)
-      .style('stroke', 'black')
-      .style('stroke-width', '2')
-      .style('fill', 'yellow')
-      .attr('r', '5')
-
+      add_mma_line(svg, data, x, y);
       svg.append("g")
         .attr("transform", "translate(" + 0 + "," + (height + margin.bottom) + ")")
         .append('text')
-        .classed('biggertext', true)
         .attr('dy', '-.31em')
         .style('text-anchor', 'start')
         .text("Basert på data frå Oljedirektoratet")
@@ -159,7 +177,6 @@ function show_resource(unit_key, resource, group, unit, file) {
       svg.append("g")
         .attr("transform", "translate(" + width + "," + (height + margin.bottom) + ")")
         .append('text')
-        .classed('biggertext', true)
         .attr('dy', '-.31em')
         .style('text-anchor', 'end')
         .text("Diagram: Refsdal.Ivar@gmail.com")
@@ -174,24 +191,7 @@ var m = {
     group: 'funntiår',
     filename: '/data/oil-production-bucket-stacked.csv',
     screenshot: 'oil_produced_reserves_by_discovery_decade.png'
-  },
-  gas: {
-    title: 'Olje',
-    unit: 'Milliardar fat olje',
-    unit_key: 'Oil',
-    group: 'funntiår',
-    filename: '/data/gas-production-bucket-monthly.csv',
-    screenshot: 'oil_produced_reserves_by_discovery_decade.png'
-  },
-  oe: {
-    title: 'Olje',
-    unit: 'Milliardar fat olje',
-    unit_key: 'Oil',
-    group: 'funntiår',
-    filename: '/data/recent-oe-production-monthly.csv',
-    screenshot: 'oil_produced_reserves_by_discovery_decade.png'
   }
-
 };
 
 var mode = findGetParameter('mode', 'oil');
