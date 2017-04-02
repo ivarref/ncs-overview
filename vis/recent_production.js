@@ -48,7 +48,7 @@ function add_mma_line(svg, data, x, y) {
     .attr('r', '5')
 }
 
-function show_resource(unit_key, resource, group, unit, file) {
+function show_resource(file) {
   d3.formatDefaultLocale({
     'decimal': ',',
     'thousands': '.',
@@ -59,7 +59,7 @@ function show_resource(unit_key, resource, group, unit, file) {
   var svg = d3.select('body').append('svg')
     .attr('width', 960)
     .attr('height', 500)
-    .style('border', "1px solid #000000")
+    //.style('border', "1px solid #000000")
 
   var margin = { top: 50, right: 50, bottom: 40, left: 50 },
     width = +svg.attr("width") - margin.left - margin.right,
@@ -139,7 +139,7 @@ function show_resource(unit_key, resource, group, unit, file) {
       legendbox.append('rect')
         .attr('x', 20)
         .attr('y', -20)
-        .attr('width', 180)
+        .attr('width', 198)
         .attr('height', 10 + 20 * (2 + keys.length))
         .attr('fill', 'white')
         .attr('stroke', 'black')
@@ -211,7 +211,7 @@ function show_resource(unit_key, resource, group, unit, file) {
         .append("text")
         .attr("fill", "#000")
         .attr("transform", "rotate(-90)")
-        .attr("y", -margin.left + 8)
+        .attr("y", -margin.left + 3)
         .attr("x", -height / 2)
         .attr("dy", "0.71em")
         .style("text-anchor", "middle")
@@ -259,14 +259,10 @@ function show_resource(unit_key, resource, group, unit, file) {
 
 var m = {
   oil: {
-    title: 'Olje',
-    unit: 'Milliardar fat olje',
-    unit_key: 'Oil',
-    group: 'funntiår',
     filename: '/data/oil-production-bucket-stacked.csv',
-    screenshot: 'oil_produced_reserves_by_discovery_decade.png'
+    screenshot: 'recent_oil_production.png'
   }
 };
 
 var mode = findGetParameter('mode', 'oil');
-show_resource(m[mode].unit_key, m[mode].title, m[mode].group, m[mode].unit, m[mode].filename);
+show_resource(m[mode].filename);
