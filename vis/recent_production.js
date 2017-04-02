@@ -82,8 +82,21 @@ function show_resource(unit_key, resource, group, unit, file) {
       keys = keys.reverse()
       data = data.filter(function (x) { return x.datestr >= '2010-12'; })
 
+      var cols = d3.schemeCategory10;
+      console.log(cols);
+      var cols = ["#d62728",  //red
+        "#ff7f0e", //orange
+        "#8c564b", //brown
+        "#1f77b4", //blue
+        "#17becf", //cyan
+        "#e377c2", //pink
+        "#9467bd", //purple
+        "#bcbd22", //gusjegul
+        "#7f7f7f", //gray
+        "#2ca02c", //green
+      ]
       var z = d3.scaleOrdinal()
-        .range(d3.schemeCategory10);
+        .range(cols);
       z.domain(keys);
 
       var y = d3.scaleLinear()
@@ -96,7 +109,7 @@ function show_resource(unit_key, resource, group, unit, file) {
         .attr('x', width / 2)
         .style("text-anchor", "middle")
         .classed("heading", true)
-        .text("Norsk oljeproduksjon 2010 - " + data[data.length - 1].date.getFullYear() + ", etter feltmodenhet")
+        .text("Norsk oljeproduksjon etter feltmodenhet, 2010 - " + data[data.length - 1].date.getFullYear())
 
       var x = d3.scaleBand()
         .domain(data.map(function (d) { return d.date }))
@@ -181,14 +194,14 @@ function show_resource(unit_key, resource, group, unit, file) {
       svg.append("g")
         .attr("transform", "translate(" + width + ",0)")
         .call(d3.axisRight(y))
-        // svg.append("g")
-        // .append("text")
-        // .attr("fill", "#000")
-        // .attr("transform", "rotate(90)")
-        // .attr("y", -margin.right + 4)
-        // .attr("dy", "0.71em")
-        // .style("text-anchor", "middle")
-        // .text("Millionar fat olje/dag");
+      // svg.append("g")
+      // .append("text")
+      // .attr("fill", "#000")
+      // .attr("transform", "rotate(90)")
+      // .attr("y", -margin.right + 4)
+      // .attr("dy", "0.71em")
+      // .style("text-anchor", "middle")
+      // .text("Millionar fat olje/dag");
 
 
       add_mma_line(svg, data, x, y);
