@@ -61,7 +61,7 @@ function show_resource(opts) {
     .attr('height', 500)
   //.style('border', "1px solid #000000")
 
-  var margin = { top: 70, right: 50, bottom: 40, left: 50 },
+  var margin = { top: 70, right: 60, bottom: 40, left: 60 },
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     svg = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
