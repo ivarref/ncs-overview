@@ -89,6 +89,14 @@
 #_(cond (< (:oil-percentage-produced %) 80) "1-0 - 80% produced"
         :else "2-80 - 100% produced")
 
+#_(defn generate-bucket-file
+  [filename bucket-fn]
+  (let [with-bucket (->> with-cumulative (mapv #(assoc % :bucket (bucket-fn %))))
+        empty-buckets (reduce (fn [o n] (assoc o n "0.00")) {} (distinct (map :bucket with-bucket)))
+        ]
+    )
+  )
+
 (def with-bucket (->> with-cumulative
                       ;(filter #(< (:start-production %) 2002))
                       (mapv #(assoc % :bucket
@@ -121,6 +129,11 @@
                    (map #(dissoc % :days-in-month))
                    (map #(dissoc % :total))))
 
-(csvmap/write-csv "oil-production-bucket-stacked.csv"
+(csvmap/write-csv "../data/oil-production-bucket-stacked.csv"
                   {:columns (cons :date (cons :mma (keys empty-buckets)))
                    :data    with-mma})
+
+(defn -main
+  []
+  (println "File created as side effect... ^__^"))
+

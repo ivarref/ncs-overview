@@ -15,6 +15,7 @@ else
   rm -rf tmp_data/*
   ./download.sh
   ./download_well.sh
+  ./download_clojure.sh
 fi
 
 ./generate.py
