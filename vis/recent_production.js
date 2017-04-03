@@ -101,7 +101,10 @@ function show_resource(opts) {
       z.domain(keys);
 
       var y = d3.scaleLinear()
-        .domain([0, d3.max(data.map(function (d) { return d3.max([d.mma]) }))])
+        .domain([0, d3.max(data.map(function (d) { 
+          var s = keys.reduce(function (o, n) { return o + d[n]; }, 0);
+          return d3.max([d.mma, s])
+        }))])
         .range([height, 0]);
 
       var xstart = 120;
@@ -271,7 +274,18 @@ var m = {
     filename: '/data/oil-production-bucket-stacked.csv',
     subtitle: 'Alle felt',
     screenshot: 'recent_oil_production.png'
+  },
+  oldfields: {
+    filename: '/data/oil-production-bucket-stacked-old-fields.csv',
+    subtitle: 'Felt med produksjonsstart før 2002',
+    screenshot: 'recent_oil_production_old_fields.png'
+  },
+  newfields: {
+    filename: '/data/oil-production-bucket-stacked-new-fields.csv',
+    subtitle: 'Felt med produksjonsstart f.o.m 2002',
+    screenshot: 'recent_oil_production_new_fields.png'
   }
+
 };
 
 var mode = findGetParameter('mode', 'oil');
