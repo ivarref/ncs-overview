@@ -48,7 +48,7 @@ function add_mma_line(svg, data, x, y) {
     .attr('r', '5')
 }
 
-function show_resource(file) {
+function show_resource(opts) {
   d3.formatDefaultLocale({
     'decimal': ',',
     'thousands': '.',
@@ -59,16 +59,16 @@ function show_resource(file) {
   var svg = d3.select('body').append('svg')
     .attr('width', 960)
     .attr('height', 500)
-    //.style('border', "1px solid #000000")
+  //.style('border', "1px solid #000000")
 
-  var margin = { top: 50, right: 50, bottom: 40, left: 50 },
+  var margin = { top: 70, right: 50, bottom: 40, left: 50 },
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     svg = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var parseTime = d3.timeParse("%Y-%m");
 
-  d3.csv(file,
+  d3.csv(opts.filename,
     function (d) {
       var o = Object.keys(d).reduce(function (o, n) { o[n] = +d[n]; return o; }, {});
       o.date = parseTime(d.date);
@@ -104,13 +104,21 @@ function show_resource(file) {
         .domain([0, d3.max(data.map(function (d) { return d3.max([d.mma]) }))])
         .range([height, 0]);
 
+      var xstart = 120;
       svg.append("g")
         .append("text")
-        .attr('dy', '-0.75em')
-        .attr('x', width / 2)
-        .style("text-anchor", "middle")
+        .attr('dy', '-1.75em')
+        .attr('x', xstart)
+        .style("text-anchor", "start")
         .classed("heading", true)
-        .text("Norsk oljeproduksjon etter feltmodenhet, " + data[0].date.getFullYear() + " - " + data[data.length - 1].date.getFullYear())
+        .text("Månedlig oljeproduksjon etter feltmodenhet, " + data[0].date.getFullYear() + " - " + data[data.length - 1].date.getFullYear())
+
+      svg.append("g")
+        .append("text")
+        .attr('dy', '-1.35em')
+        .attr('x', xstart)
+        .style("text-anchor", "start")
+        .text(opts.subtitle + '. Siste 12 mnd. gjennomsnitt: ' + ("" + data[data.length - 1].mma).replace(".", ",") + ' M fat olje/dag.')
 
       var x = d3.scaleBand()
         .domain(data.map(function (d) { return d.date }))
@@ -134,30 +142,32 @@ function show_resource(file) {
         .attr("height", function (d) { return y(d[0]) - y(d[1]); })
         .attr("width", x.bandwidth());
 
+      var xstart = (x(data[0].date) + x.bandwidth() / 2);
+      var ystart = height - (20 * (2 + keys.length)) - x.bandwidth() / 2 - 10.0;
+
       var legendbox = svg.append("g")
-        .attr('transform', 'translate(10, ' + (height - (20 * (2 + keys.length))) + ')')
+        .attr('transform', 'translate(' + xstart + ',' + ystart + ')')
       legendbox.append('rect')
-        .attr('x', 20)
-        .attr('y', -20)
         .attr('width', 198)
-        .attr('height', 10 + 20 * (2 + keys.length))
+        .attr('height', 20 * (2 + keys.length) + 10.0)
         .attr('fill', 'white')
         .attr('stroke', 'black')
         .style('fill-opacity', '0.8')
 
+      legendbox = legendbox.append('g')
+        .attr('transform', 'translate(' + 7 + ',' + 20 + ')')
+
       legendbox.append('text')
-        .attr('x', 20 + 10)
         .style('font-weight', 'bold')
         .text('Produksjon')
 
       legendbox.append('g')
-        .attr('transform', 'translate(10, 20)')
+        .attr('transform', 'translate(24, 20)')
         .append('text')
-        .attr('x', 24 + 20)
         .text('12 mnd. gjennomsnitt')
 
       legendbox.append('g')
-        .attr('transform', 'translate(29, 15)')
+        .attr('transform', 'translate(0, 15)')
         .append('line')
         .attr('x1', 0)
         .attr('x2', 19)
@@ -167,7 +177,7 @@ function show_resource(file) {
         .style('stroke-width', '3')
 
       legendbox.append('g')
-        .attr('transform', 'translate(29, 15)')
+        .attr('transform', 'translate(0, 15)')
         .append('circle')
         .attr('cx', 19 / 2.0)
         .attr('cy', 0)
@@ -176,8 +186,8 @@ function show_resource(file) {
         .style('fill', 'yellow')
         .attr('r', '5')
 
-      var legend = svg.append("g")
-        .attr('transform', 'translate(20, ' + (5 + height - (20 * (1 + keys.length))) + ')')
+      var legend = legendbox.append("g")
+        .attr('transform', 'translate(0, 25)')
         .attr("font-family", "sans-serif")
         .attr("font-size", 10)
         .selectAll("g")
@@ -186,13 +196,12 @@ function show_resource(file) {
         .attr("transform", function (d, i) { return "translate(0," + i * 20 + ")"; });
 
       legend.append("rect")
-        .attr("x", 19)
         .attr("width", 19)
         .attr("height", 19)
         .attr("fill", z);
 
       legend.append("text")
-        .attr("x", 24 + 20)
+        .attr("x", 25)
         .attr("y", 9.5)
         .attr("dy", "0.32em")
         .text(function (d) { return d.slice(2); });
@@ -260,9 +269,10 @@ function show_resource(file) {
 var m = {
   oil: {
     filename: '/data/oil-production-bucket-stacked.csv',
+    subtitle: 'Alle felt',
     screenshot: 'recent_oil_production.png'
   }
 };
 
 var mode = findGetParameter('mode', 'oil');
-show_resource(m[mode].filename);
+show_resource(m[mode]);
