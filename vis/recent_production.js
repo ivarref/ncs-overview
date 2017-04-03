@@ -114,7 +114,7 @@ function show_resource(opts) {
         .attr('x', xstart)
         .style("text-anchor", "start")
         .classed("heading", true)
-        .text("Månedlig oljeproduksjon etter feltmodenhet, " + data[0].date.getFullYear() + " - " + data[data.length - 1].date.getFullYear())
+        .text("Månadleg oljeproduksjon etter feltmogning, " + data[0].date.getFullYear() + " - " + data[data.length - 1].date.getFullYear())
 
       svg.append("g")
         .append("text")
