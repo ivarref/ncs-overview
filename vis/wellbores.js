@@ -14,9 +14,9 @@ function show_resource(opts) {
   var svg = d3.select('body').append('svg')
     .attr('width', 960)
     .attr('height', 500)
-    .style('border', "1px solid #000000")
+    // .style('border', "1px solid #000000")
 
-  var margin = { top: 70, right: 60, bottom: 60, left: 60 },
+  var margin = { top: 70, right: 50, bottom: 50, left: 50 },
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     svg = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -47,14 +47,18 @@ function show_resource(opts) {
         .attr('dy', '-1.35em')
         .attr('x', xstart)
         .style("text-anchor", "start")
-        .text('Funn = reservar + (alle) betinga ressursar')
+        .text('Med funn meinest reservar pluss alle betinga ressursar')
 
       var x = d3.scaleLinear()
         .domain([1, data.length])
         .range([0, width])
 
+      var values = function (d) {
+        return Object.keys(d).map(function (k) { return d[k]; });
+      };
+
       var y = d3.scaleLinear()
-        .domain([0, d3.max(Object.values(data[data.length - 1]))])
+        .domain([0, d3.max(values(data[data.length - 1]))])
         .range([height, 0])
 
       var line = d3.line()
@@ -67,13 +71,11 @@ function show_resource(opts) {
         .enter().append('g')
 
       var cols = [
-        "#e377c2", //pink
         //        "#8c564b", //brown
         "#2ca02c", //green
         //        "#d62728", //red
         "#ff7f0e", //orange
-
-
+        "#e377c2", //pink
         "#1f77b4", //blue
         "#17becf", //cyan
         "#bcbd22", //gusjegul
@@ -207,7 +209,7 @@ function show_resource(opts) {
         .attr("x", -height / 2)
         .attr("dy", "0.71em")
         .style("text-anchor", "middle")
-        .text("Milliardar fat oljeekvivalentar");
+        .text("Milliardar fat " + opts.unit);
 
       svg.append("g")
         .attr("transform", "translate(" + width + ",0)")
@@ -220,7 +222,7 @@ function show_resource(opts) {
         .attr("y", -margin.right + 4)
         .attr("dy", "0.71em")
         .style("text-anchor", "middle")
-        .text("Milliardar fat oljeekvivalentar");
+        .text("Milliardar fat " + opts.unit);
 
       svg.append("g")
         .attr("transform", "translate(" + (width / 2.0) + "," + (height) + ")")
@@ -249,16 +251,19 @@ var m = {
   oil: {
     filename: '/data/wellbores_cumulative_recoverable_plus_resources_oil_mboe.csv',
     title: 'Norsk olje: Kumulative funn etter region',
+    unit: 'olje',
     screenshot: 'cumulative_discoveries_oil_wellbores_by_region.png'
   },
   gas: {
     filename: '/data/wellbores_cumulative_recoverable_plus_resources_gas_mboe.csv',
     title: 'Norsk gass: Kumulative funn etter region',
+    unit: 'oljeekvivalentar',
     screenshot: 'cumulative_discoveries_gas_wellbores_by_region.png'
   },
   oe: {
     filename: '/data/wellbores_cumulative_recoverable_plus_resources_oe_mboe.csv',
     title: 'Norsk petroleum: Kumulative funn etter region',
+    unit: 'oljeekvivalentar',
     screenshot: 'cumulative_discoveries_oe_wellbores_by_region.png'
   }
 };
