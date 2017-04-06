@@ -47,7 +47,16 @@ function show_resource(opts) {
         .attr('dy', '-1.35em')
         .attr('x', xstart)
         .style("text-anchor", "start")
-        .text('Med funn meinest reservar pluss alle betinga ressursar')
+        .text('Med funn meinest reservar pluss betinga ressursar*')
+
+      svg.append("g")
+        .append("text")
+        .attr('y', height)
+        .attr('x', width)
+        .attr('dy', '-.35em')
+        .attr('dx', '-.31em')
+        .style("text-anchor", "end")
+        .text('*3F, 4F, 5F og 7F i ODs ressursklassifisering')
 
       var x = d3.scaleLinear()
         .domain([1, data.length])
