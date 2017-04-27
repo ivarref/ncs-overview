@@ -2,10 +2,10 @@
   "status": "Producing",
   "oil_production_kboe_d_rp=10": "1089",
   "gas_production_kboe_d_rp=10": "2873",
-  "oe_production_kboe_d_rp=10": "4327",
-  "oil_mboe": "3974.7",
+  "oe_production_kboe_d_rp=10": "4328",
+  "oil_mboe": "3975.9",
   "gas_mboe": "10486.7",
-  "oe_mboe": "15794.8",
+  "oe_mboe": "15796.0",
   "fields": {
     "ALVE": {
       "discoveryYear": "1990",
@@ -90,6 +90,12 @@
       "oil_mboe": "0.6",
       "gas_mboe": "0.0",
       "oe_mboe": "0.6"
+    },
+    "FLYNDRE": {
+      "discoveryYear": "1974",
+      "oil_mboe": "1.3",
+      "gas_mboe": "0.0",
+      "oe_mboe": "1.3"
     },
     "FRAM": {
       "discoveryYear": "1990",

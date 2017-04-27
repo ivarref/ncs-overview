@@ -1,0 +1,19 @@
+{
+  "dscName": "34/10-55 S",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "OIL/GAS",
+  "wlbName": "34/10-55 S",
+  "nmaName": "North sea",
+  "fldName": "SINDRE",
+  "dscDateFromInclInField": "27.03.2017",
+  "dscDiscoveryYear": "2017",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "BUSINESS ARRANGEMENT AREA",
+  "dscOwnerName": "SINDRE UNIT",
+  "dscNpdidDiscovery": "29394737",
+  "fldNpdidField": "29401178",
+  "wlbNpdidWellbore": "8102",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=29394737",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=29401178"
+}

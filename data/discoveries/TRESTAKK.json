@@ -1,0 +1,19 @@
+{
+  "dscName": "6406/3-2 (Trestakk)",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "OIL",
+  "wlbName": "6406/3-2",
+  "nmaName": "Norwegian sea",
+  "fldName": "TRESTAKK",
+  "dscDateFromInclInField": "30.03.2017",
+  "dscDiscoveryYear": "1986",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "091",
+  "dscNpdidDiscovery": "44846",
+  "fldNpdidField": "29396445",
+  "wlbNpdidWellbore": "863",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=44846",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=29396445"
+}

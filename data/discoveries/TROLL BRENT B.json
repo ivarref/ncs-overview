@@ -1,0 +1,19 @@
+{
+  "dscName": "31/2-N-11 H",
+  "cmpLongName": "Statoil Petroleum AS",
+  "dscCurrentActivityStatus": "Approved for production",
+  "dscHcType": "OIL",
+  "wlbName": "31/2-N-11 H",
+  "nmaName": "North sea",
+  "fldName": "TROLL BRENT B",
+  "dscDateFromInclInField": "06.04.2017",
+  "dscDiscoveryYear": "2005",
+  "dscResInclInDiscoveryName": "",
+  "dscOwnerKind": "PRODUCTION LICENSE",
+  "dscOwnerName": "054",
+  "dscNpdidDiscovery": "3465918",
+  "fldNpdidField": "29398828",
+  "wlbNpdidWellbore": "5102",
+  "dscFactPageUrl": "http://factpages.npd.no/FactPages/default.aspx?nav1=discovery&nav2=PageView|All&nav3=3465918",
+  "dscFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=FieldByNPDID&NPDID=29398828"
+}

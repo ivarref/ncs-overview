@@ -1,11 +1,11 @@
 {
   "status": "Production in clarification phase",
-  "oil_production_kboe_d_rp=10": "266",
-  "gas_production_kboe_d_rp=10": "102",
-  "oe_production_kboe_d_rp=10": "381",
-  "oil_mboe": "972.5",
-  "gas_mboe": "370.6",
-  "oe_mboe": "1392.4",
+  "oil_production_kboe_d_rp=10": "255",
+  "gas_production_kboe_d_rp=10": "99",
+  "oe_production_kboe_d_rp=10": "364",
+  "oil_mboe": "930.4",
+  "gas_mboe": "360.1",
+  "oe_mboe": "1329.5",
   "fields": {},
   "discoveries": {
     "16/4-6 S (Luno II)": {
@@ -49,12 +49,6 @@
       "oil_mboe": "89.4",
       "gas_mboe": "23.1",
       "oe_mboe": "119.9"
-    },
-    "6407/8-6 BAUGE": {
-      "discoveryYear": "2013",
-      "oil_mboe": "42.1",
-      "gas_mboe": "10.5",
-      "oe_mboe": "63.0"
     },
     "6506/9-2 S (Fogelberg)": {
       "discoveryYear": "2010",

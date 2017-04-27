@@ -374,7 +374,7 @@
         "dscNpdidDiscovery": "22506411"
     },
     {
-        "dscName": "34/8-16 S (Iapetus Øst)",
+        "dscName": "34/8-16 S (Lapetus Øst)",
         "dscDiscoveryYear": "2015",
         "dscReservesRC": "7F",
         "dscRecoverableOil": "0.05",
@@ -548,17 +548,6 @@
         "dscRecoverableCondensate": "0.00",
         "dscRecoverableOe": "2.34",
         "dscNpdidDiscovery": "916112"
-    },
-    {
-        "dscName": "6406/3-2 (Trestakk)",
-        "dscDiscoveryYear": "1986",
-        "dscReservesRC": "3F",
-        "dscRecoverableOil": "10.65",
-        "dscRecoverableGas": "0.69",
-        "dscRecoverableNGL": "0.14",
-        "dscRecoverableCondensate": "0.00",
-        "dscRecoverableOe": "11.60",
-        "dscNpdidDiscovery": "44846"
     },
     {
         "dscName": "6406/9-1 LINNORM",
@@ -746,17 +735,6 @@
         "dscRecoverableCondensate": "0.00",
         "dscRecoverableOe": "0.95",
         "dscNpdidDiscovery": "1628221"
-    },
-    {
-        "dscName": "6507/7-14 S DVALIN",
-        "dscDiscoveryYear": "2010",
-        "dscReservesRC": "3F",
-        "dscRecoverableOil": "0.00",
-        "dscRecoverableGas": "17.93",
-        "dscRecoverableNGL": "0.24",
-        "dscRecoverableCondensate": "0.40",
-        "dscRecoverableOe": "18.79",
-        "dscNpdidDiscovery": "18229140"
     },
     {
         "dscName": "6607/12-2 S (Alve Nord)",

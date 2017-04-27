@@ -87,7 +87,7 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 16/1-14 (Apollo),resource,2010,"Production likely, but unclarified",6.3,0.3,6.9
 33/9-19 S SYGNA,reserve,1996,Producing,6.3,0.0,6.3
 35/11-20 S,resource,2016,Production not evaluated,4.9,1.3,6.2
-34/8-16 S (Iapetus Øst),resource,2015,Production not evaluated,0.3,4.2,5.7
+34/8-16 S (Lapetus Øst),resource,2015,Production not evaluated,0.3,4.2,5.7
 15/9-15 GUNGNE,reserve,1982,Producing,0.6,3.1,5.6
 2/11-2 HOD,reserve,1974,Producing,2.5,0.6,5.5
 25/5-3 SKIRNE,reserve,1990,Producing,1.9,3.1,5.0
@@ -95,13 +95,13 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 25/4-1 HEIMDAL,reserve,1972,Producing,0.6,3.8,4.4
 35/11-20 B,resource,2016,Production not evaluated,3.5,0.9,4.4
 3/7-4 TRYM,reserve,1990,Producing,0.6,3.1,3.8
-31/2-N-11 H,resource,2005,Decided for production,3.5,0.0,3.5
+31/2-N-11 H,resource,2005,Approved for production,3.5,0.0,3.5
 35/11-17 (F-Vest),resource,2014,"Production likely, but unclarified",2.9,0.0,2.9
 34/10-48 S GIMLE,reserve,2004,Producing,1.3,1.3,2.5
 1/3-6 OSELVAR,reserve,1991,Producing,1.9,0.6,2.5
 15/9-9 SLEIPNER ØST,reserve,1981,Producing,0.6,1.9,2.5
 6/3-1 PI,reserve,1985,Producing,1.3,0.0,1.3
-1/5-2 FLYNDRE,reserve,1974,Approved for production,1.3,0.0,1.3
+1/5-2 FLYNDRE,reserve,1974,Producing,1.3,0.0,1.3
 35/11-15 S FRAM H-NORD,reserve,2007,Producing,1.3,0.0,1.3
 25/5-7 ATLA,reserve,2010,Producing,0.6,0.6,1.3
 2/1-3 GYDA,reserve,1980,Producing,0.6,0.6,1.3
@@ -122,7 +122,7 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 2/4-6 VEST EKOFISK,unknown,1970,Shut down,0.0,0.0,0.0
 2/5-1 TOR,unknown,1970,Shut down,0.0,0.0,0.0
 25/1-1 FRIGG,unknown,1969,Shut down,0.0,0.0,0.0
-34/10-55 S,unknown,2017,Production not evaluated,0.0,0.0,0.0
+34/10-55 S,unknown,2017,Approved for production,0.0,0.0,0.0
 25/1-4 NORDØST FRIGG,unknown,1974,Shut down,0.0,0.0,0.0
 25/2-1 ØST FRIGG,unknown,1973,Shut down,0.0,0.0,0.0
 25/2-4 LILLE-FRIGG,unknown,1975,Shut down,0.0,0.0,0.0

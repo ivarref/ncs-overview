@@ -108,6 +108,15 @@
         "fldNpdidField": "43758"
     },
     {
+        "fldName": "DVALIN",
+        "fldDiscoveryYear": "2010",
+        "fldCurrentActivityStatus": "Approved for production",
+        "fldRecoverableOil": "0.00",
+        "fldRecoverableGas": "17.90",
+        "fldRecoverableOE": "18.68",
+        "fldNpdidField": "29393934"
+    },
+    {
         "fldName": "EDDA",
         "fldDiscoveryYear": "1972",
         "fldCurrentActivityStatus": "Shut down",
@@ -164,7 +173,7 @@
     {
         "fldName": "FLYNDRE",
         "fldDiscoveryYear": "1974",
-        "fldCurrentActivityStatus": "Approved for production",
+        "fldCurrentActivityStatus": "Producing",
         "fldRecoverableOil": "0.20",
         "fldRecoverableGas": "0.00",
         "fldRecoverableOE": "0.20",
@@ -772,6 +781,15 @@
         "fldRecoverableGas": "4.80",
         "fldRecoverableOE": "74.61",
         "fldNpdidField": "43725"
+    },
+    {
+        "fldName": "TRESTAKK",
+        "fldDiscoveryYear": "1986",
+        "fldCurrentActivityStatus": "Approved for production",
+        "fldRecoverableOil": "10.70",
+        "fldRecoverableGas": "0.70",
+        "fldRecoverableOE": "11.59",
+        "fldNpdidField": "29396445"
     },
     {
         "fldName": "TROLL",

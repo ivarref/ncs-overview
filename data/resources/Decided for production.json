@@ -1,24 +1,18 @@
 {
   "status": "Decided for production",
-  "oil_production_kboe_d_rp=10": "32",
-  "gas_production_kboe_d_rp=10": "2",
-  "oe_production_kboe_d_rp=10": "34",
-  "oil_mboe": "115.6",
-  "gas_mboe": "6.5",
-  "oe_mboe": "123.8",
+  "oil_production_kboe_d_rp=10": "24",
+  "gas_production_kboe_d_rp=10": "3",
+  "oe_production_kboe_d_rp=10": "30",
+  "oil_mboe": "87.2",
+  "gas_mboe": "12.6",
+  "oe_mboe": "110.3",
   "fields": {},
   "discoveries": {
-    "31/2-N-11 H": {
-      "discoveryYear": "2005",
-      "oil_mboe": "3.5",
-      "gas_mboe": "0.0",
-      "oe_mboe": "3.5"
-    },
-    "6406/3-2 (Trestakk)": {
-      "discoveryYear": "1986",
-      "oil_mboe": "67.0",
-      "gas_mboe": "4.3",
-      "oe_mboe": "73.0"
+    "6407/8-6 BAUGE": {
+      "discoveryYear": "2013",
+      "oil_mboe": "42.1",
+      "gas_mboe": "10.5",
+      "oe_mboe": "63.0"
     },
     "8/10-4 S ODA": {
       "discoveryYear": "2011",

@@ -1,11 +1,11 @@
 {
   "status": "Approved for production",
-  "oil_production_kboe_d_rp=10": "587",
-  "gas_production_kboe_d_rp=10": "197",
-  "oe_production_kboe_d_rp=10": "825",
-  "oil_mboe": "2142.4",
-  "gas_mboe": "717.9",
-  "oe_mboe": "3011.1",
+  "oil_production_kboe_d_rp=10": "606",
+  "gas_production_kboe_d_rp=10": "198",
+  "oe_production_kboe_d_rp=10": "845",
+  "oil_mboe": "2211.9",
+  "gas_mboe": "722.1",
+  "oe_mboe": "3085.6",
   "fields": {
     "BYRDING": {
       "discoveryYear": "2005",
@@ -13,11 +13,11 @@
       "gas_mboe": "0.0",
       "oe_mboe": "8.8"
     },
-    "FLYNDRE": {
-      "discoveryYear": "1974",
-      "oil_mboe": "1.3",
-      "gas_mboe": "0.0",
-      "oe_mboe": "1.3"
+    "DVALIN": {
+      "discoveryYear": "2010",
+      "oil_mboe": "0.0",
+      "gas_mboe": "112.6",
+      "oe_mboe": "117.5"
     },
     "GINA KROG": {
       "discoveryYear": "1978",
@@ -49,6 +49,12 @@
       "gas_mboe": "162.3",
       "oe_mboe": "255.9"
     },
+    "TRESTAKK": {
+      "discoveryYear": "1986",
+      "oil_mboe": "67.3",
+      "gas_mboe": "4.4",
+      "oe_mboe": "72.9"
+    },
     "UTGARD": {
       "discoveryYear": "1982",
       "oil_mboe": "8.8",
@@ -63,11 +69,11 @@
     }
   },
   "discoveries": {
-    "6507/7-14 S DVALIN": {
-      "discoveryYear": "2010",
-      "oil_mboe": "0.0",
-      "gas_mboe": "112.8",
-      "oe_mboe": "118.2"
+    "31/2-N-11 H": {
+      "discoveryYear": "2005",
+      "oil_mboe": "3.5",
+      "gas_mboe": "0.0",
+      "oe_mboe": "3.5"
     }
   }
 }

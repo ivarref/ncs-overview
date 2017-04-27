@@ -10,7 +10,7 @@
   "wlbSubSea": " NO",
   "wlbEntryDate": "25.09.1987",
   "wlbCompletionDate": "29.12.1987",
-  "wlbField": "",
+  "wlbField": "TRESTAKK",
   "wlbDrillPermit": "563-L",
   "wlbDiscovery": "6406/3-2 (Trestakk)",
   "wlbDiscoveryWellbore": "NO",
@@ -73,7 +73,7 @@
   "wlbReleasedDate": "29.12.1989",
   "wlbNpdidWellbore": "1173",
   "dscNpdidDiscovery": "44846",
-  "fldNpdidField": "",
+  "fldNpdidField": "29396445",
   "fclNpdidFacilityDrilling": "287821",
   "wlbNpdidWellboreReclass": "0",
   "prlNpdidProductionLicence": "21532"
