@@ -8,7 +8,7 @@ import pandas as pd
 import generate
 
 if __name__=="__main__":
-  frame = pd.read_csv('./data/raw_discovery_overview.csv')
+  frame = pd.read_csv('./data/raw_discovery_overview_simplified.csv')
 
   with open('./data/raw_reserves_field_discovery_year.csv', 'w') as wfd:
     writer = csv.writer(wfd)

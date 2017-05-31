@@ -2,6 +2,14 @@
 
 set -ex
 
+# factpages.npd.no -> Field -> Table view -> Overview -> Export CSV
+curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/field&rs:Command=Render&rc:Toolbar=false&rc:Parameters=f&rs:Format=CSV&Top100=false&IpAddress=80.213.237.130&CultureCode=en" \
+| tr -d '\r' \
+| awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}{print}' \
+| awk 'NF' > data/raw_field_overview.csv
+./drop_columns.py ./data/raw_field_overview.csv fldFactPageUrl fldFactMapUrl fldDateUpdated fldDateUpdatedMax DatesyncNPD
+./explode_csv.py ./data/raw_field_overview.csv ./data/raw_field_overview.json
+
 # factpages.npd.no -> Discovery -> Table view -> Overview -> Export CSV
 curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/discovery&rs:Command=Render&rc:Toolbar=false&rc:Parameters=f&rs:Format=CSV&Top100=false&IpAddress=80.213.255.240&CultureCode=en" \
 | tr -d '\r' \
@@ -12,6 +20,10 @@ curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/discovery&rs:Com
 head -n1 data/raw_discovery_overview.csv > ./data/ignore_discovery.csv
 ./drop_columns.py ./data/raw_discovery_overview.csv dscDateUpdated dscDateUpdatedMax DatesyncNPD
 ./explode_csv.py ./data/raw_discovery_overview.csv ./data/raw_discovery_overview.json
+
+cd derived-remaining
+lein run -m derived-remaining.adddiscoveryyear
+cd -
 
 
 curl "http://factpages.npd.no/ReportServer?/FactPages/TableView/discovery&rs:Command=Render&rc:Toolbar=false&rc:Parameters=f&rs:Format=CSV&Top100=false&IpAddress=80.213.255.240&CultureCode=en" \
