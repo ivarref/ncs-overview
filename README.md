@@ -3,20 +3,20 @@
 ## Olje
 ![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_discovery_decade.png)
 
-Oljeproduksjonen per februar 2017 er på 1,62 millionar fat/dag, som er 51,7% av nivået i januar 2001 (3,13 millionar fat/dag).
+Oljeproduksjonen per mars 2017 er på 1,63 millionar fat/dag, som er 52,0% av nivået i januar 2001 (3,13 millionar fat/dag).
 Dette gjev ein årleg produksjon på 0,6 milliardar fat.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_discovery_decade.png)
 
-Dei opphavlege utvinnbare oljereservane er på 32,4 milliardar fat.
+Dei opphavlege utvinnbare oljereservane er på 32,5 milliardar fat.
 Totalt 80,9% av desse er utvunne.
 Gjenverande reservar er på 6,2 milliardar fat.
-Med noverande produksjonstempo er desse reservane utvunne på 10,5 år.
+Med noverande produksjonstempo er desse reservane utvunne på 10,4 år.
 
 ## Gass
 ![Gassproduksjonen](img/gas_production_yearly_12MMA_by_discovery_decade.png)
 
-Gassproduksjonen per februar 2017 er på 2,01 millionar fat oljeekvivalentar/dag, som er 95,5% av nivået i mai 2016 (2,10 millionar fat oljeekvivalentar/dag).
+Gassproduksjonen per mars 2017 er på 2,00 millionar fat oljeekvivalentar/dag, som er 95,4% av nivået i mai 2016 (2,10 millionar fat oljeekvivalentar/dag).
 Dette gjev ein årleg produksjon på 0,7 milliardar fat.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_discovery_decade.png)
@@ -29,13 +29,13 @@ Med noverande produksjonstempo er desse reservane utvunne på 15,3 år.
 ## Petroleum
 ![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_discovery_decade.png)
 
-Petroleumproduksjonen per februar 2017 er på 4,00 millionar fat oljeekvivalentar/dag, som er 86,6% av nivået i juli 2004 (4,62 millionar fat oljeekvivalentar/dag).
+Petroleumproduksjonen per mars 2017 er på 4,01 millionar fat oljeekvivalentar/dag, som er 86,8% av nivået i juli 2004 (4,62 millionar fat oljeekvivalentar/dag).
 Dette gjev ein årleg produksjon på 1,5 milliardar fat.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_discovery_decade.png)
 
-Dei opphavlege utvinnbare petroleumreservane er på 62,0 milliardar fat oljeekvivalent.
-Totalt 69,5% av desse er utvunne.
+Dei opphavlege utvinnbare petroleumreservane er på 62,1 milliardar fat oljeekvivalent.
+Totalt 69,6% av desse er utvunne.
 Gjenverande reservar er på 18,9 milliardar fat oljeekvivalent.
 Med noverande produksjonstempo er desse reservane utvunne på 12,9 år.
 
@@ -50,18 +50,18 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 
 | Funntiår | Olje | Gass | Petroleum |
 | ---- | ---: | ---: | ---: |
-| 1960 | 9,3 | 0,8 | 4,3 |
-| 1970 | 33,9 | 40,4 | 36,8 |
-| 1980 | 22,9 | 28,9 | 28,3 |
+| 1960 | 9,2 | 0,8 | 4,2 |
+| 1970 | 33,6 | 40,4 | 36,7 |
+| 1980 | 22,6 | 28,9 | 28,2 |
 | 1990 | 18,5 | 27,9 | 23,0 |
-| 2000 | 15,5 | 1,6 | 7,5 |
+| 2000 | 16,1 | 1,6 | 7,8 |
 | 2010 | 0,0 | 0,4 | 0,2 |
 
 # Oversikt over norsk sokkel etter produksjonsstartår
 
 ## Olje
 ![Produksjon](img/oil_production_yearly_12MMA_by_startproduction.png)
-Felt med produksjonsstart før år 2000 står for 61% av dagens oljeproduksjon.
+Felt med produksjonsstart før år 2000 står for 60% av dagens oljeproduksjon.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_startproduction.png)
 
@@ -102,10 +102,10 @@ Johan Sverdrup (med planlagt produksjonsstart i 2019) har 23% av desse (1,9 mill
 ![Produksjon](img/oil_production_yearly_12MMA_by_region.png)
 Nordsjøen står for 82% av oljeproduksjonen,
 Norskehavet 15% og
-Barentshavet 3%.
+Barentshavet 4%.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_region.png)
-Nordsjøen har 84% (5,2 milliardar fat olje) av oljereservane.
+Nordsjøen har 85% (5,3 milliardar fat olje) av oljereservane.
 
 Norskehavet har 13% (0,8 milliardar fat olje) av oljereservane.
 
