@@ -1,12 +1,19 @@
 {
   "status": "Production not evaluated",
-  "oil_production_kboe_d_rp=10": "60",
-  "gas_production_kboe_d_rp=10": "113",
-  "oe_production_kboe_d_rp=10": "181",
-  "oil_mboe": "217.4",
-  "gas_mboe": "411.5",
-  "oe_mboe": "661.6",
-  "fields": {},
+  "oil_production_kboe_d_rp=10": "100",
+  "gas_production_kboe_d_rp=10": "120",
+  "oe_production_kboe_d_rp=10": "232",
+  "oil_mboe": "363.3",
+  "gas_mboe": "439.2",
+  "oe_mboe": "845.9",
+  "fields": {
+    "IVAR AASEN": {
+      "discoveryYear": "2008",
+      "oil_mboe": "145.9",
+      "gas_mboe": "27.7",
+      "oe_mboe": "184.4"
+    }
+  },
   "discoveries": {
     "16/1-26 S": {
       "discoveryYear": "2016",

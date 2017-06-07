@@ -1,11 +1,11 @@
 {
   "status": "Decided for production",
-  "oil_production_kboe_d_rp=10": "24",
+  "oil_production_kboe_d_rp=10": "12",
   "gas_production_kboe_d_rp=10": "3",
-  "oe_production_kboe_d_rp=10": "30",
-  "oil_mboe": "87.2",
-  "gas_mboe": "12.6",
-  "oe_mboe": "110.3",
+  "oe_production_kboe_d_rp=10": "17",
+  "oil_mboe": "42.1",
+  "gas_mboe": "10.5",
+  "oe_mboe": "63.0",
   "fields": {},
   "discoveries": {
     "6407/8-6 BAUGE": {
@@ -13,12 +13,6 @@
       "oil_mboe": "42.1",
       "gas_mboe": "10.5",
       "oe_mboe": "63.0"
-    },
-    "8/10-4 S ODA": {
-      "discoveryYear": "2011",
-      "oil_mboe": "45.2",
-      "gas_mboe": "2.1",
-      "oe_mboe": "47.4"
     }
   }
 }

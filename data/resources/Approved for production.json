@@ -1,11 +1,11 @@
 {
   "status": "Approved for production",
-  "oil_production_kboe_d_rp=10": "606",
+  "oil_production_kboe_d_rp=10": "618",
   "gas_production_kboe_d_rp=10": "198",
-  "oe_production_kboe_d_rp=10": "845",
-  "oil_mboe": "2211.9",
-  "gas_mboe": "722.1",
-  "oe_mboe": "3085.6",
+  "oe_production_kboe_d_rp=10": "858",
+  "oil_mboe": "2257.0",
+  "gas_mboe": "724.2",
+  "oe_mboe": "3132.9",
   "fields": {
     "BYRDING": {
       "discoveryYear": "2005",
@@ -74,6 +74,12 @@
       "oil_mboe": "3.5",
       "gas_mboe": "0.0",
       "oe_mboe": "3.5"
+    },
+    "8/10-4 S ODA": {
+      "discoveryYear": "2011",
+      "oil_mboe": "45.2",
+      "gas_mboe": "2.1",
+      "oe_mboe": "47.4"
     }
   }
 }

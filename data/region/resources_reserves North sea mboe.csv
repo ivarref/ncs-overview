@@ -12,6 +12,7 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 2/8-6 VALHALL,reserve,1975,Producing,184.3,34.0,237.4
 25/11-15 GRANE,reserve,1991,Producing,235.9,0.0,235.9
 15/5-1 GINA KROG,reserve,1978,Approved for production,105.7,74.2,218.1
+16/1-26 S,resource,2016,Production not evaluated,154.1,29.1,194.0
 16/1-9 IVAR AASEN,reserve,2008,Producing,145.9,27.7,184.4
 2/7-1 ELDFISK,reserve,1970,Producing,146.6,17.6,172.5
 16/1-8 EDVARD GRIEG,reserve,2007,Producing,148.4,13.8,169.5
@@ -26,6 +27,7 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 2/4-21 (King Lear),resource,2012,"Production likely, but unclarified",41.0,57.6,98.6
 35/9-7 (Skarfjell),resource,2012,Production in clarification phase,69.4,17.4,97.0
 34/10-23 VALEMON,reserve,1985,Producing,7.5,77.4,92.1
+34/11-6 S,reserve,2017,Producing,7.5,77.4,92.1
 15/6-3 SLEIPNER VEST,reserve,1974,Producing,13.8,63.5,85.2
 35/11-4 FRAM,reserve,1990,Producing,32.7,39.6,78.3
 25/2-10 S (Frigg-GammaDelta),resource,1986,Production in clarification phase,60.6,14.6,75.2
@@ -42,15 +44,15 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 16/4-6 S (Luno II),resource,2013,Production in clarification phase,38.2,8.8,50.9
 36/7-4 (Cara),resource,2016,Production not evaluated,17.8,24.8,49.4
 25/2-18 S (Langfjellet),resource,2016,Production not evaluated,41.9,7.1,49.0
-8/10-4 S ODA,resource,2011,Decided for production,45.2,2.1,47.4
+8/10-4 S ODA,resource,2011,Approved for production,45.2,2.1,47.4
 34/11-2 S (Nøkken),resource,1996,"Production likely, but unclarified",12.3,32.9,45.2
 30/6-5 OSEBERG ØST,reserve,1981,Producing,42.1,0.6,44.0
 34/3-1 S KNARR,reserve,2008,Producing,36.5,0.6,39.5
 30/5-3 S (Corvus),resource,2009,"Production likely, but unclarified",2.8,34.5,37.4
 16/1-12 (Rolvsnes),resource,2009,"Production likely, but unclarified",32.0,2.8,37.1
 35/12-2 (Grosbeak),resource,2009,Production not evaluated,30.2,4.4,34.6
-31/4-3 BRAGE,reserve,1980,Producing,27.0,4.4,31.4
 25/11-16 SVALIN,reserve,1992,Producing,31.4,0.0,31.4
+31/4-3 BRAGE,reserve,1980,Producing,27.0,4.4,31.4
 34/8-14 S VISUND SØR,reserve,2008,Producing,5.0,20.1,29.9
 24/9-5 VOLUND,reserve,1994,Producing,26.4,2.5,28.9
 34/4-11 (Beta),resource,2010,Production in clarification phase,23.5,2.0,28.2
@@ -73,11 +75,10 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 26/10-1 (Zulu Øst),resource,2015,Production not evaluated,0.0,15.7,15.7
 33/9-7 STATFJORD ØST,reserve,1976,Producing,5.0,0.0,13.4
 25/5-9 (Trell),resource,2014,"Production likely, but unclarified",13.4,0.0,13.4
-24/9-9 S BØYLA,reserve,2009,Producing,12.6,0.6,13.2
 16/2-5,resource,2009,Production not evaluated,0.0,12.0,13.2
+24/9-9 S BØYLA,reserve,2009,Producing,12.6,0.6,13.2
 25/1-11 R (Storklakken),resource,2010,"Production likely, but unclarified",9.8,0.9,10.8
 25/4-6 S VALE,reserve,1991,Producing,3.8,6.3,10.1
-16/1-26 S,resource,2016,Production not evaluated,8.2,1.4,9.6
 30/9-28 S,resource,2016,"Production likely, but unclarified",1.6,7.5,9.2
 2/4-17 TJALVE,resource,1992,Production not evaluated,3.7,5.3,8.9
 35/11-13 BYRDING,reserve,2005,Approved for production,8.8,0.0,8.8
@@ -92,25 +93,25 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 2/11-2 HOD,reserve,1974,Producing,2.5,0.6,5.5
 25/5-3 SKIRNE,reserve,1990,Producing,1.9,3.1,5.0
 35/8-6 A,resource,2016,Production not evaluated,3.4,1.3,4.7
-25/4-1 HEIMDAL,reserve,1972,Producing,0.6,3.8,4.4
 35/11-20 B,resource,2016,Production not evaluated,3.5,0.9,4.4
+25/4-1 HEIMDAL,reserve,1972,Producing,0.6,3.8,4.4
 3/7-4 TRYM,reserve,1990,Producing,0.6,3.1,3.8
 31/2-N-11 H,resource,2005,Approved for production,3.5,0.0,3.5
 35/11-17 (F-Vest),resource,2014,"Production likely, but unclarified",2.9,0.0,2.9
 34/10-48 S GIMLE,reserve,2004,Producing,1.3,1.3,2.5
 1/3-6 OSELVAR,reserve,1991,Producing,1.9,0.6,2.5
 15/9-9 SLEIPNER ØST,reserve,1981,Producing,0.6,1.9,2.5
+25/5-7 ATLA,reserve,2010,Producing,0.6,0.6,1.3
+2/1-3 GYDA,reserve,1980,Producing,0.6,0.6,1.3
 6/3-1 PI,reserve,1985,Producing,1.3,0.0,1.3
 1/5-2 FLYNDRE,reserve,1974,Producing,1.3,0.0,1.3
 35/11-15 S FRAM H-NORD,reserve,2007,Producing,1.3,0.0,1.3
-25/5-7 ATLA,reserve,2010,Producing,0.6,0.6,1.3
-2/1-3 GYDA,reserve,1980,Producing,0.6,0.6,1.3
 7/7-2 BRYNHILD,reserve,1992,Producing,0.6,0.0,0.6
 1/2-1 BLANE,reserve,1989,Producing,0.6,0.0,0.6
 15/12-12 REV,reserve,2001,Producing,0.6,0.0,0.6
 15/5 ENOCH/SELE,reserve,1985,Producing,0.6,0.0,0.6
-34/11-6 S,unknown,2017,Production not evaluated,0.0,0.0,0.0
-2/7-4 EDDA,unknown,1972,Shut down,0.0,0.0,0.0
+34/10-55 S,unknown,2017,Approved for production,0.0,0.0,0.0
+33/9-6 DELTA,unknown,1976,Shut down,0.0,0.0,0.0
 1/3-K-5 TAMBAR ØST,unknown,2007,Producing,0.0,0.0,0.0
 1/6-1 ALBUSKJELL,unknown,1972,Shut down,0.0,0.0,0.0
 1/9-4 TOMMELITEN GAMMA,unknown,1978,Shut down,0.0,0.0,0.0
@@ -121,8 +122,8 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 15/9-19 S VOLVE,unknown,1993,Shut down,0.0,0.0,0.0
 2/4-6 VEST EKOFISK,unknown,1970,Shut down,0.0,0.0,0.0
 2/5-1 TOR,unknown,1970,Shut down,0.0,0.0,0.0
-25/1-1 FRIGG,unknown,1969,Shut down,0.0,0.0,0.0
-34/10-55 S,unknown,2017,Approved for production,0.0,0.0,0.0
+2/7-4 EDDA,unknown,1972,Shut down,0.0,0.0,0.0
+25/1-1 FRIGG,unknown,1971,Shut down,0.0,0.0,0.0
 25/1-4 NORDØST FRIGG,unknown,1974,Shut down,0.0,0.0,0.0
 25/2-1 ØST FRIGG,unknown,1973,Shut down,0.0,0.0,0.0
 25/2-4 LILLE-FRIGG,unknown,1975,Shut down,0.0,0.0,0.0
@@ -133,9 +134,8 @@ dscName,kind,dscDiscoveryYear,dscCurrentActivityStatus,oil,gas,oe
 30/10-2 ODIN,unknown,1974,Shut down,0.0,0.0,0.0
 30/2-1 HULDRA,unknown,1982,Shut down,0.0,0.0,0.0
 33/9  MURCHISON,unknown,1975,Shut down,0.0,0.0,0.0
-33/9-6 DELTA,unknown,1976,Shut down,0.0,0.0,0.0
 9/2-1 YME,unknown,1987,Shut down,0.0,0.0,0.0
 30/8-1 S TUNE,unknown,1995,Producing,-1.3,-5.7,-6.9
-Sum resources,resource,All,Any,920.5,762.2,1791.7
-Sum reserves,reserve,All,Any,5247.7,7676.3,13759.9
+Sum resources,resource,All,Any,1066.4,789.9,1976.1
+Sum reserves,reserve,All,Any,5255.3,7753.7,13852.0
 Sum,resource,All,All,6167.0,8432.9,15544.7

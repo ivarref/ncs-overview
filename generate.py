@@ -59,7 +59,7 @@ def get_giant_status(ids, prop):
 
 
 def get_discovery_years(ids):
-  frame = pd.read_csv('./data/raw_discovery_overview.csv')
+  frame = pd.read_csv('./data/raw_discovery_overview_simplified.csv')
   res = []
   for (idx, id) in enumerate(ids):
     m = frame[frame['fldName'] == id]
@@ -72,7 +72,7 @@ def get_discovery_years(ids):
   return collections.OrderedDict(res)
 
 def get_discovery_region_to_fields(ids):
-  frame = pd.read_csv('./data/raw_discovery_overview.csv')
+  frame = pd.read_csv('./data/raw_discovery_overview_simplified.csv')
   d = collections.defaultdict(list)
   for (idx, id) in enumerate(ids):
     m = frame[frame['fldName'] == id]
