@@ -44,17 +44,6 @@
         "dscNpdidDiscovery": "18437181"
     },
     {
-        "dscName": "16/1-26 S",
-        "dscDiscoveryYear": "2016",
-        "dscReservesRC": "7F",
-        "dscRecoverableOil": "1.30",
-        "dscRecoverableGas": "0.23",
-        "dscRecoverableNGL": "0.00",
-        "dscRecoverableCondensate": "0.00",
-        "dscRecoverableOe": "1.53",
-        "dscNpdidDiscovery": "28245194"
-    },
-    {
         "dscName": "16/2-3 (Ragnarock)",
         "dscDiscoveryYear": "2007",
         "dscReservesRC": "7F",
@@ -306,17 +295,6 @@
         "dscRecoverableCondensate": "0.00",
         "dscRecoverableOe": "1.46",
         "dscNpdidDiscovery": "28123140"
-    },
-    {
-        "dscName": "31/2-N-11 H",
-        "dscDiscoveryYear": "2005",
-        "dscReservesRC": "3F",
-        "dscRecoverableOil": "0.55",
-        "dscRecoverableGas": "0.00",
-        "dscRecoverableNGL": "0.00",
-        "dscRecoverableCondensate": "0.00",
-        "dscRecoverableOe": "0.55",
-        "dscNpdidDiscovery": "3465918"
     },
     {
         "dscName": "31/7-1 (Brasse)",
@@ -933,16 +911,5 @@
         "dscRecoverableCondensate": "0.00",
         "dscRecoverableOe": "56.48",
         "dscNpdidDiscovery": "23761893"
-    },
-    {
-        "dscName": "8/10-4 S ODA",
-        "dscDiscoveryYear": "2011",
-        "dscReservesRC": "3F",
-        "dscRecoverableOil": "7.18",
-        "dscRecoverableGas": "0.34",
-        "dscRecoverableNGL": "0.00",
-        "dscRecoverableCondensate": "0.00",
-        "dscRecoverableOe": "7.53",
-        "dscNpdidDiscovery": "21118177"
     }
 ]

@@ -549,6 +549,15 @@
         "fldNpdidField": "43778"
     },
     {
+        "fldName": "ODA",
+        "fldDiscoveryYear": "2011",
+        "fldCurrentActivityStatus": "Approved for production",
+        "fldRecoverableOil": "7.20",
+        "fldRecoverableGas": "0.30",
+        "fldRecoverableOE": "7.50",
+        "fldNpdidField": "29412516"
+    },
+    {
         "fldName": "ODIN",
         "fldDiscoveryYear": "1974",
         "fldCurrentActivityStatus": "Shut down",
@@ -799,6 +808,15 @@
         "fldRecoverableGas": "1432.80",
         "fldRecoverableOE": "1764.40",
         "fldNpdidField": "46437"
+    },
+    {
+        "fldName": "TROLL BRENT B",
+        "fldDiscoveryYear": "2005",
+        "fldCurrentActivityStatus": "Approved for production",
+        "fldRecoverableOil": "0.60",
+        "fldRecoverableGas": "0.00",
+        "fldRecoverableOE": "0.60",
+        "fldNpdidField": "29398828"
     },
     {
         "fldName": "TRYM",
