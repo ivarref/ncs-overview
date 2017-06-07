@@ -3,9 +3,9 @@
   "oil_production_kboe_d_rp=10": "618",
   "gas_production_kboe_d_rp=10": "198",
   "oe_production_kboe_d_rp=10": "858",
-  "oil_mboe": "2257.0",
-  "gas_mboe": "724.2",
-  "oe_mboe": "3132.9",
+  "oil_mboe": "2257.5",
+  "gas_mboe": "724.0",
+  "oe_mboe": "3133.0",
   "fields": {
     "BYRDING": {
       "discoveryYear": "2005",
@@ -49,11 +49,23 @@
       "gas_mboe": "162.3",
       "oe_mboe": "255.9"
     },
+    "ODA": {
+      "discoveryYear": "2011",
+      "oil_mboe": "45.3",
+      "gas_mboe": "1.9",
+      "oe_mboe": "47.2"
+    },
     "TRESTAKK": {
       "discoveryYear": "1986",
       "oil_mboe": "67.3",
       "gas_mboe": "4.4",
       "oe_mboe": "72.9"
+    },
+    "TROLL BRENT B": {
+      "discoveryYear": "2005",
+      "oil_mboe": "3.8",
+      "gas_mboe": "0.0",
+      "oe_mboe": "3.8"
     },
     "UTGARD": {
       "discoveryYear": "1982",
@@ -68,18 +80,5 @@
       "oe_mboe": "291.9"
     }
   },
-  "discoveries": {
-    "31/2-N-11 H": {
-      "discoveryYear": "2005",
-      "oil_mboe": "3.5",
-      "gas_mboe": "0.0",
-      "oe_mboe": "3.5"
-    },
-    "8/10-4 S ODA": {
-      "discoveryYear": "2011",
-      "oil_mboe": "45.2",
-      "gas_mboe": "2.1",
-      "oe_mboe": "47.4"
-    }
-  }
+  "discoveries": {}
 }

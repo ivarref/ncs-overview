@@ -1,11 +1,11 @@
 {
   "status": "Production not evaluated",
-  "oil_production_kboe_d_rp=10": "100",
+  "oil_production_kboe_d_rp=10": "97",
   "gas_production_kboe_d_rp=10": "120",
-  "oe_production_kboe_d_rp=10": "232",
-  "oil_mboe": "363.3",
-  "gas_mboe": "439.2",
-  "oe_mboe": "845.9",
+  "oe_production_kboe_d_rp=10": "229",
+  "oil_mboe": "355.1",
+  "gas_mboe": "437.7",
+  "oe_mboe": "836.3",
   "fields": {
     "IVAR AASEN": {
       "discoveryYear": "2008",
@@ -15,12 +15,6 @@
     }
   },
   "discoveries": {
-    "16/1-26 S": {
-      "discoveryYear": "2016",
-      "oil_mboe": "8.2",
-      "gas_mboe": "1.4",
-      "oe_mboe": "9.6"
-    },
     "16/2-3 (Ragnarock)": {
       "discoveryYear": "2007",
       "oil_mboe": "18.2",
