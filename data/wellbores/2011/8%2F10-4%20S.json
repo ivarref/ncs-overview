@@ -10,7 +10,7 @@
   "wlbSubSea": " NO",
   "wlbEntryDate": "15.08.2011",
   "wlbCompletionDate": "27.10.2011",
-  "wlbField": "",
+  "wlbField": "ODA",
   "wlbDrillPermit": "1366-L",
   "wlbDiscovery": "8/10-4 S ODA",
   "wlbDiscoveryWellbore": "YES",
@@ -73,7 +73,7 @@
   "wlbReleasedDate": "27.10.2013",
   "wlbNpdidWellbore": "6630",
   "dscNpdidDiscovery": "21118177",
-  "fldNpdidField": "",
+  "fldNpdidField": "29412516",
   "fclNpdidFacilityDrilling": "292114",
   "wlbNpdidWellboreReclass": "0",
   "prlNpdidProductionLicence": "4237284"
