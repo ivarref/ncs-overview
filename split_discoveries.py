@@ -10,7 +10,7 @@ import os
 import pandas as pd
 
 if __name__=="__main__":
-  frame = pd.read_csv('./data/raw_discovery_overview.csv')
+  frame = pd.read_csv('./data/raw_discovery_overview_simplified.csv')
   names = [x for x in frame[u'fldName'].unique() if not type(x) == float]
   
   try:
@@ -21,7 +21,7 @@ if __name__=="__main__":
   for name in names:
     fil = './data/discoveries/' + name.replace('/', '%2F') + '.json'
     print("writing", fil)
-    with codecs.open('./data/raw_discovery_overview.csv', mode='rb', encoding='utf8') as fd:
+    with codecs.open('./data/raw_discovery_overview_simplified.csv', mode='rb', encoding='utf8') as fd:
       reader = csv.reader(fd)
       with open(fil, mode='w', encoding='utf8') as wfd:
         idx_to_col = {}
