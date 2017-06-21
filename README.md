@@ -3,7 +3,7 @@
 ## Olje
 ![Oljeproduksjonen](img/oil_production_yearly_12MMA_by_discovery_decade.png)
 
-Oljeproduksjonen per mars 2017 er på 1,63 millionar fat/dag, som er 52,0% av nivået i januar 2001 (3,13 millionar fat/dag).
+Oljeproduksjonen per april 2017 er på 1,63 millionar fat/dag, som er 52,2% av nivået i januar 2001 (3,13 millionar fat/dag).
 Dette gjev ein årleg produksjon på 0,6 milliardar fat.
 
 ![Produsert og reserver](img/oil_produced_reserves_by_discovery_decade.png)
@@ -16,7 +16,7 @@ Med noverande produksjonstempo er desse reservane utvunne på 10,4 år.
 ## Gass
 ![Gassproduksjonen](img/gas_production_yearly_12MMA_by_discovery_decade.png)
 
-Gassproduksjonen per mars 2017 er på 2,00 millionar fat oljeekvivalentar/dag, som er 95,4% av nivået i mai 2016 (2,10 millionar fat oljeekvivalentar/dag).
+Gassproduksjonen per april 2017 er på 2,01 millionar fat oljeekvivalentar/dag, som er 95,4% av nivået i mai 2016 (2,10 millionar fat oljeekvivalentar/dag).
 Dette gjev ein årleg produksjon på 0,7 milliardar fat.
 
 ![Produsert og reserver](img/gas_produced_reserves_by_discovery_decade.png)
@@ -29,7 +29,7 @@ Med noverande produksjonstempo er desse reservane utvunne på 15,3 år.
 ## Petroleum
 ![Petroleumproduksjonen](img/oe_production_yearly_12MMA_by_discovery_decade.png)
 
-Petroleumproduksjonen per mars 2017 er på 4,01 millionar fat oljeekvivalentar/dag, som er 86,8% av nivået i juli 2004 (4,62 millionar fat oljeekvivalentar/dag).
+Petroleumproduksjonen per april 2017 er på 4,02 millionar fat oljeekvivalentar/dag, som er 86,9% av nivået i juli 2004 (4,62 millionar fat oljeekvivalentar/dag).
 Dette gjev ein årleg produksjon på 1,5 milliardar fat.
 
 ![Produsert og reserver](img/oe_produced_reserves_by_discovery_decade.png)
@@ -51,11 +51,11 @@ Man kan med andre ord se at funn gjort på 1970-tallet noenlunde dominerer produ
 | Funntiår | Olje | Gass | Petroleum |
 | ---- | ---: | ---: | ---: |
 | 1960 | 9,2 | 0,8 | 4,2 |
-| 1970 | 33,6 | 40,4 | 36,7 |
-| 1980 | 22,6 | 28,9 | 28,2 |
-| 1990 | 18,5 | 27,9 | 23,0 |
-| 2000 | 16,1 | 1,6 | 7,8 |
-| 2010 | 0,0 | 0,4 | 0,2 |
+| 1970 | 33,3 | 40,6 | 36,6 |
+| 1980 | 22,3 | 28,7 | 28,0 |
+| 1990 | 18,6 | 27,9 | 23,0 |
+| 2000 | 16,6 | 1,6 | 8,0 |
+| 2010 | 0,0 | 0,3 | 0,2 |
 
 # Oversikt over norsk sokkel etter produksjonsstartår
 
@@ -100,7 +100,7 @@ Johan Sverdrup (med planlagt produksjonsstart i 2019) har 23% av desse (1,9 mill
 ## Olje
 
 ![Produksjon](img/oil_production_yearly_12MMA_by_region.png)
-Nordsjøen står for 82% av oljeproduksjonen,
+Nordsjøen står for 81% av oljeproduksjonen,
 Norskehavet 15% og
 Barentshavet 4%.
 

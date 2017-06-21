@@ -69,7 +69,7 @@
   "wlbFactMapUrl": "http://gis.npd.no/factmaps/html_21/?run=WellboreExpByNPDID&scale=100000&NPDID=7532",
   "wlbDiskosWellboreType": "initial             ",
   "wlbDiskosWellboreParent": "                                        ",
-  "wlbWdssQcDate": "",
+  "wlbWdssQcDate": "25.08.2017",
   "wlbReleasedDate": "25.08.2017",
   "wlbNpdidWellbore": "7532",
   "dscNpdidDiscovery": "4530554",
