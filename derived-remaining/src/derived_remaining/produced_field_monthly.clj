@@ -21,6 +21,17 @@
                                  :prfPrdProducedWaterInFieldMillSm3
                                  :prfNpdidInformationCarrier]))
 
+(def missing-reserve-data-field-names
+  (->> raw-data
+       :data
+       (remove #(= "33/9-6 DELTA" (:prfInformationCarrier %)))
+       (mapv :prfInformationCarrier)
+       (distinct)
+       (remove #(some #{%} reserve/field-names))
+       (vec)))
+
+(test/is (= [] missing-reserve-data-field-names))
+
 (def data (->> raw-data
                :data
                (remove #(= "33/9-6 DELTA" (:prfInformationCarrier %)))
@@ -147,14 +158,14 @@
 
 
 #_(generate-bucket-file "../data/oil-production-bucket-stacked-new-fields.csv"
-                      (filter #(>= (:start-production %) 2008) with-cumulative)
-                      #(cond
-                         (< (:oil-percentage-produced %) 50) "1-0 - 50% produsert"
-                         (< (:oil-percentage-produced %) 60) "1-50 - 60% produsert"
-                         (< (:oil-percentage-produced %) 70) "3-60 - 70% produsert"
-                         (< (:oil-percentage-produced %) 80) "4-70 - 80% produsert"
-                         (< (:oil-percentage-produced %) 90) "5-80 - 90% produsert"
-                         :else "6-90 - 100% produsert"))
+                        (filter #(>= (:start-production %) 2008) with-cumulative)
+                        #(cond
+                           (< (:oil-percentage-produced %) 50) "1-0 - 50% produsert"
+                           (< (:oil-percentage-produced %) 60) "1-50 - 60% produsert"
+                           (< (:oil-percentage-produced %) 70) "3-60 - 70% produsert"
+                           (< (:oil-percentage-produced %) 80) "4-70 - 80% produsert"
+                           (< (:oil-percentage-produced %) 90) "5-80 - 90% produsert"
+                           :else "6-90 - 100% produsert"))
 
 (defn -main
   []
